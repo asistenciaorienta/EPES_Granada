@@ -1,1 +1,347 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EPES Granada · Gestión</title>
 
+  <style>
+    :root{
+      /* Paleta inspirada en el logo */
+      --ja-green: #b8cb14;
+      --ja-blue:  #1f5078;
+      --blue-100: #f4f8e7;
+      --blue-200: #d0dcea;
+      --blue-300: #a2b9d1;
+
+      --bg: #ffffff;
+      --text: #0b2233;
+      --muted: #4b6473;
+
+      --shadow: 0 10px 30px rgba(31,80,120,.12);
+      --radius: 18px;
+      --radius-sm: 12px;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 420px at 20% 0%, rgba(184,203,20,.16), transparent 60%),
+        radial-gradient(900px 420px at 80% 0%, rgba(162,185,209,.30), transparent 60%),
+        var(--bg);
+      min-height: 100vh;
+    }
+
+    /* Layout */
+    .container{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 18px 40px;
+    }
+
+    /* Topbar */
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding: 10px 12px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.7);
+      backdrop-filter: blur(8px);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(162,185,209,.35);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      min-width: 240px;
+    }
+
+    .brand img{
+      height: 46px;
+      width:auto;
+      display:block;
+      border-radius: 10px;
+    }
+
+    .brand .title{
+      display:flex;
+      flex-direction:column;
+      line-height:1.1;
+    }
+    .brand .title strong{
+      font-size: 15px;
+      letter-spacing:.2px;
+      color: var(--ja-blue);
+    }
+    .brand .title span{
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+
+    .actions-right{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .icon-btn{
+      width:42px;
+      height:42px;
+      border-radius: 14px;
+      border: 1px solid rgba(162,185,209,.45);
+      background: rgba(255,255,255,.85);
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+      transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+      box-shadow: 0 6px 18px rgba(31,80,120,.08);
+      position:relative;
+    }
+    .icon-btn:hover{
+      transform: translateY(-1px);
+      border-color: rgba(184,203,20,.9);
+      box-shadow: 0 10px 24px rgba(31,80,120,.14);
+    }
+    .icon-btn:active{ transform: translateY(0px) scale(.99); }
+
+    .icon{
+      width:22px;
+      height:22px;
+      fill: var(--ja-blue);
+      opacity:.95;
+    }
+
+    /* Tooltip simple */
+    .icon-btn[data-tip]::after{
+      content: attr(data-tip);
+      position:absolute;
+      right:0;
+      top: calc(100% + 8px);
+      background: rgba(31,80,120,.95);
+      color: #fff;
+      font-size: 12px;
+      padding: 7px 10px;
+      border-radius: 10px;
+      white-space: nowrap;
+      opacity:0;
+      transform: translateY(-4px);
+      pointer-events:none;
+      transition: opacity .12s ease, transform .12s ease;
+    }
+    .icon-btn:hover::after{
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    /* Hero */
+    .hero{
+      margin-top: 22px;
+      padding: 28px 18px 16px;
+      text-align:center;
+    }
+    .hero h1{
+      margin: 0;
+      font-size: clamp(22px, 2.2vw, 30px);
+      color: var(--ja-blue);
+      letter-spacing:.2px;
+    }
+    .hero p{
+      margin: 10px auto 0;
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 14.5px;
+      line-height:1.5;
+    }
+
+    /* Big menu buttons */
+    .menu{
+      margin-top: 20px;
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card-btn{
+      border: 1px solid rgba(162,185,209,.45);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.78);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      text-align:left;
+      cursor:pointer;
+      transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+      position:relative;
+      overflow:hidden;
+      min-height: 130px;
+    }
+    .card-btn:hover{
+      transform: translateY(-2px);
+      border-color: rgba(184,203,20,.9);
+      box-shadow: 0 16px 34px rgba(31,80,120,.14);
+    }
+
+    .card-btn .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      font-size: 12px;
+      color: rgba(31,80,120,.92);
+      background: rgba(208,220,234,.55);
+      border: 1px solid rgba(162,185,209,.45);
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    .card-btn h2{
+      margin: 12px 0 6px;
+      font-size: 18px;
+      color: var(--ja-blue);
+    }
+    .card-btn p{
+      margin:0;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.45;
+      max-width: 48ch;
+    }
+
+    .card-btn .accent{
+      position:absolute;
+      inset:auto -40px -40px auto;
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(184,203,20,.45), rgba(162,185,209,.20), transparent 65%);
+      filter: blur(0px);
+      pointer-events:none;
+    }
+
+    .primary{
+      border-color: rgba(184,203,20,.65);
+    }
+    .primary .pill{
+      background: rgba(184,203,20,.18);
+      border-color: rgba(184,203,20,.35);
+    }
+
+    /* Footer */
+    .footer{
+      margin-top: 26px;
+      display:flex;
+      justify-content:center;
+      color: rgba(75,100,115,.85);
+      font-size: 12.5px;
+    }
+
+    /* Responsive */
+    @media (max-width: 860px){
+      .brand{ min-width: auto; }
+      .menu{ grid-template-columns: 1fr; }
+      .card-btn{ min-height: 120px; }
+      .topbar{ padding: 10px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <div class="brand">
+        <!-- Cambia la ruta/nombre si lo necesitas -->
+        <img src="logo-epes.jpg" alt="EPES · SAE" />
+        <div class="title">
+          <strong>Gestión EPES · Granada</strong>
+          <span>Servicio Andaluz de Empleo</span>
+        </div>
+      </div>
+
+      <div class="actions-right" aria-label="Acciones superiores">
+        <!-- Usuario -->
+        <button class="icon-btn" type="button" data-tip="Usuario (correo, nombre…)" onclick="onUser()">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z"/>
+          </svg>
+        </button>
+
+        <!-- Configuración -->
+        <button class="icon-btn" type="button" data-tip="Configuración (altas)" onclick="onSettings()">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19.14 12.94a7.49 7.49 0 0 0 .05-.94 7.49 7.49 0 0 0-.05-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.3 7.3 0 0 0-1.63-.94l-.36-2.54A.5.5 0 0 0 13.9 1h-3.8a.5.5 0 0 0-.49.42l-.36 2.54a7.3 7.3 0 0 0-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.71 7.02a.5.5 0 0 0 .12.64l2.03 1.58a7.49 7.49 0 0 0-.05.94c0 .32.02.63.05.94L2.83 14.52a.5.5 0 0 0-.12.64l1.92 3.32a.5.5 0 0 0 .6.22l2.39-.96c.5.38 1.05.7 1.63.94l.36 2.54a.5.5 0 0 0 .49.42h3.8a.5.5 0 0 0 .49-.42l.36-2.54c.58-.24 1.13-.56 1.63-.94l2.39.96a.5.5 0 0 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64ZM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5Z"/>
+          </svg>
+        </button>
+
+        <!-- Estadísticas -->
+        <button class="icon-btn" type="button" data-tip="Estadísticas" onclick="onStats()">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 19h16v2H4zM6 10h3v7H6zM11 6h3v11h-3zM16 12h3v5h-3z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Panel principal</h1>
+      <p>
+        Acceso rápido a la creación de convenios y prácticas, y al buscador general.
+        La gestión avanzada (altas, usuarios y configuración) está en los iconos superiores.
+      </p>
+    </section>
+
+    <!-- MAIN MENU -->
+    <main class="menu" aria-label="Menú principal">
+      <button class="card-btn primary" type="button" onclick="goConvenio()">
+        <span class="pill">
+          <strong style="color: var(--ja-green);">+</strong>
+          Acción rápida
+        </span>
+        <h2>+ Convenio</h2>
+        <p>Crear un nuevo convenio y asociarlo a entidad, empresa y centros de trabajo.</p>
+        <span class="accent" aria-hidden="true"></span>
+      </button>
+
+      <button class="card-btn primary" type="button" onclick="goPractica()">
+        <span class="pill">
+          <strong style="color: var(--ja-green);">+</strong>
+          Acción rápida
+        </span>
+        <h2>+ Práctica</h2>
+        <p>Generar una práctica desde un convenio existente y vincularla a centros de trabajo.</p>
+        <span class="accent" aria-hidden="true"></span>
+      </button>
+
+      <button class="card-btn" type="button" onclick="goBuscador()">
+        <span class="pill">Consulta</span>
+        <h2>Buscador</h2>
+        <p>Buscar convenios, prácticas, entidades, empresas y centros por filtros.</p>
+        <span class="accent" aria-hidden="true"></span>
+      </button>
+    </main>
+
+    <div class="footer">
+      <span>EPES · SAE · Junta de Andalucía</span>
+    </div>
+  </div>
+
+  <script>
+    // Placeholders de navegación (luego lo conectamos a tus pantallas reales)
+    function goConvenio(){ alert("Ir a: Alta Convenio"); }
+    function goPractica(){ alert("Ir a: Alta Práctica"); }
+    function goBuscador(){ alert("Ir a: Buscador"); }
+
+    // Iconos superiores
+    function onUser(){ alert("Abrir: Perfil de usuario (correo, nombre, etc.)"); }
+    function onSettings(){ alert("Abrir: Configuración (Alta personal SAE, Alta entidades, Alta convocatorias)"); }
+    function onStats(){ alert("Abrir: Estadísticas"); }
+  </script>
+</body>
+</html>
