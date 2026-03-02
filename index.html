@@ -921,7 +921,32 @@
             <div id="profNombre" style="font-weight:900;color:var(--ja-blue)"></div>
           </div>
         </div>
-
+        <div class="panel" style="padding:14px;margin-top:12px;background:rgba(238,244,251,.65)">
+          <h4 style="margin:0;color:var(--ja-blue);font-size:14px">Cambiar contraseña</h4>
+        
+          <form class="form" id="formChangePass" style="margin-top:10px">
+            <div class="field" style="grid-column:1/-1">
+              <label for="cp_actual">Clave actual</label>
+              <input id="cp_actual" type="password" autocomplete="current-password" required />
+            </div>
+        
+            <div class="field">
+              <label for="cp_nueva">Nueva clave</label>
+              <input id="cp_nueva" type="password" autocomplete="new-password" required />
+            </div>
+        
+            <div class="field">
+              <label for="cp_nueva2">Confirmar nueva clave</label>
+              <input id="cp_nueva2" type="password" autocomplete="new-password" required />
+            </div>
+        
+            <div class="form-actions">
+              <button class="btn primary" id="btnChangePass" type="submit">Guardar nueva clave</button>
+            </div>
+        
+            <div class="error" id="changePassError" style="display:none"></div>
+          </form>
+        </div>
         <div class="form-actions" style="margin-top:12px">
           <button class="btn" type="button" onclick="closeModal('modalProfile')">Cerrar</button>
           <button class="btn danger" type="button" onclick="logout()">Cerrar sesión</button>
