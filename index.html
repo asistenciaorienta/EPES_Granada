@@ -874,7 +874,107 @@
       <section class="view" id="view-config-entidades" aria-label="Alta entidades">
         <div class="panel">
           <h2 style="margin:0;color:var(--ja-blue)">Alta entidades</h2>
-          <p class="hint">Pendiente de conectar: CRUD sobre hoja <code>Entidades</code> + <code>Personal_Tecnico</code>.</p>
+          <p class="hint">Crear, editar y (si procede) eliminar entidades.</p>
+      
+          <!-- CREAR ENTIDAD -->
+          <div class="panel" style="margin-top:14px;background:rgba(238,244,251,.55)">
+            <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Crear entidad</h3>
+      
+            <form class="form" id="formCreateEntidad">
+              <div class="field">
+                <label for="e_nombre">nombre</label>
+                <input id="e_nombre" required />
+              </div>
+      
+              <div class="field">
+                <label for="e_expediente">expediente (único si se usa)</label>
+                <input id="e_expediente" />
+              </div>
+      
+              <div class="field">
+                <label for="e_id_convocatoria">id_convocatoria</label>
+                <input id="e_id_convocatoria" placeholder="(de momento manual)" />
+              </div>
+      
+              <div class="field">
+                <label for="e_cif">cif</label>
+                <input id="e_cif" />
+              </div>
+      
+              <div class="field">
+                <label for="e_dir3">dir3</label>
+                <input id="e_dir3" />
+              </div>
+      
+              <div class="field" style="grid-column:1/-1">
+                <label for="e_direccion">dirección</label>
+                <input id="e_direccion" />
+              </div>
+      
+              <div class="field">
+                <label for="e_tel">telefono_coord</label>
+                <input id="e_tel" />
+              </div>
+      
+              <div class="field">
+                <label for="e_email">email_coord</label>
+                <input id="e_email" type="email" />
+              </div>
+      
+              <div class="field">
+                <label for="e_pol_acc">poliza_general_accidentes</label>
+                <input id="e_pol_acc" />
+              </div>
+      
+              <div class="field">
+                <label for="e_pol_rc">poliza_rc</label>
+                <input id="e_pol_rc" />
+              </div>
+      
+              <div class="field" style="grid-column:1/-1">
+                <label for="e_rep">representacion_legal</label>
+                <input id="e_rep" />
+              </div>
+      
+              <div class="field" style="grid-column:1/-1">
+                <label for="e_ficha">ficha_tecnica</label>
+                <input id="e_ficha" placeholder="URL o texto" />
+              </div>
+      
+              <div class="form-actions">
+                <button class="btn" type="button" onclick="routeTo('#/config')">Volver</button>
+                <button class="btn primary" id="btnCreateEntidad" type="submit">Crear entidad</button>
+              </div>
+      
+              <div class="error" id="createEntidadError" style="display:none"></div>
+            </form>
+          </div>
+      
+          <!-- LISTADO -->
+          <div class="panel" style="margin-top:14px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+              <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Entidades registradas</h3>
+              <button class="btn" type="button" onclick="loadEntidades()">Actualizar lista</button>
+            </div>
+      
+            <div style="overflow:auto;margin-top:10px;border:1px solid rgba(162,185,209,.35);border-radius:14px">
+              <table style="width:100%;border-collapse:collapse;font-size:13px">
+                <thead style="background:rgba(208,220,234,.55)">
+                  <tr>
+                    <th style="text-align:left;padding:10px">id</th>
+                    <th style="text-align:left;padding:10px">nombre</th>
+                    <th style="text-align:left;padding:10px">cif</th>
+                    <th style="text-align:left;padding:10px">expediente</th>
+                    <th style="text-align:left;padding:10px">acciones</th>
+                  </tr>
+                </thead>
+                <tbody id="entTbody">
+                  <tr><td colspan="5" style="padding:10px;color:var(--muted)">Pulsa “Actualizar lista”.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      
         </div>
       </section>
 
@@ -990,7 +1090,7 @@
        CONFIG: pon aquí tu API
        ========================= */
     // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
-    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbyTh5p2rjWmRyEGDqbaSSXNKlS_NWAjy_l44DhC0RfLuiAuzFjmeaLbpCZNe3fcTHrEfA/exec';
+    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbzPBiHETYtdz4fvH0H1lJndrghQ4l-bOlDtGxjH449kyAeY59bYjeN8DM_ZfeUzVvPziQ/exec';
     // ✅ Base específica para JSONP (evita 302)
     const API_BASE_URL_JSONP = API_BASE_URL.replace(
       'https://script.google.com/macros/s/',
@@ -1340,6 +1440,7 @@
         }
       });
       wirePersonalSAE();
+      wireEntidades();
       wireChangePassword();
     }
 
@@ -1514,6 +1615,123 @@
           btn.disabled = false;
         }
       });
+    }
+    function canEdit(){
+      const p = userPerfil();
+      return p === 'ADMIN' || p === 'GESTOR_EDITA' || p === 'GESTOR_BORRA';
+    }
+    function canDelete(){
+      const p = userPerfil();
+      return p === 'ADMIN' || p === 'GESTOR_BORRA';
+    }
+    
+    function wireEntidades(){
+      const form = document.getElementById('formCreateEntidad');
+      if (!form) return;
+    
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const err = document.getElementById('createEntidadError');
+        const btn = document.getElementById('btnCreateEntidad');
+        err.style.display = 'none';
+        btn.disabled = true;
+    
+        try{
+          const payload = {
+            nombre: document.getElementById('e_nombre').value.trim(),
+            expediente: document.getElementById('e_expediente').value.trim(),
+            id_convocatoria: document.getElementById('e_id_convocatoria').value.trim(),
+            cif: document.getElementById('e_cif').value.trim(),
+            dir3: document.getElementById('e_dir3').value.trim(),
+            'dirección': document.getElementById('e_direccion').value.trim(),
+            telefono_coord: document.getElementById('e_tel').value.trim(),
+            email_coord: document.getElementById('e_email').value.trim(),
+            poliza_general_accidentes: document.getElementById('e_pol_acc').value.trim(),
+            poliza_rc: document.getElementById('e_pol_rc').value.trim(),
+            representacion_legal: document.getElementById('e_rep').value.trim(),
+            ficha_tecnica: document.getElementById('e_ficha').value.trim(),
+          };
+    
+          const res = await apiFetch('entidades/create', { method:'POST', body: payload });
+          toast('Entidad creada: ' + (res.id_entidad || 'OK'));
+          form.reset();
+          await loadEntidades();
+        } catch(ex){
+          err.textContent = ex.message || 'No se pudo crear la entidad';
+          err.style.display = 'block';
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    }
+    
+    async function loadEntidades(){
+      const tbody = document.getElementById('entTbody');
+      if (!tbody) return;
+    
+      tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--muted)">Cargando…</td></tr>`;
+    
+      try{
+        const data = await apiJsonp('list', { table: 'Entidades' });
+        const rows = (data.rows || []).map(r => ({
+          id: r.id_entidad ?? '',
+          nombre: r.nombre ?? '',
+          cif: r.cif ?? '',
+          expediente: r.expediente ?? ''
+        }));
+    
+        if (!rows.length){
+          tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--muted)">Sin registros.</td></tr>`;
+          return;
+        }
+    
+        tbody.innerHTML = rows.map(e => `
+          <tr>
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(e.id)}</td>
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(e.nombre)}</td>
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(e.cif)}</td>
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(e.expediente)}</td>
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25);white-space:nowrap">
+              ${canEdit() ? `<button class="btn" type="button" onclick="editEntidadPrompt('${escapeHtml(e.id)}')">Editar</button>` : ''}
+              ${canDelete() ? `<button class="btn danger" type="button" onclick="deleteEntidad('${escapeHtml(e.id)}')">Borrar</button>` : ''}
+            </td>
+          </tr>
+        `).join('');
+    
+      } catch(ex){
+        tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--danger)">Error: ${escapeHtml(ex.message||'No se pudo cargar')}</td></tr>`;
+      }
+    }
+    
+    async function editEntidadPrompt(id_entidad){
+      if (!canEdit()) return toast('Permisos insuficientes');
+    
+      const nuevoNombre = prompt('Nuevo nombre para ' + id_entidad + ':');
+      if (nuevoNombre === null) return;
+    
+      const patch = { nombre: nuevoNombre.trim() };
+      if (!patch.nombre) return toast('Nombre vacío');
+    
+      await apiFetch('update', {
+        method:'POST',
+        body: { table:'Entidades', id_field:'id_entidad', id:id_entidad, patch }
+      });
+    
+      toast('Entidad actualizada');
+      await loadEntidades();
+    }
+    
+    async function deleteEntidad(id_entidad){
+      if (!canDelete()) return toast('Permisos insuficientes');
+      if (!confirm('¿Borrar entidad ' + id_entidad + '?')) return;
+    
+      await apiFetch('delete', {
+        method:'POST',
+        body: { table:'Entidades', id_field:'id_entidad', id:id_entidad }
+      });
+    
+      toast('Entidad borrada');
+      await loadEntidades();
     }
     
     async function loadUsers(){
