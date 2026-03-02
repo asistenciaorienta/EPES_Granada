@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light" />
   <title>EPES Granada · Gestión</title>
 
   <style>
@@ -10,48 +11,58 @@
       /* Paleta inspirada en el logo */
       --ja-green: #b8cb14;
       --ja-blue:  #1f5078;
-      --blue-100: #f4f8e7;
+      --blue-50:  #f4f8ff;
+      --blue-100: #eef4fb;
       --blue-200: #d0dcea;
       --blue-300: #a2b9d1;
 
       --bg: #ffffff;
       --text: #0b2233;
       --muted: #4b6473;
+      --danger: #b42318;
 
-      --shadow: 0 10px 30px rgba(31,80,120,.12);
+      --shadow: 0 12px 30px rgba(31,80,120,.12);
+      --shadow-2: 0 18px 46px rgba(31,80,120,.18);
       --radius: 18px;
       --radius-sm: 12px;
+
+      --focus: 0 0 0 4px rgba(184,203,20,.35);
     }
 
     *{ box-sizing:border-box; }
+    html,body{ height:100%; }
     body{
       margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       color:var(--text);
       background:
-        radial-gradient(900px 420px at 20% 0%, rgba(184,203,20,.16), transparent 60%),
-        radial-gradient(900px 420px at 80% 0%, rgba(162,185,209,.30), transparent 60%),
-        var(--bg);
-      min-height: 100vh;
+        radial-gradient(900px 420px at 18% -10%, rgba(184,203,20,.18), transparent 60%),
+        radial-gradient(900px 420px at 82% -10%, rgba(162,185,209,.32), transparent 60%),
+        linear-gradient(180deg, rgba(238,244,251,.65), rgba(255,255,255,.85) 40%, #fff);
     }
 
-    /* Layout */
+    a{ color:inherit; text-decoration:none; }
+    button{ font:inherit; }
+
     .container{
-      max-width: 1100px;
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 18px 18px 40px;
+      padding: 18px 18px 44px;
     }
 
     /* Topbar */
     .topbar{
+      position: sticky;
+      top: 14px;
+      z-index: 50;
       display:flex;
       align-items:center;
       justify-content:space-between;
       gap:16px;
       padding: 10px 12px;
       border-radius: var(--radius);
-      background: rgba(255,255,255,.7);
-      backdrop-filter: blur(8px);
+      background: rgba(255,255,255,.78);
+      backdrop-filter: blur(10px);
       box-shadow: var(--shadow);
       border: 1px solid rgba(162,185,209,.35);
     }
@@ -60,7 +71,7 @@
       display:flex;
       align-items:center;
       gap:12px;
-      min-width: 240px;
+      min-width: 280px;
     }
 
     .brand img{
@@ -74,6 +85,7 @@
       display:flex;
       flex-direction:column;
       line-height:1.1;
+      gap:4px;
     }
     .brand .title strong{
       font-size: 15px;
@@ -85,10 +97,28 @@
       color: var(--muted);
     }
 
-    .actions-right{
+    .right{
       display:flex;
       align-items:center;
       gap:10px;
+    }
+
+    .pill-status{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(162,185,209,.45);
+      background: rgba(255,255,255,.9);
+      color: rgba(31,80,120,.9);
+      font-size: 12.5px;
+      white-space: nowrap;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:50%;
+      background: var(--ja-green);
+      box-shadow: 0 0 0 3px rgba(184,203,20,.18);
     }
 
     .icon-btn{
@@ -96,7 +126,7 @@
       height:42px;
       border-radius: 14px;
       border: 1px solid rgba(162,185,209,.45);
-      background: rgba(255,255,255,.85);
+      background: rgba(255,255,255,.92);
       display:grid;
       place-items:center;
       cursor:pointer;
@@ -107,9 +137,10 @@
     .icon-btn:hover{
       transform: translateY(-1px);
       border-color: rgba(184,203,20,.9);
-      box-shadow: 0 10px 24px rgba(31,80,120,.14);
+      box-shadow: 0 12px 26px rgba(31,80,120,.14);
     }
     .icon-btn:active{ transform: translateY(0px) scale(.99); }
+    .icon-btn:focus-visible{ outline: none; box-shadow: var(--shadow), var(--focus); }
 
     .icon{
       width:22px;
@@ -118,118 +149,309 @@
       opacity:.95;
     }
 
-    /* Tooltip simple */
-    .icon-btn[data-tip]::after{
-      content: attr(data-tip);
-      position:absolute;
-      right:0;
-      top: calc(100% + 8px);
-      background: rgba(31,80,120,.95);
-      color: #fff;
-      font-size: 12px;
-      padding: 7px 10px;
-      border-radius: 10px;
-      white-space: nowrap;
-      opacity:0;
-      transform: translateY(-4px);
-      pointer-events:none;
-      transition: opacity .12s ease, transform .12s ease;
-    }
-    .icon-btn:hover::after{
-      opacity:1;
-      transform: translateY(0);
-    }
-
-    /* Hero */
+    /* Main */
     .hero{
-      margin-top: 22px;
-      padding: 28px 18px 16px;
-      text-align:center;
+      margin-top: 20px;
+      padding: 22px 6px 8px;
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap: 16px;
+      flex-wrap: wrap;
     }
     .hero h1{
-      margin: 0;
-      font-size: clamp(22px, 2.2vw, 30px);
+      margin:0;
+      font-size: clamp(22px, 2.1vw, 30px);
       color: var(--ja-blue);
       letter-spacing:.2px;
     }
     .hero p{
-      margin: 10px auto 0;
-      max-width: 720px;
+      margin: 8px 0 0;
       color: var(--muted);
       font-size: 14.5px;
       line-height:1.5;
+      max-width: 72ch;
     }
 
-    /* Big menu buttons */
-    .menu{
-      margin-top: 20px;
+    /* Route header */
+    .routebar{
+      margin-top: 14px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding: 14px 16px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(162,185,209,.40);
+      background: rgba(255,255,255,.72);
+      box-shadow: var(--shadow);
+    }
+    .routebar .crumb{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-height: 30px;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(184,203,20,.35);
+      background: rgba(184,203,20,.15);
+      color: rgba(31,80,120,.95);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .route-title{
+      font-weight: 700;
+      color: var(--ja-blue);
+    }
+    .route-actions{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap: wrap;
+    }
+
+    .btn{
+      border: 1px solid rgba(162,185,209,.45);
+      background: rgba(255,255,255,.92);
+      border-radius: 14px;
+      padding: 10px 12px;
+      cursor:pointer;
+      transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+      box-shadow: 0 6px 18px rgba(31,80,120,.08);
+      color: rgba(31,80,120,.95);
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .btn:hover{ transform: translateY(-1px); border-color: rgba(184,203,20,.9); box-shadow: 0 12px 26px rgba(31,80,120,.14); }
+    .btn:active{ transform: translateY(0px) scale(.99); }
+    .btn:focus-visible{ outline:none; box-shadow: var(--shadow), var(--focus); }
+
+    .btn.primary{
+      border-color: rgba(184,203,20,.65);
+      background: linear-gradient(180deg, rgba(184,203,20,.20), rgba(255,255,255,.92));
+    }
+
+    /* Cards */
+    .grid3{
+      margin-top: 14px;
       display:grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 14px;
     }
-
-    .card-btn{
+    .card{
       border: 1px solid rgba(162,185,209,.45);
       border-radius: var(--radius);
       background: rgba(255,255,255,.78);
       box-shadow: var(--shadow);
       padding: 18px;
-      text-align:left;
-      cursor:pointer;
-      transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
       position:relative;
       overflow:hidden;
-      min-height: 130px;
+      min-height: 138px;
     }
-    .card-btn:hover{
-      transform: translateY(-2px);
-      border-color: rgba(184,203,20,.9);
-      box-shadow: 0 16px 34px rgba(31,80,120,.14);
-    }
-
-    .card-btn .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      font-size: 12px;
-      color: rgba(31,80,120,.92);
-      background: rgba(208,220,234,.55);
-      border: 1px solid rgba(162,185,209,.45);
-      padding: 6px 10px;
-      border-radius: 999px;
-    }
-
-    .card-btn h2{
-      margin: 12px 0 6px;
+    .card h2{
+      margin: 0 0 6px;
       font-size: 18px;
       color: var(--ja-blue);
     }
-    .card-btn p{
-      margin:0;
+    .card p{
+      margin: 0;
       color: var(--muted);
       font-size: 13.5px;
       line-height: 1.45;
-      max-width: 48ch;
+      max-width: 54ch;
     }
-
-    .card-btn .accent{
+    .card .accent{
       position:absolute;
-      inset:auto -40px -40px auto;
-      width: 170px;
-      height: 170px;
+      inset:auto -46px -46px auto;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       background: radial-gradient(circle at 30% 30%, rgba(184,203,20,.45), rgba(162,185,209,.20), transparent 65%);
-      filter: blur(0px);
       pointer-events:none;
     }
 
-    .primary{
-      border-color: rgba(184,203,20,.65);
+    .card.link{
+      cursor:pointer;
+      transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
     }
-    .primary .pill{
-      background: rgba(184,203,20,.18);
-      border-color: rgba(184,203,20,.35);
+    .card.link:hover{
+      transform: translateY(-2px);
+      border-color: rgba(184,203,20,.9);
+      box-shadow: var(--shadow-2);
     }
+    .card .meta{
+      margin-top: 12px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(162,185,209,.45);
+      background: rgba(208,220,234,.50);
+      font-size: 12px;
+      color: rgba(31,80,120,.95);
+      font-weight: 600;
+    }
+    .tag strong{ color: var(--ja-green); }
+
+    /* Views */
+    .view{ display:none; margin-top: 14px; }
+    .view.active{ display:block; }
+
+    .panel{
+      border: 1px solid rgba(162,185,209,.45);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.78);
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+
+    .form{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .field{
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+    }
+    label{
+      font-size: 12.5px;
+      color: rgba(31,80,120,.9);
+      font-weight: 700;
+    }
+    input, select{
+      padding: 11px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(162,185,209,.55);
+      background: rgba(255,255,255,.92);
+      color: var(--text);
+      outline: none;
+    }
+    input:focus, select:focus{
+      box-shadow: var(--focus);
+      border-color: rgba(184,203,20,.9);
+    }
+
+    .form-actions{
+      grid-column: 1 / -1;
+      display:flex;
+      gap:10px;
+      justify-content:flex-end;
+      margin-top: 6px;
+      flex-wrap: wrap;
+    }
+
+    .hint{
+      color: var(--muted);
+      font-size: 12.5px;
+      margin-top: 8px;
+      line-height: 1.4;
+    }
+
+    /* Dropdown */
+    .dropdown{ position:relative; }
+    .menu{
+      position:absolute;
+      top: 48px;
+      right: 0;
+      min-width: 280px;
+      border-radius: 16px;
+      border: 1px solid rgba(162,185,209,.45);
+      background: rgba(255,255,255,.96);
+      box-shadow: var(--shadow-2);
+      padding: 8px;
+      display:none;
+      z-index: 100;
+    }
+    .menu.open{ display:block; }
+    .menu .item{
+      width:100%;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      border: none;
+      background: transparent;
+      padding: 10px 10px;
+      border-radius: 12px;
+      cursor:pointer;
+      color: rgba(31,80,120,.95);
+      font-weight: 700;
+      text-align:left;
+    }
+    .menu .item:hover{
+      background: rgba(208,220,234,.45);
+    }
+    .menu .sep{
+      height:1px;
+      background: rgba(162,185,209,.35);
+      margin: 6px 6px;
+    }
+    .menu .small{
+      font-weight: 600;
+      color: rgba(75,100,115,.95);
+      font-size: 12px;
+      padding: 8px 10px 6px;
+    }
+
+    /* Modal */
+    .modal-backdrop{
+      position: fixed;
+      inset: 0;
+      background: rgba(11,34,51,.45);
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding: 18px;
+      z-index: 200;
+    }
+    .modal-backdrop.open{ display:flex; }
+    .modal{
+      width: min(720px, 100%);
+      border-radius: 22px;
+      border: 1px solid rgba(162,185,209,.35);
+      background: rgba(255,255,255,.97);
+      box-shadow: var(--shadow-2);
+      overflow:hidden;
+    }
+    .modal header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(162,185,209,.35);
+      background: linear-gradient(180deg, rgba(238,244,251,.9), rgba(255,255,255,.98));
+    }
+    .modal header h3{
+      margin:0;
+      color: var(--ja-blue);
+      font-size: 15px;
+      letter-spacing:.2px;
+    }
+    .modal .content{
+      padding: 16px;
+    }
+    .modal .close{
+      width:40px;height:40px;
+      border-radius: 14px;
+      border: 1px solid rgba(162,185,209,.45);
+      background: rgba(255,255,255,.92);
+      cursor:pointer;
+    }
+    .modal .close:focus-visible{ outline:none; box-shadow: var(--focus); border-color: rgba(184,203,20,.9); }
 
     /* Footer */
     .footer{
@@ -240,12 +462,12 @@
       font-size: 12.5px;
     }
 
-    /* Responsive */
     @media (max-width: 860px){
-      .brand{ min-width: auto; }
-      .menu{ grid-template-columns: 1fr; }
-      .card-btn{ min-height: 120px; }
-      .topbar{ padding: 10px; }
+      .brand{ min-width:auto; }
+      .pill-status{ display:none; }
+      .grid3{ grid-template-columns: 1fr; }
+      .form{ grid-template-columns: 1fr; }
+      .topbar{ top: 10px; }
     }
   </style>
 </head>
@@ -254,33 +476,48 @@
   <div class="container">
 
     <!-- TOP BAR -->
-    <header class="topbar">
-      <div class="brand">
-        <!-- Cambia la ruta/nombre si lo necesitas -->
-        <img src="logo_epes.png" alt="EPES · SAE" />
+    <header class="topbar" role="banner">
+      <a class="brand" href="#/" aria-label="Ir al inicio">
+        <img src="logo-epes.jpg" alt="Experiencias Profesionales para el Empleo" />
         <div class="title">
           <strong>Gestión EPES · Granada</strong>
           <span>Servicio Andaluz de Empleo</span>
         </div>
-      </div>
+      </a>
 
-      <div class="actions-right" aria-label="Acciones superiores">
+      <div class="right" aria-label="Acciones superiores">
+        <div class="pill-status" title="Estado de sesión">
+          <span class="dot" aria-hidden="true"></span>
+          <span id="sessionText">Sesión: demo (CONSULTA)</span>
+        </div>
+
         <!-- Usuario -->
-        <button class="icon-btn" type="button" data-tip="Usuario (correo, nombre…)" onclick="onUser()">
+        <button class="icon-btn" type="button" id="btnUser" aria-label="Perfil de usuario">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z"/>
           </svg>
         </button>
 
-        <!-- Configuración -->
-        <button class="icon-btn" type="button" data-tip="Configuración (altas)" onclick="onSettings()">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M19.14 12.94a7.49 7.49 0 0 0 .05-.94 7.49 7.49 0 0 0-.05-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.3 7.3 0 0 0-1.63-.94l-.36-2.54A.5.5 0 0 0 13.9 1h-3.8a.5.5 0 0 0-.49.42l-.36 2.54a7.3 7.3 0 0 0-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.71 7.02a.5.5 0 0 0 .12.64l2.03 1.58a7.49 7.49 0 0 0-.05.94c0 .32.02.63.05.94L2.83 14.52a.5.5 0 0 0-.12.64l1.92 3.32a.5.5 0 0 0 .6.22l2.39-.96c.5.38 1.05.7 1.63.94l.36 2.54a.5.5 0 0 0 .49.42h3.8a.5.5 0 0 0 .49-.42l.36-2.54c.58-.24 1.13-.56 1.63-.94l2.39.96a.5.5 0 0 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64ZM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5Z"/>
-          </svg>
-        </button>
+        <!-- Configuración (dropdown) -->
+        <div class="dropdown">
+          <button class="icon-btn" type="button" id="btnSettings" aria-label="Configuración">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19.14 12.94a7.49 7.49 0 0 0 .05-.94 7.49 7.49 0 0 0-.05-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.3 7.3 0 0 0-1.63-.94l-.36-2.54A.5.5 0 0 0 13.9 1h-3.8a.5.5 0 0 0-.49.42l-.36 2.54a7.3 7.3 0 0 0-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.71 7.02a.5.5 0 0 0 .12.64l2.03 1.58a7.49 7.49 0 0 0-.05.94c0 .32.02.63.05.94L2.83 14.52a.5.5 0 0 0-.12.64l1.92 3.32a.5.5 0 0 0 .6.22l2.39-.96c.5.38 1.05.7 1.63.94l.36 2.54a.5.5 0 0 0 .49.42h3.8a.5.5 0 0 0 .49-.42l.36-2.54c.58-.24 1.13-.56 1.63-.94l2.39.96a.5.5 0 0 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64ZM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5Z"/>
+            </svg>
+          </button>
+
+          <div class="menu" id="settingsMenu" role="menu" aria-label="Menú de configuración">
+            <div class="small">Altas / Catálogos</div>
+            <button class="item" role="menuitem" onclick="routeTo('#/config/personal')">Alta personal SAE</button>
+            <button class="item" role="menuitem" onclick="routeTo('#/config/entidades')">Alta entidades</button>
+            <button class="item" role="menuitem" onclick="routeTo('#/config/convocatorias')">Alta convocatorias</button>
+            <div class="sep"></div>
+            <button class="item" role="menuitem" onclick="routeTo('#/config')">Abrir configuración</button>
+          </div>
+        </div>
 
         <!-- Estadísticas -->
-        <button class="icon-btn" type="button" data-tip="Estadísticas" onclick="onStats()">
+        <button class="icon-btn" type="button" id="btnStats" aria-label="Estadísticas">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M4 19h16v2H4zM6 10h3v7H6zM11 6h3v11h-3zM16 12h3v5h-3z"/>
           </svg>
@@ -289,42 +526,253 @@
     </header>
 
     <!-- HERO -->
-    <section class="hero">
-      <h1>Panel principal</h1>
-      <p>
-        Acceso rápido a la creación de convenios y prácticas, y al buscador general.
-        La gestión avanzada (altas, usuarios y configuración) está en los iconos superiores.
-      </p>
+    <section class="hero" aria-label="Encabezado">
+      <div>
+        <h1 id="pageH1">Panel principal</h1>
+        <p id="pageP">
+          Acceso rápido a la creación de convenios y prácticas, y al buscador general. La gestión avanzada está en Configuración.
+        </p>
+      </div>
     </section>
 
-    <!-- MAIN MENU -->
-    <main class="menu" aria-label="Menú principal">
-      <button class="card-btn primary" type="button" onclick="goConvenio()">
-        <span class="pill">
-          <strong style="color: var(--ja-green);">+</strong>
-          Acción rápida
-        </span>
-        <h2>+ Convenio</h2>
-        <p>Crear un nuevo convenio y asociarlo a entidad, empresa y centros de trabajo.</p>
-        <span class="accent" aria-hidden="true"></span>
-      </button>
+    <!-- ROUTE BAR -->
+    <section class="routebar" aria-label="Barra de ruta">
+      <div class="crumb">
+        <span class="badge" id="routeBadge">Inicio</span>
+        <span class="route-title" id="routeTitle">Menú</span>
+      </div>
+      <div class="route-actions" id="routeActions">
+        <button class="btn primary" type="button" onclick="routeTo('#/convenio')">+ Convenio</button>
+        <button class="btn primary" type="button" onclick="routeTo('#/practica')">+ Práctica</button>
+        <button class="btn" type="button" onclick="routeTo('#/buscador')">Buscador</button>
+      </div>
+    </section>
 
-      <button class="card-btn primary" type="button" onclick="goPractica()">
-        <span class="pill">
-          <strong style="color: var(--ja-green);">+</strong>
-          Acción rápida
-        </span>
-        <h2>+ Práctica</h2>
-        <p>Generar una práctica desde un convenio existente y vincularla a centros de trabajo.</p>
-        <span class="accent" aria-hidden="true"></span>
-      </button>
+    <!-- VIEWS -->
+    <main>
 
-      <button class="card-btn" type="button" onclick="goBuscador()">
-        <span class="pill">Consulta</span>
-        <h2>Buscador</h2>
-        <p>Buscar convenios, prácticas, entidades, empresas y centros por filtros.</p>
-        <span class="accent" aria-hidden="true"></span>
-      </button>
+      <!-- HOME -->
+      <section class="view active" id="view-home" aria-label="Inicio">
+        <div class="grid3">
+          <div class="card link" onclick="routeTo('#/convenio')" role="button" tabindex="0">
+            <h2>+ Convenio</h2>
+            <p>Crear un convenio y asociarlo a entidad, empresa y centros de trabajo.</p>
+            <div class="meta">
+              <span class="tag"><strong>+</strong> acción rápida</span>
+              <span class="tag">firma / adendas</span>
+            </div>
+            <span class="accent" aria-hidden="true"></span>
+          </div>
+
+          <div class="card link" onclick="routeTo('#/practica')" role="button" tabindex="0">
+            <h2>+ Práctica</h2>
+            <p>Generar una práctica desde un convenio existente y vincularla a centros.</p>
+            <div class="meta">
+              <span class="tag"><strong>+</strong> acción rápida</span>
+              <span class="tag">anexos / fechas</span>
+            </div>
+            <span class="accent" aria-hidden="true"></span>
+          </div>
+
+          <div class="card link" onclick="routeTo('#/buscador')" role="button" tabindex="0">
+            <h2>Buscador</h2>
+            <p>Buscar convenios, prácticas, entidades, empresas y centros con filtros.</p>
+            <div class="meta">
+              <span class="tag">consulta</span>
+              <span class="tag">filtros</span>
+            </div>
+            <span class="accent" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONVENIO -->
+      <section class="view" id="view-convenio" aria-label="Alta convenio">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Alta de convenio</h2>
+          <p class="hint">Plantilla de formulario. Aquí conectaremos con tu Apps Script (create/update) y los selectores de Entidad/Empresa/Centros.</p>
+
+          <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: guardar convenio');">
+            <div class="field">
+              <label for="c_id">id_convenio</label>
+              <input id="c_id" placeholder="C0001 (o automático)" />
+            </div>
+            <div class="field">
+              <label for="c_entidad">id_entidad</label>
+              <input id="c_entidad" placeholder="E0001" />
+            </div>
+            <div class="field">
+              <label for="c_cif">CIF empresa</label>
+              <input id="c_cif" placeholder="B12345678" />
+            </div>
+            <div class="field">
+              <label for="c_firma">fecha_firma_convenio</label>
+              <input id="c_firma" type="date" />
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="button" onclick="routeTo('#/')">Cancelar</button>
+              <button class="btn primary" type="submit">Guardar convenio</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- PRACTICA -->
+      <section class="view" id="view-practica" aria-label="Alta práctica">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Alta de práctica</h2>
+          <p class="hint">Plantilla de formulario. Aquí conectaremos con tu Apps Script y selección de convenio + centros.</p>
+
+          <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: guardar práctica');">
+            <div class="field">
+              <label for="p_id">id_practica</label>
+              <input id="p_id" placeholder="P0001 (o automático)" />
+            </div>
+            <div class="field">
+              <label for="p_convenio">id_convenio</label>
+              <input id="p_convenio" placeholder="C0001" />
+            </div>
+            <div class="field">
+              <label for="p_inicio">fecha_inicio_practica</label>
+              <input id="p_inicio" type="date" />
+            </div>
+            <div class="field">
+              <label for="p_fin">fecha_fin_practica</label>
+              <input id="p_fin" type="date" />
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="button" onclick="routeTo('#/')">Cancelar</button>
+              <button class="btn primary" type="submit">Guardar práctica</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- BUSCADOR -->
+      <section class="view" id="view-buscador" aria-label="Buscador">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Buscador</h2>
+          <p class="hint">Búsqueda unificada (convenios, prácticas, entidades, empresas, centros). Luego lo conectamos al endpoint list con filtros.</p>
+
+          <div class="form" style="margin-top:14px">
+            <div class="field">
+              <label for="b_tipo">Tipo</label>
+              <select id="b_tipo">
+                <option value="Convenios">Convenios</option>
+                <option value="Practicas">Prácticas</option>
+                <option value="Entidades">Entidades</option>
+                <option value="Empresas">Empresas</option>
+                <option value="Centros_de_Trabajo">Centros de trabajo</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="b_q">Búsqueda</label>
+              <input id="b_q" placeholder="CIF, id, nombre, expediente..." />
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="button" onclick="toast('Pendiente: ejecutar búsqueda')">Buscar</button>
+            </div>
+          </div>
+
+          <div class="hint" style="margin-top:14px">
+            Resultado: aquí irá una tabla (con paginación) y acciones según perfil (CONSULTA / GESTOR_EDITA / GESTOR_BORRA).
+          </div>
+        </div>
+      </section>
+
+      <!-- CONFIG -->
+      <section class="view" id="view-config" aria-label="Configuración">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Configuración</h2>
+          <p class="hint">Secciones: alta personal SAE, alta entidades, alta convocatorias. Este panel se abre también desde el engranaje.</p>
+
+          <div class="grid3" style="margin-top:14px">
+            <div class="card link" onclick="routeTo('#/config/personal')" role="button" tabindex="0">
+              <h2>Alta personal SAE</h2>
+              <p>Crear usuarios, asignar perfil (ADMIN / GESTOR_EDITA / GESTOR_BORRA / CONSULTA) y resetear contraseña.</p>
+              <span class="accent" aria-hidden="true"></span>
+            </div>
+            <div class="card link" onclick="routeTo('#/config/entidades')" role="button" tabindex="0">
+              <h2>Alta entidades</h2>
+              <p>Registrar entidades y su personal técnico asociado.</p>
+              <span class="accent" aria-hidden="true"></span>
+            </div>
+            <div class="card link" onclick="routeTo('#/config/convocatorias')" role="button" tabindex="0">
+              <h2>Alta convocatorias</h2>
+              <p>Crear y mantener convocatorias de la Junta de Andalucía.</p>
+              <span class="accent" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONFIG: PERSONAL -->
+      <section class="view" id="view-config-personal" aria-label="Alta personal SAE">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Alta personal SAE</h2>
+          <p class="hint">Esto llamará a tu endpoint ADMIN: <code>admin/create_user</code> y <code>admin/set_password</code>.</p>
+
+          <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: crear usuario');">
+            <div class="field">
+              <label for="u_id">id_personal_sae</label>
+              <input id="u_id" placeholder="U0001" />
+            </div>
+            <div class="field">
+              <label for="u_correo">correo_corp (único)</label>
+              <input id="u_correo" placeholder="nombre@juntadeandalucia.es" />
+            </div>
+            <div class="field">
+              <label for="u_nombre">nombre_y_apellidos</label>
+              <input id="u_nombre" placeholder="Nombre Apellidos" />
+            </div>
+            <div class="field">
+              <label for="u_perfil">perfil</label>
+              <select id="u_perfil">
+                <option>CONSULTA</option>
+                <option>GESTOR_EDITA</option>
+                <option>GESTOR_BORRA</option>
+                <option>ADMIN</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="u_clave">clave temporal</label>
+              <input id="u_clave" type="password" placeholder="Temporal123!" />
+            </div>
+            <div class="field">
+              <label for="u_verif">verificado</label>
+              <select id="u_verif">
+                <option value="true">true</option>
+                <option value="false">false</option>
+              </select>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="button" onclick="routeTo('#/config')">Volver</button>
+              <button class="btn primary" type="submit">Crear usuario</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- CONFIG: ENTIDADES -->
+      <section class="view" id="view-config-entidades" aria-label="Alta entidades">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Alta entidades</h2>
+          <p class="hint">Pendiente de conectar: CRUD sobre hoja <code>Entidades</code> + <code>Personal_Tecnico</code>.</p>
+        </div>
+      </section>
+
+      <!-- CONFIG: CONVOCATORIAS -->
+      <section class="view" id="view-config-convocatorias" aria-label="Alta convocatorias">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Alta convocatorias</h2>
+          <p class="hint">Pendiente de conectar: CRUD sobre hoja <code>Convocatorias</code>.</p>
+        </div>
+      </section>
+
     </main>
 
     <div class="footer">
@@ -332,16 +780,223 @@
     </div>
   </div>
 
-  <script>
-    // Placeholders de navegación (luego lo conectamos a tus pantallas reales)
-    function goConvenio(){ alert("Ir a: Alta Convenio"); }
-    function goPractica(){ alert("Ir a: Alta Práctica"); }
-    function goBuscador(){ alert("Ir a: Buscador"); }
+  <!-- MODAL PERFIL -->
+  <div class="modal-backdrop" id="modalProfile" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+      <header>
+        <h3 id="profileTitle">Perfil de usuario</h3>
+        <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalProfile')">✕</button>
+      </header>
+      <div class="content">
+        <p class="hint" style="margin-top:0">
+          Aquí editaremos <strong>correo</strong> y <strong>nombre</strong> (y opcionalmente cambio de clave). En MVP puedes dejar solo lectura si lo prefieres.
+        </p>
 
-    // Iconos superiores
-    function onUser(){ alert("Abrir: Perfil de usuario (correo, nombre, etc.)"); }
-    function onSettings(){ alert("Abrir: Configuración (Alta personal SAE, Alta entidades, Alta convocatorias)"); }
-    function onStats(){ alert("Abrir: Estadísticas"); }
+        <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: guardar perfil');">
+          <div class="field">
+            <label for="m_correo">correo_corp</label>
+            <input id="m_correo" value="demo@juntadeandalucia.es" />
+          </div>
+          <div class="field">
+            <label for="m_nombre">nombre_y_apellidos</label>
+            <input id="m_nombre" value="Usuario Demo" />
+          </div>
+
+          <div class="form-actions">
+            <button class="btn" type="button" onclick="closeModal('modalProfile')">Cancelar</button>
+            <button class="btn primary" type="submit">Guardar cambios</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL STATS -->
+  <div class="modal-backdrop" id="modalStats" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="statsTitle">
+      <header>
+        <h3 id="statsTitle">Estadísticas</h3>
+        <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalStats')">✕</button>
+      </header>
+      <div class="content">
+        <p class="hint" style="margin-top:0">
+          Aquí irán KPIs: nº convenios, nº prácticas activas, por convocatoria, por entidad, estados, errores, etc.
+        </p>
+        <div class="grid3" style="grid-template-columns: repeat(3, minmax(0,1fr)); margin-top:14px">
+          <div class="card" style="min-height:auto">
+            <h2 style="margin:0">Convenios</h2>
+            <p class="hint">Pendiente de datos</p>
+          </div>
+          <div class="card" style="min-height:auto">
+            <h2 style="margin:0">Prácticas</h2>
+            <p class="hint">Pendiente de datos</p>
+          </div>
+          <div class="card" style="min-height:auto">
+            <h2 style="margin:0">Errores</h2>
+            <p class="hint">Pendiente de datos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* ========= Mini-router (hash) ========= */
+    const routes = {
+      '#/': { view: 'home', badge: 'Inicio', title: 'Menú', h1: 'Panel principal',
+              p: 'Acceso rápido a la creación de convenios y prácticas, y al buscador general. La gestión avanzada está en Configuración.' },
+
+      '#/convenio': { view: 'convenio', badge: 'Convenio', title: 'Alta de convenio',
+              h1: 'Convenios', p: 'Crea y gestiona convenios con entidades, empresas y centros de trabajo.' },
+
+      '#/practica': { view: 'practica', badge: 'Práctica', title: 'Alta de práctica',
+              h1: 'Prácticas', p: 'Crea prácticas vinculadas a convenios y centros. Controla anexos, fechas y estados.' },
+
+      '#/buscador': { view: 'buscador', badge: 'Buscador', title: 'Búsqueda unificada',
+              h1: 'Buscador', p: 'Localiza y filtra información en todas las tablas principales.' },
+
+      '#/config': { view: 'config', badge: 'Config', title: 'Configuración',
+              h1: 'Configuración', p: 'Altas y mantenimiento de catálogos (personal SAE, entidades, convocatorias).' },
+
+      '#/config/personal': { view: 'config-personal', badge: 'Config', title: 'Alta personal SAE',
+              h1: 'Personal SAE', p: 'Gestión de usuarios y permisos (solo ADMIN para altas y resets).' },
+
+      '#/config/entidades': { view: 'config-entidades', badge: 'Config', title: 'Alta entidades',
+              h1: 'Entidades', p: 'Registro de entidades y su personal técnico.' },
+
+      '#/config/convocatorias': { view: 'config-convocatorias', badge: 'Config', title: 'Alta convocatorias',
+              h1: 'Convocatorias', p: 'Creación y mantenimiento de convocatorias.' },
+    };
+
+    function routeTo(hash){
+      window.location.hash = hash;
+      closeSettingsMenu();
+    }
+
+    function setActiveView(viewName){
+      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+      const el = document.getElementById('view-' + viewName);
+      if (el) el.classList.add('active');
+    }
+
+    function applyRoute(){
+      const hash = window.location.hash || '#/';
+      const r = routes[hash] || routes['#/'];
+
+      setActiveView(r.view);
+
+      document.getElementById('routeBadge').textContent = r.badge;
+      document.getElementById('routeTitle').textContent = r.title;
+      document.getElementById('pageH1').textContent = r.h1;
+      document.getElementById('pageP').textContent = r.p;
+
+      // Acciones rápidas: en home mostramos 3, en resto mostramos volver + shortcuts
+      const actions = document.getElementById('routeActions');
+      if (hash === '#/'){
+        actions.innerHTML = `
+          <button class="btn primary" type="button" onclick="routeTo('#/convenio')">+ Convenio</button>
+          <button class="btn primary" type="button" onclick="routeTo('#/practica')">+ Práctica</button>
+          <button class="btn" type="button" onclick="routeTo('#/buscador')">Buscador</button>
+        `;
+      } else {
+        actions.innerHTML = `
+          <button class="btn" type="button" onclick="routeTo('#/')">Inicio</button>
+          <button class="btn" type="button" onclick="routeTo('#/buscador')">Buscador</button>
+          <button class="btn primary" type="button" onclick="routeTo('#/convenio')">+ Convenio</button>
+          <button class="btn primary" type="button" onclick="routeTo('#/practica')">+ Práctica</button>
+        `;
+      }
+    }
+
+    window.addEventListener('hashchange', applyRoute);
+    window.addEventListener('DOMContentLoaded', () => {
+      applyRoute();
+      wireUI();
+    });
+
+    /* ========= Dropdown config ========= */
+    function wireUI(){
+      const btnSettings = document.getElementById('btnSettings');
+      const menu = document.getElementById('settingsMenu');
+
+      btnSettings.addEventListener('click', (e) => {
+        e.stopPropagation();
+        menu.classList.toggle('open');
+      });
+
+      document.addEventListener('click', (e) => {
+        // cerrar si click fuera
+        if (!menu.contains(e.target) && e.target !== btnSettings) closeSettingsMenu();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeSettingsMenu();
+          closeModal('modalProfile');
+          closeModal('modalStats');
+        }
+      });
+
+      document.getElementById('btnUser').addEventListener('click', () => openModal('modalProfile'));
+      document.getElementById('btnStats').addEventListener('click', () => openModal('modalStats'));
+    }
+
+    function closeSettingsMenu(){
+      document.getElementById('settingsMenu').classList.remove('open');
+    }
+
+    /* ========= Modales accesibles ========= */
+    function openModal(id){
+      const b = document.getElementById(id);
+      b.classList.add('open');
+      b.setAttribute('aria-hidden','false');
+
+      // foco al primer input/botón dentro
+      const focusable = b.querySelector('input,select,button');
+      if (focusable) focusable.focus();
+
+      // cerrar al click fuera
+      b.addEventListener('click', onBackdropClick);
+      function onBackdropClick(e){
+        if (e.target === b){
+          closeModal(id);
+          b.removeEventListener('click', onBackdropClick);
+        }
+      }
+    }
+
+    function closeModal(id){
+      const b = document.getElementById(id);
+      b.classList.remove('open');
+      b.setAttribute('aria-hidden','true');
+    }
+
+    /* ========= Toast mínimo ========= */
+    let toastTimer = null;
+    function toast(msg){
+      let t = document.getElementById('toast');
+      if (!t){
+        t = document.createElement('div');
+        t.id = 'toast';
+        t.style.position = 'fixed';
+        t.style.left = '50%';
+        t.style.bottom = '22px';
+        t.style.transform = 'translateX(-50%)';
+        t.style.padding = '10px 12px';
+        t.style.borderRadius = '14px';
+        t.style.border = '1px solid rgba(162,185,209,.45)';
+        t.style.background = 'rgba(255,255,255,.96)';
+        t.style.boxShadow = '0 14px 34px rgba(31,80,120,.18)';
+        t.style.zIndex = '300';
+        t.style.fontWeight = '700';
+        t.style.color = 'rgba(31,80,120,.95)';
+        document.body.appendChild(t);
+      }
+      t.textContent = msg;
+      t.style.opacity = '1';
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => { t.style.opacity = '0'; }, 1800);
+    }
   </script>
 </body>
 </html>
