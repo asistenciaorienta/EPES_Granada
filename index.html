@@ -964,7 +964,7 @@
        CONFIG: pon aquí tu API
        ========================= */
     // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
-    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbzp-OXd1wHSQzatbnOSXiRlVguKUvn5WVF6PI5cxl_PCe6MZypU6J-Q7qb8fkbmOkUpBA/exec';
+    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbyrxPW-r0Dsw4PqBHCaEh1gByzHPWEbkTMEW8ErzOm06_voMnKUEaXY2cvQXa3RBMO_2g/exec';
 
     /* =========================
        Estado de sesión
@@ -1256,7 +1256,45 @@
         }
       });
       wirePersonalSAE();
+      wireChangePassword();
     }
+
+    function wireChangePassword(){
+      const form = document.getElementById('formChangePass');
+      if (!form) return;
+    
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const err = document.getElementById('changePassError');
+        const btn = document.getElementById('btnChangePass');
+    
+        err.style.display = 'none';
+        btn.disabled = true;
+    
+        try{
+          const actual = document.getElementById('cp_actual').value;
+          const nueva  = document.getElementById('cp_nueva').value;
+          const nueva2 = document.getElementById('cp_nueva2').value;
+    
+          if (nueva !== nueva2) throw new Error('La nueva clave no coincide con la confirmación');
+          if (nueva.length < 8) throw new Error('La nueva clave debe tener al menos 8 caracteres');
+    
+          await apiFetch('auth/change_password', {
+            method: 'POST',
+            body: { clave_actual: actual, nueva_clave: nueva }
+          });
+    
+          toast('Contraseña actualizada');
+          form.reset();
+    
+        } catch(ex){
+          err.textContent = ex.message || 'No se pudo cambiar la contraseña';
+          err.style.display = 'block';
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    }    
 
     function fillProfileModal(){
       document.getElementById('profCorreo').textContent = storage.user?.correo || '';
