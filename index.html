@@ -894,7 +894,7 @@
        CONFIG: pon aquí tu API
        ========================= */
     // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
-    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbyIcrW7LLKuymBMyPS9wib0h-6dWtubi2qxTyg4Zzgf4HkIucT4U0aafoVbra8Wl6OOuQ/exec';
+    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbzp-OXd1wHSQzatbnOSXiRlVguKUvn5WVF6PI5cxl_PCe6MZypU6J-Q7qb8fkbmOkUpBA/exec';
 
     /* =========================
        Estado de sesión
@@ -940,27 +940,34 @@
        API helper
        ========================= */
     async function apiFetch(path, { method='GET', query={}, body=null, auth=true } = {}){
-      if (!API_BASE_URL || API_BASE_URL === 'PEGA_AQUI_TU_URL_DE_WEB_APP') {
+      const base = API_BASE_URL;
+      if (!base || base.includes('PEGA_AQUI')) {
         throw new Error('Configura API_BASE_URL con la URL de tu Web App (Apps Script).');
       }
-
-      const url = new URL(API_BASE_URL);
+    
+      const url = new URL(base);
       url.searchParams.set('path', path);
+    
+      // query extra
       Object.entries(query || {}).forEach(([k,v]) => url.searchParams.set(k, String(v)));
-
-      const headers = { 'Content-Type': 'application/json' };
-      if (auth && storage.token) headers['Authorization'] = `Bearer ${storage.token}`;
-
-      const res = await fetch(url.toString(), {
-        method,
-        headers,
-        body: body ? JSON.stringify(body) : null
-      });
-
+    
+      // auth por querystring (EVITA preflight)
+      if (auth && storage.token) url.searchParams.set('auth', storage.token);
+    
+      const options = { method };
+    
+      // Para evitar preflight: NO mandamos Authorization y NO usamos application/json
+      if (method !== 'GET') {
+        options.headers = { 'Content-Type': 'text/plain;charset=utf-8' };
+        options.body = body ? JSON.stringify(body) : '';
+      }
+    
+      const res = await fetch(url.toString(), options);
+    
+      // Apps Script siempre devuelve 200 en muchos casos; miramos el JSON ok/error
       const data = await res.json().catch(() => ({}));
       if (!data || data.ok !== true) {
         const msg = data?.error || 'Error de API';
-        // Si sesión inválida, fuerza logout suave
         if (/sesión caducada|no autorizado|invalid|unauthorized/i.test(msg)) {
           clearSession();
           routeTo('#/login');
