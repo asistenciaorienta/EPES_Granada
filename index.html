@@ -990,7 +990,7 @@
        CONFIG: pon aquí tu API
        ========================= */
     // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
-    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbxSEED-o85Ps7lBsf5JYQ4LcHZ69dvuFM4cPhZYPpHrpsedxV4VnVM29bziPq8xOIOfOA/exec';
+    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbyTh5p2rjWmRyEGDqbaSSXNKlS_NWAjy_l44DhC0RfLuiAuzFjmeaLbpCZNe3fcTHrEfA/exec';
     // ✅ Base específica para JSONP (evita 302)
     const API_BASE_URL_JSONP = API_BASE_URL.replace(
       'https://script.google.com/macros/s/',
@@ -1052,7 +1052,7 @@
       Object.entries(query || {}).forEach(([k,v]) => url.searchParams.set(k, String(v)));
     
       // auth por querystring (EVITA preflight)
-      if (auth && storage.token) url.searchParams.set('auth', 'Bearer ' + storage.token);
+      if (auth && storage.token) url.searchParams.set('t', storage.token);
     
       const options = { method };
     
@@ -1085,7 +1085,7 @@
     
         Object.entries(query || {}).forEach(([k,v]) => url.searchParams.set(k, String(v)));
     
-        if (storage.token) url.searchParams.set('auth', 'Bearer ' + storage.token);
+        if (storage.token) url.searchParams.set('t', storage.token);
         url.searchParams.set('callback', cbName);
         url.searchParams.set('_', Date.now()); // anti-caché
     
