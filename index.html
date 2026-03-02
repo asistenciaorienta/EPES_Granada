@@ -990,7 +990,7 @@
        CONFIG: pon aquí tu API
        ========================= */
     // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
-    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbzyJ_GBLF7SSdTgiWbJEQsdw-cUhsZfL7XAo5G7UUroyZicWr5ODObq8C3ihulHR6NMYg/exec';
+    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbygQTB05qcLm52peuK3VSTyGKHKIxu04zVnXVM9euxCMMHUrpKPQgSbJt9KPE5kMwQK/exec';
 
     /* =========================
        Estado de sesión
@@ -1083,6 +1083,7 @@
     
         if (storage.token) url.searchParams.set('auth', 'Bearer ' + storage.token);
         url.searchParams.set('callback', cbName);
+        url.searchParams.set('_', Date.now()); // 👈 evita caché
     
         const script = document.createElement('script');
         let timer = null;
