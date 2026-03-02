@@ -991,7 +991,11 @@
        ========================= */
     // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
     const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbxSEED-o85Ps7lBsf5JYQ4LcHZ69dvuFM4cPhZYPpHrpsedxV4VnVM29bziPq8xOIOfOA/exec';
-
+    // ✅ Base específica para JSONP (evita 302)
+    const API_BASE_URL_JSONP = API_BASE_URL.replace(
+      'https://script.google.com/macros/s/',
+      'https://script.googleusercontent.com/macros/s/'
+    );
     /* =========================
        Estado de sesión
        ========================= */
@@ -1076,7 +1080,7 @@
     function apiJsonp(path, query = {}, timeoutMs = 12000){
       return new Promise((resolve, reject) => {
         const cbName = '__epes_cb_' + Math.random().toString(36).slice(2);
-        const url = new URL(API_BASE_URL);
+        const url = new URL(API_BASE_URL_JSONP);
         url.searchParams.set('path', path);
     
         Object.entries(query || {}).forEach(([k,v]) => url.searchParams.set(k, String(v)));
