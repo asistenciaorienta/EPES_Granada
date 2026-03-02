@@ -8,7 +8,6 @@
 
   <style>
     :root{
-      /* Paleta inspirada en el logo */
       --ja-green: #b8cb14;
       --ja-blue:  #1f5078;
       --blue-50:  #f4f8ff;
@@ -50,7 +49,6 @@
       padding: 18px 18px 44px;
     }
 
-    /* Topbar */
     .topbar{
       position: sticky;
       top: 14px;
@@ -149,7 +147,6 @@
       opacity:.95;
     }
 
-    /* Main */
     .hero{
       margin-top: 20px;
       padding: 22px 6px 8px;
@@ -173,7 +170,6 @@
       max-width: 72ch;
     }
 
-    /* Route header */
     .routebar{
       margin-top: 14px;
       display:flex;
@@ -224,7 +220,7 @@
       transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
       box-shadow: 0 6px 18px rgba(31,80,120,.08);
       color: rgba(31,80,120,.95);
-      font-weight: 600;
+      font-weight: 700;
       font-size: 13px;
     }
     .btn:hover{ transform: translateY(-1px); border-color: rgba(184,203,20,.9); box-shadow: 0 12px 26px rgba(31,80,120,.14); }
@@ -235,14 +231,19 @@
       border-color: rgba(184,203,20,.65);
       background: linear-gradient(180deg, rgba(184,203,20,.20), rgba(255,255,255,.92));
     }
+    .btn.danger{
+      border-color: rgba(180,35,24,.35);
+      background: rgba(180,35,24,.06);
+      color: var(--danger);
+    }
 
-    /* Cards */
     .grid3{
       margin-top: 14px;
       display:grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 14px;
     }
+
     .card{
       border: 1px solid rgba(162,185,209,.45);
       border-radius: var(--radius);
@@ -274,7 +275,6 @@
       background: radial-gradient(circle at 30% 30%, rgba(184,203,20,.45), rgba(162,185,209,.20), transparent 65%);
       pointer-events:none;
     }
-
     .card.link{
       cursor:pointer;
       transition: transform .12s ease, border-color .12s ease, box-shadow .12s ease;
@@ -301,11 +301,10 @@
       background: rgba(208,220,234,.50);
       font-size: 12px;
       color: rgba(31,80,120,.95);
-      font-weight: 600;
+      font-weight: 700;
     }
     .tag strong{ color: var(--ja-green); }
 
-    /* Views */
     .view{ display:none; margin-top: 14px; }
     .view.active{ display:block; }
 
@@ -331,7 +330,7 @@
     label{
       font-size: 12.5px;
       color: rgba(31,80,120,.9);
-      font-weight: 700;
+      font-weight: 800;
     }
     input, select{
       padding: 11px 12px;
@@ -345,7 +344,6 @@
       box-shadow: var(--focus);
       border-color: rgba(184,203,20,.9);
     }
-
     .form-actions{
       grid-column: 1 / -1;
       display:flex;
@@ -354,15 +352,19 @@
       margin-top: 6px;
       flex-wrap: wrap;
     }
-
     .hint{
       color: var(--muted);
       font-size: 12.5px;
       margin-top: 8px;
       line-height: 1.4;
     }
+    .error{
+      color: var(--danger);
+      font-weight: 800;
+      font-size: 12.5px;
+      margin-top: 10px;
+    }
 
-    /* Dropdown */
     .dropdown{ position:relative; }
     .menu{
       position:absolute;
@@ -389,7 +391,7 @@
       border-radius: 12px;
       cursor:pointer;
       color: rgba(31,80,120,.95);
-      font-weight: 700;
+      font-weight: 800;
       text-align:left;
     }
     .menu .item:hover{
@@ -401,13 +403,16 @@
       margin: 6px 6px;
     }
     .menu .small{
-      font-weight: 600;
+      font-weight: 700;
       color: rgba(75,100,115,.95);
       font-size: 12px;
       padding: 8px 10px 6px;
     }
+    .menu .disabled{
+      opacity:.45;
+      pointer-events:none;
+    }
 
-    /* Modal */
     .modal-backdrop{
       position: fixed;
       inset: 0;
@@ -453,13 +458,25 @@
     }
     .modal .close:focus-visible{ outline:none; box-shadow: var(--focus); border-color: rgba(184,203,20,.9); }
 
-    /* Footer */
     .footer{
       margin-top: 26px;
       display:flex;
       justify-content:center;
       color: rgba(75,100,115,.85);
       font-size: 12.5px;
+    }
+
+    /* Login layout */
+    .login-wrap{
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    .login-card{
+      border: 1px solid rgba(162,185,209,.45);
+      border-radius: 22px;
+      background: rgba(255,255,255,.85);
+      box-shadow: var(--shadow-2);
+      padding: 18px;
     }
 
     @media (max-width: 860px){
@@ -488,7 +505,7 @@
       <div class="right" aria-label="Acciones superiores">
         <div class="pill-status" title="Estado de sesión">
           <span class="dot" aria-hidden="true"></span>
-          <span id="sessionText">Sesión: demo (CONSULTA)</span>
+          <span id="sessionText">Sin sesión</span>
         </div>
 
         <!-- Usuario -->
@@ -508,7 +525,7 @@
 
           <div class="menu" id="settingsMenu" role="menu" aria-label="Menú de configuración">
             <div class="small">Altas / Catálogos</div>
-            <button class="item" role="menuitem" onclick="routeTo('#/config/personal')">Alta personal SAE</button>
+            <button class="item" id="miAltaPersonal" role="menuitem" onclick="routeTo('#/config/personal')">Alta personal SAE</button>
             <button class="item" role="menuitem" onclick="routeTo('#/config/entidades')">Alta entidades</button>
             <button class="item" role="menuitem" onclick="routeTo('#/config/convocatorias')">Alta convocatorias</button>
             <div class="sep"></div>
@@ -529,9 +546,7 @@
     <section class="hero" aria-label="Encabezado">
       <div>
         <h1 id="pageH1">Panel principal</h1>
-        <p id="pageP">
-          Acceso rápido a la creación de convenios y prácticas, y al buscador general. La gestión avanzada está en Configuración.
-        </p>
+        <p id="pageP">Cargando…</p>
       </div>
     </section>
 
@@ -541,18 +556,46 @@
         <span class="badge" id="routeBadge">Inicio</span>
         <span class="route-title" id="routeTitle">Menú</span>
       </div>
-      <div class="route-actions" id="routeActions">
-        <button class="btn primary" type="button" onclick="routeTo('#/convenio')">+ Convenio</button>
-        <button class="btn primary" type="button" onclick="routeTo('#/practica')">+ Práctica</button>
-        <button class="btn" type="button" onclick="routeTo('#/buscador')">Buscador</button>
-      </div>
+      <div class="route-actions" id="routeActions"></div>
     </section>
 
     <!-- VIEWS -->
     <main>
 
+      <!-- LOGIN -->
+      <section class="view" id="view-login" aria-label="Acceso">
+        <div class="login-wrap">
+          <div class="login-card">
+            <h2 style="margin:0;color:var(--ja-blue)">Acceso</h2>
+            <p class="hint" style="margin-top:6px">
+              Introduce tu <strong>correo corporativo</strong> y tu <strong>clave</strong>.
+            </p>
+
+            <form class="form" id="loginForm">
+              <div class="field" style="grid-column:1/-1">
+                <label for="loginCorreo">correo_corp</label>
+                <input id="loginCorreo" type="email" autocomplete="username" placeholder="nombre@juntadeandalucia.es" required />
+              </div>
+              <div class="field" style="grid-column:1/-1">
+                <label for="loginClave">clave</label>
+                <input id="loginClave" type="password" autocomplete="current-password" placeholder="••••••••" required />
+              </div>
+
+              <div class="form-actions">
+                <button class="btn primary" id="loginBtn" type="submit">Entrar</button>
+              </div>
+
+              <div class="error" id="loginError" style="display:none"></div>
+              <div class="hint" style="margin-top:10px">
+                Si no puedes acceder, pide a un ADMIN que resetee tu clave desde “Alta personal SAE”.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <!-- HOME -->
-      <section class="view active" id="view-home" aria-label="Inicio">
+      <section class="view" id="view-home" aria-label="Inicio">
         <div class="grid3">
           <div class="card link" onclick="routeTo('#/convenio')" role="button" tabindex="0">
             <h2>+ Convenio</h2>
@@ -590,7 +633,7 @@
       <section class="view" id="view-convenio" aria-label="Alta convenio">
         <div class="panel">
           <h2 style="margin:0;color:var(--ja-blue)">Alta de convenio</h2>
-          <p class="hint">Plantilla de formulario. Aquí conectaremos con tu Apps Script (create/update) y los selectores de Entidad/Empresa/Centros.</p>
+          <p class="hint">Plantilla de formulario. Próximo paso: conectarlo a tu Apps Script (create/update).</p>
 
           <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: guardar convenio');">
             <div class="field">
@@ -622,7 +665,7 @@
       <section class="view" id="view-practica" aria-label="Alta práctica">
         <div class="panel">
           <h2 style="margin:0;color:var(--ja-blue)">Alta de práctica</h2>
-          <p class="hint">Plantilla de formulario. Aquí conectaremos con tu Apps Script y selección de convenio + centros.</p>
+          <p class="hint">Plantilla de formulario. Próximo paso: conectar convenio + centros (tabla puente).</p>
 
           <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: guardar práctica');">
             <div class="field">
@@ -654,7 +697,7 @@
       <section class="view" id="view-buscador" aria-label="Buscador">
         <div class="panel">
           <h2 style="margin:0;color:var(--ja-blue)">Buscador</h2>
-          <p class="hint">Búsqueda unificada (convenios, prácticas, entidades, empresas, centros). Luego lo conectamos al endpoint list con filtros.</p>
+          <p class="hint">Búsqueda unificada. Próximo paso: llamar a <code>GET path=list</code> con filtros.</p>
 
           <div class="form" style="margin-top:14px">
             <div class="field">
@@ -678,7 +721,7 @@
           </div>
 
           <div class="hint" style="margin-top:14px">
-            Resultado: aquí irá una tabla (con paginación) y acciones según perfil (CONSULTA / GESTOR_EDITA / GESTOR_BORRA).
+            Resultado: tabla con acciones según perfil (CONSULTA / GESTOR_EDITA / GESTOR_BORRA).
           </div>
         </div>
       </section>
@@ -687,12 +730,12 @@
       <section class="view" id="view-config" aria-label="Configuración">
         <div class="panel">
           <h2 style="margin:0;color:var(--ja-blue)">Configuración</h2>
-          <p class="hint">Secciones: alta personal SAE, alta entidades, alta convocatorias. Este panel se abre también desde el engranaje.</p>
+          <p class="hint">Altas y mantenimiento. Algunas opciones dependen del perfil.</p>
 
           <div class="grid3" style="margin-top:14px">
-            <div class="card link" onclick="routeTo('#/config/personal')" role="button" tabindex="0">
+            <div class="card link" id="cardAltaPersonal" onclick="routeTo('#/config/personal')" role="button" tabindex="0">
               <h2>Alta personal SAE</h2>
-              <p>Crear usuarios, asignar perfil (ADMIN / GESTOR_EDITA / GESTOR_BORRA / CONSULTA) y resetear contraseña.</p>
+              <p>Crear usuarios, asignar perfil y resetear contraseña. (Solo ADMIN)</p>
               <span class="accent" aria-hidden="true"></span>
             </div>
             <div class="card link" onclick="routeTo('#/config/entidades')" role="button" tabindex="0">
@@ -702,7 +745,7 @@
             </div>
             <div class="card link" onclick="routeTo('#/config/convocatorias')" role="button" tabindex="0">
               <h2>Alta convocatorias</h2>
-              <p>Crear y mantener convocatorias de la Junta de Andalucía.</p>
+              <p>Crear y mantener convocatorias.</p>
               <span class="accent" aria-hidden="true"></span>
             </div>
           </div>
@@ -713,9 +756,9 @@
       <section class="view" id="view-config-personal" aria-label="Alta personal SAE">
         <div class="panel">
           <h2 style="margin:0;color:var(--ja-blue)">Alta personal SAE</h2>
-          <p class="hint">Esto llamará a tu endpoint ADMIN: <code>admin/create_user</code> y <code>admin/set_password</code>.</p>
+          <p class="hint">Solo ADMIN. Endpoint: <code>POST path=admin/create_user</code> / <code>admin/set_password</code>.</p>
 
-          <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: crear usuario');">
+          <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: crear usuario (admin/create_user)');">
             <div class="field">
               <label for="u_id">id_personal_sae</label>
               <input id="u_id" placeholder="U0001" />
@@ -789,24 +832,30 @@
       </header>
       <div class="content">
         <p class="hint" style="margin-top:0">
-          Aquí editaremos <strong>correo</strong> y <strong>nombre</strong> (y opcionalmente cambio de clave). En MVP puedes dejar solo lectura si lo prefieres.
+          Datos de sesión (en MVP: lectura) y cierre de sesión.
         </p>
 
-        <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: guardar perfil');">
-          <div class="field">
-            <label for="m_correo">correo_corp</label>
-            <input id="m_correo" value="demo@juntadeandalucia.es" />
+        <div class="panel" style="padding:14px;background:rgba(238,244,251,.65)">
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <div style="flex:1;min-width:220px">
+              <div style="font-size:12px;color:var(--muted);font-weight:800">Correo</div>
+              <div id="profCorreo" style="font-weight:900;color:var(--ja-blue)"></div>
+            </div>
+            <div style="flex:1;min-width:220px">
+              <div style="font-size:12px;color:var(--muted);font-weight:800">Perfil</div>
+              <div id="profPerfil" style="font-weight:900;color:var(--ja-blue)"></div>
+            </div>
           </div>
-          <div class="field">
-            <label for="m_nombre">nombre_y_apellidos</label>
-            <input id="m_nombre" value="Usuario Demo" />
+          <div style="margin-top:10px">
+            <div style="font-size:12px;color:var(--muted);font-weight:800">Nombre</div>
+            <div id="profNombre" style="font-weight:900;color:var(--ja-blue)"></div>
           </div>
+        </div>
 
-          <div class="form-actions">
-            <button class="btn" type="button" onclick="closeModal('modalProfile')">Cancelar</button>
-            <button class="btn primary" type="submit">Guardar cambios</button>
-          </div>
-        </form>
+        <div class="form-actions" style="margin-top:12px">
+          <button class="btn" type="button" onclick="closeModal('modalProfile')">Cerrar</button>
+          <button class="btn danger" type="button" onclick="logout()">Cerrar sesión</button>
+        </div>
       </div>
     </div>
   </div>
@@ -841,31 +890,164 @@
   </div>
 
   <script>
-    /* ========= Mini-router (hash) ========= */
+    /* =========================
+       CONFIG: pon aquí tu API
+       ========================= */
+    // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
+    const API_BASE_URL = 'PEGA_AQUI_TU_URL_DE_WEB_APP';
+
+    /* =========================
+       Estado de sesión
+       ========================= */
+    const storage = {
+      get token(){ return sessionStorage.getItem('epes_token') || ''; },
+      set token(v){ v ? sessionStorage.setItem('epes_token', v) : sessionStorage.removeItem('epes_token'); },
+      get user(){ try { return JSON.parse(sessionStorage.getItem('epes_user')||'null'); } catch { return null; } },
+      set user(v){ v ? sessionStorage.setItem('epes_user', JSON.stringify(v)) : sessionStorage.removeItem('epes_user'); },
+    };
+
+    function isLoggedIn(){ return !!storage.token && !!storage.user; }
+    function userPerfil(){ return (storage.user && storage.user.perfil) ? storage.user.perfil : ''; }
+    function isAdmin(){ return userPerfil() === 'ADMIN'; }
+
+    function updateSessionUI(){
+      const st = document.getElementById('sessionText');
+      if (!st) return;
+
+      if (isLoggedIn()){
+        st.textContent = `Sesión: ${storage.user?.correo || ''} (${storage.user?.perfil || ''})`;
+      } else {
+        st.textContent = 'Sin sesión';
+      }
+
+      // Mostrar/ocultar opciones ADMIN
+      const miAltaPersonal = document.getElementById('miAltaPersonal');
+      const cardAltaPersonal = document.getElementById('cardAltaPersonal');
+      if (miAltaPersonal) {
+        if (isAdmin()) {
+          miAltaPersonal.classList.remove('disabled');
+          miAltaPersonal.style.display = '';
+        } else {
+          miAltaPersonal.style.display = 'none';
+        }
+      }
+      if (cardAltaPersonal) {
+        cardAltaPersonal.style.display = isAdmin() ? '' : 'none';
+      }
+    }
+
+    /* =========================
+       API helper
+       ========================= */
+    async function apiFetch(path, { method='GET', query={}, body=null, auth=true } = {}){
+      if (!API_BASE_URL || API_BASE_URL === 'PEGA_AQUI_TU_URL_DE_WEB_APP') {
+        throw new Error('Configura API_BASE_URL con la URL de tu Web App (Apps Script).');
+      }
+
+      const url = new URL(API_BASE_URL);
+      url.searchParams.set('path', path);
+      Object.entries(query || {}).forEach(([k,v]) => url.searchParams.set(k, String(v)));
+
+      const headers = { 'Content-Type': 'application/json' };
+      if (auth && storage.token) headers['Authorization'] = `Bearer ${storage.token}`;
+
+      const res = await fetch(url.toString(), {
+        method,
+        headers,
+        body: body ? JSON.stringify(body) : null
+      });
+
+      const data = await res.json().catch(() => ({}));
+      if (!data || data.ok !== true) {
+        const msg = data?.error || 'Error de API';
+        // Si sesión inválida, fuerza logout suave
+        if (/sesión caducada|no autorizado|invalid|unauthorized/i.test(msg)) {
+          clearSession();
+          routeTo('#/login');
+        }
+        throw new Error(msg);
+      }
+      return data;
+    }
+
+    /* =========================
+       Auth
+       ========================= */
+    async function login(correo, clave){
+      const data = await apiFetch('auth/login', {
+        method: 'POST',
+        auth: false,
+        body: { correo, clave }
+      });
+      storage.token = data.token;
+      storage.user = data.user;
+      updateSessionUI();
+    }
+
+    async function logout(){
+      try{
+        if (storage.token) {
+          // opcional: si implementas /auth/logout en Apps Script
+          await apiFetch('auth/logout', { method:'POST', body:{} });
+        }
+      } catch(e){
+        // aunque falle, limpiamos local
+      }
+      clearSession();
+      closeModal('modalProfile');
+      toast('Sesión cerrada');
+      routeTo('#/login');
+    }
+
+    function clearSession(){
+      storage.token = '';
+      storage.user = null;
+      updateSessionUI();
+    }
+
+    /* =========================
+       Router (hash)
+       ========================= */
     const routes = {
-      '#/': { view: 'home', badge: 'Inicio', title: 'Menú', h1: 'Panel principal',
-              p: 'Acceso rápido a la creación de convenios y prácticas, y al buscador general. La gestión avanzada está en Configuración.' },
-
-      '#/convenio': { view: 'convenio', badge: 'Convenio', title: 'Alta de convenio',
-              h1: 'Convenios', p: 'Crea y gestiona convenios con entidades, empresas y centros de trabajo.' },
-
-      '#/practica': { view: 'practica', badge: 'Práctica', title: 'Alta de práctica',
-              h1: 'Prácticas', p: 'Crea prácticas vinculadas a convenios y centros. Controla anexos, fechas y estados.' },
-
-      '#/buscador': { view: 'buscador', badge: 'Buscador', title: 'Búsqueda unificada',
-              h1: 'Buscador', p: 'Localiza y filtra información en todas las tablas principales.' },
-
-      '#/config': { view: 'config', badge: 'Config', title: 'Configuración',
-              h1: 'Configuración', p: 'Altas y mantenimiento de catálogos (personal SAE, entidades, convocatorias).' },
-
-      '#/config/personal': { view: 'config-personal', badge: 'Config', title: 'Alta personal SAE',
-              h1: 'Personal SAE', p: 'Gestión de usuarios y permisos (solo ADMIN para altas y resets).' },
-
-      '#/config/entidades': { view: 'config-entidades', badge: 'Config', title: 'Alta entidades',
-              h1: 'Entidades', p: 'Registro de entidades y su personal técnico.' },
-
-      '#/config/convocatorias': { view: 'config-convocatorias', badge: 'Config', title: 'Alta convocatorias',
-              h1: 'Convocatorias', p: 'Creación y mantenimiento de convocatorias.' },
+      '#/login': {
+        view: 'login', badge: 'Acceso', title: 'Login',
+        h1: 'Acceso', p: 'Introduce tus credenciales para acceder a la aplicación.',
+        public: true
+      },
+      '#/': {
+        view: 'home', badge: 'Inicio', title: 'Menú',
+        h1: 'Panel principal',
+        p: 'Acceso rápido a la creación de convenios y prácticas, y al buscador general.',
+      },
+      '#/convenio': {
+        view: 'convenio', badge: 'Convenio', title: 'Alta de convenio',
+        h1: 'Convenios', p: 'Crea y gestiona convenios con entidades, empresas y centros de trabajo.',
+      },
+      '#/practica': {
+        view: 'practica', badge: 'Práctica', title: 'Alta de práctica',
+        h1: 'Prácticas', p: 'Crea prácticas vinculadas a convenios y centros. Controla anexos, fechas y estados.',
+      },
+      '#/buscador': {
+        view: 'buscador', badge: 'Buscador', title: 'Búsqueda unificada',
+        h1: 'Buscador', p: 'Localiza y filtra información en todas las tablas principales.',
+      },
+      '#/config': {
+        view: 'config', badge: 'Config', title: 'Configuración',
+        h1: 'Configuración', p: 'Altas y mantenimiento de catálogos.',
+      },
+      '#/config/personal': {
+        view: 'config-personal', badge: 'Config', title: 'Alta personal SAE',
+        h1: 'Personal SAE', p: 'Gestión de usuarios y permisos (solo ADMIN).',
+        guard: () => isAdmin()
+      },
+      '#/config/entidades': {
+        view: 'config-entidades', badge: 'Config', title: 'Alta entidades',
+        h1: 'Entidades', p: 'Registro de entidades y su personal técnico.',
+      },
+      '#/config/convocatorias': {
+        view: 'config-convocatorias', badge: 'Config', title: 'Alta convocatorias',
+        h1: 'Convocatorias', p: 'Creación y mantenimiento de convocatorias.',
+      },
     };
 
     function routeTo(hash){
@@ -879,19 +1061,13 @@
       if (el) el.classList.add('active');
     }
 
-    function applyRoute(){
-      const hash = window.location.hash || '#/';
-      const r = routes[hash] || routes['#/'];
-
-      setActiveView(r.view);
-
-      document.getElementById('routeBadge').textContent = r.badge;
-      document.getElementById('routeTitle').textContent = r.title;
-      document.getElementById('pageH1').textContent = r.h1;
-      document.getElementById('pageP').textContent = r.p;
-
-      // Acciones rápidas: en home mostramos 3, en resto mostramos volver + shortcuts
+    function renderRouteActions(hash){
       const actions = document.getElementById('routeActions');
+      if (!actions) return;
+
+      // En login, no mostrar acciones
+      if (hash === '#/login') { actions.innerHTML = ''; return; }
+
       if (hash === '#/'){
         actions.innerHTML = `
           <button class="btn primary" type="button" onclick="routeTo('#/convenio')">+ Convenio</button>
@@ -908,13 +1084,43 @@
       }
     }
 
+    function applyRoute(){
+      const hash = window.location.hash || (isLoggedIn() ? '#/' : '#/login');
+      const r = routes[hash] || (isLoggedIn() ? routes['#/'] : routes['#/login']);
+
+      // Guard de sesión
+      if (!r.public && !isLoggedIn()){
+        window.location.hash = '#/login';
+        return;
+      }
+
+      // Guard de rol
+      if (r.guard && !r.guard()){
+        toast('Permisos insuficientes');
+        window.location.hash = '#/';
+        return;
+      }
+
+      setActiveView(r.view);
+
+      document.getElementById('routeBadge').textContent = r.badge;
+      document.getElementById('routeTitle').textContent = r.title;
+      document.getElementById('pageH1').textContent = r.h1;
+      document.getElementById('pageP').textContent = r.p;
+
+      renderRouteActions(hash);
+    }
+
     window.addEventListener('hashchange', applyRoute);
     window.addEventListener('DOMContentLoaded', () => {
-      applyRoute();
       wireUI();
+      updateSessionUI();
+      applyRoute();
     });
 
-    /* ========= Dropdown config ========= */
+    /* =========================
+       Dropdown config + modales
+       ========================= */
     function wireUI(){
       const btnSettings = document.getElementById('btnSettings');
       const menu = document.getElementById('settingsMenu');
@@ -925,7 +1131,6 @@
       });
 
       document.addEventListener('click', (e) => {
-        // cerrar si click fuera
         if (!menu.contains(e.target) && e.target !== btnSettings) closeSettingsMenu();
       });
 
@@ -937,25 +1142,62 @@
         }
       });
 
-      document.getElementById('btnUser').addEventListener('click', () => openModal('modalProfile'));
-      document.getElementById('btnStats').addEventListener('click', () => openModal('modalStats'));
+      document.getElementById('btnUser').addEventListener('click', () => {
+        if (!isLoggedIn()) { routeTo('#/login'); return; }
+        fillProfileModal();
+        openModal('modalProfile');
+      });
+
+      document.getElementById('btnStats').addEventListener('click', () => {
+        if (!isLoggedIn()) { routeTo('#/login'); return; }
+        openModal('modalStats');
+      });
+
+      // Login form
+      const lf = document.getElementById('loginForm');
+      lf.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const correo = document.getElementById('loginCorreo').value.trim();
+        const clave = document.getElementById('loginClave').value;
+        const err = document.getElementById('loginError');
+        const btn = document.getElementById('loginBtn');
+
+        err.style.display = 'none';
+        btn.disabled = true;
+        btn.textContent = 'Entrando…';
+
+        try{
+          await login(correo, clave);
+          toast('Bienvenido/a');
+          routeTo('#/');
+        } catch(ex){
+          err.textContent = ex.message || 'No se pudo iniciar sesión';
+          err.style.display = 'block';
+        } finally {
+          btn.disabled = false;
+          btn.textContent = 'Entrar';
+        }
+      });
+    }
+
+    function fillProfileModal(){
+      document.getElementById('profCorreo').textContent = storage.user?.correo || '';
+      document.getElementById('profPerfil').textContent = storage.user?.perfil || '';
+      document.getElementById('profNombre').textContent = storage.user?.nombre || '';
     }
 
     function closeSettingsMenu(){
       document.getElementById('settingsMenu').classList.remove('open');
     }
 
-    /* ========= Modales accesibles ========= */
     function openModal(id){
       const b = document.getElementById(id);
       b.classList.add('open');
       b.setAttribute('aria-hidden','false');
 
-      // foco al primer input/botón dentro
       const focusable = b.querySelector('input,select,button');
       if (focusable) focusable.focus();
 
-      // cerrar al click fuera
       b.addEventListener('click', onBackdropClick);
       function onBackdropClick(e){
         if (e.target === b){
@@ -971,7 +1213,9 @@
       b.setAttribute('aria-hidden','true');
     }
 
-    /* ========= Toast mínimo ========= */
+    /* =========================
+       Toast
+       ========================= */
     let toastTimer = null;
     function toast(msg){
       let t = document.getElementById('toast');
@@ -988,7 +1232,7 @@
         t.style.background = 'rgba(255,255,255,.96)';
         t.style.boxShadow = '0 14px 34px rgba(31,80,120,.18)';
         t.style.zIndex = '300';
-        t.style.fontWeight = '700';
+        t.style.fontWeight = '800';
         t.style.color = 'rgba(31,80,120,.95)';
         document.body.appendChild(t);
       }
