@@ -787,7 +787,7 @@
       
               <div class="field">
                 <label for="u_clave">clave temporal</label>
-                <input id="u_clave" type="password" placeholder="Temporal123!" required />
+                <input id="u_clave" type="password" autocomplete="new-password" placeholder="Temporal123!" required>
               </div>
       
               <div class="field">
@@ -819,7 +819,7 @@
       
               <div class="field">
                 <label for="r_clave">nueva clave</label>
-                <input id="r_clave" type="password" placeholder="Nueva123!" required />
+                <input id="r_clave" type="password" autocomplete="new-password" placeholder="Nueva123!" required>
               </div>
       
               <div class="field">
@@ -925,6 +925,7 @@
           <h4 style="margin:0;color:var(--ja-blue);font-size:14px">Cambiar contraseña</h4>
         
           <form class="form" id="formChangePass" style="margin-top:10px">
+            <input id="cp_user" type="text" autocomplete="username" style="position:absolute;left:-9999px;top:-9999px" />            
             <div class="field" style="grid-column:1/-1">
               <label for="cp_actual">Clave actual</label>
               <input id="cp_actual" type="password" autocomplete="current-password" required />
@@ -989,7 +990,7 @@
        CONFIG: pon aquí tu API
        ========================= */
     // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
-    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbzjPqz3lSc5Og28L1_K1F28RBjWt1lmPz0RWt73fTiCeO7EUefCRdSZLGyElvxeO9na8w/exec';
+    const API_BASE_URL = 'https://script.googleusercontent.com/macros/echo?user_content_key=AY5xjrSc5ocEGcpAsQMkbF0j32A4pbs3-8UzUMrTW1kO80Xr__Z5uSiYIQmcIZcqSGygd4KkjCGAgkYhXEaFGYuw9epa3fdJa7m57Nv2N48-_LGueZLK9H-OAb1edUbaDbb_3mvgFJ6q6aHLZtcnY9gNxiHeQrc3DJ9VVY8mIv72uAloTf0PGAQCBnhPcXXeEET1h2GwA7vGg8cmozgNTCHkyxrJE7pUc_rtK1i4y321olhOqKacfypXoMaRoIZa_ih6vC8bo4J8AOLpB4y9qPs4vjSQCQjpsI-dyFGJiSuI&lib=MV_B_CK6xHbqXrGktIOrNHNwuQVz5qXqR';
 
     /* =========================
        Estado de sesión
@@ -1328,6 +1329,8 @@
       document.getElementById('profCorreo').textContent = storage.user?.correo || '';
       document.getElementById('profPerfil').textContent = storage.user?.perfil || '';
       document.getElementById('profNombre').textContent = storage.user?.nombre || '';
+      const u = document.getElementById('cp_user');
+      if (u) u.value = storage.user?.correo || '';
     }
 
     function closeSettingsMenu(){
