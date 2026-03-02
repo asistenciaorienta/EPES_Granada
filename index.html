@@ -756,47 +756,122 @@
       <section class="view" id="view-config-personal" aria-label="Alta personal SAE">
         <div class="panel">
           <h2 style="margin:0;color:var(--ja-blue)">Alta personal SAE</h2>
-          <p class="hint">Solo ADMIN. Endpoint: <code>POST path=admin/create_user</code> / <code>admin/set_password</code>.</p>
-
-          <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: crear usuario (admin/create_user)');">
-            <div class="field">
-              <label for="u_id">id_personal_sae</label>
-              <input id="u_id" placeholder="U0001" />
+          <p class="hint">
+            Solo <strong>ADMIN</strong>. Crear usuarios y resetear contraseñas (salt/hash automáticos en servidor).
+          </p>
+      
+          <!-- CREAR USUARIO -->
+          <div class="panel" style="margin-top:14px;background:rgba(238,244,251,.55)">
+            <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Crear usuario</h3>
+      
+            <form class="form" id="formCreateUser">
+              <div class="field">
+                <label for="u_id">id_personal_sae</label>
+                <input id="u_id" placeholder="U0001" required />
+              </div>
+      
+              <div class="field">
+                <label for="u_correo">correo_corp (único)</label>
+                <input id="u_correo" type="email" placeholder="nombre@juntadeandalucia.es" required />
+              </div>
+      
+              <div class="field">
+                <label for="u_nombre">nombre_y_apellidos</label>
+                <input id="u_nombre" placeholder="Nombre Apellidos" required />
+              </div>
+      
+              <div class="field">
+                <label for="u_perfil">perfil</label>
+                <select id="u_perfil" required>
+                  <option>CONSULTA</option>
+                  <option>GESTOR_EDITA</option>
+                  <option>GESTOR_BORRA</option>
+                  <option>ADMIN</option>
+                </select>
+              </div>
+      
+              <div class="field">
+                <label for="u_clave">clave temporal</label>
+                <input id="u_clave" type="password" placeholder="Temporal123!" required />
+              </div>
+      
+              <div class="field">
+                <label for="u_verif">verificado</label>
+                <select id="u_verif" required>
+                  <option value="true">true</option>
+                  <option value="false">false</option>
+                </select>
+              </div>
+      
+              <div class="form-actions">
+                <button class="btn" type="button" onclick="routeTo('#/config')">Volver</button>
+                <button class="btn primary" id="btnCreateUser" type="submit">Crear usuario</button>
+              </div>
+      
+              <div class="error" id="createUserError" style="display:none"></div>
+            </form>
+          </div>
+      
+          <!-- RESET PASSWORD -->
+          <div class="panel" style="margin-top:14px;background:rgba(238,244,251,.55)">
+            <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Resetear contraseña</h3>
+      
+            <form class="form" id="formResetPass">
+              <div class="field">
+                <label for="r_correo">correo_corp</label>
+                <input id="r_correo" type="email" placeholder="usuario@juntadeandalucia.es" required />
+              </div>
+      
+              <div class="field">
+                <label for="r_clave">nueva clave</label>
+                <input id="r_clave" type="password" placeholder="Nueva123!" required />
+              </div>
+      
+              <div class="field">
+                <label for="r_salt">renovar_salt</label>
+                <select id="r_salt">
+                  <option value="true">true (recomendado)</option>
+                  <option value="false">false</option>
+                </select>
+              </div>
+      
+              <div class="form-actions">
+                <button class="btn" id="btnResetPass" type="submit">Resetear</button>
+              </div>
+      
+              <div class="error" id="resetPassError" style="display:none"></div>
+            </form>
+          </div>
+      
+          <!-- LISTADO -->
+          <div class="panel" style="margin-top:14px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+              <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Usuarios registrados</h3>
+              <button class="btn" type="button" onclick="loadUsers()">Actualizar lista</button>
             </div>
-            <div class="field">
-              <label for="u_correo">correo_corp (único)</label>
-              <input id="u_correo" placeholder="nombre@juntadeandalucia.es" />
+      
+            <div class="hint" style="margin-top:8px">
+              Consejo: crea usuarios con clave temporal y luego fuerza reset si lo necesitas.
             </div>
-            <div class="field">
-              <label for="u_nombre">nombre_y_apellidos</label>
-              <input id="u_nombre" placeholder="Nombre Apellidos" />
+      
+            <div style="overflow:auto;margin-top:10px;border:1px solid rgba(162,185,209,.35);border-radius:14px">
+              <table style="width:100%;border-collapse:collapse;font-size:13px">
+                <thead style="background:rgba(208,220,234,.55)">
+                  <tr>
+                    <th style="text-align:left;padding:10px">id</th>
+                    <th style="text-align:left;padding:10px">nombre</th>
+                    <th style="text-align:left;padding:10px">correo</th>
+                    <th style="text-align:left;padding:10px">perfil</th>
+                    <th style="text-align:left;padding:10px">verificado</th>
+                  </tr>
+                </thead>
+                <tbody id="usersTbody">
+                  <tr><td colspan="5" style="padding:10px;color:var(--muted)">Pulsa “Actualizar lista”.</td></tr>
+                </tbody>
+              </table>
             </div>
-            <div class="field">
-              <label for="u_perfil">perfil</label>
-              <select id="u_perfil">
-                <option>CONSULTA</option>
-                <option>GESTOR_EDITA</option>
-                <option>GESTOR_BORRA</option>
-                <option>ADMIN</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="u_clave">clave temporal</label>
-              <input id="u_clave" type="password" placeholder="Temporal123!" />
-            </div>
-            <div class="field">
-              <label for="u_verif">verificado</label>
-              <select id="u_verif">
-                <option value="true">true</option>
-                <option value="false">false</option>
-              </select>
-            </div>
-
-            <div class="form-actions">
-              <button class="btn" type="button" onclick="routeTo('#/config')">Volver</button>
-              <button class="btn primary" type="submit">Crear usuario</button>
-            </div>
-          </form>
+          </div>
+      
         </div>
       </section>
 
@@ -1185,6 +1260,7 @@
           btn.textContent = 'Entrar';
         }
       });
+      wirePersonalSAE();
     }
 
     function fillProfileModal(){
@@ -1248,6 +1324,111 @@
       clearTimeout(toastTimer);
       toastTimer = setTimeout(() => { t.style.opacity = '0'; }, 1800);
     }
+    function wirePersonalSAE(){
+      const formCreate = document.getElementById('formCreateUser');
+      const formReset  = document.getElementById('formResetPass');
+      if (!formCreate || !formReset) return;
+    
+      formCreate.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const err = document.getElementById('createUserError');
+        const btn = document.getElementById('btnCreateUser');
+        err.style.display = 'none';
+        btn.disabled = true;
+    
+        try{
+          const payload = {
+            id_personal_sae: document.getElementById('u_id').value.trim(),
+            nombre_y_apellidos: document.getElementById('u_nombre').value.trim(),
+            correo_corp: document.getElementById('u_correo').value.trim(),
+            perfil: document.getElementById('u_perfil').value,
+            clave_plana: document.getElementById('u_clave').value,
+            verificado: document.getElementById('u_verif').value === 'true'
+          };
+    
+          await apiFetch('admin/create_user', { method:'POST', body: payload });
+          toast('Usuario creado');
+          formCreate.reset();
+          document.getElementById('u_perfil').value = 'CONSULTA';
+          document.getElementById('u_verif').value = 'true';
+          await loadUsers();
+        } catch(ex){
+          err.textContent = ex.message || 'No se pudo crear el usuario';
+          err.style.display = 'block';
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    
+      formReset.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const err = document.getElementById('resetPassError');
+        const btn = document.getElementById('btnResetPass');
+        err.style.display = 'none';
+        btn.disabled = true;
+    
+        try{
+          const payload = {
+            correo_corp: document.getElementById('r_correo').value.trim(),
+            nueva_clave_plana: document.getElementById('r_clave').value,
+            renovar_salt: document.getElementById('r_salt').value === 'true'
+          };
+    
+          await apiFetch('admin/set_password', { method:'POST', body: payload });
+          toast('Contraseña reseteada');
+          formReset.reset();
+          document.getElementById('r_salt').value = 'true';
+        } catch(ex){
+          err.textContent = ex.message || 'No se pudo resetear la contraseña';
+          err.style.display = 'block';
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    }
+    
+    async function loadUsers(){
+      const tbody = document.getElementById('usersTbody');
+      if (!tbody) return;
+    
+      tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--muted)">Cargando…</td></tr>`;
+    
+      try{
+        const data = await apiFetch('list', { method:'GET', query:{ table: 'Personal_Departamento' } });
+    
+        const rows = (data.rows || []).map(r => ({
+          id: r.id_personal_sae ?? '',
+          nombre: r.nombre_y_apellidos ?? '',
+          correo: r.correo_corp ?? '',
+          perfil: r.perfil ?? '',
+          verificado: String(r.verificado ?? '')
+        }));
+    
+        if (!rows.length){
+          tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--muted)">Sin registros.</td></tr>`;
+          return;
+        }
+    
+        tbody.innerHTML = rows.map(u => `
+          <tr>
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(u.id)}</td>
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(u.nombre)}</td>
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(u.correo)}</td>
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)"><strong>${escapeHtml(u.perfil)}</strong></td>
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(u.verificado)}</td>
+          </tr>
+        `).join('');
+      } catch(ex){
+        tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--danger)">Error: ${escapeHtml(ex.message||'No se pudo cargar')}</td></tr>`;
+      }
+    }
+    
+    function escapeHtml(s){
+      return String(s).replace(/[&<>"']/g, c => ({
+        '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+      }[c]));
+    }
+    
   </script>
 </body>
 </html>
