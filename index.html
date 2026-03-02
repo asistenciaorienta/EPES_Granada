@@ -764,12 +764,7 @@
           <div class="panel" style="margin-top:14px;background:rgba(238,244,251,.55)">
             <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Crear usuario</h3>
       
-            <form class="form" id="formCreateUser">
-              <div class="field">
-                <label for="u_id">id_personal_sae</label>
-                <input id="u_id" placeholder="U0001" required />
-              </div>
-      
+            <form class="form" id="formCreateUser">      
               <div class="field">
                 <label for="u_correo">correo_corp (único)</label>
                 <input id="u_correo" type="email" placeholder="nombre@juntadeandalucia.es" required />
@@ -1027,7 +1022,7 @@
       Object.entries(query || {}).forEach(([k,v]) => url.searchParams.set(k, String(v)));
     
       // auth por querystring (EVITA preflight)
-      if (auth && storage.token) url.searchParams.set('auth', storage.token);
+      if (auth && storage.token) url.searchParams.set('auth', 'Bearer ' + storage.token);
     
       const options = { method };
     
@@ -1335,23 +1330,30 @@
         const btn = document.getElementById('btnCreateUser');
         err.style.display = 'none';
         btn.disabled = true;
-    
+      
         try{
           const payload = {
-            id_personal_sae: document.getElementById('u_id').value.trim(),
             nombre_y_apellidos: document.getElementById('u_nombre').value.trim(),
             correo_corp: document.getElementById('u_correo').value.trim(),
             perfil: document.getElementById('u_perfil').value,
             clave_plana: document.getElementById('u_clave').value,
             verificado: document.getElementById('u_verif').value === 'true'
           };
-    
-          await apiFetch('admin/create_user', { method:'POST', body: payload });
-          toast('Usuario creado');
+      
+          // 👇 AQUÍ VA EL CAMBIO
+          const res = await apiFetch('admin/create_user', {
+            method:'POST',
+            body: payload
+          });
+      
+          toast('Usuario creado: ' + (res.id_personal_sae || 'OK'));
+      
           formCreate.reset();
           document.getElementById('u_perfil').value = 'CONSULTA';
           document.getElementById('u_verif').value = 'true';
+      
           await loadUsers();
+      
         } catch(ex){
           err.textContent = ex.message || 'No se pudo crear el usuario';
           err.style.display = 'block';
