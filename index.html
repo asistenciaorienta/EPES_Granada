@@ -1312,6 +1312,9 @@
           toast('Contraseña actualizada');
           form.reset();
     
+          // Opcional (seguridad): forzar re-login
+          await logout();
+    
         } catch(ex){
           err.textContent = ex.message || 'No se pudo cambiar la contraseña';
           err.style.display = 'block';
@@ -1319,7 +1322,7 @@
           btn.disabled = false;
         }
       });
-    }    
+    }  
 
     function fillProfileModal(){
       document.getElementById('profCorreo').textContent = storage.user?.correo || '';
