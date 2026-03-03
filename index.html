@@ -478,14 +478,48 @@
       box-shadow: var(--shadow-2);
       padding: 18px;
     }
-
+    .row4{
+      grid-column: 1 / -1;
+      display:grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .checks{
+      grid-column: 1 / -1;
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 12px;
+      padding: 12px;
+      border: 1px solid rgba(162,185,209,.35);
+      border-radius: 14px;
+      background: rgba(255,255,255,.75);
+    }
+    .check{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(162,185,209,.25);
+      background: rgba(238,244,251,.45);
+    }
+    .check input{ width: 18px; height: 18px; }
+    .section-title{
+      grid-column: 1 / -1;
+      margin-top: 6px;
+      font-weight: 900;
+      color: var(--ja-blue);
+      font-size: 13px;
+    }
     @media (max-width: 860px){
       .brand{ min-width:auto; }
       .pill-status{ display:none; }
       .grid3{ grid-template-columns: 1fr; }
       .form{ grid-template-columns: 1fr; }
       .topbar{ top: 10px; }
-    }
+      .row4{ grid-template-columns: 1fr; }
+      .checks{ grid-template-columns: 1fr; }
+    }    
   </style>
 </head>
 
@@ -881,71 +915,87 @@
             <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Crear entidad</h3>
       
             <form class="form" id="formCreateEntidad">
-              <div class="field">
+            
+              <div class="field" style="grid-column:1/-1">
                 <label for="e_nombre">nombre</label>
                 <input id="e_nombre" required />
               </div>
-      
-              <div class="field">
-                <label for="e_expediente">expediente (único si se usa)</label>
-                <input id="e_expediente" />
+            
+              <!-- Fila corta: expediente / convocatoria / cif / dir3 -->
+              <div class="row4">
+                <div class="field">
+                  <label for="e_expediente">expediente</label>
+                  <input id="e_expediente" />
+                </div>
+            
+                <div class="field">
+                  <label for="e_id_convocatoria">id_convocatoria</label>
+                  <input id="e_id_convocatoria" placeholder="(de momento manual)" />
+                </div>
+            
+                <div class="field">
+                  <label for="e_cif">cif</label>
+                  <input id="e_cif" />
+                </div>
+            
+                <div class="field">
+                  <label for="e_dir3">dir3</label>
+                  <input id="e_dir3" />
+                </div>
               </div>
-      
-              <div class="field">
-                <label for="e_id_convocatoria">id_convocatoria</label>
-                <input id="e_id_convocatoria" placeholder="(de momento manual)" />
-              </div>
-      
-              <div class="field">
-                <label for="e_cif">cif</label>
-                <input id="e_cif" />
-              </div>
-      
-              <div class="field">
-                <label for="e_dir3">dir3</label>
-                <input id="e_dir3" />
-              </div>
-      
+            
               <div class="field" style="grid-column:1/-1">
                 <label for="e_direccion">dirección</label>
                 <input id="e_direccion" />
               </div>
-      
+            
+              <!-- CHECKS -->
+              <div class="section-title">Documentación / Requisitos</div>
+              <div class="checks">
+                <label class="check">
+                  <input id="e_pol_acc" type="checkbox" />
+                  <span>poliza_general_accidentes</span>
+                </label>
+            
+                <label class="check">
+                  <input id="e_pol_rc" type="checkbox" />
+                  <span>poliza_rc</span>
+                </label>
+            
+                <label class="check">
+                  <input id="e_rep" type="checkbox" />
+                  <span>representacion_legal</span>
+                </label>
+            
+                <label class="check" title="Si añades personal técnico, este check se desmarcará automáticamente">
+                  <input id="e_ficha" type="checkbox" />
+                  <span>ficha_tecnica</span>
+                </label>
+              </div>
+            
+              <!-- COORDINACIÓN -->
+              <div class="section-title">Coordinación</div>
+            
+              <div class="field" style="grid-column:1/-1">
+                <label for="e_nombre_coord">nombre_coord (Nombre Coordinador/a)</label>
+                <input id="e_nombre_coord" />
+              </div>
+            
               <div class="field">
                 <label for="e_tel">telefono_coord</label>
                 <input id="e_tel" />
               </div>
-      
+            
               <div class="field">
                 <label for="e_email">email_coord</label>
                 <input id="e_email" type="email" />
               </div>
-      
-              <div class="field">
-                <label for="e_pol_acc">poliza_general_accidentes</label>
-                <input id="e_pol_acc" />
-              </div>
-      
-              <div class="field">
-                <label for="e_pol_rc">poliza_rc</label>
-                <input id="e_pol_rc" />
-              </div>
-      
-              <div class="field" style="grid-column:1/-1">
-                <label for="e_rep">representacion_legal</label>
-                <input id="e_rep" />
-              </div>
-      
-              <div class="field" style="grid-column:1/-1">
-                <label for="e_ficha">ficha_tecnica</label>
-                <input id="e_ficha" placeholder="URL o texto" />
-              </div>
-      
+            
               <div class="form-actions">
                 <button class="btn" type="button" onclick="routeTo('#/config')">Volver</button>
                 <button class="btn primary" id="btnCreateEntidad" type="submit">Crear entidad</button>
               </div>
-      
+            
               <div class="error" id="createEntidadError" style="display:none"></div>
             </form>
           </div>
@@ -1085,12 +1135,57 @@
     </div>
   </div>
 
+  <div class="modal-backdrop" id="modalTecnico" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tecTitle">
+      <header>
+        <h3 id="tecTitle">Añadir personal técnico</h3>
+        <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalTecnico')">✕</button>
+      </header>
+      <div class="content">
+        <div class="panel" style="padding:14px;background:rgba(238,244,251,.65)">
+          <div style="font-size:12px;color:var(--muted);font-weight:800">Entidad</div>
+          <div id="tecEntidadLabel" style="font-weight:900;color:var(--ja-blue)"></div>
+        </div>
+  
+        <form class="form" id="formAddTecnico" style="margin-top:12px">
+          <input id="tec_id_entidad" type="text" style="position:absolute;left:-9999px;top:-9999px" />
+  
+          <div class="field" style="grid-column:1/-1">
+            <label for="tec_nombre">nombre_y_apellidos</label>
+            <input id="tec_nombre" required />
+          </div>
+  
+          <div class="field">
+            <label for="tec_email">email</label>
+            <input id="tec_email" type="email" />
+          </div>
+  
+          <div class="field">
+            <label for="tec_tel">telefono</label>
+            <input id="tec_tel" />
+          </div>
+  
+          <div class="hint" style="grid-column:1/-1;margin-top:0">
+            Al añadir personal técnico, el campo <strong>ficha_tecnica</strong> se desmarca automáticamente en la entidad.
+          </div>
+  
+          <div class="form-actions">
+            <button class="btn" type="button" onclick="closeModal('modalTecnico')">Cancelar</button>
+            <button class="btn primary" id="btnAddTecnico" type="submit">Añadir</button>
+          </div>
+  
+          <div class="error" id="addTecnicoError" style="display:none"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
   <script>
     /* =========================
        CONFIG: pon aquí tu API
        ========================= */
     // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
-    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbzPBiHETYtdz4fvH0H1lJndrghQ4l-bOlDtGxjH449kyAeY59bYjeN8DM_ZfeUzVvPziQ/exec';
+    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycby7sx67bXqCO_qn74AYdoPCk7sczpq0mG8MQYM9f9o1faThJZB35Fi3_ZFc12BvG6j3mA/exec';
     // ✅ Base específica para JSONP (evita 302)
     const API_BASE_URL_JSONP = API_BASE_URL.replace(
       'https://script.google.com/macros/s/',
@@ -1442,6 +1537,7 @@
       wirePersonalSAE();
       wireEntidades();
       wireChangePassword();
+      wireTecnicos();
     }
 
     function wireChangePassword(){
@@ -1639,17 +1735,23 @@
         try{
           const payload = {
             nombre: document.getElementById('e_nombre').value.trim(),
+          
             expediente: document.getElementById('e_expediente').value.trim(),
             id_convocatoria: document.getElementById('e_id_convocatoria').value.trim(),
             cif: document.getElementById('e_cif').value.trim(),
             dir3: document.getElementById('e_dir3').value.trim(),
             'dirección': document.getElementById('e_direccion').value.trim(),
+          
+            // checks (boolean)
+            poliza_general_accidentes: document.getElementById('e_pol_acc').checked,
+            poliza_rc: document.getElementById('e_pol_rc').checked,
+            representacion_legal: document.getElementById('e_rep').checked,
+            ficha_tecnica: document.getElementById('e_ficha').checked,
+          
+            // coordinación (al final)
+            nombre_coord: document.getElementById('e_nombre_coord').value.trim(),
             telefono_coord: document.getElementById('e_tel').value.trim(),
             email_coord: document.getElementById('e_email').value.trim(),
-            poliza_general_accidentes: document.getElementById('e_pol_acc').value.trim(),
-            poliza_rc: document.getElementById('e_pol_rc').value.trim(),
-            representacion_legal: document.getElementById('e_rep').value.trim(),
-            ficha_tecnica: document.getElementById('e_ficha').value.trim(),
           };
     
           const res = await apiFetch('entidades/create', { method:'POST', body: payload });
@@ -1692,6 +1794,7 @@
             <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(e.cif)}</td>
             <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(e.expediente)}</td>
             <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25);white-space:nowrap">
+              <button class="btn" type="button" onclick="openTecnicoModal('${escapeHtml(e.id)}','${escapeHtml(e.nombre)}')">+ Técnico</button>
               ${canEdit() ? `<button class="btn" type="button" onclick="editEntidadPrompt('${escapeHtml(e.id)}')">Editar</button>` : ''}
               ${canDelete() ? `<button class="btn danger" type="button" onclick="deleteEntidad('${escapeHtml(e.id)}')">Borrar</button>` : ''}
             </td>
@@ -1777,7 +1880,50 @@
         '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
       }[c]));
     }
+    function openTecnicoModal(id_entidad, nombre_entidad){
+      if (!canEdit()) return toast('Permisos insuficientes');
+      document.getElementById('tec_id_entidad').value = id_entidad;
+      document.getElementById('tecEntidadLabel').textContent = `${nombre_entidad} (${id_entidad})`;
+      document.getElementById('addTecnicoError').style.display = 'none';
+      document.getElementById('formAddTecnico').reset();
+      openModal('modalTecnico');
+    }
     
+    function wireTecnicos(){
+      const form = document.getElementById('formAddTecnico');
+      if (!form) return;
+    
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const err = document.getElementById('addTecnicoError');
+        const btn = document.getElementById('btnAddTecnico');
+        err.style.display = 'none';
+        btn.disabled = true;
+    
+        try{
+          const payload = {
+            id_entidad: document.getElementById('tec_id_entidad').value.trim(),
+            nombre_y_apellidos: document.getElementById('tec_nombre').value.trim(),
+            email: document.getElementById('tec_email').value.trim(),
+            telefono: document.getElementById('tec_tel').value.trim(),
+          };
+    
+          const res = await apiFetch('entidades/add_tecnico', { method:'POST', body: payload });
+    
+          toast('Técnico añadido: ' + (res.id_personal_entidad || 'OK'));
+          closeModal('modalTecnico');
+    
+          // refresca lista (para que el usuario vea que “ficha_tecnica” ya no aplica, si luego la mostramos)
+          await loadEntidades();
+    
+        } catch(ex){
+          err.textContent = ex.message || 'No se pudo añadir el técnico';
+          err.style.display = 'block';
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    }    
   </script>
 </body>
 </html>
