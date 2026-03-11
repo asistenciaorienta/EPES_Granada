@@ -425,14 +425,19 @@
     }
     .modal-backdrop.open{ display:flex; }
     .modal{
-      width: min(720px, 100%);
-      border-radius: 22px;
       border: 1px solid rgba(162,185,209,.35);
-      background: rgba(255,255,255,.97);
-      box-shadow: var(--shadow-2);
-      overflow:hidden;
+      width:min(900px, 100%);
+      max-height:90vh;      /* limita altura al 90% de la pantalla */
+      overflow-y:auto;      /* scroll vertical */
+      background:#fff;
+      border-radius:18px;
+      box-shadow:0 24px 60px rgba(0,0,0,.25);
     }
-    .modal header{
+    .modal header{.modal header{
+      position:sticky;
+      top:0;
+      background:white;
+      z-index:2
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -448,6 +453,8 @@
     }
     .modal .content{
       padding: 16px;
+      max-height:75vh;
+      overflow-y:auto;
     }
     .modal .close{
       width:40px;height:40px;
@@ -520,6 +527,36 @@
       .row4{ grid-template-columns: 1fr; }
       .checks{ grid-template-columns: 1fr; }
     }    
+
+.tabs{
+  display:flex;
+  gap:6px;
+  border-bottom:1px solid rgba(162,185,209,.4);
+  margin-bottom:12px;
+}
+
+.tab-btn{
+  padding:8px 14px;
+  border-radius:10px 10px 0 0;
+  border:1px solid rgba(162,185,209,.4);
+  border-bottom:none;
+  background:rgba(238,244,251,.7);
+  cursor:pointer;
+  font-weight:700;
+  color:var(--ja-blue);
+}
+
+.tab-btn.active{
+  background:white;
+}
+
+.tab-panel{
+  display:none;
+}
+
+.tab-panel.active{
+  display:block;
+}                  
   </style>
 </head>
 
@@ -1189,7 +1226,17 @@
       <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalEditEntidad')">✕</button>
     </header>
     <div class="content">
-      <form class="form" id="formEditEntidad">
+      <div class="tabs">
+  <button class="tab-btn active" onclick="switchEntidadTab('tabEntidad',this)">
+    Datos entidad
+  </button>
+
+  <button class="tab-btn" onclick="switchEntidadTab('tabTecnicos',this)">
+    Personal técnico
+  </button>
+</div>
+      <div id="tabEntidad" class="tab-panel active">
+<form class="form" id="formEditEntidad">
         <input id="ee_id" type="text" style="position:absolute;left:-9999px;top:-9999px" />
 
         <div class="field" style="grid-column:1/-1">
@@ -1268,7 +1315,8 @@
 
         <div class="error" id="editEntidadError" style="display:none"></div>
       </form>
-
+      </div>
+      <div id="tabTecnicos" class="tab-panel">
       <div class="panel" style="margin-top:14px">
         <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
           <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Personal técnico de la entidad</h3>
@@ -1291,6 +1339,8 @@
               <tr><td colspan="6" style="padding:10px;color:var(--muted)">Sin cargar.</td></tr>
             </tbody>
           </table>
+        </div>
+      </div>
         </div>
       </div>
     </div>
@@ -2265,6 +2315,16 @@ function wireEditTecnico(){
     }
   });
 }    
+    function switchEntidadTab(tabId, btn){
+  document.querySelectorAll('#modalEditEntidad .tab-panel')
+    .forEach(p => p.classList.remove('active'));
+
+  document.querySelectorAll('#modalEditEntidad .tab-btn')
+    .forEach(b => b.classList.remove('active'));
+
+  document.getElementById(tabId).classList.add('active');
+  btn.classList.add('active');
+}
   </script>
 </body>
 </html>
