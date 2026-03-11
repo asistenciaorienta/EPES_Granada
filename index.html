@@ -1191,6 +1191,7 @@
       'https://script.google.com/macros/s/',
       'https://script.googleusercontent.com/macros/s/'
     );
+    let currentEntidadId = '';
     /* =========================
        Estado de sesión
        ========================= */
@@ -1882,10 +1883,19 @@
     }
     function openTecnicoModal(id_entidad, nombre_entidad){
       if (!canEdit()) return toast('Permisos insuficientes');
-      document.getElementById('tec_id_entidad').value = id_entidad;
-      document.getElementById('tecEntidadLabel').textContent = `${nombre_entidad} (${id_entidad})`;
-      document.getElementById('addTecnicoError').style.display = 'none';
-      document.getElementById('formAddTecnico').reset();
+    
+      currentEntidadId = String(id_entidad || '').trim();
+    
+      document.getElementById('tecEntidadLabel').textContent =
+        `${nombre_entidad} (${currentEntidadId})`;
+    
+      const err = document.getElementById('addTecnicoError');
+      if (err) err.style.display = 'none';
+    
+      // Resetea el formulario (pero ya no dependemos de un hidden)
+      const f = document.getElementById('formAddTecnico');
+      if (f) f.reset();
+    
       openModal('modalTecnico');
     }
     
@@ -1902,10 +1912,11 @@
     
         try{
           const payload = {
-            id_entidad: document.getElementById('tec_id_entidad').value.trim(),
+            id_entidad: currentEntidadId,
             nombre_y_apellidos: document.getElementById('tec_nombre').value.trim(),
             email: document.getElementById('tec_email').value.trim(),
             telefono: document.getElementById('tec_tel').value.trim(),
+            activo: document.getElementById('tec_activo').checked
           };
     
           const res = await apiFetch('entidades/add_tecnico', { method:'POST', body: payload });
@@ -1915,7 +1926,7 @@
     
           // refresca lista (para que el usuario vea que “ficha_tecnica” ya no aplica, si luego la mostramos)
           await loadEntidades();
-    
+          if (!payload.id_entidad) throw new Error('No hay entidad seleccionada');
         } catch(ex){
           err.textContent = ex.message || 'No se pudo añadir el técnico';
           err.style.display = 'block';
