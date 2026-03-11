@@ -925,17 +925,17 @@
               <div class="row4">
                 <div class="field">
                   <label for="e_expediente">expediente</label>
-                  <input id="e_expediente" />
+                  <input id="e_expediente" required />
                 </div>
             
                 <div class="field">
                   <label for="e_id_convocatoria">id_convocatoria</label>
-                  <input id="e_id_convocatoria" placeholder="(de momento manual)" />
+                  <input id="e_id_convocatoria" required placeholder="(de momento manual)" />
                 </div>
             
                 <div class="field">
                   <label for="e_cif">cif</label>
-                  <input id="e_cif" />
+                  <input id="e_cif" required />
                 </div>
             
                 <div class="field">
@@ -946,7 +946,7 @@
             
               <div class="field" style="grid-column:1/-1">
                 <label for="e_direccion">dirección</label>
-                <input id="e_direccion" />
+                <input id="e_direccion" required />
               </div>
             
               <!-- CHECKS -->
@@ -978,17 +978,17 @@
             
               <div class="field" style="grid-column:1/-1">
                 <label for="e_nombre_coord">nombre_coord (Nombre Coordinador/a)</label>
-                <input id="e_nombre_coord" />
+                <input id="e_nombre_coord" required/>
               </div>
             
               <div class="field">
                 <label for="e_tel">telefono_coord</label>
-                <input id="e_tel" />
+                <input id="e_tel" required />
               </div>
             
               <div class="field">
                 <label for="e_email">email_coord</label>
-                <input id="e_email" type="email" />
+                <input id="e_email" type="email"  required/>
               </div>
             
               <div class="form-actions">
@@ -1164,7 +1164,10 @@
             <label for="tec_tel">telefono</label>
             <input id="tec_tel" />
           </div>
-  
+          <label class="check" style="grid-column:1/-1">
+            <input id="tec_activo" type="checkbox" checked />
+            <span>Activo</span>
+          </label>
           <div class="hint" style="grid-column:1/-1;margin-top:0">
             Al añadir personal técnico, el campo <strong>ficha_tecnica</strong> se desmarca automáticamente en la entidad.
           </div>
@@ -1185,7 +1188,7 @@
        CONFIG: pon aquí tu API
        ========================= */
     // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
-    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycby7sx67bXqCO_qn74AYdoPCk7sczpq0mG8MQYM9f9o1faThJZB35Fi3_ZFc12BvG6j3mA/exec';
+    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycby_yNOFlLuMIWeY7TSqkjOs1SayKOl7u--kz3oi20LsW9e1FgHMdwlKhETOegKGYHE/exec';
     // ✅ Base específica para JSONP (evita 302)
     const API_BASE_URL_JSONP = API_BASE_URL.replace(
       'https://script.google.com/macros/s/',
