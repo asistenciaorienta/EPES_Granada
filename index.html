@@ -1182,13 +1182,167 @@
       </div>
     </div>
   </div>
+<div class="modal-backdrop" id="modalEditEntidad" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="editEntidadTitle" style="width:min(980px, 100%)">
+    <header>
+      <h3 id="editEntidadTitle">Editar entidad</h3>
+      <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalEditEntidad')">✕</button>
+    </header>
+    <div class="content">
+      <form class="form" id="formEditEntidad">
+        <input id="ee_id" type="text" style="position:absolute;left:-9999px;top:-9999px" />
+
+        <div class="field" style="grid-column:1/-1">
+          <label for="ee_nombre">nombre</label>
+          <input id="ee_nombre" required />
+        </div>
+
+        <div class="row4">
+          <div class="field">
+            <label for="ee_expediente">expediente</label>
+            <input id="ee_expediente" required />
+          </div>
+          <div class="field">
+            <label for="ee_id_convocatoria">id_convocatoria</label>
+            <input id="ee_id_convocatoria" required />
+          </div>
+          <div class="field">
+            <label for="ee_cif">cif</label>
+            <input id="ee_cif" required />
+          </div>
+          <div class="field">
+            <label for="ee_dir3">dir3</label>
+            <input id="ee_dir3" />
+          </div>
+        </div>
+
+        <div class="field" style="grid-column:1/-1">
+          <label for="ee_direccion">dirección</label>
+          <input id="ee_direccion" required />
+        </div>
+
+        <div class="section-title">Documentación / Requisitos</div>
+        <div class="checks">
+          <label class="check">
+            <input id="ee_pol_acc" type="checkbox" />
+            <span>poliza_general_accidentes</span>
+          </label>
+
+          <label class="check">
+            <input id="ee_pol_rc" type="checkbox" />
+            <span>poliza_rc</span>
+          </label>
+
+          <label class="check">
+            <input id="ee_rep" type="checkbox" />
+            <span>representacion_legal</span>
+          </label>
+
+          <label class="check">
+            <input id="ee_ficha" type="checkbox" />
+            <span>ficha_tecnica</span>
+          </label>
+        </div>
+
+        <div class="section-title">Coordinación</div>
+
+        <div class="field" style="grid-column:1/-1">
+          <label for="ee_nombre_coord">nombre_coord</label>
+          <input id="ee_nombre_coord" required />
+        </div>
+
+        <div class="field">
+          <label for="ee_tel">telefono_coord</label>
+          <input id="ee_tel" required />
+        </div>
+
+        <div class="field">
+          <label for="ee_email">email_coord</label>
+          <input id="ee_email" type="email" required />
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="button" onclick="closeModal('modalEditEntidad')">Cancelar</button>
+          <button class="btn primary" id="btnSaveEntidad" type="submit">Guardar cambios</button>
+        </div>
+
+        <div class="error" id="editEntidadError" style="display:none"></div>
+      </form>
+
+      <div class="panel" style="margin-top:14px">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+          <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Personal técnico de la entidad</h3>
+          <button class="btn" type="button" id="btnAddTecnicoFromEdit">+ Añadir técnico</button>
+        </div>
+
+        <div style="overflow:auto;margin-top:10px;border:1px solid rgba(162,185,209,.35);border-radius:14px">
+          <table style="width:100%;border-collapse:collapse;font-size:13px">
+            <thead style="background:rgba(208,220,234,.55)">
+              <tr>
+                <th style="text-align:left;padding:10px">id</th>
+                <th style="text-align:left;padding:10px">nombre</th>
+                <th style="text-align:left;padding:10px">email</th>
+                <th style="text-align:left;padding:10px">telefono</th>
+                <th style="text-align:left;padding:10px">activo</th>
+                <th style="text-align:left;padding:10px">acciones</th>
+              </tr>
+            </thead>
+            <tbody id="tecnicosEntidadTbody">
+              <tr><td colspan="6" style="padding:10px;color:var(--muted)">Sin cargar.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+<div class="modal-backdrop" id="modalEditTecnico" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="editTecnicoTitle">
+    <header>
+      <h3 id="editTecnicoTitle">Editar personal técnico</h3>
+      <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalEditTecnico')">✕</button>
+    </header>
+    <div class="content">
+      <form class="form" id="formEditTecnico">
+        <input id="et_id" type="text" style="position:absolute;left:-9999px;top:-9999px" />
+
+        <div class="field" style="grid-column:1/-1">
+          <label for="et_nombre">nombre_y_apellidos</label>
+          <input id="et_nombre" required />
+        </div>
+
+        <div class="field">
+          <label for="et_email">email</label>
+          <input id="et_email" type="email" />
+        </div>
+
+        <div class="field">
+          <label for="et_tel">telefono</label>
+          <input id="et_tel" />
+        </div>
+
+        <label class="check" style="grid-column:1/-1">
+          <input id="et_activo" type="checkbox" />
+          <span>activo</span>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn" type="button" onclick="closeModal('modalEditTecnico')">Cancelar</button>
+          <button class="btn primary" id="btnSaveTecnico" type="submit">Guardar técnico</button>
+        </div>
+
+        <div class="error" id="editTecnicoError" style="display:none"></div>
+      </form>
+    </div>
+  </div>
+</div>
   
   <script>
     /* =========================
        CONFIG: pon aquí tu API
        ========================= */
     // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
-    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycby_yNOFlLuMIWeY7TSqkjOs1SayKOl7u--kz3oi20LsW9e1FgHMdwlKhETOegKGYHE/exec';
+    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbyN5KhzD9nJaeDfsO0x7tPr2O2htFqEG3hEWmbXG195IORoKXaJgzLzSrSd7VkH11jJwA/exec';
     // ✅ Base específica para JSONP (evita 302)
     const API_BASE_URL_JSONP = API_BASE_URL.replace(
       'https://script.google.com/macros/s/',
@@ -1542,6 +1696,8 @@
       wireEntidades();
       wireChangePassword();
       wireTecnicos();
+      wireEditEntidad();
+      wireEditTecnico();
     }
 
     function wireChangePassword(){
@@ -1799,7 +1955,7 @@
             <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(e.expediente)}</td>
             <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25);white-space:nowrap">
               <button class="btn" type="button" onclick="openTecnicoModal('${escapeHtml(e.id)}','${escapeHtml(e.nombre)}')">+ Técnico</button>
-              ${canEdit() ? `<button class="btn" type="button" onclick="editEntidadPrompt('${escapeHtml(e.id)}')">Editar</button>` : ''}
+              ${canEdit() ? `<button class="btn" type="button" onclick="openEditEntidad('${escapeHtml(e.id)}')">Editar</button>` : ''}
               ${canDelete() ? `<button class="btn danger" type="button" onclick="deleteEntidad('${escapeHtml(e.id)}')">Borrar</button>` : ''}
             </td>
           </tr>
@@ -1938,6 +2094,177 @@
         }
       });
     }    
+async function openEditEntidad(id_entidad){
+  if (!canEdit()) return toast('Permisos insuficientes');
+
+  try{
+    const data = await apiJsonp('entidades/get', { id_entidad });
+    const e = data.entidad;
+
+    document.getElementById('ee_id').value = e.id_entidad || '';
+    document.getElementById('ee_nombre').value = e.nombre || '';
+    document.getElementById('ee_expediente').value = e.expediente || '';
+    document.getElementById('ee_id_convocatoria').value = e.id_convocatoria || '';
+    document.getElementById('ee_cif').value = e.cif || '';
+    document.getElementById('ee_dir3').value = e.dir3 || '';
+    document.getElementById('ee_direccion').value = e['dirección'] || '';
+
+    document.getElementById('ee_pol_acc').checked = String(e.poliza_general_accidentes).toLowerCase() === 'true' || e.poliza_general_accidentes === true;
+    document.getElementById('ee_pol_rc').checked = String(e.poliza_rc).toLowerCase() === 'true' || e.poliza_rc === true;
+    document.getElementById('ee_rep').checked = String(e.representacion_legal).toLowerCase() === 'true' || e.representacion_legal === true;
+    document.getElementById('ee_ficha').checked = String(e.ficha_tecnica).toLowerCase() === 'true' || e.ficha_tecnica === true;
+
+    document.getElementById('ee_nombre_coord').value = e.nombre_coord || '';
+    document.getElementById('ee_tel').value = e.telefono_coord || '';
+    document.getElementById('ee_email').value = e.email_coord || '';
+
+    document.getElementById('btnAddTecnicoFromEdit').onclick = () => {
+      closeModal('modalEditEntidad');
+      openTecnicoModal(e.id_entidad, e.nombre || e.id_entidad);
+    };
+
+    await loadTecnicosEntidad(e.id_entidad);
+    document.getElementById('editEntidadError').style.display = 'none';
+    openModal('modalEditEntidad');
+
+  } catch(ex){
+    toast(ex.message || 'No se pudo abrir la entidad');
+  }
+}
+
+function wireEditEntidad(){
+  const form = document.getElementById('formEditEntidad');
+  if (!form) return;
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const err = document.getElementById('editEntidadError');
+    const btn = document.getElementById('btnSaveEntidad');
+    err.style.display = 'none';
+    btn.disabled = true;
+
+    try{
+      const id_entidad = document.getElementById('ee_id').value.trim();
+
+      const patch = {
+        nombre: document.getElementById('ee_nombre').value.trim(),
+        expediente: document.getElementById('ee_expediente').value.trim(),
+        id_convocatoria: document.getElementById('ee_id_convocatoria').value.trim(),
+        cif: document.getElementById('ee_cif').value.trim(),
+        dir3: document.getElementById('ee_dir3').value.trim(),
+        'dirección': document.getElementById('ee_direccion').value.trim(),
+
+        poliza_general_accidentes: document.getElementById('ee_pol_acc').checked,
+        poliza_rc: document.getElementById('ee_pol_rc').checked,
+        representacion_legal: document.getElementById('ee_rep').checked,
+        ficha_tecnica: document.getElementById('ee_ficha').checked,
+
+        nombre_coord: document.getElementById('ee_nombre_coord').value.trim(),
+        telefono_coord: document.getElementById('ee_tel').value.trim(),
+        email_coord: document.getElementById('ee_email').value.trim()
+      };
+
+      await apiFetch('entidades/update', {
+        method: 'POST',
+        body: { id_entidad, patch }
+      });
+
+      toast('Entidad actualizada');
+      await loadEntidades();
+      await loadTecnicosEntidad(id_entidad);
+
+    } catch(ex){
+      err.textContent = ex.message || 'No se pudo actualizar la entidad';
+      err.style.display = 'block';
+    } finally {
+      btn.disabled = false;
+    }
+  });
+}
+
+async function loadTecnicosEntidad(id_entidad){
+  const tbody = document.getElementById('tecnicosEntidadTbody');
+  if (!tbody) return;
+
+  tbody.innerHTML = `<tr><td colspan="6" style="padding:10px;color:var(--muted)">Cargando…</td></tr>`;
+
+  try{
+    const data = await apiJsonp('tecnicos/list_by_entidad', { id_entidad });
+    const rows = data.rows || [];
+
+    if (!rows.length){
+      tbody.innerHTML = `<tr><td colspan="6" style="padding:10px;color:var(--muted)">Sin personal técnico.</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = rows.map(t => `
+      <tr>
+        <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(t.id_personal_entidad || '')}</td>
+        <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(t.nombre_y_apellidos || '')}</td>
+        <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(t.email || '')}</td>
+        <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(t.telefono || '')}</td>
+        <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${(String(t.activo).toLowerCase() === 'true' || t.activo === true) ? 'Sí' : 'No'}</td>
+        <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">
+          ${canEdit() ? `<button class="btn" type="button" onclick="openEditTecnico('${escapeHtml(t.id_personal_entidad || '')}', '${escapeHtml(t.nombre_y_apellidos || '')}', '${escapeHtml(t.email || '')}', '${escapeHtml(t.telefono || '')}', '${String(t.activo)}')">Editar</button>` : ''}
+        </td>
+      </tr>
+    `).join('');
+
+  } catch(ex){
+    tbody.innerHTML = `<tr><td colspan="6" style="padding:10px;color:var(--danger)">Error: ${escapeHtml(ex.message || 'No se pudo cargar')}</td></tr>`;
+  }
+}
+function openEditTecnico(id, nombre, email, telefono, activo){
+  document.getElementById('et_id').value = id || '';
+  document.getElementById('et_nombre').value = nombre || '';
+  document.getElementById('et_email').value = email || '';
+  document.getElementById('et_tel').value = telefono || '';
+  document.getElementById('et_activo').checked = String(activo).toLowerCase() === 'true';
+
+  document.getElementById('editTecnicoError').style.display = 'none';
+  openModal('modalEditTecnico');
+}
+
+function wireEditTecnico(){
+  const form = document.getElementById('formEditTecnico');
+  if (!form) return;
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const err = document.getElementById('editTecnicoError');
+    const btn = document.getElementById('btnSaveTecnico');
+    err.style.display = 'none';
+    btn.disabled = true;
+
+    try{
+      const id_personal_entidad = document.getElementById('et_id').value.trim();
+
+      const patch = {
+        nombre_y_apellidos: document.getElementById('et_nombre').value.trim(),
+        email: document.getElementById('et_email').value.trim(),
+        telefono: document.getElementById('et_tel').value.trim(),
+        activo: document.getElementById('et_activo').checked
+      };
+
+      await apiFetch('tecnicos/update', {
+        method: 'POST',
+        body: { id_personal_entidad, patch }
+      });
+
+      closeModal('modalEditTecnico');
+      toast('Personal técnico actualizado');
+
+      const id_entidad = document.getElementById('ee_id').value.trim();
+      if (id_entidad) await loadTecnicosEntidad(id_entidad);
+
+    } catch(ex){
+      err.textContent = ex.message || 'No se pudo actualizar el técnico';
+      err.style.display = 'block';
+    } finally {
+      btn.disabled = false;
+    }
+  });
+}    
   </script>
 </body>
 </html>
