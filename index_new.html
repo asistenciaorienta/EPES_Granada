@@ -1495,6 +1495,45 @@
     </div>
   </div>
 </div>  
+<div class="modal-backdrop" id="modalEditPersona" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="editPersonaTitle">
+    <header>
+      <h3 id="editPersonaTitle">Editar persona</h3>
+      <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalEditPersona')">✕</button>
+    </header>
+
+    <div class="content">
+      <form class="form" id="formEditPersona">
+        <input id="ep_id" type="text" style="position:absolute;left:-9999px;top:-9999px" />
+
+        <div class="field" style="grid-column:1/-1">
+          <label for="ep_nombre">nombre_y_apellidos</label>
+          <input id="ep_nombre" required />
+        </div>
+
+        <div class="field">
+          <label for="ep_rol">rol</label>
+          <select id="ep_rol" required>
+            <option value="COORDINADOR">COORDINADOR</option>
+            <option value="TECNICO">TECNICO</option>
+          </select>
+        </div>
+
+        <label class="check" style="grid-column:1/-1">
+          <input id="ep_activo" type="checkbox" />
+          <span>activo</span>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn" type="button" onclick="closeModal('modalEditPersona')">Cancelar</button>
+          <button class="btn primary" id="btnSavePersona" type="submit">Guardar persona</button>
+        </div>
+
+        <div class="error" id="editPersonaError" style="display:none"></div>
+      </form>
+    </div>
+  </div>
+</div>  
   <script>
     let currentEntidadId = '';
     let currentPersonalEntidadId = '';
@@ -1503,7 +1542,7 @@
        CONFIG: pon aquí tu API
        ========================= */
     // Ejemplo: 'https://script.google.com/macros/s/AKfycb.../exec'
-    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbzMjixfi9q-uD-XnxOIOgmQGUVY7lo9UAtdOPG6xkDP-50ANstcbyLl1zebhPKx5FMiGg/exec';
+    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbz4dyvWLx7hzZdyG1GpB6YGljVWYNTZ47sEsfKg2-w2HluipAyPDfaPb5wbkfhRHOMFHg/exec';
     // ✅ Base específica para JSONP (evita 302)
     const API_BASE_URL_JSONP = API_BASE_URL.replace(
       'https://script.google.com/macros/s/',
@@ -1861,6 +1900,7 @@
       wireEditTecnico();
       wireContactos();
       wireContactoTipoHint();
+      wireEditPersona();
     }
 
     function wireChangePassword(){
@@ -2482,25 +2522,53 @@ function wireEditTecnico(){
     
     }    
     async function loadPersonal(id_entidad){
-    
       const tbody = document.getElementById("personalTbody");
+      if (!tbody) return;
     
-      const data = await apiJsonp("personal/list_by_entidad",{id_entidad});
+      tbody.innerHTML = `<tr><td colspan="4" style="padding:10px;color:var(--muted)">Cargando…</td></tr>`;
     
-      tbody.innerHTML = data.rows.map(p=>`
-      <tr>
-        <td>${escapeHtml(p.nombre_y_apellidos)}</td>
-        <td>${escapeHtml(p.rol)}</td>
-        <td>${(String(p.activo).toLowerCase() === 'true' || p.activo === true) ? '✔' : ''}</td>
-        <td>
-          <button class="btn" type="button"
-            onclick="openPersona('${escapeHtml(p.id_personal_entidad || '')}', '${escapeHtml(p.nombre_y_apellidos || '')}')">
-            contactos
-          </button>
-        </td>
-      </tr>
-      `).join("");
+      try{
+        const data = await apiJsonp("personal/list_by_entidad",{id_entidad});
+        const rows = data.rows || [];
     
+        if (!rows.length){
+          tbody.innerHTML = `<tr><td colspan="4" style="padding:10px;color:var(--muted)">Sin personal.</td></tr>`;
+          return;
+        }
+    
+        tbody.innerHTML = rows.map(p=>`
+          <tr>
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">
+              ${escapeHtml(p.nombre_y_apellidos || '')}
+            </td>
+    
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">
+              ${escapeHtml(p.rol || '')}
+            </td>
+    
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">
+              ${(String(p.activo).toLowerCase() === 'true' || p.activo === true) ? 'Sí' : 'No'}
+            </td>
+    
+            <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25);white-space:nowrap">
+              ${canEdit() ? `
+                <button class="btn" type="button"
+                  onclick="openEditPersona('${escapeHtml(p.id_personal_entidad || '')}', '${escapeHtml(p.nombre_y_apellidos || '')}', '${escapeHtml(p.rol || '')}', '${String(p.activo)}')">
+                  Editar
+                </button>
+              ` : ''}
+    
+              <button class="btn" type="button"
+                onclick="openPersona('${escapeHtml(p.id_personal_entidad || '')}', '${escapeHtml(p.nombre_y_apellidos || '')}')">
+                contactos
+              </button>
+            </td>
+          </tr>
+        `).join("");
+    
+      } catch(ex){
+        tbody.innerHTML = `<tr><td colspan="4" style="padding:10px;color:var(--danger)">Error: ${escapeHtml(ex.message || 'No se pudo cargar')}</td></tr>`;
+      }
     }
     async function openPersona(id_personal_entidad, nombre_persona){
       currentPersonalEntidadId = String(id_personal_entidad || '').trim();
@@ -2698,6 +2766,57 @@ function wireContactoTipoHint(){
 
   tipo.addEventListener('change', refresh);
   refresh();
+}
+function openEditPersona(id, nombre, rol, activo){
+  document.getElementById('ep_id').value = id || '';
+  document.getElementById('ep_nombre').value = nombre || '';
+  document.getElementById('ep_rol').value = rol || 'TECNICO';
+  document.getElementById('ep_activo').checked = String(activo).toLowerCase() === 'true';
+
+  const err = document.getElementById('editPersonaError');
+  if (err) err.style.display = 'none';
+
+  openModal('modalEditPersona');
+}
+function wireEditPersona(){
+  const form = document.getElementById('formEditPersona');
+  if (!form) return;
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+
+    const err = document.getElementById('editPersonaError');
+    const btn = document.getElementById('btnSavePersona');
+    err.style.display = 'none';
+    btn.disabled = true;
+
+    try{
+      const id_personal_entidad = document.getElementById('ep_id').value.trim();
+
+      const patch = {
+        nombre_y_apellidos: document.getElementById('ep_nombre').value.trim(),
+        rol: document.getElementById('ep_rol').value,
+        activo: document.getElementById('ep_activo').checked
+      };
+
+      await apiFetch('personal/update', {
+        method: 'POST',
+        body: { id_personal_entidad, patch }
+      });
+
+      closeModal('modalEditPersona');
+      toast('Persona actualizada');
+
+      const id_entidad = document.getElementById('ee_id').value.trim();
+      if (id_entidad) await loadPersonal(id_entidad);
+
+    } catch(ex){
+      err.textContent = ex.message || 'No se pudo actualizar la persona';
+      err.style.display = 'block';
+    } finally {
+      btn.disabled = false;
+    }
+  });
 }
     
   </script>
