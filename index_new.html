@@ -1204,133 +1204,181 @@
       </div>
     </div>
   </div>
-<div class="modal-backdrop" id="modalEditEntidad" aria-hidden="true">
-  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="editEntidadTitle" style="width:min(980px, 100%)">
-    <header>
-      <h3 id="editEntidadTitle">Editar entidad</h3>
-      <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalEditEntidad')">✕</button>
-    </header>
-    <div class="content">
-      <div class="tabs">
-  <button class="tab-btn active" onclick="switchEntidadTab('tabEntidad',this)">
-    Datos entidad
-  </button>
-
-  <button class="tab-btn" onclick="switchEntidadTab('tabTecnicos',this)">
-    Personal técnico
-  </button>
-</div>
-      <div id="tabEntidad" class="tab-panel active">
-<form class="form" id="formEditEntidad">
-        <input id="ee_id" type="text" style="position:absolute;left:-9999px;top:-9999px" />
-
-        <div class="field" style="grid-column:1/-1">
-          <label for="ee_nombre">nombre</label>
-          <input id="ee_nombre" required />
-        </div>
-
-        <div class="row4">
-          <div class="field">
-            <label for="ee_expediente">expediente</label>
-            <input id="ee_expediente" required />
-          </div>
-          <div class="field">
-            <label for="ee_id_convocatoria">id_convocatoria</label>
-            <input id="ee_id_convocatoria" required />
-          </div>
-          <div class="field">
-            <label for="ee_cif">cif</label>
-            <input id="ee_cif" required />
-          </div>
-          <div class="field">
-            <label for="ee_dir3">dir3</label>
-            <input id="ee_dir3" />
-          </div>
-        </div>
-
-        <div class="field" style="grid-column:1/-1">
-          <label for="ee_direccion">dirección</label>
-          <input id="ee_direccion" required />
-        </div>
-
-        <div class="section-title">Documentación / Requisitos</div>
-        <div class="checks">
-          <label class="check">
-            <input id="ee_pol_acc" type="checkbox" />
-            <span>poliza_general_accidentes</span>
-          </label>
-
-          <label class="check">
-            <input id="ee_pol_rc" type="checkbox" />
-            <span>poliza_rc</span>
-          </label>
-
-          <label class="check">
-            <input id="ee_rep" type="checkbox" />
-            <span>representacion_legal</span>
-          </label>
-
-          <label class="check">
-            <input id="ee_ficha" type="checkbox" />
-            <span>ficha_tecnica</span>
-          </label>
-        </div>
-
-        <div class="section-title">Coordinación</div>
-
-        <div class="field" style="grid-column:1/-1">
-          <label for="ee_nombre_coord">nombre_coord</label>
-          <input id="ee_nombre_coord" required />
-        </div>
-
-        <div class="field">
-          <label for="ee_tel">telefono_coord</label>
-          <input id="ee_tel" required />
-        </div>
-
-        <div class="field">
-          <label for="ee_email">email_coord</label>
-          <input id="ee_email" type="email" required />
-        </div>
-
-        <div class="form-actions">
-          <button class="btn" type="button" onclick="closeModal('modalEditEntidad')">Cancelar</button>
-          <button class="btn primary" id="btnSaveEntidad" type="submit">Guardar cambios</button>
-        </div>
-
-        <div class="error" id="editEntidadError" style="display:none"></div>
-      </form>
+  <div class="modal-backdrop" id="modalEditEntidad">
+    <div class="modal">
+  
+      <div class="modal-header">
+        <strong>Editar entidad</strong>
+        <button class="btn" type="button" onclick="closeModal('modalEditEntidad')">Cerrar</button>
       </div>
-      <div id="tabTecnicos" class="tab-panel">
-      <div class="panel" style="margin-top:14px">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
-          <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Personal técnico de la entidad</h3>
-          <button class="btn" type="button" id="btnAddTecnicoFromEdit">+ Añadir técnico</button>
+  
+      <div class="modal-body">
+  
+        <!-- Pestañas -->
+        <div class="tabs">
+          <button class="tab active" data-tab="tabDatos">Datos entidad</button>
+          <button class="tab" data-tab="tabExpedientes">Expedientes</button>
+          <button class="tab" data-tab="tabPersonal">Personal</button>
         </div>
-
-        <div style="overflow:auto;margin-top:10px;border:1px solid rgba(162,185,209,.35);border-radius:14px">
-          <table style="width:100%;border-collapse:collapse;font-size:13px">
-            <thead style="background:rgba(208,220,234,.55)">
+  
+        <!-- TAB 1 DATOS -->
+        <div class="tab-content active" id="tabDatos">
+  
+          <form class="form" id="formEditEntidad">
+  
+            <input type="hidden" id="ee_id">
+  
+            <div class="field">
+              <label>nombre</label>
+              <input id="ee_nombre" required>
+            </div>
+  
+            <div class="row4">
+  
+              <div class="field">
+                <label>cif</label>
+                <input id="ee_cif" required>
+              </div>
+  
+              <div class="field">
+                <label>dir3</label>
+                <input id="ee_dir3" required>
+              </div>
+  
+            </div>
+  
+            <div class="field">
+              <label>dirección</label>
+              <input id="ee_direccion" required>
+            </div>
+  
+            <div class="section-title">Documentación</div>
+  
+            <div class="checks">
+              <label class="check">
+                <input id="ee_pol_acc" type="checkbox">
+                <span>poliza_general_accidentes</span>
+              </label>
+  
+              <label class="check">
+                <input id="ee_pol_rc" type="checkbox">
+                <span>poliza_rc</span>
+              </label>
+  
+              <label class="check">
+                <input id="ee_rep" type="checkbox">
+                <span>representacion_legal</span>
+              </label>
+  
+              <label class="check">
+                <input id="ee_ficha" type="checkbox">
+                <span>ficha_tecnica</span>
+              </label>
+            </div>
+  
+            <div class="form-actions">
+              <button class="btn primary" id="btnSaveEntidad" type="submit">
+                Guardar cambios
+              </button>
+            </div>
+  
+            <div class="error" id="editEntidadError" style="display:none"></div>
+  
+          </form>
+  
+        </div>
+  
+  
+        <!-- TAB 2 EXPEDIENTES -->
+        <div class="tab-content" id="tabExpedientes">
+  
+          <div class="sub-section">
+  
+            <h4>Añadir expediente</h4>
+  
+            <div class="row4">
+  
+              <div class="field">
+                <label>expediente</label>
+                <input id="ex_expediente">
+              </div>
+  
+              <div class="field">
+                <label>convocatoria</label>
+                <select id="ex_convocatoria"></select>
+              </div>
+  
+              <div class="field" style="display:flex;align-items:end">
+                <button class="btn primary" onclick="createExpediente()">Añadir</button>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <table class="table">
+            <thead>
               <tr>
-                <th style="text-align:left;padding:10px">id</th>
-                <th style="text-align:left;padding:10px">nombre</th>
-                <th style="text-align:left;padding:10px">email</th>
-                <th style="text-align:left;padding:10px">telefono</th>
-                <th style="text-align:left;padding:10px">activo</th>
-                <th style="text-align:left;padding:10px">acciones</th>
+                <th>expediente</th>
+                <th>convocatoria</th>
+                <th></th>
               </tr>
             </thead>
-            <tbody id="tecnicosEntidadTbody">
-              <tr><td colspan="6" style="padding:10px;color:var(--muted)">Sin cargar.</td></tr>
-            </tbody>
+            <tbody id="expedientesTbody"></tbody>
           </table>
+  
         </div>
-      </div>
+  
+  
+        <!-- TAB 3 PERSONAL -->
+        <div class="tab-content" id="tabPersonal">
+  
+          <div class="sub-section">
+  
+            <h4>Añadir persona</h4>
+  
+            <div class="row4">
+  
+              <div class="field">
+                <label>nombre</label>
+                <input id="per_nombre">
+              </div>
+  
+              <div class="field">
+                <label>rol</label>
+                <select id="per_rol">
+                  <option value="COORDINADOR">COORDINADOR</option>
+                  <option value="TECNICO">TECNICO</option>
+                </select>
+              </div>
+  
+              <div class="field" style="display:flex;align-items:end">
+                <button class="btn primary" onclick="createPersona()">Añadir</button>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <table class="table">
+            <thead>
+              <tr>
+                <th>nombre</th>
+                <th>rol</th>
+                <th>activo</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="personalTbody"></tbody>
+          </table>
+  
         </div>
+  
       </div>
+  
     </div>
   </div>
-</div>  
+/*</div> */ 
 <div class="modal-backdrop" id="modalEditTecnico" aria-hidden="true">
   <div class="modal" role="dialog" aria-modal="true" aria-labelledby="editTecnicoTitle">
     <header>
@@ -1371,8 +1419,86 @@
     </div>
   </div>
 </div>
-  
+<div class="modal-backdrop" id="modalContactos" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="contactosTitle">
+    <header>
+      <h3 id="contactosTitle">Contactos de la persona</h3>
+      <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalContactos')">✕</button>
+    </header>
+
+    <div class="content">
+      <div class="panel" style="padding:14px;background:rgba(238,244,251,.65)">
+        <div style="font-size:12px;color:var(--muted);font-weight:800">Persona</div>
+        <div id="contactosPersonaLabel" style="font-weight:900;color:var(--ja-blue)"></div>
+      </div>
+
+      <div class="panel" style="margin-top:12px;background:rgba(238,244,251,.45)">
+        <h4 style="margin:0;color:var(--ja-blue);font-size:14px">Añadir contacto</h4>
+
+        <form class="form" id="formAddContacto" style="margin-top:10px">
+          <input id="co_id_personal_entidad" type="text" style="position:absolute;left:-9999px;top:-9999px" />
+
+          <div class="field">
+            <label for="co_tipo">tipo</label>
+            <select id="co_tipo" required>
+              <option value="EMAIL">EMAIL</option>
+              <option value="TELEFONO">TELEFONO</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="co_valor">valor</label>
+            <input id="co_valor" required placeholder="correo@dominio.es o 600123123" />
+          </div>
+
+          <div class="field" style="grid-column:1/-1">
+            <label for="co_obs">observaciones</label>
+            <input id="co_obs" placeholder="corporativo, móvil, fijo, personal..." />
+          </div>
+
+          <label class="check" style="grid-column:1/-1">
+            <input id="co_principal" type="checkbox" />
+            <span>Marcar como principal</span>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn primary" id="btnAddContacto" type="submit">Añadir contacto</button>
+          </div>
+
+          <div class="error" id="addContactoError" style="display:none"></div>
+        </form>
+      </div>
+
+      <div class="panel" style="margin-top:12px">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+          <h4 style="margin:0;color:var(--ja-blue);font-size:14px">Listado de contactos</h4>
+          <button class="btn" type="button" onclick="reloadCurrentContactos()">Actualizar</button>
+        </div>
+
+        <div style="overflow:auto;margin-top:10px;border:1px solid rgba(162,185,209,.35);border-radius:14px">
+          <table style="width:100%;border-collapse:collapse;font-size:13px">
+            <thead style="background:rgba(208,220,234,.55)">
+              <tr>
+                <th style="text-align:left;padding:10px">tipo</th>
+                <th style="text-align:left;padding:10px">valor</th>
+                <th style="text-align:left;padding:10px">principal</th>
+                <th style="text-align:left;padding:10px">observaciones</th>
+                <th style="text-align:left;padding:10px">acciones</th>
+              </tr>
+            </thead>
+            <tbody id="contactosTbody">
+              <tr><td colspan="5" style="padding:10px;color:var(--muted)">Sin cargar.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
   <script>
+    let currentEntidadId = '';
+    let currentPersonalEntidadId = '';
+    let currentPersonalEntidadNombre = '';
     /* =========================
        CONFIG: pon aquí tu API
        ========================= */
@@ -1733,6 +1859,8 @@
       wireTecnicos();
       wireEditEntidad();
       wireEditTecnico();
+      wireContactos();
+      wireContactoTipoHint();
     }
 
     function wireChangePassword(){
@@ -2121,29 +2249,26 @@
       });
     }    
     async function openEditEntidad(id_entidad){
-      if (!canEdit()) return toast('Permisos insuficientes');
     
-      try{
-        const data = await apiJsonp('entidades/get', { id_entidad });
-        const e = data.entidad;
+      const data = await apiJsonp('entidades/get',{id_entidad});
+      const e = data.entidad;
     
-        document.getElementById('ee_id').value = e.id_entidad || '';
-        document.getElementById('ee_nombre').value = e.nombre || '';
-        document.getElementById('ee_cif').value = e.cif || '';
-        document.getElementById('ee_dir3').value = e.dir3 || '';
-        document.getElementById('ee_direccion').value = e['dirección'] || '';
+      document.getElementById('ee_id').value = e.id_entidad;
+      document.getElementById('ee_nombre').value = e.nombre;
+      document.getElementById('ee_cif').value = e.cif;
+      document.getElementById('ee_dir3').value = e.dir3;
+      document.getElementById('ee_direccion').value = e['dirección'];
     
-        document.getElementById('ee_pol_acc').checked = String(e.poliza_general_accidentes).toLowerCase() === 'true' || e.poliza_general_accidentes === true;
-        document.getElementById('ee_pol_rc').checked = String(e.poliza_rc).toLowerCase() === 'true' || e.poliza_rc === true;
-        document.getElementById('ee_rep').checked = String(e.representacion_legal).toLowerCase() === 'true' || e.representacion_legal === true;
-        document.getElementById('ee_ficha').checked = String(e.ficha_tecnica).toLowerCase() === 'true' || e.ficha_tecnica === true;
+      document.getElementById('ee_pol_acc').checked = e.poliza_general_accidentes;
+      document.getElementById('ee_pol_rc').checked = e.poliza_rc;
+      document.getElementById('ee_rep').checked = e.representacion_legal;
+      document.getElementById('ee_ficha').checked = e.ficha_tecnica;
     
-        document.getElementById('editEntidadError').style.display = 'none';
-        openModal('modalEditEntidad');
+      await loadExpedientes(id_entidad);
+      await loadPersonal(id_entidad);
     
-      } catch(ex){
-        toast(ex.message || 'No se pudo abrir la entidad');
-      }
+      openModal('modalEditEntidad');
+    
     }
 
     function wireEditEntidad(){
@@ -2271,16 +2396,310 @@ function wireEditTecnico(){
     }
   });
 }    
-    function switchEntidadTab(tabId, btn){
-  document.querySelectorAll('#modalEditEntidad .tab-panel')
-    .forEach(p => p.classList.remove('active'));
+   function switchEntidadTab(tabId, btn){
+      document.querySelectorAll('#modalEditEntidad .tab-panel')
+        .forEach(p => p.classList.remove('active'));
+    
+      document.querySelectorAll('#modalEditEntidad .tab-btn')
+        .forEach(b => b.classList.remove('active'));
+    
+      document.getElementById(tabId).classList.add('active');
+      btn.classList.add('active');
+    }
+    document.addEventListener("click", function(e){
+    
+      if(!e.target.classList.contains("tab")) return;
+    
+      const tab = e.target.dataset.tab;
+    
+      document.querySelectorAll(".tab").forEach(t=>t.classList.remove("active"));
+      e.target.classList.add("active");
+    
+      document.querySelectorAll(".tab-content").forEach(c=>c.classList.remove("active"));
+      document.getElementById(tab).classList.add("active");
+    
+    });
 
-  document.querySelectorAll('#modalEditEntidad .tab-btn')
-    .forEach(b => b.classList.remove('active'));
+    async function loadExpedientes(id_entidad){
+    
+      const tbody = document.getElementById("expedientesTbody");
+    
+      const data = await apiJsonp("expedientes/list_by_entidad",{id_entidad});
+    
+      tbody.innerHTML = data.rows.map(r=>`
+        <tr>
+          <td>${escapeHtml(r.expediente)}</td>
+          <td>${escapeHtml(r.id_convocatoria)}</td>
+          <td>
+            <button class="btn danger" onclick="deleteExpediente('${r.expediente}')">
+              borrar
+            </button>
+          </td>
+        </tr>
+      `).join("");
+    
+    }    
+    async function createExpediente(){
+    
+      const id_entidad = document.getElementById("ee_id").value;
+    
+      const expediente = document.getElementById("ex_expediente").value.trim();
+      const id_convocatoria = document.getElementById("ex_convocatoria").value;
+    
+      await apiFetch("expedientes/create",{
+        method:"POST",
+        body:{
+          expediente,
+          id_entidad,
+          id_convocatoria
+        }
+      });
+    
+      document.getElementById("ex_expediente").value="";
+    
+      await loadExpedientes(id_entidad);
+    
+    }   
+    async function createPersona(){
+    
+      const id_entidad = document.getElementById("ee_id").value;
+    
+      const nombre = document.getElementById("per_nombre").value.trim();
+      const rol = document.getElementById("per_rol").value;
+    
+      await apiFetch("personal/create",{
+        method:"POST",
+        body:{
+          id_entidad,
+          nombre_y_apellidos:nombre,
+          rol
+        }
+      });
+    
+      document.getElementById("per_nombre").value="";
+    
+      await loadPersonal(id_entidad);
+    
+    }    
+    async function loadPersonal(id_entidad){
+    
+      const tbody = document.getElementById("personalTbody");
+    
+      const data = await apiJsonp("personal/list_by_entidad",{id_entidad});
+    
+      tbody.innerHTML = data.rows.map(p=>`
+      <tr>
+        <td>${escapeHtml(p.nombre_y_apellidos)}</td>
+        <td>${escapeHtml(p.rol)}</td>
+        <td>${(String(p.activo).toLowerCase() === 'true' || p.activo === true) ? '✔' : ''}</td>
+        <td>
+          <button class="btn" type="button"
+            onclick="openPersona('${escapeHtml(p.id_personal_entidad || '')}', '${escapeHtml(p.nombre_y_apellidos || '')}')">
+            contactos
+          </button>
+        </td>
+      </tr>
+      `).join("");
+    
+    }
+    async function openPersona(id_personal_entidad, nombre_persona){
+      currentPersonalEntidadId = String(id_personal_entidad || '').trim();
+      currentPersonalEntidadNombre = String(nombre_persona || '').trim();
+    
+      document.getElementById('co_id_personal_entidad').value = currentPersonalEntidadId;
+      document.getElementById('contactosPersonaLabel').textContent =
+        `${currentPersonalEntidadNombre} (${currentPersonalEntidadId})`;
+    
+      const err = document.getElementById('addContactoError');
+      if (err) err.style.display = 'none';
+    
+      const form = document.getElementById('formAddContacto');
+      if (form) {
+        form.reset();
+      }
+    
+      await loadContactos(currentPersonalEntidadId);
+      openModal('modalContactos');
+    }    
+    async function loadContactos(id_personal_entidad){
+      const tbody = document.getElementById('contactosTbody');
+      if (!tbody) return;
+    
+      tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--muted)">Cargando…</td></tr>`;
+    
+      try{
+        const data = await apiJsonp('contactos/list_by_personal', { id_personal_entidad });
+        const rows = data.rows || [];
+    
+        if (!rows.length){
+          tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--muted)">Sin contactos.</td></tr>`;
+          return;
+        }
+    
+        tbody.innerHTML = rows.map(c => {
+          const principal = (String(c.principal).toLowerCase() === 'true' || c.principal === true);
+    
+          return `
+            <tr>
+              <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(c.tipo || '')}</td>
+              <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(c.valor || '')}</td>
+              <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${principal ? 'Sí' : 'No'}</td>
+              <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(c.observaciones || '')}</td>
+              <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25);white-space:nowrap">
+                <button class="btn" type="button"
+                  onclick="setContactoPrincipal('${escapeHtml(c.id_contacto || '')}')">
+                  Principal
+                </button>
+                <button class="btn danger" type="button"
+                  onclick="deleteContacto('${escapeHtml(c.id_contacto || '')}')">
+                  Borrar
+                </button>
+              </td>
+            </tr>
+          `;
+        }).join('');
+    
+      } catch(ex){
+        tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--danger)">Error: ${escapeHtml(ex.message || 'No se pudo cargar')}</td></tr>`;
+      }
+    }    
+async function loadContactos(id_personal_entidad){
+  const tbody = document.getElementById('contactosTbody');
+  if (!tbody) return;
 
-  document.getElementById(tabId).classList.add('active');
-  btn.classList.add('active');
+  tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--muted)">Cargando…</td></tr>`;
+
+  try{
+    const data = await apiJsonp('contactos/list_by_personal', { id_personal_entidad });
+    const rows = data.rows || [];
+
+    if (!rows.length){
+      tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--muted)">Sin contactos.</td></tr>`;
+      return;
+    }
+
+    tbody.innerHTML = rows.map(c => {
+      const principal = (String(c.principal).toLowerCase() === 'true' || c.principal === true);
+
+      return `
+        <tr>
+          <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(c.tipo || '')}</td>
+          <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(c.valor || '')}</td>
+          <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${principal ? 'Sí' : 'No'}</td>
+          <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25)">${escapeHtml(c.observaciones || '')}</td>
+          <td style="padding:10px;border-top:1px solid rgba(162,185,209,.25);white-space:nowrap">
+            <button class="btn" type="button"
+              onclick="setContactoPrincipal('${escapeHtml(c.id_contacto || '')}')">
+              Principal
+            </button>
+            <button class="btn danger" type="button"
+              onclick="deleteContacto('${escapeHtml(c.id_contacto || '')}')">
+              Borrar
+            </button>
+          </td>
+        </tr>
+      `;
+    }).join('');
+
+  } catch(ex){
+    tbody.innerHTML = `<tr><td colspan="5" style="padding:10px;color:var(--danger)">Error: ${escapeHtml(ex.message || 'No se pudo cargar')}</td></tr>`;
+  }
 }
+async function reloadCurrentContactos(){
+  if (!currentPersonalEntidadId) return;
+  await loadContactos(currentPersonalEntidadId);
+}
+function wireContactos(){
+  const form = document.getElementById('formAddContacto');
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const err = document.getElementById('addContactoError');
+    const btn = document.getElementById('btnAddContacto');
+    err.style.display = 'none';
+    btn.disabled = true;
+
+    try{
+      const payload = {
+        id_personal_entidad: document.getElementById('co_id_personal_entidad').value.trim(),
+        tipo: document.getElementById('co_tipo').value,
+        valor: document.getElementById('co_valor').value.trim(),
+        principal: document.getElementById('co_principal').checked,
+        observaciones: document.getElementById('co_obs').value.trim()
+      };
+
+      if (!payload.id_personal_entidad) throw new Error('No hay persona seleccionada');
+
+      await apiFetch('contactos/create', {
+        method: 'POST',
+        body: payload
+      });
+
+      toast('Contacto añadido');
+      form.reset();
+      await loadContactos(payload.id_personal_entidad);
+
+    } catch(ex){
+      err.textContent = ex.message || 'No se pudo añadir el contacto';
+      err.style.display = 'block';
+    } finally {
+      btn.disabled = false;
+    }
+  });
+}
+    async function setContactoPrincipal(id_contacto){
+  if (!canEdit()) return toast('Permisos insuficientes');
+
+  try{
+    await apiFetch('contactos/update', {
+      method: 'POST',
+      body: {
+        id_contacto,
+        patch: { principal: true }
+      }
+    });
+
+    toast('Contacto principal actualizado');
+    await reloadCurrentContactos();
+
+  } catch(ex){
+    toast(ex.message || 'No se pudo actualizar el contacto');
+  }
+}
+async function deleteContacto(id_contacto){
+  if (!canDelete()) return toast('Permisos insuficientes');
+  if (!confirm('¿Borrar este contacto?')) return;
+
+  try{
+    await apiFetch('contactos/delete', {
+      method: 'POST',
+      body: { id_contacto }
+    });
+
+    toast('Contacto borrado');
+    await reloadCurrentContactos();
+
+  } catch(ex){
+    toast(ex.message || 'No se pudo borrar el contacto');
+  }
+}
+function wireContactoTipoHint(){
+  const tipo = document.getElementById('co_tipo');
+  const valor = document.getElementById('co_valor');
+  if (!tipo || !valor) return;
+
+  const refresh = () => {
+    valor.placeholder = tipo.value === 'EMAIL'
+      ? 'correo@dominio.es'
+      : '600123123';
+  };
+
+  tipo.addEventListener('change', refresh);
+  refresh();
+}
+    
   </script>
 </body>
 </html>
