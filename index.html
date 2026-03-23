@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>EPES Granada · Gestión</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  <div class="container">
+
+    <!-- TOP BAR -->
+    <header class="topbar" role="banner">
+      <a class="brand" href="#/" aria-label="Ir al inicio">
+        <img src="logo_epes.png" alt="Experiencias Profesionales para el Empleo" />
+        <div class="title">
+          <strong>Gestión EPES · Granada</strong>
+          <span>Servicio Andaluz de Empleo</span>
+        </div>
+      </a>
+
+      <div class="right" aria-label="Acciones superiores">
+        <div class="pill-status" title="Estado de sesión">
+          <span class="dot" aria-hidden="true"></span>
+          <span id="sessionText">Sin sesión</span>
+        </div>
+
+        <!-- Usuario -->
+        <button class="icon-btn" type="button" id="btnUser" aria-label="Perfil de usuario">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5Z"/>
+          </svg>
+        </button>
+
+        <!-- Configuración (dropdown) -->
+        <div class="dropdown">
+          <button class="icon-btn" type="button" id="btnSettings" aria-label="Configuración">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19.14 12.94a7.49 7.49 0 0 0 .05-.94 7.49 7.49 0 0 0-.05-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.3 7.3 0 0 0-1.63-.94l-.36-2.54A.5.5 0 0 0 13.9 1h-3.8a.5.5 0 0 0-.49.42l-.36 2.54a7.3 7.3 0 0 0-1.63.94l-2.39-.96a.5.5 0 0 0-.6.22L2.71 7.02a.5.5 0 0 0 .12.64l2.03 1.58a7.49 7.49 0 0 0-.05.94c0 .32.02.63.05.94L2.83 14.52a.5.5 0 0 0-.12.64l1.92 3.32a.5.5 0 0 0 .6.22l2.39-.96c.5.38 1.05.7 1.63.94l.36 2.54a.5.5 0 0 0 .49.42h3.8a.5.5 0 0 0 .49-.42l.36-2.54c.58-.24 1.13-.56 1.63-.94l2.39.96a.5.5 0 0 0 .6-.22l1.92-3.32a.5.5 0 0 0-.12-.64ZM12 15.5A3.5 3.5 0 1 1 15.5 12 3.5 3.5 0 0 1 12 15.5Z"/>
+            </svg>
+          </button>
+
+          <div class="menu" id="settingsMenu" role="menu" aria-label="Menú de configuración">
+            <div class="small">Altas / Catálogos</div>
+            <button class="item" id="miAltaPersonal" role="menuitem" onclick="routeTo('#/config/personal')">Alta personal SAE</button>
+            <button class="item" role="menuitem" onclick="routeTo('#/config/entidades')">Alta entidades</button>
+            <button class="item" role="menuitem" onclick="routeTo('#/config/convocatorias')">Alta convocatorias</button>
+            <div class="sep"></div>
+            <button class="item" role="menuitem" onclick="routeTo('#/config')">Abrir configuración</button>
+          </div>
+        </div>
+
+        <!-- Estadísticas -->
+        <button class="icon-btn" type="button" id="btnStats" aria-label="Estadísticas">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 19h16v2H4zM6 10h3v7H6zM11 6h3v11h-3zM16 12h3v5h-3z"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Encabezado">
+      <div>
+        <h1 id="pageH1">Panel principal</h1>
+        <p id="pageP">Cargando…</p>
+      </div>
+    </section>
+
+    <!-- ROUTE BAR -->
+    <section class="routebar" aria-label="Barra de ruta">
+      <div class="crumb">
+        <span class="badge" id="routeBadge">Inicio</span>
+        <span class="route-title" id="routeTitle">Menú</span>
+      </div>
+      <div class="route-actions" id="routeActions"></div>
+    </section>
+
+    <!-- VIEWS -->
+    <main>
+
+      <!-- LOGIN -->
+      <section class="view" id="view-login" aria-label="Acceso">
+        <div class="login-wrap">
+          <div class="login-card">
+            <h2 style="margin:0;color:var(--ja-blue)">Acceso</h2>
+            <p class="hint" style="margin-top:6px">
+              Introduce tu <strong>correo corporativo</strong> y tu <strong>clave</strong>.
+            </p>
+
+            <form class="form" id="loginForm">
+              <div class="field" style="grid-column:1/-1">
+                <label for="loginCorreo">correo_corp</label>
+                <input id="loginCorreo" type="email" autocomplete="username" placeholder="nombre@juntadeandalucia.es" required />
+              </div>
+              <div class="field" style="grid-column:1/-1">
+                <label for="loginClave">clave</label>
+                <input id="loginClave" type="password" autocomplete="current-password" placeholder="••••••••" required />
+              </div>
+
+              <div class="form-actions">
+                <button class="btn primary" id="loginBtn" type="submit">Entrar</button>
+              </div>
+
+              <div class="error" id="loginError" style="display:none"></div>
+              <div class="hint" style="margin-top:10px">
+                Si no puedes acceder, pide a un ADMIN que resetee tu clave desde “Alta personal SAE”.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOME -->
+      <section class="view" id="view-home" aria-label="Inicio">
+        <div class="grid3">
+          <div class="card link" onclick="routeTo('#/convenio')" role="button" tabindex="0">
+            <h2>+ Convenio</h2>
+            <p>Crear un convenio y asociarlo a entidad, empresa y centros de trabajo.</p>
+            <div class="meta">
+              <span class="tag"><strong>+</strong> acción rápida</span>
+              <span class="tag">firma / adendas</span>
+            </div>
+            <span class="accent" aria-hidden="true"></span>
+          </div>
+
+          <div class="card link" onclick="routeTo('#/practica')" role="button" tabindex="0">
+            <h2>+ Práctica</h2>
+            <p>Generar una práctica desde un convenio existente y vincularla a centros.</p>
+            <div class="meta">
+              <span class="tag"><strong>+</strong> acción rápida</span>
+              <span class="tag">anexos / fechas</span>
+            </div>
+            <span class="accent" aria-hidden="true"></span>
+          </div>
+
+          <div class="card link" onclick="routeTo('#/buscador')" role="button" tabindex="0">
+            <h2>Buscador</h2>
+            <p>Buscar convenios, prácticas, entidades, empresas y centros con filtros.</p>
+            <div class="meta">
+              <span class="tag">consulta</span>
+              <span class="tag">filtros</span>
+            </div>
+            <span class="accent" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONVENIO -->
+      <section class="view" id="view-convenio" aria-label="Alta convenio">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Alta de convenio</h2>
+          <p class="hint">Plantilla de formulario. Próximo paso: conectarlo a tu Apps Script (create/update).</p>
+
+          <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: guardar convenio');">
+            <div class="field">
+              <label for="c_id">id_convenio</label>
+              <input id="c_id" placeholder="C0001 (o automático)" />
+            </div>
+            <div class="field">
+              <label for="c_entidad">id_entidad</label>
+              <input id="c_entidad" placeholder="E0001" />
+            </div>
+            <div class="field">
+              <label for="c_cif">CIF empresa</label>
+              <input id="c_cif" placeholder="B12345678" />
+            </div>
+            <div class="field">
+              <label for="c_firma">fecha_firma_convenio</label>
+              <input id="c_firma" type="date" />
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="button" onclick="routeTo('#/')">Cancelar</button>
+              <button class="btn primary" type="submit">Guardar convenio</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- PRACTICA -->
+      <section class="view" id="view-practica" aria-label="Alta práctica">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Alta de práctica</h2>
+          <p class="hint">Plantilla de formulario. Próximo paso: conectar convenio + centros (tabla puente).</p>
+
+          <form class="form" onsubmit="event.preventDefault(); toast('Pendiente: guardar práctica');">
+            <div class="field">
+              <label for="p_id">id_practica</label>
+              <input id="p_id" placeholder="P0001 (o automático)" />
+            </div>
+            <div class="field">
+              <label for="p_convenio">id_convenio</label>
+              <input id="p_convenio" placeholder="C0001" />
+            </div>
+            <div class="field">
+              <label for="p_inicio">fecha_inicio_practica</label>
+              <input id="p_inicio" type="date" />
+            </div>
+            <div class="field">
+              <label for="p_fin">fecha_fin_practica</label>
+              <input id="p_fin" type="date" />
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="button" onclick="routeTo('#/')">Cancelar</button>
+              <button class="btn primary" type="submit">Guardar práctica</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- BUSCADOR -->
+      <section class="view" id="view-buscador" aria-label="Buscador">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Buscador</h2>
+          <p class="hint">Búsqueda unificada. Próximo paso: llamar a <code>GET path=list</code> con filtros.</p>
+
+          <div class="form" style="margin-top:14px">
+            <div class="field">
+              <label for="b_tipo">Tipo</label>
+              <select id="b_tipo">
+                <option value="Convenios">Convenios</option>
+                <option value="Practicas">Prácticas</option>
+                <option value="Entidades">Entidades</option>
+                <option value="Empresas">Empresas</option>
+                <option value="Centros_de_Trabajo">Centros de trabajo</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="b_q">Búsqueda</label>
+              <input id="b_q" placeholder="CIF, id, nombre, expediente..." />
+            </div>
+
+            <div class="form-actions">
+              <button class="btn" type="button" onclick="toast('Pendiente: ejecutar búsqueda')">Buscar</button>
+            </div>
+          </div>
+
+          <div class="hint" style="margin-top:14px">
+            Resultado: tabla con acciones según perfil (CONSULTA / GESTOR_EDITA / GESTOR_BORRA).
+          </div>
+        </div>
+      </section>
+
+      <!-- CONFIG -->
+      <section class="view" id="view-config" aria-label="Configuración">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Configuración</h2>
+          <p class="hint">Altas y mantenimiento. Algunas opciones dependen del perfil.</p>
+
+          <div class="grid3" style="margin-top:14px">
+            <div class="card link" id="cardAltaPersonal" onclick="routeTo('#/config/personal')" role="button" tabindex="0">
+              <h2>Alta personal SAE</h2>
+              <p>Crear usuarios, asignar perfil y resetear contraseña. (Solo ADMIN)</p>
+              <span class="accent" aria-hidden="true"></span>
+            </div>
+            <div class="card link" onclick="routeTo('#/config/entidades')" role="button" tabindex="0">
+              <h2>Alta entidades</h2>
+              <p>Registrar entidades y su personal técnico asociado.</p>
+              <span class="accent" aria-hidden="true"></span>
+            </div>
+            <div class="card link" onclick="routeTo('#/config/convocatorias')" role="button" tabindex="0">
+              <h2>Alta convocatorias</h2>
+              <p>Crear y mantener convocatorias.</p>
+              <span class="accent" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONFIG: PERSONAL -->
+      <section class="view" id="view-config-personal" aria-label="Alta personal SAE">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Alta personal SAE</h2>
+          <p class="hint">
+            Solo <strong>ADMIN</strong>. Crear usuarios y resetear contraseñas (salt/hash automáticos en servidor).
+          </p>
+      
+          <!-- CREAR USUARIO -->
+          <div class="panel" style="margin-top:14px;background:rgba(238,244,251,.55)">
+            <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Crear usuario</h3>
+      
+            <form class="form" id="formCreateUser">      
+              <div class="field">
+                <label for="u_correo">correo_corp (único)</label>
+                <input id="u_correo" type="email" placeholder="nombre@juntadeandalucia.es" required />
+              </div>
+      
+              <div class="field">
+                <label for="u_nombre">nombre_y_apellidos</label>
+                <input id="u_nombre" placeholder="Nombre Apellidos" required />
+              </div>
+      
+              <div class="field">
+                <label for="u_perfil">perfil</label>
+                <select id="u_perfil" required>
+                  <option>CONSULTA</option>
+                  <option>GESTOR_EDITA</option>
+                  <option>GESTOR_BORRA</option>
+                  <option>ADMIN</option>
+                </select>
+              </div>
+      
+              <div class="field">
+                <label for="u_clave">clave temporal</label>
+                <input id="u_clave" type="password" autocomplete="new-password" placeholder="Temporal123!" required>
+              </div>
+      
+              <div class="field">
+                <label for="u_verif">verificado</label>
+                <select id="u_verif" required>
+                  <option value="true">true</option>
+                  <option value="false">false</option>
+                </select>
+              </div>
+      
+              <div class="form-actions">
+                <button class="btn" type="button" onclick="routeTo('#/config')">Volver</button>
+                <button class="btn primary" id="btnCreateUser" type="submit">Crear usuario</button>
+              </div>
+      
+              <div class="error" id="createUserError" style="display:none"></div>
+            </form>
+          </div>
+      
+          <!-- RESET PASSWORD -->
+          <div class="panel" style="margin-top:14px;background:rgba(238,244,251,.55)">
+            <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Resetear contraseña</h3>
+      
+            <form class="form" id="formResetPass">
+              <div class="field">
+                <label for="r_correo">correo_corp</label>
+                <input id="r_correo" type="email" placeholder="usuario@juntadeandalucia.es" required />
+              </div>
+      
+              <div class="field">
+                <label for="r_clave">nueva clave</label>
+                <input id="r_clave" type="password" autocomplete="new-password" placeholder="Nueva123!" required>
+              </div>
+      
+              <div class="field">
+                <label for="r_salt">renovar_salt</label>
+                <select id="r_salt">
+                  <option value="true">true (recomendado)</option>
+                  <option value="false">false</option>
+                </select>
+              </div>
+      
+              <div class="form-actions">
+                <button class="btn" id="btnResetPass" type="submit">Resetear</button>
+              </div>
+      
+              <div class="error" id="resetPassError" style="display:none"></div>
+            </form>
+          </div>
+      
+          <!-- LISTADO -->
+          <div class="panel" style="margin-top:14px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+              <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Usuarios registrados</h3>
+              <button class="btn" type="button" onclick="loadUsers()">Actualizar lista</button>
+            </div>
+      
+            <div class="hint" style="margin-top:8px">
+              Consejo: crea usuarios con clave temporal y luego fuerza reset si lo necesitas.
+            </div>
+      
+            <div style="overflow:auto;margin-top:10px;border:1px solid rgba(162,185,209,.35);border-radius:14px">
+              <table style="width:100%;border-collapse:collapse;font-size:13px">
+                <thead style="background:rgba(208,220,234,.55)">
+                  <tr>
+                    <th style="text-align:left;padding:10px">id</th>
+                    <th style="text-align:left;padding:10px">nombre</th>
+                    <th style="text-align:left;padding:10px">correo</th>
+                    <th style="text-align:left;padding:10px">perfil</th>
+                    <th style="text-align:left;padding:10px">verificado</th>
+                  </tr>
+                </thead>
+                <tbody id="usersTbody">
+                  <tr><td colspan="5" style="padding:10px;color:var(--muted)">Pulsa “Actualizar lista”.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+      <!-- CONFIG: ENTIDADES -->
+      <section class="view" id="view-config-entidades" aria-label="Alta entidades">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Alta entidades</h2>
+          <p class="hint">Crear, editar y (si procede) eliminar entidades.</p>
+      
+          <!-- CREAR ENTIDAD -->
+          <div class="panel" style="margin-top:14px;background:rgba(238,244,251,.55)">
+            <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Crear entidad</h3>
+      
+              <form class="form" id="formCreateEntidad">
+              
+                <div class="field" style="grid-column:1/-1">
+                  <label for="e_nombre">nombre</label>
+                  <input id="e_nombre" required />
+                </div>
+              
+                <div class="row4">
+                  <div class="field">
+                    <label for="e_cif">cif</label>
+                    <input id="e_cif" required />
+                  </div>
+              
+                  <div class="field">
+                    <label for="e_dir3">dir3</label>
+                    <input id="e_dir3" required />
+                  </div>
+                </div>
+              
+                <div class="field" style="grid-column:1/-1">
+                  <label for="e_direccion">dirección</label>
+                  <input id="e_direccion" required />
+                </div>
+              
+                <div class="section-title">Documentación / Requisitos</div>
+                <div class="checks">
+                  <label class="check">
+                    <input id="e_pol_acc" type="checkbox" />
+                    <span>poliza_general_accidentes</span>
+                  </label>
+              
+                  <label class="check">
+                    <input id="e_pol_rc" type="checkbox" />
+                    <span>poliza_rc</span>
+                  </label>
+              
+                  <label class="check">
+                    <input id="e_rep" type="checkbox" />
+                    <span>representacion_legal</span>
+                  </label>
+              
+                  <label class="check">
+                    <input id="e_ficha" type="checkbox" />
+                    <span>ficha_tecnica</span>
+                  </label>
+                </div>
+              
+                <div class="form-actions">
+                  <button class="btn" type="button" onclick="routeTo('#/config')">Volver</button>
+                  <button class="btn primary" id="btnCreateEntidad" type="submit">Crear entidad</button>
+                </div>
+              
+                <div class="error" id="createEntidadError" style="display:none"></div>
+              </form>
+          </div>
+      
+          <!-- LISTADO -->
+          <div class="panel" style="margin-top:14px">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+              <h3 style="margin:0;color:var(--ja-blue);font-size:15px">Entidades registradas</h3>
+              <button class="btn" type="button" onclick="loadEntidades()">Actualizar lista</button>
+            </div>
+      
+            <div style="overflow:auto;margin-top:10px;border:1px solid rgba(162,185,209,.35);border-radius:14px">
+              <table style="width:100%;border-collapse:collapse;font-size:13px">
+                <thead style="background:rgba(208,220,234,.55)">
+                  <tr>
+                    <th style="text-align:left;padding:10px">id</th>
+                    <th style="text-align:left;padding:10px">nombre</th>
+                    <th style="text-align:left;padding:10px">cif</th>
+                    <th style="text-align:left;padding:10px">acciones</th>
+                  </tr>
+                </thead>
+                <tbody id="entTbody">
+                  <tr><td colspan="5" style="padding:10px;color:var(--muted)">Pulsa “Actualizar lista”.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+
+      <!-- CONFIG: CONVOCATORIAS -->
+      <section class="view" id="view-config-convocatorias" aria-label="Alta convocatorias">
+        <div class="panel">
+          <h2 style="margin:0;color:var(--ja-blue)">Alta convocatorias</h2>
+          <p class="hint">Pendiente de conectar: CRUD sobre hoja <code>Convocatorias</code>.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <div class="footer">
+      <span>EPES · SAE · Junta de Andalucía</span>
+    </div>
+  </div>
+
+  <!-- MODAL PERFIL -->
+  <div class="modal-backdrop" id="modalProfile" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
+      <header>
+        <h3 id="profileTitle">Perfil de usuario</h3>
+        <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalProfile')">✕</button>
+      </header>
+      <div class="content">
+        <p class="hint" style="margin-top:0">
+          Datos de sesión (en MVP: lectura) y cierre de sesión.
+        </p>
+
+        <div class="panel" style="padding:14px;background:rgba(238,244,251,.65)">
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <div style="flex:1;min-width:220px">
+              <div style="font-size:12px;color:var(--muted);font-weight:800">Correo</div>
+              <div id="profCorreo" style="font-weight:900;color:var(--ja-blue)"></div>
+            </div>
+            <div style="flex:1;min-width:220px">
+              <div style="font-size:12px;color:var(--muted);font-weight:800">Perfil</div>
+              <div id="profPerfil" style="font-weight:900;color:var(--ja-blue)"></div>
+            </div>
+          </div>
+          <div style="margin-top:10px">
+            <div style="font-size:12px;color:var(--muted);font-weight:800">Nombre</div>
+            <div id="profNombre" style="font-weight:900;color:var(--ja-blue)"></div>
+          </div>
+        </div>
+        <div class="panel" style="padding:14px;margin-top:12px;background:rgba(238,244,251,.65)">
+          <h4 style="margin:0;color:var(--ja-blue);font-size:14px">Cambiar contraseña</h4>
+        
+          <form class="form" id="formChangePass" style="margin-top:10px">
+            <input id="cp_user" type="text" autocomplete="username" style="position:absolute;left:-9999px;top:-9999px" />            
+            <div class="field" style="grid-column:1/-1">
+              <label for="cp_actual">Clave actual</label>
+              <input id="cp_actual" type="password" autocomplete="current-password" required />
+            </div>
+        
+            <div class="field">
+              <label for="cp_nueva">Nueva clave</label>
+              <input id="cp_nueva" type="password" autocomplete="new-password" required />
+            </div>
+        
+            <div class="field">
+              <label for="cp_nueva2">Confirmar nueva clave</label>
+              <input id="cp_nueva2" type="password" autocomplete="new-password" required />
+            </div>
+        
+            <div class="form-actions">
+              <button class="btn primary" id="btnChangePass" type="submit">Guardar nueva clave</button>
+            </div>
+        
+            <div class="error" id="changePassError" style="display:none"></div>
+          </form>
+        </div>
+        <div class="form-actions" style="margin-top:12px">
+          <button class="btn" type="button" onclick="closeModal('modalProfile')">Cerrar</button>
+          <button class="btn danger" type="button" onclick="logout()">Cerrar sesión</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL STATS -->
+  <div class="modal-backdrop" id="modalStats" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="statsTitle">
+      <header>
+        <h3 id="statsTitle">Estadísticas</h3>
+        <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalStats')">✕</button>
+      </header>
+      <div class="content">
+        <p class="hint" style="margin-top:0">
+          Aquí irán KPIs: nº convenios, nº prácticas activas, por convocatoria, por entidad, estados, errores, etc.
+        </p>
+        <div class="grid3" style="grid-template-columns: repeat(3, minmax(0,1fr)); margin-top:14px">
+          <div class="card" style="min-height:auto">
+            <h2 style="margin:0">Convenios</h2>
+            <p class="hint">Pendiente de datos</p>
+          </div>
+          <div class="card" style="min-height:auto">
+            <h2 style="margin:0">Prácticas</h2>
+            <p class="hint">Pendiente de datos</p>
+          </div>
+          <div class="card" style="min-height:auto">
+            <h2 style="margin:0">Errores</h2>
+            <p class="hint">Pendiente de datos</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="modalTecnico" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tecTitle">
+      <header>
+        <h3 id="tecTitle">Añadir personal técnico</h3>
+        <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalTecnico')">✕</button>
+      </header>
+      <div class="content">
+        <div class="panel" style="padding:14px;background:rgba(238,244,251,.65)">
+          <div style="font-size:12px;color:var(--muted);font-weight:800">Entidad</div>
+          <div id="tecEntidadLabel" style="font-weight:900;color:var(--ja-blue)"></div>
+        </div>
+  
+        <form class="form" id="formAddTecnico" style="margin-top:12px">
+          <input id="tec_id_entidad" type="text" style="position:absolute;left:-9999px;top:-9999px" />
+  
+          <div class="field" style="grid-column:1/-1">
+            <label for="tec_nombre">nombre_y_apellidos</label>
+            <input id="tec_nombre" required />
+          </div>
+  
+          <div class="field">
+            <label for="tec_email">email</label>
+            <input id="tec_email" type="email" />
+          </div>
+  
+          <div class="field">
+            <label for="tec_tel">telefono</label>
+            <input id="tec_tel" />
+          </div>
+          <label class="check" style="grid-column:1/-1">
+            <input id="tec_activo" type="checkbox" checked />
+            <span>Activo</span>
+          </label>
+          <div class="hint" style="grid-column:1/-1;margin-top:0">
+            Al añadir personal técnico, el campo <strong>ficha_tecnica</strong> se desmarca automáticamente en la entidad.
+          </div>
+  
+          <div class="form-actions">
+            <button class="btn" type="button" onclick="closeModal('modalTecnico')">Cancelar</button>
+            <button class="btn primary" id="btnAddTecnico" type="submit">Añadir</button>
+          </div>
+  
+          <div class="error" id="addTecnicoError" style="display:none"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop" id="modalEditEntidad">
+    <div class="modal">
+  
+      <div class="modal-header">
+        <strong>Editar entidad</strong>
+        <button class="btn" type="button" onclick="closeModal('modalEditEntidad')">Cerrar</button>
+      </div>
+  
+      <div class="modal-body">
+  
+        <!-- Pestañas -->
+        <div class="tabs">
+          <button class="tab active" data-tab="tabDatos">Datos entidad</button>
+          <button class="tab" data-tab="tabExpedientes">Expedientes</button>
+          <button class="tab" data-tab="tabPersonal">Personal</button>
+        </div>
+  
+        <!-- TAB 1 DATOS -->
+        <div class="tab-content active" id="tabDatos">
+  
+          <form class="form" id="formEditEntidad">
+  
+            <input type="hidden" id="ee_id">
+  
+            <div class="field">
+              <label>nombre</label>
+              <input id="ee_nombre" required>
+            </div>
+  
+            <div class="row4">
+  
+              <div class="field">
+                <label>cif</label>
+                <input id="ee_cif" required>
+              </div>
+  
+              <div class="field">
+                <label>dir3</label>
+                <input id="ee_dir3" required>
+              </div>
+  
+            </div>
+  
+            <div class="field">
+              <label>dirección</label>
+              <input id="ee_direccion" required>
+            </div>
+  
+            <div class="section-title">Documentación</div>
+  
+            <div class="checks">
+              <label class="check">
+                <input id="ee_pol_acc" type="checkbox">
+                <span>poliza_general_accidentes</span>
+              </label>
+  
+              <label class="check">
+                <input id="ee_pol_rc" type="checkbox">
+                <span>poliza_rc</span>
+              </label>
+  
+              <label class="check">
+                <input id="ee_rep" type="checkbox">
+                <span>representacion_legal</span>
+              </label>
+  
+              <label class="check">
+                <input id="ee_ficha" type="checkbox">
+                <span>ficha_tecnica</span>
+              </label>
+            </div>
+  
+            <div class="form-actions">
+              <button class="btn primary" id="btnSaveEntidad" type="submit">
+                Guardar cambios
+              </button>
+            </div>
+  
+            <div class="error" id="editEntidadError" style="display:none"></div>
+  
+          </form>
+  
+        </div>
+  
+  
+        <!-- TAB 2 EXPEDIENTES -->
+        <div class="tab-content" id="tabExpedientes">
+  
+          <div class="sub-section">
+  
+            <h4>Añadir expediente</h4>
+  
+            <div class="row4">
+  
+              <div class="field">
+                <label>expediente</label>
+                <input id="ex_expediente">
+              </div>
+  
+              <div class="field">
+                <label>convocatoria</label>
+                <select id="ex_convocatoria"></select>
+              </div>
+  
+              <div class="field" style="display:flex;align-items:end">
+                <button class="btn primary" onclick="createExpediente()">Añadir</button>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <table class="table">
+            <thead>
+              <tr>
+                <th>expediente</th>
+                <th>convocatoria</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="expedientesTbody"></tbody>
+          </table>
+  
+        </div>
+  
+  
+        <!-- TAB 3 PERSONAL -->
+        <div class="tab-content" id="tabPersonal">
+  
+          <div class="sub-section">
+  
+            <h4>Añadir persona</h4>
+  
+            <div class="row4">
+  
+              <div class="field">
+                <label>nombre</label>
+                <input id="per_nombre">
+              </div>
+  
+              <div class="field">
+                <label>rol</label>
+                <select id="per_rol">
+                  <option value="COORDINADOR">COORDINADOR</option>
+                  <option value="TECNICO">TECNICO</option>
+                </select>
+              </div>
+  
+              <div class="field" style="display:flex;align-items:end">
+                <button class="btn primary" onclick="createPersona()">Añadir</button>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <table class="table">
+            <thead>
+              <tr>
+                <th>nombre</th>
+                <th>rol</th>
+                <th>activo</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="personalTbody"></tbody>
+          </table>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+  </div>
+</div> 
+<div class="modal-backdrop" id="modalEditTecnico" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="editTecnicoTitle">
+    <header>
+      <h3 id="editTecnicoTitle">Editar personal técnico</h3>
+      <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalEditTecnico')">✕</button>
+    </header>
+    <div class="content">
+      <form class="form" id="formEditTecnico">
+        <input id="et_id" type="text" style="position:absolute;left:-9999px;top:-9999px" />
+
+        <div class="field" style="grid-column:1/-1">
+          <label for="et_nombre">nombre_y_apellidos</label>
+          <input id="et_nombre" required />
+        </div>
+
+        <div class="field">
+          <label for="et_email">email</label>
+          <input id="et_email" type="email" />
+        </div>
+
+        <div class="field">
+          <label for="et_tel">telefono</label>
+          <input id="et_tel" />
+        </div>
+
+        <label class="check" style="grid-column:1/-1">
+          <input id="et_activo" type="checkbox" />
+          <span>activo</span>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn" type="button" onclick="closeModal('modalEditTecnico')">Cancelar</button>
+          <button class="btn primary" id="btnSaveTecnico" type="submit">Guardar técnico</button>
+        </div>
+
+        <div class="error" id="editTecnicoError" style="display:none"></div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="modal-backdrop" id="modalContactos" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="contactosTitle">
+    <header>
+      <h3 id="contactosTitle">Contactos de la persona</h3>
+      <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalContactos')">✕</button>
+    </header>
+
+    <div class="content">
+      <div class="panel" style="padding:14px;background:rgba(238,244,251,.65)">
+        <div style="font-size:12px;color:var(--muted);font-weight:800">Persona</div>
+        <div id="contactosPersonaLabel" style="font-weight:900;color:var(--ja-blue)"></div>
+      </div>
+
+      <div class="panel" style="margin-top:12px;background:rgba(238,244,251,.45)">
+        <h4 style="margin:0;color:var(--ja-blue);font-size:14px">Añadir contacto</h4>
+
+        <form class="form" id="formAddContacto" style="margin-top:10px">
+          <input id="co_id_personal_entidad" type="text" style="position:absolute;left:-9999px;top:-9999px" />
+
+          <div class="field">
+            <label for="co_tipo">tipo</label>
+            <select id="co_tipo" required>
+              <option value="EMAIL">EMAIL</option>
+              <option value="TELEFONO">TELEFONO</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="co_valor">valor</label>
+            <input id="co_valor" required placeholder="correo@dominio.es o 600123123" />
+          </div>
+
+          <div class="field" style="grid-column:1/-1">
+            <label for="co_obs">observaciones</label>
+            <input id="co_obs" placeholder="corporativo, móvil, fijo, personal..." />
+          </div>
+
+          <label class="check" style="grid-column:1/-1">
+            <input id="co_principal" type="checkbox" />
+            <span>Marcar como principal</span>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn primary" id="btnAddContacto" type="submit">Añadir contacto</button>
+          </div>
+
+          <div class="error" id="addContactoError" style="display:none"></div>
+        </form>
+      </div>
+
+      <div class="panel" style="margin-top:12px">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+          <h4 style="margin:0;color:var(--ja-blue);font-size:14px">Listado de contactos</h4>
+          <button class="btn" type="button" onclick="reloadCurrentContactos()">Actualizar</button>
+        </div>
+
+        <div style="overflow:auto;margin-top:10px;border:1px solid rgba(162,185,209,.35);border-radius:14px">
+          <table style="width:100%;border-collapse:collapse;font-size:13px">
+            <thead style="background:rgba(208,220,234,.55)">
+              <tr>
+                <th style="text-align:left;padding:10px">tipo</th>
+                <th style="text-align:left;padding:10px">valor</th>
+                <th style="text-align:left;padding:10px">principal</th>
+                <th style="text-align:left;padding:10px">observaciones</th>
+                <th style="text-align:left;padding:10px">acciones</th>
+              </tr>
+            </thead>
+            <tbody id="contactosTbody">
+              <tr><td colspan="5" style="padding:10px;color:var(--muted)">Sin cargar.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+<div class="modal-backdrop" id="modalEditPersona" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="editPersonaTitle">
+    <header>
+      <h3 id="editPersonaTitle">Editar persona</h3>
+      <button class="close" type="button" aria-label="Cerrar" onclick="closeModal('modalEditPersona')">✕</button>
+    </header>
+
+    <div class="content">
+      <form class="form" id="formEditPersona">
+        <input id="ep_id" type="text" style="position:absolute;left:-9999px;top:-9999px" />
+
+        <div class="field" style="grid-column:1/-1">
+          <label for="ep_nombre">nombre_y_apellidos</label>
+          <input id="ep_nombre" required />
+        </div>
+
+        <div class="field">
+          <label for="ep_rol">rol</label>
+          <select id="ep_rol" required>
+            <option value="COORDINADOR">COORDINADOR</option>
+            <option value="TECNICO">TECNICO</option>
+          </select>
+        </div>
+
+        <label class="check" style="grid-column:1/-1">
+          <input id="ep_activo" type="checkbox" />
+          <span>activo</span>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn" type="button" onclick="closeModal('modalEditPersona')">Cancelar</button>
+          <button class="btn primary" id="btnSavePersona" type="submit">Guardar persona</button>
+        </div>
+
+        <div class="error" id="editPersonaError" style="display:none"></div>
+      </form>
+    </div>
+  </div>
+</div>  
+  <script src="js/script_completo.js"></script>
+</body>
+</html>
+  
