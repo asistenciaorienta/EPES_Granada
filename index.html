@@ -214,37 +214,31 @@
       </section>
 
       <!-- BUSCADOR -->
-      <section class="view" id="view-buscador" aria-label="Buscador">
-        <div class="panel">
-          <h2 style="margin:0;color:var(--ja-blue)">Buscador</h2>
-          <p class="hint">Búsqueda unificada. Próximo paso: llamar a <code>GET path=list</code> con filtros.</p>
+    <!-- BUSCADOR -->
+<section class="view" id="view-buscador" aria-label="Buscador">
+  <div class="panel">
+    <h2 style="margin:0;color:var(--ja-blue)">Buscador</h2>
+    <p class="hint">Buscar empresa por CIF.</p>
 
-          <div class="form" style="margin-top:14px">
-            <div class="field">
-              <label for="b_tipo">Tipo</label>
-              <select id="b_tipo">
-                <option value="Convenios">Convenios</option>
-                <option value="Practicas">Prácticas</option>
-                <option value="Entidades">Entidades</option>
-                <option value="Empresas">Empresas</option>
-                <option value="Centros_de_Trabajo">Centros de trabajo</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="b_q">Búsqueda</label>
-              <input id="b_q" placeholder="CIF, id, nombre, expediente..." />
-            </div>
+    <div class="form" style="margin-top:14px">
+      <div class="field">
+        <label for="b_q">CIF</label>
+        <input id="b_q" placeholder="Introduce CIF (ej: B12345678)" />
+      </div>
 
-            <div class="form-actions">
-              <button class="btn" type="button" onclick="toast('Pendiente: ejecutar búsqueda')">Buscar</button>
-            </div>
-          </div>
+      <div class="form-actions">
+        <button class="btn primary" type="button" onclick="buscarEmpresa()">Buscar</button>
+      </div>
+    </div>
 
-          <div class="hint" style="margin-top:14px">
-            Resultado: tabla con acciones según perfil (CONSULTA / GESTOR_EDITA / GESTOR_BORRA).
-          </div>
-        </div>
-      </section>
+    <!-- RESULTADO -->
+    <div id="resultadoBusqueda" class="panel" style="margin-top:14px;display:none">
+      <h3 style="margin:0;color:var(--ja-blue)">Resultado</h3>
+      <p id="resultadoTexto" class="hint" style="margin-top:8px"></p>
+    </div>
+
+  </div>
+</section>
 
       <!-- CONFIG -->
       <section class="view" id="view-config" aria-label="Configuración">
