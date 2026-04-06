@@ -1,3 +1,42 @@
+let conveniosData = [];
+
+// Cargar JSON al iniciar
+async function cargarConvenios() {
+  try {
+    const response = await fetch('convenios.json');
+    conveniosData = await response.json();
+  } catch (error) {
+    console.error('Error cargando convenios.json:', error);
+  }
+}
+
+// Ejecutar al cargar la app
+document.addEventListener("DOMContentLoaded", cargarConvenios);
+
+
+// Buscar por CIF
+function buscarEmpresa() {
+  const cifInput = document.getElementById("b_q").value.trim().toUpperCase();
+  const resultadoDiv = document.getElementById("resultadoBusqueda");
+  const resultadoTexto = document.getElementById("resultadoTexto");
+
+  if (!cifInput) {
+    resultadoTexto.textContent = "Introduce un CIF.";
+    resultadoDiv.style.display = "block";
+    return;
+  }
+
+  const resultado = conveniosData.find(item => item.cif.toUpperCase() === cifInput);
+
+  if (resultado) {
+    resultadoTexto.textContent = "Empresa: " + resultado.nombre;
+  } else {
+    resultadoTexto.textContent = "No se encontró ninguna empresa con ese CIF.";
+  }
+
+  resultadoDiv.style.display = "block";
+}
+
 
     let currentEntidadId = '';
     let currentPersonalEntidadId = '';
