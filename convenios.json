@@ -1,3 +1,4 @@
 [
-  
+  { "cif": "B12345678", "nombre": "Empresa 1" },
+  { "cif": "A87654321", "nombre": "Empresa 2" }
 ]
