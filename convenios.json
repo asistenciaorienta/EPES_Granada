@@ -1,4 +1,12 @@
 [
-  { "cif": "B12345678", "nombre": "Empresa 1" },
-  { "cif": "A87654321", "nombre": "Empresa 2" }
+  {
+    "cif": "B12345678",
+    "nombre": "Empresa 1",
+    "convocatoria": "2026"
+  },
+  {
+    "cif": "A87654321",
+    "nombre": "Empresa 2",
+    "convocatoria": "2025"
+  }
 ]
