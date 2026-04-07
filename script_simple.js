@@ -75,8 +75,8 @@ function buscarEmpresa() {
     return;
   }
 
-  if (cifInput.length !== 9 || !esCIFValido(cifInput)) {
-    resultadoTexto.textContent = "Formato de CIF no válido. El CIF debe tener 9 caracteres (letra + 7/8 números + control).";
+  if (!validarDocumento(cifInput)) {
+    resultadoTexto.textContent = "CIF/NIF/NIE no válido.";
     resultadoDiv.style.display = "block";
     return;
   }
@@ -122,6 +122,68 @@ function normalizarCIF(valor) {
   limpio = limpio.substring(0, 9);
 
   return limpio;
+}
+
+function validarDocumento(doc) {
+  doc = doc.toUpperCase();
+
+  // NIF (8 números + letra)
+  if (/^\d{8}[A-Z]$/.test(doc)) {
+    const letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+    const numero = parseInt(doc.substring(0, 8), 10);
+    const letra = doc[8];
+    return letras[numero % 23] === letra;
+  }
+
+  // NIE (X,Y,Z + 7 números + letra)
+  if (/^[XYZ]\d{7}[A-Z]$/.test(doc)) {
+    let numero = doc.replace('X', '0').replace('Y', '1').replace('Z', '2');
+    return validarDocumento(numero);
+  }
+
+  // CIF (empresa)
+  if (/^[A-Z]\d{7}[A-Z0-9]$/.test(doc)) {
+
+    const letraInicial = doc[0];
+    const numeros = doc.substring(1, 8);
+    const control = doc[8];
+
+    let sumaPares = 0;
+    let sumaImpares = 0;
+
+    for (let i = 0; i < numeros.length; i++) {
+      let n = parseInt(numeros[i]);
+
+      if (i % 2 === 0) {
+        // posiciones impares (0-index)
+        let mult = n * 2;
+        sumaImpares += Math.floor(mult / 10) + (mult % 10);
+      } else {
+        sumaPares += n;
+      }
+    }
+
+    const total = sumaPares + sumaImpares;
+    const unidad = total % 10;
+    const digitoControl = (10 - unidad) % 10;
+
+    const letrasControl = "JABCDEFGHI";
+    const letraControl = letrasControl[digitoControl];
+
+    // Tipos de CIF
+    if ("ABEH".includes(letraInicial)) {
+      return control == digitoControl;
+    }
+
+    if ("KPQS".includes(letraInicial)) {
+      return control == letraControl;
+    }
+
+    // Resto: puede ser ambos
+    return control == digitoControl || control == letraControl;
+  }
+
+  return false;
 }
 
 
