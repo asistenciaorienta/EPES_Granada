@@ -248,25 +248,29 @@ function extraerCentros(resultados) {
   const centros = [];
 
   resultados.forEach(item => {
+
     if (Array.isArray(item.centros)) {
       item.centros.forEach(c => {
-        if (typeof c === "string") {
-          centros.push(c.trim());
-        } else if (c && typeof c === "object") {
-          const texto = [c.nombre, c.direccion, c.municipio]
-            .filter(Boolean)
-            .join(" · ");
+
+        if (c && typeof c === "object") {
+
+          const texto = [
+            c.calle,
+            c.codigo_postal,
+            c.municipio
+          ]
+          .filter(v => v && v.trim() !== "")
+          .join(" · ");
+
           if (texto) centros.push(texto);
         }
+
       });
-    } else if (item.centro) {
-      centros.push(String(item.centro).trim());
-    } else if (item.direccion) {
-      centros.push(String(item.direccion).trim());
     }
+
   });
 
-  return [...new Set(centros)].filter(Boolean);
+  return [...new Set(centros)];
 }
 
 // =========================
