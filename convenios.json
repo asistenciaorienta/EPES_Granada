@@ -1,12 +1,33 @@
 [
   {
+    "id": 1,
+    "convocatoria": 2026,
     "cif": "V09409749",
-    "nombre": "PLATAFORMA PARA LA IMPLANTACIÓN DE PROGRAMAS DE INCLUSIÓN LABORAL EN COLECTIVOS DESFAVORECIDOS",
-    "convocatoria": "2026"
+    "nombre": "EMPRESA DEMO SL",
+    "centros": [
+      {
+        "calle": "Calle Recogidas, 12",
+        "codigo_postal": "18005",
+        "municipio": "Granada"
+      },
+      {
+        "calle": "Avenida de Andalucía, 45",
+        "codigo_postal": "18600",
+        "municipio": "Motril"
+      }
+    ]
   },
   {
-    "cif": "A87654321",
-    "nombre": "Empresa 2",
-    "convocatoria": "2025"
+    "id": 2,
+    "convocatoria": 2026,
+    "cif": "Q1234567H",
+    "nombre": "FUNDACIÓN EJEMPLO",
+    "centros": [
+      {
+        "calle": "Plaza Nueva, 3",
+        "codigo_postal": "18010",
+        "municipio": "Granada"
+      }
+    ]
   }
 ]
