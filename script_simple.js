@@ -168,12 +168,6 @@ function buscarEmpresa() {
     html += `</ul>`;
   }
 
-  html += `
-    <div style="margin-top:10px;font-size:12px;color:#475569;">
-      Información meramente informativa (solo personas jurídicas).
-    </div>
-  `;
-
   mostrarResultado(html, "ok");
 }
 
