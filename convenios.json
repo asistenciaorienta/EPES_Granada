@@ -30,4 +30,17 @@
       }
     ]
   }
+{
+  "id": 3,
+  "convocatoria": 2026,
+  "cif": "Q1234567H",
+  "nombre": "ORGANISMO EJEMPLO",
+  "centros": [
+    {
+      "calle": "Calle Real, 8",
+      "codigo_postal": "18200",
+      "municipio": "Maracena"
+    }
+  ]
+}  
 ]
