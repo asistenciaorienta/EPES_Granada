@@ -10,13 +10,13 @@
   <style>
     .legal-warning {
       margin-top: 20px;
-      padding: 12px 14px;
+      padding: 14px 16px;
       background: #f5f7fa;
       border-left: 4px solid #0b5ed7;
-      font-size: 13px;
-      color: #444;
-      line-height: 1.4;
       border-radius: 6px;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #334155;
     }
 
     .legal-warning strong {
@@ -24,16 +24,27 @@
       margin-bottom: 6px;
       color: #0b5ed7;
     }
+
+    .result-ok {
+      color: #166534;
+    }
+
+    .result-error {
+      color: #b91c1c;
+    }
+
+    .result-warn {
+      color: #92400e;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
 
-    <!-- CABECERA -->
     <header class="topbar">
       <div class="brand">
-        <img src="logo_epes.png" />
+        <img src="logo_epes.png" alt="Logo EPES" />
         <div class="title">
           <strong>Buscador de Empresas</strong>
           <span>Servicio Andaluz de Empleo</span>
@@ -41,15 +52,13 @@
       </div>
     </header>
 
-    <!-- HERO -->
     <section class="hero">
       <div>
         <h1>Consulta de convenios</h1>
-        <p>Introduce un CIF a buscar.</p>
+        <p>Introduce un CIF de persona jurídica.</p>
       </div>
     </section>
 
-    <!-- BUSCADOR -->
     <main>
       <section class="view" style="display:block">
         <div class="panel">
@@ -57,7 +66,7 @@
           <div class="form" style="margin-top:14px">
             <div class="field">
               <label for="b_q">CIF</label>
-              <input id="b_q" placeholder="Ej: B12345678" onkeypress="handleEnter(event)" />
+              <input id="b_q" placeholder="Ej: B12345678" onkeypress="handleEnter(event)" maxlength="9" />
             </div>
 
             <div class="form-actions">
@@ -65,17 +74,17 @@
             </div>
           </div>
 
-          <!-- RESULTADO -->
           <div id="resultadoBusqueda" class="panel" style="margin-top:14px;display:none">
             <h3 style="margin:0;color:var(--ja-blue)">Resultado</h3>
             <p id="resultadoTexto" class="hint" style="margin-top:8px"></p>
           </div>
 
-          <!-- AVISO LEGAL -->
           <div class="legal-warning" role="note" aria-label="Aviso legal">
             <strong>Aviso legal</strong>
             La información mostrada tiene carácter meramente informativo y responde a fines de interés público en el marco del programa de experiencias profesionales para el empleo y prácticas no laborales.
             Este servicio no proporciona datos personales ni información relativa a personas físicas.
+            La consulta está limitada exclusivamente a personas jurídicas identificadas mediante CIF.
+            El uso de este buscador implica la aceptación de las condiciones de uso del servicio.
           </div>
 
         </div>
