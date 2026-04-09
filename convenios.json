@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "id_convenio": "CV0015",
     "convocatoria": 2026,
     "cif": "V09409749",
     "nombre": "EMPRESA DEMO SL",
@@ -19,6 +20,7 @@
   },
   {
     "id": 2,
+    "id_convenio": "CV0016",
     "convocatoria": 2026,
     "cif": "R1800580A",
     "nombre": "FUNDACIÓN EJEMPLO",
@@ -32,6 +34,7 @@
   },
 {
   "id": 3,
+  "id_convenio": "CV0017",
   "convocatoria": 2026,
   "cif": "Q1234567H",
   "nombre": "ORGANISMO EJEMPLO",
@@ -42,5 +45,5 @@
       "municipio": "Maracena"
     }
   ]
-}  
+}    
 ]
