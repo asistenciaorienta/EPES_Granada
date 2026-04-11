@@ -1,52 +1,5 @@
 [
   {
-    "id": 1,
-    "id_convenio": "CV0015",
-    "convocatoria": 2026,
-    "cif": "V09409749",
-    "nombre": "EMPRESA DEMO SL",
-    "centros": [
-      {
-        "calle": "Calle Recogidas, 12",
-        "codigo_postal": "18005",
-        "municipio": "Granada"
-      },
-      {
-        "calle": "Avenida de Andalucía, 45",
-        "codigo_postal": "18600",
-        "municipio": "Motril"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "id_convenio": "CV0016",
-    "convocatoria": 2026,
-    "cif": "R1800580A",
-    "nombre": "FUNDACIÓN EJEMPLO",
-    "centros": [
-      {
-        "calle": "Plaza Nueva, 3",
-        "codigo_postal": "18010",
-        "municipio": "Granada"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "id_convenio": "CV0017",
-    "convocatoria": 2026,
-    "cif": "Q1234567H",
-    "nombre": "ORGANISMO EJEMPLO",
-    "centros": [
-      {
-        "calle": "Calle Real, 8",
-        "codigo_postal": "18200",
-        "municipio": "Maracena"
-      }
-    ]
-  },
-  {
     "id": "CV0020",
     "id_convenio": "CV0020",
     "convocatoria": "Conv0001",
