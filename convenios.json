@@ -32,18 +32,32 @@
       }
     ]
   },
-{
-  "id": 3,
-  "id_convenio": "CV0017",
-  "convocatoria": 2026,
-  "cif": "Q1234567H",
-  "nombre": "ORGANISMO EJEMPLO",
-  "centros": [
-    {
-      "calle": "Calle Real, 8",
-      "codigo_postal": "18200",
-      "municipio": "Maracena"
-    }
-  ]
-}    
+  {
+    "id": 3,
+    "id_convenio": "CV0017",
+    "convocatoria": 2026,
+    "cif": "Q1234567H",
+    "nombre": "ORGANISMO EJEMPLO",
+    "centros": [
+      {
+        "calle": "Calle Real, 8",
+        "codigo_postal": "18200",
+        "municipio": "Maracena"
+      }
+    ]
+  },
+  {
+    "id": "CV0020",
+    "id_convenio": "CV0020",
+    "convocatoria": "Conv0001",
+    "cif": "B86561412",
+    "nombre": "Coca Cola",
+    "centros": [
+      {
+        "calle": "Calle Pascual, 33",
+        "codigo_postal": "18001",
+        "municipio": "Granada"
+      }
+    ]
+  }
 ]
