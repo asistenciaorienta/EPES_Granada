@@ -77,15 +77,30 @@ async function cargarDatos() {
   try {
     await cargarEstadoPublicacion();
 
-    const [convocatorias, convenios] = await Promise.all([
+    const [convocatoriasJson, conveniosJson] = await Promise.all([
       fetchJsonSinCache("convocatorias.json"),
       fetchJsonSinCache("convenios.json")
     ]);
 
-    convocatoriasData = convocatorias;
-    conveniosData = convenios;
+    // Soporta tanto formato nuevo { meta, datos } como formato antiguo array
+    if (Array.isArray(convocatoriasJson)) {
+      convocatoriasData = convocatoriasJson;
+      ultimaActualizacionConvocatorias = "";
+    } else {
+      convocatoriasData = Array.isArray(convocatoriasJson.datos) ? convocatoriasJson.datos : [];
+      ultimaActualizacionConvocatorias = convocatoriasJson.meta?.ultima_actualizacion || "";
+    }
+
+    if (Array.isArray(conveniosJson)) {
+      conveniosData = conveniosJson;
+      ultimaActualizacionConvenios = "";
+    } else {
+      conveniosData = Array.isArray(conveniosJson.datos) ? conveniosJson.datos : [];
+      ultimaActualizacionConvenios = conveniosJson.meta?.ultima_actualizacion || "";
+    }
 
     detectarConvocatoriasActivas();
+    mostrarUltimaActualizacion();
 
   } catch (error) {
     console.error("Error cargando datos:", error);
@@ -261,6 +276,28 @@ function detectarTipoDocumento(doc) {
   if (/^[XYZ]\d{7}[A-Z]$/.test(doc)) return "NIE";
   if (/^[ABCDEFGHJNPQRSUVWLM]\d{7}[A-Z0-9]$/.test(doc)) return "CIF";
   return "OTRO";
+}
+
+function mostrarUltimaActualizacion() {
+  const div = document.getElementById("infoUltimaActualizacion");
+  if (!div) return;
+
+  const textos = [];
+
+  if (ultimaActualizacionConvenios) {
+    textos.push(`Convenios: ${escapeHtml(formatearFechaHora(ultimaActualizacionConvenios))}`);
+  }
+
+  if (ultimaActualizacionConvocatorias) {
+    textos.push(`Convocatorias: ${escapeHtml(formatearFechaHora(ultimaActualizacionConvocatorias))}`);
+  }
+
+  if (textos.length === 0) {
+    div.innerHTML = "";
+    return;
+  }
+
+  div.innerHTML = `<small><strong>Última actualización:</strong> ${textos.join(" | ")}</small>`;
 }
 
 // =========================
