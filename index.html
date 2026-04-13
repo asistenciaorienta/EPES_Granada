@@ -6,7 +6,6 @@
   <title>Buscador de Empresas · EPES</title>
 
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
@@ -43,19 +42,20 @@
               <button class="btn primary" onclick="buscarEmpresa()">Buscar</button>
             </div>
           </div>
+
           <div id="avisoActualizacion" class="aviso-actualizacion" style="display:none;"></div>
-          
+
+          <div id="infoUltimaActualizacion" class="info-ultima-actualizacion"></div>
+
           <small style="display:block;margin-top:6px;color:#64748b;">
             Solo se admiten consultas mediante CIF de personas jurídicas. No se aceptan NIF ni NIE.
           </small>
-          
+
           <div id="resultadoBusqueda" class="panel" style="margin-top:14px;display:none">
             <h3 style="margin:0;color:var(--ja-blue)">Resultado</h3>
             <p id="resultadoTexto" class="hint" style="margin-top:8px"></p>
           </div>
 
-          <div id="infoUltimaActualizacion" class="info-ultima-actualizacion"></div>
-          
           <div class="legal-warning" role="note" aria-label="Aviso legal">
             <strong>Aviso legal</strong>
             La información mostrada tiene carácter meramente informativo y responde a fines de interés público en el marco del programa de experiencias profesionales para el empleo y prácticas no laborales.
@@ -63,6 +63,7 @@
             La consulta está limitada exclusivamente a personas jurídicas identificadas mediante CIF.
             El uso de este buscador implica la aceptación de las condiciones de uso del servicio.
           </div>
+
         </div>
       </section>
     </main>
