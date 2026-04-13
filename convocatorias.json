@@ -1,20 +1,15 @@
 [
   {
-    "id": "2025",
-    "nombre": "Convocatoria 2025",
-    "fecha_inicio": "2025-01-01",
-    "fecha_fin": "2025-12-31"
-  },
-  {
-    "id": "2026",
-    "nombre": "Convocatoria 2026",
-    "fecha_inicio": "2026-01-01",
-    "fecha_fin": "2026-12-31"
-  },
-  {
-    "id": "Conv0001",
-    "nombre": "2025-27",
-    "fecha_inicio": "2026-01-01",
-    "fecha_fin": "2026-12-31"
+    "meta": {
+      "ultima_actualizacion": "2026-04-13T11:05:00Z"
+    },
+    "datos": [
+      {
+        "id": "Conv0001",
+        "nombre": "2025-27",
+        "fecha_inicio": "2026-01-01",
+        "fecha_fin": "2026-12-31"
+      }
+    ]
   }
 ]
