@@ -2,6 +2,8 @@ let conveniosData = [];
 let convocatoriasData = [];
 let convocatoriasActivas = [];
 let estadoPublicacion = null;
+let ultimaActualizacionConvenios = "";
+let ultimaActualizacionConvocatorias = "";
 
 // =========================
 // AVISO ACTUALIZACIÓN
@@ -330,4 +332,20 @@ function escapeHtml(texto) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
+}
+
+// =========================
+// FORMATEAR FECHA
+// =========================
+function formatearFechaHora(fechaIso) {
+  if (!fechaIso) return "";
+
+  const fecha = new Date(fechaIso);
+
+  if (isNaN(fecha.getTime())) return "";
+
+  return fecha.toLocaleString("es-ES", {
+    dateStyle: "short",
+    timeStyle: "medium"
+  });
 }
