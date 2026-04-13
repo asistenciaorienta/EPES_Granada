@@ -11,6 +11,7 @@
 <body>
   <div class="container">
 
+    <!-- HEADER -->
     <header class="topbar">
       <div class="brand">
         <img src="logo_epes.png" alt="Logo EPES" />
@@ -21,6 +22,7 @@
       </div>
     </header>
 
+    <!-- HERO -->
     <section class="hero">
       <div>
         <h1>Consulta de convenios</h1>
@@ -28,14 +30,16 @@
       </div>
     </section>
 
+    <!-- CONTENIDO -->
     <main>
-      <section class="view" style="display:block">
+      <section class="view">
         <div class="panel">
 
-          <div class="form" style="margin-top:14px">
+          <!-- FORMULARIO -->
+          <div class="form">
             <div class="field">
               <label for="b_q">CIF</label>
-              <input id="b_q" placeholder="Ej: B12345678" onkeypress="handleEnter(event)" maxlength="9" />
+              <input id="b_q" placeholder="Ej: B12345678" maxlength="9" />
             </div>
 
             <div class="form-actions">
@@ -43,19 +47,24 @@
             </div>
           </div>
 
+          <!-- AVISO ACTUALIZACIÓN -->
           <div id="avisoActualizacion" class="aviso-actualizacion" style="display:none;"></div>
 
+          <!-- ÚLTIMA ACTUALIZACIÓN -->
           <div id="infoUltimaActualizacion" class="info-ultima-actualizacion"></div>
 
-          <small style="display:block;margin-top:6px;color:#64748b;">
+          <!-- NOTA DE USO -->
+          <small class="nota-cif">
             Solo se admiten consultas mediante CIF de personas jurídicas. No se aceptan NIF ni NIE.
           </small>
 
-          <div id="resultadoBusqueda" class="panel" style="margin-top:14px;display:none">
-            <h3 style="margin:0;color:var(--ja-blue)">Resultado</h3>
-            <p id="resultadoTexto" class="hint" style="margin-top:8px"></p>
+          <!-- RESULTADO -->
+          <div id="resultadoBusqueda" class="resultado-busqueda" style="display:none">
+            <h3>Resultado</h3>
+            <p id="resultadoTexto" class="hint"></p>
           </div>
 
+          <!-- AVISO LEGAL -->
           <div class="legal-warning" role="note" aria-label="Aviso legal">
             <strong>Aviso legal</strong>
             La información mostrada tiene carácter meramente informativo y responde a fines de interés público en el marco del programa de experiencias profesionales para el empleo y prácticas no laborales.
@@ -68,9 +77,10 @@
       </section>
     </main>
 
-    <div class="footer">
+    <!-- FOOTER -->
+    <footer class="footer">
       <span>EPES · Servicio de Intermediación e Inserción Laboral del SAE de Granada · Junta de Andalucía</span>
-    </div>
+    </footer>
 
   </div>
 
