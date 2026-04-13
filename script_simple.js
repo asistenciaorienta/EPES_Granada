@@ -3,7 +3,6 @@ let convocatoriasData = [];
 let convocatoriasActivas = [];
 let estadoPublicacion = null;
 let ultimaActualizacionConvenios = "";
-let ultimaActualizacionConvocatorias = "";
 
 // =========================
 // AVISO ACTUALIZACIÓN
@@ -65,8 +64,9 @@ async function cargarEstadoPublicacion() {
       ocultarAvisoActualizacion();
     }
   } catch (error) {
+    estadoPublicacion = null;
+    ocultarAvisoActualizacion();
     console.warn("No se pudo cargar estado_publicacion.json:", error);
-    // No bloqueamos la web por esto
   }
 }
 
@@ -85,10 +85,8 @@ async function cargarDatos() {
     // Soporta tanto formato nuevo { meta, datos } como formato antiguo array
     if (Array.isArray(convocatoriasJson)) {
       convocatoriasData = convocatoriasJson;
-      ultimaActualizacionConvocatorias = "";
     } else {
       convocatoriasData = Array.isArray(convocatoriasJson.datos) ? convocatoriasJson.datos : [];
-      ultimaActualizacionConvocatorias = convocatoriasJson.meta?.ultima_actualizacion || "";
     }
 
     if (Array.isArray(conveniosJson)) {
@@ -124,8 +122,9 @@ document.addEventListener("DOMContentLoaded", () => {
       this.value = normalizarDocumento(this.value);
     });
 
-    input.addEventListener("keypress", function (e) {
+    input.addEventListener("keydown", function (e) {
       if (e.key === "Enter") {
+        e.preventDefault();
         buscarEmpresa();
       }
     });
@@ -136,8 +135,16 @@ document.addEventListener("DOMContentLoaded", () => {
 // FECHAS SEGURAS
 // =========================
 function parseFechaLocal(fechaStr) {
-  const [y, m, d] = fechaStr.split("-");
-  return new Date(y, m - 1, d);
+  if (!fechaStr || typeof fechaStr !== "string") return null;
+
+  const partes = fechaStr.split("-");
+  if (partes.length !== 3) return null;
+
+  const [y, m, d] = partes.map(Number);
+  if (!y || !m || !d) return null;
+
+  const fecha = new Date(y, m - 1, d);
+  return isNaN(fecha.getTime()) ? null : fecha;
 }
 
 // =========================
@@ -149,7 +156,7 @@ function detectarConvocatoriasActivas() {
   convocatoriasActivas = convocatoriasData.filter(c => {
     const inicio = parseFechaLocal(c.fecha_inicio);
     const fin = parseFechaLocal(c.fecha_fin);
-    return hoy >= inicio && hoy <= fin;
+    return inicio && fin && hoy >= inicio && hoy <= fin;
   });
 
   console.log("Convocatorias activas:", convocatoriasActivas);
@@ -253,6 +260,8 @@ function mostrarResultado(html, tipo = "") {
   const resultadoDiv = document.getElementById("resultadoBusqueda");
   const resultadoTexto = document.getElementById("resultadoTexto");
 
+  if (!resultadoDiv || !resultadoTexto) return;
+
   resultadoTexto.innerHTML = html;
   resultadoTexto.className = "hint";
 
@@ -282,22 +291,14 @@ function mostrarUltimaActualizacion() {
   const div = document.getElementById("infoUltimaActualizacion");
   if (!div) return;
 
-  const textos = [];
-
-  if (ultimaActualizacionConvenios) {
-    textos.push(`Convenios: ${escapeHtml(formatearFechaHora(ultimaActualizacionConvenios))}`);
-  }
-
-  if (ultimaActualizacionConvocatorias) {
-    textos.push(`Convocatorias: ${escapeHtml(formatearFechaHora(ultimaActualizacionConvocatorias))}`);
-  }
-
-  if (textos.length === 0) {
+  if (!ultimaActualizacionConvenios) {
     div.innerHTML = "";
     return;
   }
 
-  div.innerHTML = `<small><strong>Última actualización:</strong> ${textos.join(" | ")}</small>`;
+  div.innerHTML = `
+    <small><strong>Última actualización publicada:</strong> ${escapeHtml(formatearFechaHora(ultimaActualizacionConvenios))}</small>
+  `;
 }
 
 // =========================
