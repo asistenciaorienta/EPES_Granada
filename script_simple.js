@@ -1,31 +1,95 @@
 let conveniosData = [];
 let convocatoriasData = [];
 let convocatoriasActivas = [];
+let estadoPublicacion = null;
+
+// =========================
+// AVISO ACTUALIZACIÓN
+// =========================
+function mostrarAvisoActualizacion(html, tipo = "info") {
+  const aviso = document.getElementById("avisoActualizacion");
+  if (!aviso) return;
+
+  aviso.innerHTML = html;
+  aviso.className = `aviso-actualizacion aviso-${tipo}`;
+  aviso.style.display = "block";
+}
+
+function ocultarAvisoActualizacion() {
+  const aviso = document.getElementById("avisoActualizacion");
+  if (!aviso) return;
+  aviso.style.display = "none";
+  aviso.innerHTML = "";
+}
+
+// =========================
+// FETCH SIN CACHÉ
+// =========================
+async function fetchJsonSinCache(url) {
+  const separador = url.includes("?") ? "&" : "?";
+  const urlFinal = `${url}${separador}v=${Date.now()}`;
+
+  const res = await fetch(urlFinal, {
+    cache: "no-store"
+  });
+
+  if (!res.ok) {
+    throw new Error(`Error HTTP al cargar ${url}`);
+  }
+
+  return res.json();
+}
+
+// =========================
+// CARGA ESTADO PUBLICACIÓN
+// =========================
+async function cargarEstadoPublicacion() {
+  try {
+    estadoPublicacion = await fetchJsonSinCache("estado_publicacion.json");
+
+    if (estadoPublicacion?.actualizando) {
+      const fecha = estadoPublicacion.fecha
+        ? new Date(estadoPublicacion.fecha).toLocaleString("es-ES")
+        : "";
+
+      mostrarAvisoActualizacion(`
+        <strong>⚠ La información se está actualizando.</strong><br>
+        Puede que los cambios aún no aparezcan en la web de GitHub.<br>
+        Prueba de nuevo en unos minutos.
+        ${estadoPublicacion.mensaje ? `<br><em>${escapeHtml(estadoPublicacion.mensaje)}</em>` : ""}
+        ${fecha ? `<br><small>Último cambio de estado: ${escapeHtml(fecha)}</small>` : ""}
+      `, "warn");
+    } else {
+      ocultarAvisoActualizacion();
+    }
+  } catch (error) {
+    console.warn("No se pudo cargar estado_publicacion.json:", error);
+    // No bloqueamos la web por esto
+  }
+}
 
 // =========================
 // CARGA DE DATOS
 // =========================
 async function cargarDatos() {
   try {
-    const [convRes, convDataRes] = await Promise.all([
-      fetch('convocatorias.json'),
-      fetch('convenios.json')
+    await cargarEstadoPublicacion();
+
+    const [convocatorias, convenios] = await Promise.all([
+      fetchJsonSinCache("convocatorias.json"),
+      fetchJsonSinCache("convenios.json")
     ]);
 
-    if (!convRes.ok || !convDataRes.ok) {
-      throw new Error("Error HTTP al cargar JSON");
-    }
-
-    convocatoriasData = await convRes.json();
-    conveniosData = await convDataRes.json();
+    convocatoriasData = convocatorias;
+    conveniosData = convenios;
 
     detectarConvocatoriasActivas();
 
   } catch (error) {
-    console.error('Error cargando datos:', error);
+    console.error("Error cargando datos:", error);
     mostrarResultado(
-      'No se han podido cargar los datos del servicio.',
-      'error'
+      "No se han podido cargar los datos del servicio.",
+      "error"
     );
   }
 }
@@ -39,12 +103,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const input = document.getElementById("b_q");
 
   if (input) {
-    // Normalización en vivo
     input.addEventListener("input", function () {
       this.value = normalizarDocumento(this.value);
     });
 
-    // ENTER
     input.addEventListener("keypress", function (e) {
       if (e.key === "Enter") {
         buscarEmpresa();
@@ -105,7 +167,6 @@ function buscarEmpresa() {
 
   const tipo = detectarTipoDocumento(doc);
 
-  // Bloqueo legal
   if (tipo === "NIF" || tipo === "NIE") {
     mostrarResultado(`
       <span class="result-warn"><strong>Consulta no permitida.</strong></span><br>
@@ -143,17 +204,14 @@ function buscarEmpresa() {
     return;
   }
 
-  // Empresas únicas
   const empresas = [...new Set(resultados.map(r => r.nombre))];
 
-  // Convocatorias encontradas
   const convocatoriasEncontradas = [...new Set(
     resultados.map(r =>
       convocatoriasData.find(c => String(c.id) === String(r.convocatoria))?.nombre
     ).filter(Boolean)
   )];
 
-  // Centros
   const centros = extraerCentros(resultados);
 
   let html = `
@@ -242,12 +300,9 @@ function extraerCentros(resultados) {
   const centros = [];
 
   resultados.forEach(item => {
-
     if (Array.isArray(item.centros)) {
       item.centros.forEach(c => {
-
         if (c && typeof c === "object") {
-
           const texto = [
             c.calle,
             c.codigo_postal,
@@ -258,10 +313,8 @@ function extraerCentros(resultados) {
 
           if (texto) centros.push(texto);
         }
-
       });
     }
-
   });
 
   return [...new Set(centros)];
