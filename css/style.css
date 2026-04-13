@@ -564,3 +564,23 @@
 .tab-panel.active{
   display:block;
 }
+
+.aviso-actualizacion {
+  margin: 12px 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.aviso-warn {
+  background: #fff4e5;
+  border: 1px solid #f0b35f;
+  color: #7a4b00;
+}
+
+.aviso-info {
+  background: #eef6ff;
+  border: 1px solid #8bb8e8;
+  color: #1f4f82;
+}
