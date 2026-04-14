@@ -13,6 +13,12 @@
     ]
   },
   {
+    "id": "1",
+    "nombre": "2023-2025 Complementaria",
+    "fecha_inicio": "Fri Apr 26",
+    "fecha_fin": "Sat Apr 25"
+  },
+  {
     "id": "2",
     "nombre": "2025-2027",
     "fecha_inicio": "Fri Dec 26",
