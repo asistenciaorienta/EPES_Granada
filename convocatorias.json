@@ -11,5 +11,11 @@
         "fecha_fin": "2026-12-31"
       }
     ]
+  },
+  {
+    "id": "2",
+    "nombre": "2025-2027",
+    "fecha_inicio": "Fri Dec 26",
+    "fecha_fin": "Sat Dec 25"
   }
 ]
