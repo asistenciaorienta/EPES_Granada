@@ -14,6 +14,20 @@
     ]
   },
   {
+    "id": "CV0005",
+    "id_convenio": "CV0005",
+    "convocatoria": 2,
+    "cif": "B18281766",
+    "nombre": "VIVEROS CAMBIL SL",
+    "centros": [
+      {
+        "calle": "Carretera de Málaga, km 34",
+        "codigo_postal": "18320",
+        "municipio": "Santa Fe"
+      }
+    ]
+  },
+  {
     "meta": {
       "ultima_actualizacion": "2026-04-13T11:00:00Z"
     },
