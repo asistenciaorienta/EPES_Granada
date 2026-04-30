@@ -1,107 +1,108 @@
 [
-  {
-    "id": "CV0007",
-    "id_convenio": "CV0007",
-    "convocatoria": 2,
-    "cif": "G18710558",
-    "nombre": "ASOCIACIÓN ALMANJAYAR EN FAMILIA",
-    "centros": [
-      {
-        "calle": "C/ Real de Motril 58, Local 3",
-        "codigo_postal": "18100",
-        "municipio": "Armilla"
-      },
-      {
-        "calle": "C/ Arquitecto José Contreras, nº13",
-        "codigo_postal": "18013",
-        "municipio": "Granada"
-      }
-    ]
+{
+  "meta": {
+    "ultima_actualizacion": "2026-04-13T11:00:00Z"
   },
-  {
-    "id": "CV0006",
-    "id_convenio": "CV0006",
-    "convocatoria": 2,
-    "cif": "B18468876",
-    "nombre": "Centro Infantil Arco Iris SL",
-    "centros": [
-      {
-        "calle": "Avenida de la Ilustración 129, local 1,",
-        "codigo_postal": "18006",
-        "municipio": "Granada"
-      }
-    ]
-  },
-  {
-    "id": "CV0003",
-    "id_convenio": "CV0003",
-    "convocatoria": 2,
-    "cif": "B86561412",
-    "nombre": "Coca Cola",
-    "centros": [
-      {
-        "calle": "Avda. Joaquina Eguaras, 2",
-        "codigo_postal": "18013",
-        "municipio": "Granada"
-      }
-    ]
-  },
-  {
-    "id": "CV0008",
-    "id_convenio": "CV0008",
-    "convocatoria": 2,
-    "cif": "A79059085",
-    "nombre": "SAR RESIDENCIAL Y ASISTENCIAL, S.A.U",
-    "centros": [
-      {
-        "calle": "C/ Padre Ferrer 1.",
-        "codigo_postal": "18008",
-        "municipio": "Granada"
-      }
-    ]
-  },
-  {
-    "id": "CV0005",
-    "id_convenio": "CV0005",
-    "convocatoria": 2,
-    "cif": "B18281766",
-    "nombre": "VIVEROS CAMBIL S.L.",
-    "centros": [
-      {
-        "calle": "Carretera de Málaga, km 34",
-        "codigo_postal": "18320",
-        "municipio": "Santa Fe"
-      }
-    ]
-  },
-  {
-    "meta": {
-      "ultima_actualizacion": "2026-04-13T11:00:00Z"
+  "datos": [
+    {
+      "id": "CV0007",
+      "id_convenio": "CV0007",
+      "convocatoria": "2",
+      "cif": "G18710558",
+      "nombre": "ASOCIACIÓN ALMANJAYAR EN FAMILIA",
+      "centros": [
+        {
+          "calle": "C/ Real de Motril 58, Local 3",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "C/ Arquitecto José Contreras, nº13",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
+        }
+      ]
     },
-    "datos": [
-      {
-        "id_convenio": "CV0020",
-        "convocatoria": "Conv0001",
-        "cif": "B86561412",
-        "nombre": "Coca Cola",
-        "centros": [
-          {
-            "calle": "Calle Delgado, 99",
-            "codigo_postal": "18014",
-            "municipio": "Granada"
-          },
-          {
-            "calle": "Calle Pascual, 33",
-            "codigo_postal": "18001",
-            "municipio": "Granada"
-          },
-          {
-            "calle": "Calle Paz, 76",
-            "codigo_postal": "18320",
-            "municipio": "Santa Fe"
-          }
-        ]
-      }
-    ]
-  }
+    {
+      "id": "CV0006",
+      "id_convenio": "CV0006",
+      "convocatoria": "2",
+      "cif": "B18468876",
+      "nombre": "Centro Infantil Arco Iris SL",
+      "centros": [
+        {
+          "calle": "Avenida de la Ilustración 129, local 1",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0003",
+      "id_convenio": "CV0003",
+      "convocatoria": "2",
+      "cif": "B86561412",
+      "nombre": "Coca Cola",
+      "centros": [
+        {
+          "calle": "Avda. Joaquina Eguaras, 2",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0008",
+      "id_convenio": "CV0008",
+      "convocatoria": "2",
+      "cif": "A79059085",
+      "nombre": "SAR RESIDENCIAL Y ASISTENCIAL, S.A.U",
+      "centros": [
+        {
+          "calle": "C/ Padre Ferrer 1",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0005",
+      "id_convenio": "CV0005",
+      "convocatoria": "2",
+      "cif": "B18281766",
+      "nombre": "VIVEROS CAMBIL S.L.",
+      "centros": [
+        {
+          "calle": "Carretera de Málaga, km 34",
+          "codigo_postal": "18320",
+          "municipio": "Santa Fe"
+        }
+      ]
+    },
+    {
+      "id": "CV0020",
+      "id_convenio": "CV0020",
+      "convocatoria": "Conv0001",
+      "cif": "B86561412",
+      "nombre": "Coca Cola",
+      "centros": [
+        {
+          "calle": "Calle Delgado, 99",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Calle Pascual, 33",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Calle Paz, 76",
+          "codigo_postal": "18320",
+          "municipio": "Santa Fe"
+        }
+      ]
+    }
+  ]
+}  
 ]
