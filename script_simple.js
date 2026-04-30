@@ -213,7 +213,7 @@ function buscarEmpresa() {
 
   const resultados = conveniosData.filter(item => {
     const cifItem = normalizarDocumento(item.cif || "");
-    return cifItem === doc && idsActivas.includes(String(item.convocatoria));
+    return cifItem === doc && idsActivas.includes(String(item.convocatoria || ""));
   });
 
   if (resultados.length === 0) {
