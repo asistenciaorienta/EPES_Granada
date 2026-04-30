@@ -47,6 +47,20 @@
     ]
   },
   {
+    "id": "CV0008",
+    "id_convenio": "CV0008",
+    "convocatoria": 2,
+    "cif": "A79059085",
+    "nombre": "SAR RESIDENCIAL Y ASISTENCIAL, S.A.U",
+    "centros": [
+      {
+        "calle": "C/ Padre Ferrer 1.",
+        "codigo_postal": "18008",
+        "municipio": "Granada"
+      }
+    ]
+  },
+  {
     "id": "CV0005",
     "id_convenio": "CV0005",
     "convocatoria": 2,
