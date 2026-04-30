@@ -1,27 +1,21 @@
 [
-  {
-    "meta": {
-      "ultima_actualizacion": "2026-04-13T11:05:00Z"
+{
+  "meta": {
+    "ultima_actualizacion": "2026-04-13T11:05:00Z"
+  },
+  "datos": [
+    {
+      "id": "1",
+      "nombre": "2023-2025 Complementaria",
+      "fecha_inicio": "2024-04-26",
+      "fecha_fin": "2025-04-25"
     },
-    "datos": [
-      {
-        "id": "Conv0001",
-        "nombre": "2025-27",
-        "fecha_inicio": "2026-01-01",
-        "fecha_fin": "2026-12-31"
-      }
-    ]
-  },
-  {
-    "id": "1",
-    "nombre": "2023-2025 Complementaria",
-    "fecha_inicio": "Fri Apr 26",
-    "fecha_fin": "Sat Apr 25"
-  },
-  {
-    "id": "2",
-    "nombre": "2025-2027",
-    "fecha_inicio": "Fri Dec 26",
-    "fecha_fin": "Sat Dec 25"
-  }
+    {
+      "id": "2",
+      "nombre": "2025-2027",
+      "fecha_inicio": "2025-12-26",
+      "fecha_fin": "2027-12-25"
+    }
+  ]
+}
 ]
