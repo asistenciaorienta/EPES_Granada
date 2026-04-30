@@ -330,7 +330,9 @@
 
     .view{ display:none; margin-top: 14px; }
     .view.active{ display:block; }
-
+.view{
+  display:block !important;
+}
     .panel{
       border: 1px solid rgba(162,185,209,.45);
       border-radius: var(--radius);
