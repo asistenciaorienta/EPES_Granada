@@ -1,5 +1,19 @@
 [
   {
+    "id": "CV0006",
+    "id_convenio": "CV0006",
+    "convocatoria": 2,
+    "cif": "B18468876",
+    "nombre": "Centro Infantil Arco Iris SL",
+    "centros": [
+      {
+        "calle": "Avenida de la Ilustración 129, local 1,",
+        "codigo_postal": "18006",
+        "municipio": "Granada"
+      }
+    ]
+  },
+  {
     "id": "CV0003",
     "id_convenio": "CV0003",
     "convocatoria": 2,
