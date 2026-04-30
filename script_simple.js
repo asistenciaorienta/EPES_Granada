@@ -152,26 +152,21 @@ function parseFechaLocal(fechaStr) {
 // =========================
 function detectarConvocatoriasActivas() {
   const hoy = new Date();
+  hoy.setHours(0, 0, 0, 0); // 🔥 clave
 
   convocatoriasActivas = convocatoriasData.filter(c => {
     const inicio = parseFechaLocal(c.fecha_inicio);
     const fin = parseFechaLocal(c.fecha_fin);
-    return inicio && fin && hoy >= inicio && hoy <= fin;
+
+    if (!inicio || !fin) return false;
+
+    inicio.setHours(0, 0, 0, 0);
+    fin.setHours(23, 59, 59, 999); // 🔥 importante
+
+    return hoy >= inicio && hoy <= fin;
   });
 
   console.log("Convocatorias activas:", convocatoriasActivas);
-
-  const divConv = document.getElementById("convocatoriaActual");
-
-  if (divConv) {
-    if (convocatoriasActivas.length === 0) {
-      divConv.textContent = "No hay convocatorias activas";
-    } else {
-      divConv.textContent =
-        "Convocatorias activas: " +
-        convocatoriasActivas.map(c => c.nombre).join(", ");
-    }
-  }
 }
 
 // =========================
