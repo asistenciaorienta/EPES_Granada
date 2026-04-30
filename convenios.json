@@ -1,5 +1,24 @@
 [
   {
+    "id": "CV0007",
+    "id_convenio": "CV0007",
+    "convocatoria": 2,
+    "cif": "G18710558",
+    "nombre": "ASOCIACIÓN ALMANJAYAR EN FAMILIA",
+    "centros": [
+      {
+        "calle": "C/ Real de Motril 58, Local 3",
+        "codigo_postal": "18100",
+        "municipio": "Armilla"
+      },
+      {
+        "calle": "C/ Arquitecto José Contreras, nº13",
+        "codigo_postal": "18013",
+        "municipio": "Granada"
+      }
+    ]
+  },
+  {
     "id": "CV0006",
     "id_convenio": "CV0006",
     "convocatoria": 2,
