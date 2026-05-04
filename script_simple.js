@@ -135,15 +135,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // FECHAS SEGURAS
 // =========================
 function parseFechaLocal(fechaStr) {
-  if (!fechaStr || typeof fechaStr !== "string") return null;
+  if (!fechaStr) return null;
 
-  const partes = fechaStr.split("-");
-  if (partes.length !== 3) return null;
-
-  const [y, m, d] = partes.map(Number);
-  if (!y || !m || !d) return null;
-
-  const fecha = new Date(y, m - 1, d);
+  const fecha = new Date(fechaStr);
   return isNaN(fecha.getTime()) ? null : fecha;
 }
 
@@ -152,16 +146,12 @@ function parseFechaLocal(fechaStr) {
 // =========================
 function detectarConvocatoriasActivas() {
   const hoy = new Date();
-  hoy.setHours(0, 0, 0, 0); // 🔥 clave
 
   convocatoriasActivas = convocatoriasData.filter(c => {
-    const inicio = parseFechaLocal(c.fecha_inicio);
-    const fin = parseFechaLocal(c.fecha_fin);
+    const inicio = new Date(c.fecha_inicio);
+    const fin = new Date(c.fecha_fin);
 
-    if (!inicio || !fin) return false;
-
-    inicio.setHours(0, 0, 0, 0);
-    fin.setHours(23, 59, 59, 999); // 🔥 importante
+    if (isNaN(inicio) || isNaN(fin)) return false;
 
     return hoy >= inicio && hoy <= fin;
   });
