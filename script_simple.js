@@ -213,15 +213,25 @@ function buscarEmpresa() {
     return;
   }
 
-  const empresas = [...new Set(resultados.map(r => r.nombre))];
+ const empresas = [...new Set(
+    resultados
+      .map(r => r.nombre)
+      .filter(Boolean)
+  )];
+  
+  const conveniosEncontrados = [...new Set(
+    resultados
+      .map(r => r.id_convenio || r.id)
+      .filter(Boolean)
+  )];
+  
+  const centros = extraerCentros(resultados);
 
   const convocatoriasEncontradas = [...new Set(
     resultados.map(r =>
       convocatoriasData.find(c => String(c.id) === String(r.convocatoria))?.nombre
     ).filter(Boolean)
   )];
-
-  const centros = extraerCentros(resultados);
 
   let html = `
     <span class="result-ok"><strong>✔ Hay convenio firmado.</strong></span><br>
