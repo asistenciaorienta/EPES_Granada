@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-05-04T10:39:27.912Z"
+    "ultima_actualizacion": "2026-05-04T10:39:35.514Z"
   },
   "datos": [
     {
@@ -226,6 +226,20 @@
           "calle": "Calle telefónica, 9",
           "codigo_postal": "18320",
           "municipio": "Santa Fe"
+        }
+      ]
+    },
+    {
+      "id": "CV0004",
+      "id_convenio": "CV0004",
+      "convocatoria": "2",
+      "cif": "B18281766",
+      "nombre": "VIVEROS CAMBIL S.L.",
+      "centros": [
+        {
+          "calle": "CARRETERA DE LA SIERRA, 180",
+          "codigo_postal": "18008",
+          "municipio": "Lancha del Genil"
         }
       ]
     }
