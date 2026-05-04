@@ -1,5 +1,19 @@
 [
   {
+    "id": "CV0010",
+    "id_convenio": "CV0010",
+    "convocatoria": 2,
+    "cif": "B19692268",
+    "nombre": "MULTISERVICIOS EMPRESARIALES GRANADA SL",
+    "centros": [
+      {
+        "calle": "Plaza Isabel la Católica 1",
+        "codigo_postal": "18009",
+        "municipio": "Granada"
+      }
+    ]
+  },
+  {
     "id": "CV0009",
     "id_convenio": "CV0009",
     "convocatoria": 2,
