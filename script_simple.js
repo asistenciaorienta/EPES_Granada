@@ -48,25 +48,31 @@ async function cargarEstadoPublicacion() {
   try {
     estadoPublicacion = await fetchJsonSinCache("estado_publicacion.json");
 
-    if (estadoPublicacion?.actualizando) {
+    const actualizando = estadoPublicacion?.actualizando === true;
+
+    if (actualizando) {
       const fecha = estadoPublicacion.fecha
         ? new Date(estadoPublicacion.fecha).toLocaleString("es-ES")
         : "";
 
       mostrarAvisoActualizacion(`
         <strong>⚠ La información se está actualizando.</strong><br>
-        Puede que los cambios aún no aparezcan en la web de GitHub.<br>
+        Es posible que los últimos cambios todavía no aparezcan publicados.<br>
         Prueba de nuevo en unos minutos.
         ${estadoPublicacion.mensaje ? `<br><em>${escapeHtml(estadoPublicacion.mensaje)}</em>` : ""}
-        ${fecha ? `<br><small>Último cambio de estado: ${escapeHtml(fecha)}</small>` : ""}
+        ${fecha ? `<br><small>Inicio de actualización: ${escapeHtml(fecha)}</small>` : ""}
       `, "warn");
-    } else {
-      ocultarAvisoActualizacion();
+
+      return true;
     }
-  } catch (error) {
-    estadoPublicacion = null;
+
     ocultarAvisoActualizacion();
+    return false;
+
+  } catch (error) {
     console.warn("No se pudo cargar estado_publicacion.json:", error);
+    ocultarAvisoActualizacion();
+    return false;
   }
 }
 
@@ -114,6 +120,10 @@ async function cargarDatos() {
 // =========================
 document.addEventListener("DOMContentLoaded", () => {
   cargarDatos();
+
+  setInterval(() => {
+    cargarEstadoPublicacion();
+  }, 10000);
 
   const input = document.getElementById("b_q");
 
