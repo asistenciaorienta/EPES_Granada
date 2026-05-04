@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-05-04T10:09:52.097Z"
+    "ultima_actualizacion": "2026-05-04T10:10:13.774Z"
   },
   "datos": [
     {
@@ -71,6 +71,30 @@
           "calle": "Calle Paz, 76",
           "codigo_postal": "18320",
           "municipio": "Santa Fe"
+        }
+      ]
+    },
+    {
+      "id": "CV0001",
+      "id_convenio": "CV0001",
+      "convocatoria": "2",
+      "cif": "B86561412",
+      "nombre": "Coca Cola",
+      "centros": [
+        {
+          "calle": "calle malva, 8",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Avda. Andalucía, 9",
+          "codigo_postal": "18327",
+          "municipio": "Láchar"
+        },
+        {
+          "calle": "Calle Cuadrado, 98",
+          "codigo_postal": "18327",
+          "municipio": "Láchar"
         }
       ]
     },
