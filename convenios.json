@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-05-05T06:48:08.331Z"
+    "ultima_actualizacion": "2026-05-05T11:20:27.887Z"
   },
   "datos": [
     {
@@ -156,6 +156,20 @@
           "calle": "C/ Camino de Ronda, 96 -1º",
           "codigo_postal": "18004",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0019",
+      "id_convenio": "CV0019",
+      "convocatoria": "2",
+      "cif": "B18593475",
+      "nombre": "Promociones Primera Ocupación SL",
+      "centros": [
+        {
+          "calle": "C/ Casería Tolín s/n, Crta. Loja-Huetor Tajar, , Granada",
+          "codigo_postal": "18360",
+          "municipio": "Huetor Tajar"
         }
       ]
     },
