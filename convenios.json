@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-05-05T11:29:18.977Z"
+    "ultima_actualizacion": "2026-05-11T10:10:20.844Z"
   },
   "datos": [
     {
@@ -174,6 +174,30 @@
           "calle": "C/ Padre Ferrer 1",
           "codigo_postal": "18008",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0021",
+      "id_convenio": "CV0021",
+      "convocatoria": "2",
+      "cif": "B18754440",
+      "nombre": "TARTAS CRISTINA SL",
+      "centros": [
+        {
+          "calle": "AVENIDA DE CONSTITUCIÓN, 27",
+          "codigo_postal": "18014",
+          "municipio": "GRANADA"
+        },
+        {
+          "calle": "C/ RECOGIDAS, 46",
+          "codigo_postal": "18002",
+          "municipio": "GRANADA"
+        },
+        {
+          "calle": "Polígono de Asegra, C/ SIERRA DE BAZA, 4",
+          "codigo_postal": "18210",
+          "municipio": "PELIGROS"
         }
       ]
     },
