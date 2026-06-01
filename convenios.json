@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-06-01T09:13:17.902Z"
+    "ultima_actualizacion": "2026-06-01T12:56:55.962Z"
   },
   "datos": [
     {
@@ -18,6 +18,20 @@
         {
           "calle": "C/ Arquitecto José Contreras, nº13",
           "codigo_postal": "18013",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0022",
+      "id_convenio": "CV0022",
+      "convocatoria": "2",
+      "cif": "G18710558",
+      "nombre": "ASOCIACIÓN ALMANJAYAR EN FAMILIA",
+      "centros": [
+        {
+          "calle": "prueba de dirección",
+          "codigo_postal": "18001",
           "municipio": "Granada"
         }
       ]
