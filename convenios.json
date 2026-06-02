@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-06-02T07:05:57.788Z"
+    "ultima_actualizacion": "2026-06-02T07:07:55.853Z"
   },
   "datos": [
     {
@@ -132,6 +132,20 @@
           "calle": "calle fuente, 3",
           "codigo_postal": "18327",
           "municipio": "Láchar"
+        }
+      ]
+    },
+    {
+      "id": "CV0024",
+      "id_convenio": "CV0024",
+      "convocatoria": "2",
+      "cif": "B86561412",
+      "nombre": "Coca Cola",
+      "centros": [
+        {
+          "calle": "Calle Circulo, 5",
+          "codigo_postal": "18320",
+          "municipio": "Santa Fe"
         }
       ]
     },
