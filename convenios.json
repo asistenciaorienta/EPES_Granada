@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-06-02T06:51:05.028Z"
+    "ultima_actualizacion": "2026-06-02T06:56:59.783Z"
   },
   "datos": [
     {
@@ -47,6 +47,20 @@
           "calle": "Avenida de la Ilustración 129, local 10",
           "codigo_postal": "18006",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0023",
+      "id_convenio": "CV0023",
+      "convocatoria": "2",
+      "cif": "B18468876",
+      "nombre": "Centro Infantil Arco Iris SL",
+      "centros": [
+        {
+          "calle": "fasdfasdf",
+          "codigo_postal": "18327",
+          "municipio": "Láchar"
         }
       ]
     },
