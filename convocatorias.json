@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-04-13T11:05:00Z"
+    "ultima_actualizacion": "2026-08-24T07:02:43.623Z"
   },
   "datos": [
     {
@@ -12,6 +12,12 @@
     {
       "id": "2",
       "nombre": "2025-2027",
+      "fecha_inicio": "2025-12-26",
+      "fecha_fin": "2027-12-25"
+    },
+    {
+      "id": "2025-27",
+      "nombre": "EPES 2025",
       "fecha_inicio": "2025-12-26",
       "fecha_fin": "2027-12-25"
     }
