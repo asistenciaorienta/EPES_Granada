@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-08-25T09:54:01.129Z"
+    "ultima_actualizacion": "2026-08-25T10:00:58.367Z"
   },
   "datos": [
     {
@@ -9,7 +9,18 @@
       "convocatoria": "2025-27",
       "cif": "B13782446",
       "nombre": "IBEROLAM TIMBER & TECHNOLOGY SL",
-      "centros": []
+      "centros": [
+        {
+          "calle": "C/ Gran Vía de Colón 48, Planta 5, D05-D06",
+          "codigo_postal": "18010",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Poligono 27, parcela 174, Los barrancos P.I El Arco",
+          "codigo_postal": "18250",
+          "municipio": "Valderubio"
+        }
+      ]
     },
     {
       "id": "CV0007",
