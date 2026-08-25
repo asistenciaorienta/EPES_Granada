@@ -1,8 +1,3179 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-08-25T10:00:58.367Z"
+    "ultima_actualizacion": "2026-08-25T10:14:14.475Z"
   },
   "datos": [
+    {
+      "id": "CV0213",
+      "id_convenio": "CV0213",
+      "convocatoria": "2025-27",
+      "cif": "A18030064",
+      "nombre": "A FORGED TOOL SA",
+      "centros": []
+    },
+    {
+      "id": "CV0263",
+      "id_convenio": "CV0263",
+      "convocatoria": "2025-27",
+      "cif": "B22734560",
+      "nombre": "a Grupo Musarte Formación e Innovación, S.L.U",
+      "centros": [
+        {
+          "calle": "Avda. Norman Bethune, S/N, Puerta 6, C.P. 18600, Motril",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0018",
+      "id_convenio": "CV0018",
+      "convocatoria": "2025-27",
+      "cif": "F18031922",
+      "nombre": "ABENZOAR S.C.A.",
+      "centros": [
+        {
+          "calle": "C/ROSALIA DE CASTRO 27 GRANADA 18011",
+          "codigo_postal": "18011",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0419",
+      "id_convenio": "CV0419",
+      "convocatoria": "2025-27",
+      "cif": "B13876792",
+      "nombre": "ACACIO ACADEMY S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0376",
+      "id_convenio": "CV0376",
+      "convocatoria": "2025-27",
+      "cif": "V09409749",
+      "nombre": "ACCION LABORAL (Plataf. Impl. Prog. Incl. Lab. Col. Desfav)",
+      "centros": [
+        {
+          "calle": "Avenida/ Dr. Oloriz, 8, bajo, en Granada. C.P. 18012",
+          "codigo_postal": "18012",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0175",
+      "id_convenio": "CV0175",
+      "convocatoria": "2025-27",
+      "cif": "E18897801",
+      "nombre": "AGRÍCOLA RODRÍGUEZ MESA SL",
+      "centros": [
+        {
+          "calle": "Autovía Bailén-Motril Km 185 Peligros 18210",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0328",
+      "id_convenio": "CV0328",
+      "convocatoria": "2025-27",
+      "cif": "B19642743",
+      "nombre": "AGROILLESCAS SLU",
+      "centros": []
+    },
+    {
+      "id": "CV0538",
+      "id_convenio": "CV0538",
+      "convocatoria": "2025-27",
+      "cif": "B19666825",
+      "nombre": "Al Andalus BC 2007 SL",
+      "centros": []
+    },
+    {
+      "id": "CV0370",
+      "id_convenio": "CV0370",
+      "convocatoria": "2025-27",
+      "cif": "B18520619",
+      "nombre": "ALBAY CONSULTORA Y FORMACIÓN SL",
+      "centros": []
+    },
+    {
+      "id": "CV0337",
+      "id_convenio": "CV0337",
+      "convocatoria": "2025-27",
+      "cif": "A28581882",
+      "nombre": "ALCAMPO, S.A.",
+      "centros": []
+    },
+    {
+      "id": "CV0544",
+      "id_convenio": "CV0544",
+      "convocatoria": "2025-27",
+      "cif": "B19628809",
+      "nombre": "ALCOSTONEVADA SL",
+      "centros": [
+        {
+          "calle": "AVENIDA ANDALUCIA, 59, ATARFE, 18230, GRANADA",
+          "codigo_postal": "18230",
+          "municipio": "Atarfe"
+        },
+        {
+          "calle": "C/ PALENCIA, 18. 18007 GRANADA",
+          "codigo_postal": "18007",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "CALLE REAL, 11, SANTA FE, 18320, GRANADA",
+          "codigo_postal": "18320",
+          "municipio": "Santa Fe"
+        }
+      ]
+    },
+    {
+      "id": "CV0428",
+      "id_convenio": "CV0428",
+      "convocatoria": "2025-27",
+      "cif": "B91405142",
+      "nombre": "ALDI DOS HERMANAS SUPERMERCADOS SLU",
+      "centros": [
+        {
+          "calle": "Avda San Rafael, 57 18100 Armilla (Granada)",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "Avda. de las Alpujarras s/n 18015 Granada",
+          "codigo_postal": "18015",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "C/ Jimena, 2 18014 Granada",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "C/ Palencia, 22 18007 Granada",
+          "codigo_postal": "18007",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Cno. de Ronda, 129 18003 Granada",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Avda de Andalucía, 10 18198 Huétor Vega (Granada)",
+          "codigo_postal": "18198",
+          "municipio": "Huétor Vega"
+        },
+        {
+          "calle": "Avda Doctor Norman Bethune s/n 18600 Motril (Granada)",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0563",
+      "id_convenio": "CV0563",
+      "convocatoria": "2025-27",
+      "cif": "B19681907",
+      "nombre": "ALMACENES BARRAGAN SL",
+      "centros": [
+        {
+          "calle": "Polígono Industrial Juncaril, C/ Loja Parc 117. 18210 Granada",
+          "codigo_postal": "18210",
+          "municipio": "Loja"
+        }
+      ]
+    },
+    {
+      "id": "CV0480",
+      "id_convenio": "CV0480",
+      "convocatoria": "2025-27",
+      "cif": "B18625137",
+      "nombre": "ALQUERÍA DE MORAYMA, S.L.",
+      "centros": [
+        {
+          "calle": "Calle Pianista García Carrillo , 2, Granada 18010",
+          "codigo_postal": "18010",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0568",
+      "id_convenio": "CV0568",
+      "convocatoria": "2025-27",
+      "cif": "B06007793",
+      "nombre": "ALQUITENT SL",
+      "centros": [
+        {
+          "calle": "Avenida de la Constitución, 21, Granada, 18014",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0021",
+      "id_convenio": "CV0021",
+      "convocatoria": "2025-27",
+      "cif": "B70777966",
+      "nombre": "ÁLVARO MORENO RETAIL, SLU",
+      "centros": [
+        {
+          "calle": "CC Nevada Shopping. C/ Hipócrates s/n Local 238. Armilla, Granada 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "C/ Recogidas 11, local 5. Granada. 18002.",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "C/ Luis Buñuel 6, local M04. Pulianas, Granada",
+          "codigo_postal": "",
+          "municipio": "Pulianas"
+        }
+      ]
+    },
+    {
+      "id": "CV0300",
+      "id_convenio": "CV0300",
+      "convocatoria": "2025-27",
+      "cif": "E19610039",
+      "nombre": "ALZAGO CB",
+      "centros": []
+    },
+    {
+      "id": "CV0349",
+      "id_convenio": "CV0349",
+      "convocatoria": "2025-27",
+      "cif": "A38385712",
+      "nombre": "AMHUDE SAU",
+      "centros": []
+    },
+    {
+      "id": "CV0310",
+      "id_convenio": "CV0310",
+      "convocatoria": "2025-27",
+      "cif": "B54556436",
+      "nombre": "ANALIZA SOCIEDAD DE DIAGNÓSTICO SL",
+      "centros": [
+        {
+          "calle": "Calle Caridad, nº 6. Bajo A. Motril, CP 18.600.",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0003",
+      "id_convenio": "CV0003",
+      "convocatoria": "2025-27",
+      "cif": "B19541937",
+      "nombre": "APARTAMENTOS INSIDE",
+      "centros": [
+        {
+          "calle": "C/ MOLINOS, 18, LOCAL 4 (GRANADA) 18009",
+          "codigo_postal": "18009",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0260",
+      "id_convenio": "CV0260",
+      "convocatoria": "2025-27",
+      "cif": "G18022368",
+      "nombre": "APROSMO ((ASOC PERSONAS DISC INTELEC MOTRIL COSTA GRANADINA ALPUJARRA)",
+      "centros": []
+    },
+    {
+      "id": "CV0442",
+      "id_convenio": "CV0442",
+      "convocatoria": "2025-27",
+      "cif": "G18343376",
+      "nombre": "ARCA EMPLEO",
+      "centros": [
+        {
+          "calle": "C/ Ctra. de Málaga, 43 18015 Granada",
+          "codigo_postal": "18015",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0223",
+      "id_convenio": "CV0223",
+      "convocatoria": "2025-27",
+      "cif": "B38036901",
+      "nombre": "ARCO ORGANIZACIÓN SL",
+      "centros": []
+    },
+    {
+      "id": "CV0268",
+      "id_convenio": "CV0268",
+      "convocatoria": "2025-27",
+      "cif": "B18805457",
+      "nombre": "Área 080 Cualificación Profesional S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0507",
+      "id_convenio": "CV0507",
+      "convocatoria": "2025-27",
+      "cif": "B21717608",
+      "nombre": "ARENAS LÓPEZ 95",
+      "centros": [
+        {
+          "calle": "Avenida Andalucía, Nº 66 Villanueva Mesía .CP 18369 (Granada).",
+          "codigo_postal": "18369",
+          "municipio": "Villanueva Mesía"
+        }
+      ]
+    },
+    {
+      "id": "CV0078",
+      "id_convenio": "CV0078",
+      "convocatoria": "2025-27",
+      "cif": "B18695247",
+      "nombre": "ARMARIOS ARCOMEG MARTÍN SL.",
+      "centros": []
+    },
+    {
+      "id": "CV0076",
+      "id_convenio": "CV0076",
+      "convocatoria": "2025-27",
+      "cif": "B22183370",
+      "nombre": "ARQUISOCIAL SL",
+      "centros": []
+    },
+    {
+      "id": "CV0229",
+      "id_convenio": "CV0229",
+      "convocatoria": "2025-27",
+      "cif": "B18809533",
+      "nombre": "ARTECSO ARQUITECTURA E INGENIERÍA SL.",
+      "centros": [
+        {
+          "calle": "CARRETERA DE ALHAMA Nº6-BAJO-CHURRIANA DE LA VEGA (GRANADA) C.P. 18.194",
+          "codigo_postal": "18194",
+          "municipio": "Churriana de la Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0445",
+      "id_convenio": "CV0445",
+      "convocatoria": "2025-27",
+      "cif": "B18462820",
+      "nombre": "Asesoría Rivas García SL.",
+      "centros": []
+    },
+    {
+      "id": "CV0379",
+      "id_convenio": "CV0379",
+      "convocatoria": "2025-27",
+      "cif": "B91228460",
+      "nombre": "ASISTENCIAL EUROPEA REIFS, S.L.",
+      "centros": [
+        {
+          "calle": "C/ MONTEVIDEO, S/N MARACENA (GRANADA) CP. 18200",
+          "codigo_postal": "18200",
+          "municipio": "Maracena"
+        }
+      ]
+    },
+    {
+      "id": "CV0438",
+      "id_convenio": "CV0438",
+      "convocatoria": "2025-27",
+      "cif": "G18927756",
+      "nombre": "ASOCIACION AFEMAGRA SALUD MENTAL GRANADA NORDESTE",
+      "centros": [
+        {
+          "calle": "C/ Solares s/n 18800 Baza (Granada)",
+          "codigo_postal": "18800",
+          "municipio": "Baza"
+        }
+      ]
+    },
+    {
+      "id": "CV0196",
+      "id_convenio": "CV0196",
+      "convocatoria": "2025-27",
+      "cif": "G18710558",
+      "nombre": "ASOCIACIÓN ALMANJÁYAR EN FAMILIA (ALFA)",
+      "centros": [
+        {
+          "calle": "C/ Arquitecto José Contreras, nº 13, 18013, Granada",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0176",
+      "id_convenio": "CV0176",
+      "convocatoria": "2025-27",
+      "cif": "G81037822",
+      "nombre": "ASOCIACIÓN BARRÓ",
+      "centros": []
+    },
+    {
+      "id": "CV0051",
+      "id_convenio": "CV0051",
+      "convocatoria": "2025-27",
+      "cif": "G19625482",
+      "nombre": "ASOCIACIÓN CULTURAL EL BOSQUE NATURA",
+      "centros": []
+    },
+    {
+      "id": "CV0534",
+      "id_convenio": "CV0534",
+      "convocatoria": "2025-27",
+      "cif": "G18403808",
+      "nombre": "ASOCIACIÓN DE COMERCIANTES Y EMPRESARIOS DE LA MANCOMUNIDAD RIBERA BAJA DEL GENIL",
+      "centros": []
+    },
+    {
+      "id": "CV0098",
+      "id_convenio": "CV0098",
+      "convocatoria": "2025-27",
+      "cif": "G18552083",
+      "nombre": "ASOCIACIÓN DE DISCAPACITADOS LOS CUATRO ARCOS",
+      "centros": []
+    },
+    {
+      "id": "CV0165",
+      "id_convenio": "CV0165",
+      "convocatoria": "2025-27",
+      "cif": "G18345751",
+      "nombre": "ASOCIACIÓN DE EDUCADORES PARA TIEMPO LIBRE MARIA DE BORJA",
+      "centros": [
+        {
+          "calle": "C/ JOSÉ MARÍA MIRANDA SERRANO, 33 BAJO A Y B. 18011 GRANADA",
+          "codigo_postal": "18011",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0004",
+      "id_convenio": "CV0004",
+      "convocatoria": "2025-27",
+      "cif": "G18363010",
+      "nombre": "ASOCIACIÓN DE ENFERMEDADES RARAS Y DISCAPACIDAD PANIDE",
+      "centros": [
+        {
+          "calle": "Avda. de Cádiz, 42, Complejo Galicia, Edif. Lugo B (Granada) 18006",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0320",
+      "id_convenio": "CV0320",
+      "convocatoria": "2025-27",
+      "cif": "G18413773",
+      "nombre": "Asociación de Familiares de enfermos de Alzheimer AFAVIDA",
+      "centros": []
+    },
+    {
+      "id": "CV0529",
+      "id_convenio": "CV0529",
+      "convocatoria": "2025-27",
+      "cif": "G19688803",
+      "nombre": "Asociación de familiares y enfermos de Alzheimer y otras demencias del Poniente Granadino",
+      "centros": [
+        {
+          "calle": "C/ Rosalia de Castro, Nº 1 Huétor Tájar (Granada) CP.18360",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0140",
+      "id_convenio": "CV0140",
+      "convocatoria": "2025-27",
+      "cif": "G19560226",
+      "nombre": "ASOCIACIÓN DE MUJERES LA VOLAERA",
+      "centros": [
+        {
+          "calle": "C/ VERONICA DE LA MAGDALENA, N.º 23. Granada 18002.",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0520",
+      "id_convenio": "CV0520",
+      "convocatoria": "2025-27",
+      "cif": "G19797364",
+      "nombre": "ASOCIACIÓN DE MUJERES RAÍCES DE TAXARA",
+      "centros": [
+        {
+          "calle": "C/ Rosalia de Castro, Nº1 Huétor Tájar (Granada) CP. 18360",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0226",
+      "id_convenio": "CV0226",
+      "convocatoria": "2025-27",
+      "cif": "G18866343",
+      "nombre": "ASOCIACION DE OSTOMIZADOS DE GRANADA (AOGRA)",
+      "centros": []
+    },
+    {
+      "id": "CV0069",
+      "id_convenio": "CV0069",
+      "convocatoria": "2025-27",
+      "cif": "G18056374",
+      "nombre": "ASOCIACIÓN DE PARAPLÉJICOS Y GRADES MINUS VÁLIDOS DE GRANADA (ASPAYM-GRANADA)",
+      "centros": [
+        {
+          "calle": "C/ Escritor Miguel Toro nº 7, bajo. Granada.18006.",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0135",
+      "id_convenio": "CV0135",
+      "convocatoria": "2025-27",
+      "cif": "G10881449",
+      "nombre": "ASOCIACIÓN EDUCACEM",
+      "centros": [
+        {
+          "calle": "PLAZA ANTONIO QUITIAN,BLOQUE 13,LOCAL 1,18013 GRANADA",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0436",
+      "id_convenio": "CV0436",
+      "convocatoria": "2025-27",
+      "cif": "G18018853",
+      "nombre": "ASOCIACIÓN EN FAVOR DE LAS PERSONAS CON DISCAPACIDAD INTELECTUAL “SAN JOSÉ”",
+      "centros": [
+        {
+          "calle": "C/ José Luis de los Reyes Arenas, 1 18500 Guadix (Granada)",
+          "codigo_postal": "18500",
+          "municipio": "Guadix"
+        }
+      ]
+    },
+    {
+      "id": "CV0244",
+      "id_convenio": "CV0244",
+      "convocatoria": "2025-27",
+      "cif": "G18352054",
+      "nombre": "ASOCIACIÓN ENFERMOS DE CROHN Y COLITIS ULCEROSA (ACCU GRANADA)",
+      "centros": [
+        {
+          "calle": "C/ Escultor Navas Parejo, Edificio Carolina, local 2, 18006, Granada",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0285",
+      "id_convenio": "CV0285",
+      "convocatoria": "2025-27",
+      "cif": "G18216614",
+      "nombre": "ASOCIACIÓN GRANADINA DE EMIGRANTES Y RETORNADOS (AGEyR)",
+      "centros": [
+        {
+          "calle": "C/ Monachil, 6, Bajo 18007 Granada",
+          "codigo_postal": "18007",
+          "municipio": "Monachil"
+        }
+      ]
+    },
+    {
+      "id": "CV0055",
+      "id_convenio": "CV0055",
+      "convocatoria": "2025-27",
+      "cif": "G19646231",
+      "nombre": "ASOCIACIÓN HIJOS DE LA VEGA",
+      "centros": [
+        {
+          "calle": "Callejón de los Nogales 6. 18010, Granada",
+          "codigo_postal": "18010",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0169",
+      "id_convenio": "CV0169",
+      "convocatoria": "2025-27",
+      "cif": "G18050419",
+      "nombre": "ASOCIACIÓN JUVENIL AMIGOS DE ALMANJÁYAR Y CARTUJA",
+      "centros": []
+    },
+    {
+      "id": "CV0220",
+      "id_convenio": "CV0220",
+      "convocatoria": "2025-27",
+      "cif": "G19676998",
+      "nombre": "ASOCIACION LA MOEBIUS",
+      "centros": []
+    },
+    {
+      "id": "CV0387",
+      "id_convenio": "CV0387",
+      "convocatoria": "2025-27",
+      "cif": "G19608967",
+      "nombre": "ASOCIACIÓN LABORATORIO RURAL LABCASA",
+      "centros": [
+        {
+          "calle": "AVDA. LA RAZUELA 9, 1º, DCHA 18650 NIGÜELAS, GRANADA",
+          "codigo_postal": "18650",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0573",
+      "id_convenio": "CV0573",
+      "convocatoria": "2025-27",
+      "cif": "G18288878",
+      "nombre": "ASOCIACIÓN MEDICUS MUNDI SUR",
+      "centros": [
+        {
+          "calle": "C/ José Tamayo, 12 Edf. Puerto Lápice- local, 18008, Granada",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0203",
+      "id_convenio": "CV0203",
+      "convocatoria": "2025-27",
+      "cif": "G18498154",
+      "nombre": "ASOCIACIÓN OCREM",
+      "centros": [
+        {
+          "calle": "C/ARZOBISPO PEDRO DE CASTRO 7 EDIFICIO COLUMBA I 18013 GRANADA",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0455",
+      "id_convenio": "CV0455",
+      "convocatoria": "2025-27",
+      "cif": "G18344978",
+      "nombre": "ASOCIACIÓN PARA LA AYUDA A PERSONAS CON NECESIDADES ESPECIALES “ESPERANZA”",
+      "centros": [
+        {
+          "calle": "Avda. Cuatro Caminos, 37, Benamaurel , Baza,(Granada), 18817",
+          "codigo_postal": "18817",
+          "municipio": "Baza"
+        }
+      ]
+    },
+    {
+      "id": "CV0521",
+      "id_convenio": "CV0521",
+      "convocatoria": "2025-27",
+      "cif": "G21953161",
+      "nombre": "ASOCIACIÓN PONIENTE VIVO",
+      "centros": [
+        {
+          "calle": "C/ Rosalia de Castro, Nº 1 Huétor Tájar (Granada) CP. 18360",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0005",
+      "id_convenio": "CV0005",
+      "convocatoria": "2025-27",
+      "cif": "G18474254",
+      "nombre": "ASOCIACIÓN PRO INTELIGENCIA LIMITE",
+      "centros": [
+        {
+          "calle": "C/ ZIRIES BAJOS, 4 BAJO (GRANADA) 18005",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0441",
+      "id_convenio": "CV0441",
+      "convocatoria": "2025-27",
+      "cif": "G18025130",
+      "nombre": "Asociación Prodiscapacitados Psíquicos Jabalcón",
+      "centros": [
+        {
+          "calle": "CARRETERA DE CANILES S/N 18800 BAZA (GRANADA)",
+          "codigo_postal": "18800",
+          "municipio": "Baza"
+        }
+      ]
+    },
+    {
+      "id": "CV0007",
+      "id_convenio": "CV0007",
+      "convocatoria": "2025-27",
+      "cif": "G18895680",
+      "nombre": "ASOCIACIÓN RURAL DE DESARROLLO Y COOPERACIÓN EUROPEA CULTURAE",
+      "centros": [
+        {
+          "calle": "C/ EL TREVENQUE, 20 (GRANADA) 18008",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0451",
+      "id_convenio": "CV0451",
+      "convocatoria": "2025-27",
+      "cif": "G18767319",
+      "nombre": "Asociación SAPAME (Salud para la Mente",
+      "centros": [
+        {
+          "calle": "Calle Almona del Boquerón Nº10, Granada, 18001",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0166",
+      "id_convenio": "CV0166",
+      "convocatoria": "2025-27",
+      "cif": "G18029496",
+      "nombre": "ASPACE GRANADA",
+      "centros": [
+        {
+          "calle": "C/ MERCEDES GAIBROIS,39 18008 GRANADA",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0114",
+      "id_convenio": "CV0114",
+      "convocatoria": "2025-27",
+      "cif": "F18627943",
+      "nombre": "ATENCIÓN Y OCIO INFANTIL DE PELIGROS S.C.A.",
+      "centros": [
+        {
+          "calle": "Avda. Olivo Gordo s/n 18210, Peligros, Granada.",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0381",
+      "id_convenio": "CV0381",
+      "convocatoria": "2025-27",
+      "cif": "B18489179",
+      "nombre": "ATLÁNTIDA FORMACIÓN SL",
+      "centros": [
+        {
+          "calle": "CALLE/ ACEQUIA DEL ZUTE, 2, Granada C.P. 18015",
+          "codigo_postal": "18015",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0033",
+      "id_convenio": "CV0033",
+      "convocatoria": "2025-27",
+      "cif": "B19535590",
+      "nombre": "Atticus Market S.L.",
+      "centros": [
+        {
+          "calle": "Calle Nueva de San Antón 16. Granada 18005",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Calle San Juan de Dios 24.18001, Granada",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0318",
+      "id_convenio": "CV0318",
+      "convocatoria": "2025-27",
+      "cif": "B18974535",
+      "nombre": "Aula 10 Servicios Educativos S.L.",
+      "centros": [
+        {
+          "calle": "Calle Comedias, 8-10. 18600 Motril (Granada)",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0319",
+      "id_convenio": "CV0319",
+      "convocatoria": "2025-27",
+      "cif": "B18535286",
+      "nombre": "AUTOESCUELA DIVINA PASTORA SL",
+      "centros": [
+        {
+          "calle": "Avda. de la Habana nº 14, Motril C.P. 18.600",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0254",
+      "id_convenio": "CV0254",
+      "convocatoria": "2025-27",
+      "cif": "B18446906",
+      "nombre": "AUTOMECÁNICA PÉREZ SLU",
+      "centros": []
+    },
+    {
+      "id": "CV0522",
+      "id_convenio": "CV0522",
+      "convocatoria": "2025-27",
+      "cif": "B18704858",
+      "nombre": "AUTOMOVILES SANCHEZ ARCOS SL",
+      "centros": [
+        {
+          "calle": "Poligono Los Bermejales S/N Huétor Tájar (Granada) CP. 18360",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0056",
+      "id_convenio": "CV0056",
+      "convocatoria": "2025-27",
+      "cif": "B19652270",
+      "nombre": "AUTOREPARACIÓN LOJA SLU",
+      "centros": [
+        {
+          "calle": "C/ Moraleda 14, Polig. Industrial Manzanil 2, (Loja, Granada) 18300",
+          "codigo_postal": "18300",
+          "municipio": "Loja"
+        }
+      ]
+    },
+    {
+      "id": "CV0238",
+      "id_convenio": "CV0238",
+      "convocatoria": "2025-27",
+      "cif": "B18392340",
+      "nombre": "AUTOSERVICIO CASTARNADO SL",
+      "centros": [
+        {
+          "calle": "C/ Pilarejo, nº 24, 18561, Montejícar, Granada",
+          "codigo_postal": "18561",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0330",
+      "id_convenio": "CV0330",
+      "convocatoria": "2025-27",
+      "cif": "B97673453",
+      "nombre": "AVANTA PREVENCION INTEGRAL",
+      "centros": []
+    },
+    {
+      "id": "CV0427",
+      "id_convenio": "CV0427",
+      "convocatoria": "2025-27",
+      "cif": "B18785600",
+      "nombre": "AVANZA ESCUELA ESTUDIOS INTEGRALES SL",
+      "centros": [
+        {
+          "calle": "C/ Manuel de Falla, nº 5, bajo, 18005, Granada",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0303",
+      "id_convenio": "CV0303",
+      "convocatoria": "2025-27",
+      "cif": "B18956102",
+      "nombre": "Ayudan2 S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0446",
+      "id_convenio": "CV0446",
+      "convocatoria": "2025-27",
+      "cif": "B18937219",
+      "nombre": "Bandas Transportadoras del Sur SL",
+      "centros": [
+        {
+          "calle": "Polígono Iznamontes P11 18550 Iznalloz (Granada)",
+          "codigo_postal": "18550",
+          "municipio": "Iznalloz"
+        }
+      ]
+    },
+    {
+      "id": "CV0185",
+      "id_convenio": "CV0185",
+      "convocatoria": "2025-27",
+      "cif": "E55393359",
+      "nombre": "BAR-RESTAURANTE LOS OLIVOS ALFACAR ESPJ",
+      "centros": [
+        {
+          "calle": "C/ Francia, n.º 1, Alfacar, CP 18170",
+          "codigo_postal": "18170",
+          "municipio": "Alfacar"
+        }
+      ]
+    },
+    {
+      "id": "CV0524",
+      "id_convenio": "CV0524",
+      "convocatoria": "2025-27",
+      "cif": "B18092957",
+      "nombre": "BERNER MONTAJE Y FIJACION SL",
+      "centros": [
+        {
+          "calle": "C/ Albert Berner, Pol Industrial La Rosa, Chauchina (Granada) CP. 18330",
+          "codigo_postal": "18330",
+          "municipio": "Chauchina"
+        }
+      ]
+    },
+    {
+      "id": "CV0548",
+      "id_convenio": "CV0548",
+      "convocatoria": "2025-27",
+      "cif": "B19568120",
+      "nombre": "BHD VINTAGE SL",
+      "centros": [
+        {
+          "calle": "C/ Jaén, nº7, Polígono Industrial La Fuente, Fuente Vaqueros, 18340, Granada",
+          "codigo_postal": "18340",
+          "municipio": "Fuente Vaqueros"
+        },
+        {
+          "calle": "C/ Trinidad, nº3, 18003, Granada",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0439",
+      "id_convenio": "CV0439",
+      "convocatoria": "2025-27",
+      "cif": "B19667054",
+      "nombre": "BIOMADI ENERGÍAS RENOVABLES Y SOSTENIBLES SLU",
+      "centros": [
+        {
+          "calle": "Polígono Industrial de Dílar, nave 9 18152 Dílar (Granada)",
+          "codigo_postal": "18152",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0443",
+      "id_convenio": "CV0443",
+      "convocatoria": "2025-27",
+      "cif": "B93209898",
+      "nombre": "BIOS TECHNOLOGY SOLUTIONS",
+      "centros": [
+        {
+          "calle": "Ctra. de Córdoba km 429 nave 2 18230 Atarfe (Granada)",
+          "codigo_postal": "18230",
+          "municipio": "Atarfe"
+        }
+      ]
+    },
+    {
+      "id": "CV0559",
+      "id_convenio": "CV0559",
+      "convocatoria": "2025-27",
+      "cif": "B72877715",
+      "nombre": "BOCADILLO DE JAMÓN, S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0100",
+      "id_convenio": "CV0100",
+      "convocatoria": "2025-27",
+      "cif": "B85240950",
+      "nombre": "BRASA Y LEÑA ESPAÑA, S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0410",
+      "id_convenio": "CV0410",
+      "convocatoria": "2025-27",
+      "cif": "B19634443",
+      "nombre": "BRAUN MARKETING CONSULTING, S.L.",
+      "centros": [
+        {
+          "calle": "Calle / Molinos 5, Granada.18009",
+          "codigo_postal": "18009",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0235",
+      "id_convenio": "CV0235",
+      "convocatoria": "2025-27",
+      "cif": "B19574235",
+      "nombre": "BRUJILAPIOS SL",
+      "centros": [
+        {
+          "calle": "Callejón del Pretorio nº7, 18008 Granada",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0489",
+      "id_convenio": "CV0489",
+      "convocatoria": "2025-27",
+      "cif": "B18368639",
+      "nombre": "BUEN CROASSANT, S.L",
+      "centros": [
+        {
+          "calle": "P.I. Dos de octubre, Cmno. del Jau, 11, Santa Fe, Granada. 18320",
+          "codigo_postal": "18320",
+          "municipio": "Santa Fe"
+        }
+      ]
+    },
+    {
+      "id": "CV0487",
+      "id_convenio": "CV0487",
+      "convocatoria": "2025-27",
+      "cif": "B28757730",
+      "nombre": "C&A MODAS SL",
+      "centros": [
+        {
+          "calle": "CC Nevada Shopping. Locales 28 y 29. Avenida de las Palmeras, 75. Armilla (Granada)",
+          "codigo_postal": "",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0500",
+      "id_convenio": "CV0500",
+      "convocatoria": "2025-27",
+      "cif": "B18631184",
+      "nombre": "CAFETERÍA SANCHO, S.L.",
+      "centros": [
+        {
+          "calle": "Calle Tablas, 16 Granada. 18002",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0582",
+      "id_convenio": "CV0582",
+      "convocatoria": "2025-27",
+      "cif": "B16397903",
+      "nombre": "CAMISEROS DEL SOL SL",
+      "centros": [
+        {
+          "calle": "C/ Reyes Católicos 45. 18001, Granada",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0138",
+      "id_convenio": "CV0138",
+      "convocatoria": "2025-27",
+      "cif": "B10593259",
+      "nombre": "CAMPER DIVISIÓN SL",
+      "centros": []
+    },
+    {
+      "id": "CV0440",
+      "id_convenio": "CV0440",
+      "convocatoria": "2025-27",
+      "cif": "R1800089C",
+      "nombre": "CÁRITAS DIOCESANA GUADIX – BAZA",
+      "centros": []
+    },
+    {
+      "id": "CV0373",
+      "id_convenio": "CV0373",
+      "convocatoria": "2025-27",
+      "cif": "B16843104",
+      "nombre": "CARNE Y CALLA SL.",
+      "centros": [
+        {
+          "calle": "PZ. BIBRAMBLA, 4, CP 18001 GRANADA",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0243",
+      "id_convenio": "CV0243",
+      "convocatoria": "2025-27",
+      "cif": "E19708700",
+      "nombre": "CARPINTERIA SOPORTUJAR CB",
+      "centros": []
+    },
+    {
+      "id": "CV0566",
+      "id_convenio": "CV0566",
+      "convocatoria": "2025-27",
+      "cif": "B18522649",
+      "nombre": "CASA CASTAÑEDA S.L",
+      "centros": []
+    },
+    {
+      "id": "CV0115",
+      "id_convenio": "CV0115",
+      "convocatoria": "2025-27",
+      "cif": "G18780460",
+      "nombre": "CASA DE LA MISERICORDIA SAN GABRIEL",
+      "centros": [
+        {
+          "calle": "Carretera Granada-Córdoba nº5, Pinos Puente 18240 Granada",
+          "codigo_postal": "18240",
+          "municipio": "Pinos Puente"
+        }
+      ]
+    },
+    {
+      "id": "CV0214",
+      "id_convenio": "CV0214",
+      "convocatoria": "2025-27",
+      "cif": "R1800639E",
+      "nombre": "CASA FAMILIAR DR. JUAN SEGURA",
+      "centros": [
+        {
+          "calle": "C/ Periodista Miguel González Pareja, nº 2, 18014, Granada",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0262",
+      "id_convenio": "CV0262",
+      "convocatoria": "2025-27",
+      "cif": "B13958715",
+      "nombre": "CASLEANU S.L",
+      "centros": [
+        {
+          "calle": "Calle Gonzalo Robles, 68, Órgiva C.P. 18400",
+          "codigo_postal": "18400",
+          "municipio": "Órgiva"
+        }
+      ]
+    },
+    {
+      "id": "CV0371",
+      "id_convenio": "CV0371",
+      "convocatoria": "2025-27",
+      "cif": "G56893100",
+      "nombre": "CECOT GRANADA",
+      "centros": [
+        {
+          "calle": "Calle/ Santa Clotilde, 3. CP. 18003",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0154",
+      "id_convenio": "CV0154",
+      "convocatoria": "2025-27",
+      "cif": "B18525279",
+      "nombre": "CEE RESIDENCIA GENIL SL",
+      "centros": [
+        {
+          "calle": "Polígono Virgen de las Nieves, Paseo de las Andas, 8, CP 18110, Las Gabias",
+          "codigo_postal": "18110",
+          "municipio": "Las Gabias"
+        }
+      ]
+    },
+    {
+      "id": "CV0191",
+      "id_convenio": "CV0191",
+      "convocatoria": "2025-27",
+      "cif": "B18831198",
+      "nombre": "CEI ECODUENDES SL",
+      "centros": [
+        {
+          "calle": "Carretera Dílar-Otura, nº 1, Urb. Los Cortijillos, 18152, Dílar, Granada",
+          "codigo_postal": "18152",
+          "municipio": "Otura"
+        }
+      ]
+    },
+    {
+      "id": "CV0472",
+      "id_convenio": "CV0472",
+      "convocatoria": "2025-27",
+      "cif": "B18377622",
+      "nombre": "CENTRO ANDALUZ DE ESTUDIOS Y ENTRENAMIENTO SL",
+      "centros": [
+        {
+          "calle": "Calle Sancho Panza, 8. Bajo. Granada 18008",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Centro Andaluz de estudios y entrenamiento",
+          "codigo_postal": "",
+          "municipio": ""
+        }
+      ]
+    },
+    {
+      "id": "CV0123",
+      "id_convenio": "CV0123",
+      "convocatoria": "2025-27",
+      "cif": "B18653592",
+      "nombre": "CENTRO DE ATENCIÓN A LA TERCERA EDAD DIURNO S.L. (CATEDI)",
+      "centros": [
+        {
+          "calle": "C/ Aricel, 54, 18220 Albolote (Granada)",
+          "codigo_postal": "18220",
+          "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0108",
+      "id_convenio": "CV0108",
+      "convocatoria": "2025-27",
+      "cif": "B19611730",
+      "nombre": "CENTRO DE DÍA SANTA ÁNGELA DE LA CRUZ",
+      "centros": [
+        {
+          "calle": "C/ Acequia de la Madraza, s/n 18015 Granada",
+          "codigo_postal": "18015",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0006",
+      "id_convenio": "CV0006",
+      "convocatoria": "2025-27",
+      "cif": "F19712835",
+      "nombre": "CENTRO DE DIA SIERRA DE LAS NIEVES S.COOP.AND DE INTERÉS SOCIAL",
+      "centros": []
+    },
+    {
+      "id": "CV0390",
+      "id_convenio": "CV0390",
+      "convocatoria": "2025-27",
+      "cif": "B18576884",
+      "nombre": "Centro geriátrico especializado",
+      "centros": [
+        {
+          "calle": "Calle Capote, 9 C.P.18014",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Calle Capote n.º 9, 18014 Granada",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0073",
+      "id_convenio": "CV0073",
+      "convocatoria": "2025-27",
+      "cif": "B18646471",
+      "nombre": "CENTRO GERIÁTRICO ESTANCIA DIURNA ALCÁZAR SL.",
+      "centros": []
+    },
+    {
+      "id": "CV0374",
+      "id_convenio": "CV0374",
+      "convocatoria": "2025-27",
+      "cif": "B18609909",
+      "nombre": "CENTRO GERONTOLÓGICO ANCHA DE CAPUCHINOS GRANADA, S.L.",
+      "centros": [
+        {
+          "calle": "C/ Ancha de capuchinos, 6 Bajo 18012 Granada",
+          "codigo_postal": "18012",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0148",
+      "id_convenio": "CV0148",
+      "convocatoria": "2025-27",
+      "cif": "B19615806",
+      "nombre": "Centro infantil Mofletes SL",
+      "centros": [
+        {
+          "calle": "C/ EURÍPIDES Nº 2 18014 GRANADA",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0063",
+      "id_convenio": "CV0063",
+      "convocatoria": "2025-27",
+      "cif": "B56823669",
+      "nombre": "CENTRO INFANTIL PANDA S.L",
+      "centros": []
+    },
+    {
+      "id": "CV0179",
+      "id_convenio": "CV0179",
+      "convocatoria": "2025-27",
+      "cif": "J56922503",
+      "nombre": "CENTRO MASSALUD SOCIEDAD CIVIL PARTICULAR",
+      "centros": [
+        {
+          "calle": "C/ ALICANTE, Nº13, LOCAL BAJO, 18193, MONACHIL, GRANADA",
+          "codigo_postal": "18193",
+          "municipio": "Monachil"
+        }
+      ]
+    },
+    {
+      "id": "CV0513",
+      "id_convenio": "CV0513",
+      "convocatoria": "2025-27",
+      "cif": "B18713289",
+      "nombre": "Centro Óptico Jiménez Garófano S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0537",
+      "id_convenio": "CV0537",
+      "convocatoria": "2025-27",
+      "cif": "B18515221",
+      "nombre": "CENTROMIPC SL",
+      "centros": []
+    },
+    {
+      "id": "CV0382",
+      "id_convenio": "CV0382",
+      "convocatoria": "2025-27",
+      "cif": "B18624528",
+      "nombre": "CENTROS DE DÍA ANTARES, S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0341",
+      "id_convenio": "CV0341",
+      "convocatoria": "2025-27",
+      "cif": "B93608503",
+      "nombre": "Centros infantiles Happy School S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0461",
+      "id_convenio": "CV0461",
+      "convocatoria": "2025-27",
+      "cif": "B19673581",
+      "nombre": "CERAMIC AMBITION SLU",
+      "centros": [
+        {
+          "calle": "Carretera Granada-Motril, salida Alhendín, Granada, 18620",
+          "codigo_postal": "18620",
+          "municipio": "Alhendín"
+        }
+      ]
+    },
+    {
+      "id": "CV0184",
+      "id_convenio": "CV0184",
+      "convocatoria": "2025-27",
+      "cif": "B18356808",
+      "nombre": "CERCOLIM SL",
+      "centros": [
+        {
+          "calle": "C/ Ancha de Gracia 3, 18002, Granada",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "C/ Restauradores 1, Granada 18007",
+          "codigo_postal": "18007",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0126",
+      "id_convenio": "CV0126",
+      "convocatoria": "2025-27",
+      "cif": "B19533181",
+      "nombre": "CHEZMOI SERVICES S.L.",
+      "centros": [
+        {
+          "calle": "C/ JOAQUÍN ACOSTA N.º 6, 18010 GRANADA",
+          "codigo_postal": "18010",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0533",
+      "id_convenio": "CV0533",
+      "convocatoria": "2025-27",
+      "cif": "B19606656",
+      "nombre": "CITYSEM MARKETING ONLINE SL",
+      "centros": []
+    },
+    {
+      "id": "CV0265",
+      "id_convenio": "CV0265",
+      "convocatoria": "2025-27",
+      "cif": "F91141879",
+      "nombre": "CLAROS SOCIEDAD COOPERATIVA ANDALUZA DE INTERES SOCIAL",
+      "centros": []
+    },
+    {
+      "id": "CV0570",
+      "id_convenio": "CV0570",
+      "convocatoria": "2025-27",
+      "cif": "F91141879",
+      "nombre": "CLAROS SOCIEDAD COOPERATIVA ANDALUZA DE INTERES SOCIAL",
+      "centros": []
+    },
+    {
+      "id": "CV0342",
+      "id_convenio": "CV0342",
+      "convocatoria": "2025-27",
+      "cif": "B42902288",
+      "nombre": "Clínica Dental Fernández Abarca S.L.P.",
+      "centros": []
+    },
+    {
+      "id": "CV0089",
+      "id_convenio": "CV0089",
+      "convocatoria": "2025-27",
+      "cif": "G18223644",
+      "nombre": "CLUB DE BALONCESTO ARMILLA",
+      "centros": [
+        {
+          "calle": "C/ León, s/n 18100 Armilla (Granada)",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0156",
+      "id_convenio": "CV0156",
+      "convocatoria": "2025-27",
+      "cif": "B19605047",
+      "nombre": "CLUB DE EQUITACIÓN GRANADA S.L.U.",
+      "centros": [
+        {
+          "calle": "C/ RAMAL DEL MOLINO, P. 2- PARCELA 22, 18140 LA ZUBIA GRANADA",
+          "codigo_postal": "18140",
+          "municipio": "La Zubia"
+        }
+      ]
+    },
+    {
+      "id": "CV0042",
+      "id_convenio": "CV0042",
+      "convocatoria": "2025-27",
+      "cif": "V18787572",
+      "nombre": "CLUB DEPORTIVO IUNDENIA",
+      "centros": [
+        {
+          "calle": "AVDA LUIS JAVIER RODRIGUEZ SALAS 18213 JUN (GRANADA)",
+          "codigo_postal": "18213",
+          "municipio": "Jun"
+        }
+      ]
+    },
+    {
+      "id": "CV0302",
+      "id_convenio": "CV0302",
+      "convocatoria": "2025-27",
+      "cif": "G18086686",
+      "nombre": "COAG GRANADA",
+      "centros": []
+    },
+    {
+      "id": "CV0277",
+      "id_convenio": "CV0277",
+      "convocatoria": "2025-27",
+      "cif": "B62213814",
+      "nombre": "COALIMENT ANDALUCÍA SL",
+      "centros": [
+        {
+          "calle": "Carretera de Almería, 81, C.P. 18600 Motril (Granada)",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0286",
+      "id_convenio": "CV0286",
+      "convocatoria": "2025-27",
+      "cif": "F18080515",
+      "nombre": "COEPI, SOC. COOP.AND.",
+      "centros": []
+    },
+    {
+      "id": "CV0279",
+      "id_convenio": "CV0279",
+      "convocatoria": "2025-27",
+      "cif": "A06007611",
+      "nombre": "COFARES SUROESTE, SA",
+      "centros": [
+        {
+          "calle": "Camino de las Algaidas,32, Motril CP 18613 (Ganada",
+          "codigo_postal": "18613",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0143",
+      "id_convenio": "CV0143",
+      "convocatoria": "2025-27",
+      "cif": "R1800116D",
+      "nombre": "Colegio Jesús M.ª Cristo de la Yedra",
+      "centros": [
+        {
+          "calle": "Paseo de la Cartuja n.º 2, 18011, Granada",
+          "codigo_postal": "18011",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0493",
+      "id_convenio": "CV0493",
+      "convocatoria": "2025-27",
+      "cif": "B35597020",
+      "nombre": "COMESS GROUP DE RESTAURACION SL",
+      "centros": [
+        {
+          "calle": "C.C. Serrallo Plaza, P.º Laguna de Cameros, 1, Genil, Granada 18008",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0045",
+      "id_convenio": "CV0045",
+      "convocatoria": "2025-27",
+      "cif": "B63334635",
+      "nombre": "COMPLETE ENTERTAINMENT EXCHANGE, S.L.",
+      "centros": [
+        {
+          "calle": "C. San Antón, 4, Centro, 18005 Granada",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0159",
+      "id_convenio": "CV0159",
+      "convocatoria": "2025-27",
+      "cif": "B19667906",
+      "nombre": "COMUNICACIÓN ADAPTADA SL",
+      "centros": []
+    },
+    {
+      "id": "CV0456",
+      "id_convenio": "CV0456",
+      "convocatoria": "2025-27",
+      "cif": "A79103222",
+      "nombre": "CONFORAMA ESPAÑA SA",
+      "centros": [
+        {
+          "calle": "Ctra. de Jaén Km 2 S/N, Granada, 18014",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0509",
+      "id_convenio": "CV0509",
+      "convocatoria": "2025-27",
+      "cif": "B18240838",
+      "nombre": "CONGELADOS APOLO SL",
+      "centros": []
+    },
+    {
+      "id": "CV0528",
+      "id_convenio": "CV0528",
+      "convocatoria": "2025-27",
+      "cif": "B19637834",
+      "nombre": "CONSERVAS TORO LOPEZ SL",
+      "centros": []
+    },
+    {
+      "id": "CV0274",
+      "id_convenio": "CV0274",
+      "convocatoria": "2025-27",
+      "cif": "B18951640",
+      "nombre": "Consultora de Formación Valverde S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0431",
+      "id_convenio": "CV0431",
+      "convocatoria": "2025-27",
+      "cif": "F46078986",
+      "nombre": "Consum S. Coop.",
+      "centros": [
+        {
+          "calle": "Avda de la Estación, 22 18230 Atarfe (Granada)",
+          "codigo_postal": "18230",
+          "municipio": "Atarfe"
+        },
+        {
+          "calle": "C/ David Valero s/n 18800 Baza (Granada)",
+          "codigo_postal": "18800",
+          "municipio": "Baza"
+        },
+        {
+          "calle": "Ctra. Murcia s/n 18800 Baza (Granada)",
+          "codigo_postal": "18800",
+          "municipio": "Baza"
+        },
+        {
+          "calle": "C/ Estación de Tranvías 1824 18110 Las Gabias (Granada)",
+          "codigo_postal": "18110",
+          "municipio": "Las Gabias"
+        },
+        {
+          "calle": "Avda. de los Ángeles, 28 18300 Loja (Granada)",
+          "codigo_postal": "18300",
+          "municipio": "Loja"
+        },
+        {
+          "calle": "Calle Manuel Peña Alta, 3-5, 18600 Motril (Granada)",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0137",
+      "id_convenio": "CV0137",
+      "convocatoria": "2025-27",
+      "cif": "F18004937",
+      "nombre": "COVIRAN S.C.A.",
+      "centros": [
+        {
+          "calle": "CARRETERA NACIONAL 432,KM 431,18230,ATARFE,GRANADA",
+          "codigo_postal": "18230",
+          "municipio": "Atarfe"
+        }
+      ]
+    },
+    {
+      "id": "CV0270",
+      "id_convenio": "CV0270",
+      "convocatoria": "2025-27",
+      "cif": "B56406564",
+      "nombre": "Cronophone Motril S.L.",
+      "centros": [
+        {
+          "calle": "Plaza Cruz Verde,7, 18600 Motril (Granada)",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        },
+        {
+          "calle": "Avda. Antonio Machado,2, Bajo,18680 Salobreña",
+          "codigo_postal": "18680",
+          "municipio": "Salobreña"
+        }
+      ]
+    },
+    {
+      "id": "CV0495",
+      "id_convenio": "CV0495",
+      "convocatoria": "2025-27",
+      "cif": "Q2866001G",
+      "nombre": "CRUZ ROJA ESPAÑOLA",
+      "centros": [
+        {
+          "calle": "Avda. Ronda de Baza, 55. Baza. 18800 (Granada)",
+          "codigo_postal": "18800",
+          "municipio": "Baza"
+        }
+      ]
+    },
+    {
+      "id": "CV0221",
+      "id_convenio": "CV0221",
+      "convocatoria": "2025-27",
+      "cif": "B19579093",
+      "nombre": "CULTURAE FORMACIÓN Y EMPLEO SL",
+      "centros": [
+        {
+          "calle": "CARRETERA DE LA SIERRA Nº 60 GRANADA C.P. 18008",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0532",
+      "id_convenio": "CV0532",
+      "convocatoria": "2025-27",
+      "cif": "B19668250",
+      "nombre": "DALBAT GRANADA SL",
+      "centros": [
+        {
+          "calle": "C/ Buensuceso, Nº1 Bajo Granada (Granada) CP. 18002",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0001",
+      "id_convenio": "CV0001",
+      "convocatoria": "2025-27",
+      "cif": "B24855983",
+      "nombre": "DAYSA FORMACIÓN S.L.",
+      "centros": [
+        {
+          "calle": "C/ Ancha de Capuchinos, 22, Granada, 18012",
+          "codigo_postal": "18012",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0278",
+      "id_convenio": "CV0278",
+      "convocatoria": "2025-27",
+      "cif": "B18857136",
+      "nombre": "De Cara Asesores Fiscales SLP",
+      "centros": []
+    },
+    {
+      "id": "CV0308",
+      "id_convenio": "CV0308",
+      "convocatoria": "2025-27",
+      "cif": "B86867512",
+      "nombre": "dealz españa sl",
+      "centros": [
+        {
+          "calle": "Avenida de Salobreña 60, Motril (CP 18600)",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0542",
+      "id_convenio": "CV0542",
+      "convocatoria": "2025-27",
+      "cif": "B86867512",
+      "nombre": "dealz españa sl",
+      "centros": [
+        {
+          "calle": "Centro Comercial Nevada Shopping, Av. de las Palmeras 75, Armilla , Granada 18001",
+          "codigo_postal": "18001",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "Camino de Ronda, 97B 18003 Granada",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Centro Comercial Granaita. C/ Luis Buñuel, 6, Pulianas, 18197 Granada",
+          "codigo_postal": "18197",
+          "municipio": "Pulianas"
+        }
+      ]
+    },
+    {
+      "id": "CV0435",
+      "id_convenio": "CV0435",
+      "convocatoria": "2025-27",
+      "cif": "B18668806",
+      "nombre": "DEIMOS CENES SL",
+      "centros": [
+        {
+          "calle": "Avda. Sierra Nevada, 33 18190 Cenes de la Vega (Granada)",
+          "codigo_postal": "18190",
+          "municipio": "Cenes de la Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0209",
+      "id_convenio": "CV0209",
+      "convocatoria": "2025-27",
+      "cif": "B18463612",
+      "nombre": "DESGUACES GRANADA SL",
+      "centros": [
+        {
+          "calle": "Avda Andalucía, s/n, (Polígono Industrial Fatinafar), 18015, Granada",
+          "codigo_postal": "18015",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0470",
+      "id_convenio": "CV0470",
+      "convocatoria": "2025-27",
+      "cif": "B18531780",
+      "nombre": "DESGUACES SUSPIRO DEL MORO, SL",
+      "centros": [
+        {
+          "calle": "Ctra. Motril, K.146, s/n, Villa de Otura, Granada, 18630",
+          "codigo_postal": "18630",
+          "municipio": "Otura"
+        }
+      ]
+    },
+    {
+      "id": "CV0048",
+      "id_convenio": "CV0048",
+      "convocatoria": "2025-27",
+      "cif": "A80782519",
+      "nombre": "DIA RETAIL ESPAÑA S.A.U.",
+      "centros": [
+        {
+          "calle": "Avenida de Dilar 95. 18007 Granada.",
+          "codigo_postal": "18007",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Carretera de la Sierra S/N. 18550, Iznalloz, Granada.",
+          "codigo_postal": "18550",
+          "municipio": "Iznalloz"
+        }
+      ]
+    },
+    {
+      "id": "CV0295",
+      "id_convenio": "CV0295",
+      "convocatoria": "2025-27",
+      "cif": "A80782519",
+      "nombre": "DIA RETAIL ESPAÑA S.A.U.",
+      "centros": []
+    },
+    {
+      "id": "CV0019",
+      "id_convenio": "CV0019",
+      "convocatoria": "2025-27",
+      "cif": "B18996090",
+      "nombre": "DIALI ARCHIDONA SL",
+      "centros": [
+        {
+          "calle": "C/ Avenida de Andalucía, s/n, Loja (Granada) 18300",
+          "codigo_postal": "18300",
+          "municipio": "Loja"
+        }
+      ]
+    },
+    {
+      "id": "CV0484",
+      "id_convenio": "CV0484",
+      "convocatoria": "2025-27",
+      "cif": "B19565019",
+      "nombre": "DISTRIBUCIONES CARNICAS SIERRA DEL TRIGO, SL",
+      "centros": []
+    },
+    {
+      "id": "CV0297",
+      "id_convenio": "CV0297",
+      "convocatoria": "2025-27",
+      "cif": "B18693846",
+      "nombre": "DISTRIBUIDORA MORONSAN, SL",
+      "centros": []
+    },
+    {
+      "id": "CV0227",
+      "id_convenio": "CV0227",
+      "convocatoria": "2025-27",
+      "cif": "B19642198",
+      "nombre": "DIVADARON SERVICIOS SLU",
+      "centros": [
+        {
+          "calle": "c/ poniente 3, armilla(granada) 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "CALLE SALAMANCA Nº 11-PISO 2º DR-ARMILLA 18.100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0352",
+      "id_convenio": "CV0352",
+      "convocatoria": "2025-27",
+      "cif": "A08474306",
+      "nombre": "DOMCA SAU",
+      "centros": [
+        {
+          "calle": "CAMINO DE JAYENA Nº82 18620 ALHENIDIN (GRANADA",
+          "codigo_postal": "18620",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0017",
+      "id_convenio": "CV0017",
+      "convocatoria": "2025-27",
+      "cif": "B18469312",
+      "nombre": "DORCAS PUBLICIDAD S.L",
+      "centros": [
+        {
+          "calle": "C/ San Miguel 42 Armilla, 18100 (Granada)",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "C/ Venecia 40 Armilla, 18100 (Granada)",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0041",
+      "id_convenio": "CV0041",
+      "convocatoria": "2025-27",
+      "cif": "B19608835",
+      "nombre": "DOS FLORES DE GRANA 2016 S.L.",
+      "centros": [
+        {
+          "calle": "Calle Horno Marina 13. Granada. 18001.",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0204",
+      "id_convenio": "CV0204",
+      "convocatoria": "2025-27",
+      "cif": "B18976944",
+      "nombre": "DULCEÁNGEL CONFITERÍA SL",
+      "centros": []
+    },
+    {
+      "id": "CV0201",
+      "id_convenio": "CV0201",
+      "convocatoria": "2025-27",
+      "cif": "B01974716",
+      "nombre": "ECO TIERRA DE DIATOMEAS SLU",
+      "centros": [
+        {
+          "calle": "Polígono los Álamos, UE-I/3, 9, 18230, Atarfe, Granada",
+          "codigo_postal": "18230",
+          "municipio": "Atarfe"
+        }
+      ]
+    },
+    {
+      "id": "CV0026",
+      "id_convenio": "CV0026",
+      "convocatoria": "2025-27",
+      "cif": "B18914416",
+      "nombre": "ECOIDEAS CONSULTORIA SL",
+      "centros": [
+        {
+          "calle": "C/Ismail 41 18013 Granada",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0266",
+      "id_convenio": "CV0266",
+      "convocatoria": "2025-27",
+      "cif": "B19564129",
+      "nombre": "Ediciones Iceberg S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0144",
+      "id_convenio": "CV0144",
+      "convocatoria": "2025-27",
+      "cif": "B19605948",
+      "nombre": "EINTEGRA TECHNOLOGY CONSULTING 2020 SL",
+      "centros": [
+        {
+          "calle": "C/ HUÉTOR VEGA, 5C-6C ALBOLOTE 18220",
+          "codigo_postal": "18220",
+          "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0366",
+      "id_convenio": "CV0366",
+      "convocatoria": "2025-27",
+      "cif": "B01769355",
+      "nombre": "EL PLACER DE SER LIBRES SL",
+      "centros": [
+        {
+          "calle": "Comercial Neptuno C/ Arabial Granada CP: 18004",
+          "codigo_postal": "18004",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0197",
+      "id_convenio": "CV0197",
+      "convocatoria": "2025-27",
+      "cif": "B19593425",
+      "nombre": "EL SUPER DE CARMEN S.L.",
+      "centros": [
+        {
+          "calle": "Av. Salvador Allende, Bajo, Local 1. CP 18007 Granada",
+          "codigo_postal": "18007",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0299",
+      "id_convenio": "CV0299",
+      "convocatoria": "2025-27",
+      "cif": "B18385567",
+      "nombre": "ELABORACIONES DE PRODUCTOS QUÍMICOS RABEMA SL",
+      "centros": [
+        {
+          "calle": "Carretera de Almería 16, C.P. 18600, Motril (Granada)",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0283",
+      "id_convenio": "CV0283",
+      "convocatoria": "2025-27",
+      "cif": "B19673722",
+      "nombre": "EMBUTIDOS EL CANDELÓN SL",
+      "centros": []
+    },
+    {
+      "id": "CV0068",
+      "id_convenio": "CV0068",
+      "convocatoria": "2025-27",
+      "cif": "B19682541",
+      "nombre": "ENCANTO GRANADINO 2019 SL. - RTE. ZORRO VIEJO",
+      "centros": []
+    },
+    {
+      "id": "CV0581",
+      "id_convenio": "CV0581",
+      "convocatoria": "2025-27",
+      "cif": "B84699255",
+      "nombre": "ESFÉRICA DE INVERSIONES GLOBALES S.L.",
+      "centros": [
+        {
+          "calle": "Calle Cetti Meriem 6. Granada .18010",
+          "codigo_postal": "18010",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0012",
+      "id_convenio": "CV0012",
+      "convocatoria": "2025-27",
+      "cif": "B19588730",
+      "nombre": "ESPACIOS MONTESSORI S.L.",
+      "centros": [
+        {
+          "calle": "Carretera de la Zubia, 12. Gójar (Granada) 18150",
+          "codigo_postal": "18150",
+          "municipio": "Gójar"
+        }
+      ]
+    },
+    {
+      "id": "CV0384",
+      "id_convenio": "CV0384",
+      "convocatoria": "2025-27",
+      "cif": "B11885225",
+      "nombre": "ESTACIÓN DISEÑO SL",
+      "centros": [
+        {
+          "calle": "C/ Benjamin Franklin, 1 Armilla - Granada CP. 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0420",
+      "id_convenio": "CV0420",
+      "convocatoria": "2025-27",
+      "cif": "B18317255",
+      "nombre": "ESTANTERÍAS METÁLICAS RECORD SL.",
+      "centros": []
+    },
+    {
+      "id": "CV0412",
+      "id_convenio": "CV0412",
+      "convocatoria": "2025-27",
+      "cif": "B44707545",
+      "nombre": "ESTUDIO MAMUT SL",
+      "centros": []
+    },
+    {
+      "id": "CV0112",
+      "id_convenio": "CV0112",
+      "convocatoria": "2025-27",
+      "cif": "B18503425",
+      "nombre": "ETIQUETAS ALHAMBRA S.L.",
+      "centros": [
+        {
+          "calle": "AVENIDA DE HUELVA N.º 2, PELIGROS 18210, GRANADA",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0432",
+      "id_convenio": "CV0432",
+      "convocatoria": "2025-27",
+      "cif": "A62018064",
+      "nombre": "EURO DEPOT ESPAÑA, S.A.U",
+      "centros": [
+        {
+          "calle": "Ctra. de Jaen, 8 18197 Pulianas (Granada)",
+          "codigo_postal": "18197",
+          "municipio": "Pulianas"
+        }
+      ]
+    },
+    {
+      "id": "CV0569",
+      "id_convenio": "CV0569",
+      "convocatoria": "2025-27",
+      "cif": "B17880550",
+      "nombre": "EUROFIRMS ETT, SLU",
+      "centros": []
+    },
+    {
+      "id": "CV0036",
+      "id_convenio": "CV0036",
+      "convocatoria": "2025-27",
+      "cif": "B18568295",
+      "nombre": "EUROSPLIT DISTRIBUCIÓN Y SUMINISTROS, S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0075",
+      "id_convenio": "CV0075",
+      "convocatoria": "2025-27",
+      "cif": "B19645662",
+      "nombre": "EXPRESS PEDRO ANTONIO DE ALARCON, SL (CARREFOUR EXPRESS)",
+      "centros": [
+        {
+          "calle": "Calle Pedro Antonio de Alarcón 40. Granada.18002",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0205",
+      "id_convenio": "CV0205",
+      "convocatoria": "2025-27",
+      "cif": "B06882013",
+      "nombre": "EXPRESS SAVA SL",
+      "centros": [
+        {
+          "calle": "Avda. De los Almendros, n.º 4. Huétor Vega (Granada) 18198",
+          "codigo_postal": "18198",
+          "municipio": "Huétor Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0275",
+      "id_convenio": "CV0275",
+      "convocatoria": "2025-27",
+      "cif": "B83050138",
+      "nombre": "Falstacen S.L.",
+      "centros": [
+        {
+          "calle": "Calle Rector Pascual Rivas Carrera 1, 18613 Motril (Granada)",
+          "codigo_postal": "18613",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0124",
+      "id_convenio": "CV0124",
+      "convocatoria": "2025-27",
+      "cif": "B19661818",
+      "nombre": "FAMARA BIO COSMÉTICA, S.L.",
+      "centros": [
+        {
+          "calle": "Camino El Jau nº 2, Santa Fé 18320, Granada",
+          "codigo_postal": "18320",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0388",
+      "id_convenio": "CV0388",
+      "convocatoria": "2025-27",
+      "cif": "E18372268",
+      "nombre": "FARMACIA MESA MORENO CB",
+      "centros": [
+        {
+          "calle": "C/ GENERAL SERRANO, 1, C.P. 18650 Durcal (Granada",
+          "codigo_postal": "18650",
+          "municipio": "Dúrcal"
+        }
+      ]
+    },
+    {
+      "id": "CV0180",
+      "id_convenio": "CV0180",
+      "convocatoria": "2025-27",
+      "cif": "A28541639",
+      "nombre": "FCC MEDIOAMBIENTALES SAU",
+      "centros": [
+        {
+          "calle": "Avda. Cristobal Colón, s/n Churriana de la Vega, 18194",
+          "codigo_postal": "18194",
+          "municipio": "Churriana de la Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0130",
+      "id_convenio": "CV0130",
+      "convocatoria": "2025-27",
+      "cif": "G41289224",
+      "nombre": "FEDERACIÓN DE ORGANIZACIONES ANDALUZAS DE MAYORES (FOAM)",
+      "centros": [
+        {
+          "calle": "Plaza de la Candelaria s/n, 18210, Peligros, GR",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0008",
+      "id_convenio": "CV0008",
+      "convocatoria": "2025-27",
+      "cif": "G18075408",
+      "nombre": "FEGRADI COCEMFE GRANADA",
+      "centros": [
+        {
+          "calle": "Paseo Laguna de Cameros nº 6. 18008 Granada.",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0139",
+      "id_convenio": "CV0139",
+      "convocatoria": "2025-27",
+      "cif": "B44973659",
+      "nombre": "FERRAN PELUQUEROS SL",
+      "centros": [
+        {
+          "calle": "C/ MARTINES CAMPOS, 17. GRANADA 18002.",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0241",
+      "id_convenio": "CV0241",
+      "convocatoria": "2025-27",
+      "cif": "B18927830",
+      "nombre": "FERTORMAR LUDOTECA SL",
+      "centros": [
+        {
+          "calle": "Avda. De Guadahortuna, n.º 11, 18561 Montejícar (Granada)",
+          "codigo_postal": "18561",
+          "municipio": "Guadahortuna"
+        }
+      ]
+    },
+    {
+      "id": "CV0122",
+      "id_convenio": "CV0122",
+      "convocatoria": "2025-27",
+      "cif": "B18778084",
+      "nombre": "FIAKA AMBIENT, S.L.",
+      "centros": [
+        {
+          "calle": "C/. Garrido Atienza 24, Pol. Ind. 2 octubre, Santa Fe, 18320, Granada",
+          "codigo_postal": "18320",
+          "municipio": "Santa Fe"
+        }
+      ]
+    },
+    {
+      "id": "CV0095",
+      "id_convenio": "CV0095",
+      "convocatoria": "2025-27",
+      "cif": "B19697002",
+      "nombre": "FIBERGY NETWORKS",
+      "centros": []
+    },
+    {
+      "id": "CV0151",
+      "id_convenio": "CV0151",
+      "convocatoria": "2025-27",
+      "cif": "B75558304",
+      "nombre": "FLOR TRUJILLO REHABILITACIÓN INTEGRAL, S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0362",
+      "id_convenio": "CV0362",
+      "convocatoria": "2025-27",
+      "cif": "B75505586",
+      "nombre": "FLORISTERÍA CALADIUM, S. L. U .",
+      "centros": []
+    },
+    {
+      "id": "CV0060",
+      "id_convenio": "CV0060",
+      "convocatoria": "2025-27",
+      "cif": "B19673763",
+      "nombre": "FREIDURIA LOS MARIANOS, S.L",
+      "centros": [
+        {
+          "calle": "C/ Acera del Darro, nº 20, 18005, GRANADA",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0555",
+      "id_convenio": "CV0555",
+      "convocatoria": "2025-27",
+      "cif": "G18412023",
+      "nombre": "FUNDACIÓN BANCO DE ALIMENTOS DE GRANADA",
+      "centros": [
+        {
+          "calle": "Carretera de Córdoba, s/n, Mercagranada, 18015, Granada",
+          "codigo_postal": "18015",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0046",
+      "id_convenio": "CV0046",
+      "convocatoria": "2025-27",
+      "cif": "G18020917",
+      "nombre": "FUNDACIÓN BENÉFICA DOCETE OMNES",
+      "centros": []
+    },
+    {
+      "id": "CV0088",
+      "id_convenio": "CV0088",
+      "convocatoria": "2025-27",
+      "cif": "G18000802",
+      "nombre": "Fundación Caja General de Ahorros de Granada CC Memoria de Andalucía",
+      "centros": [
+        {
+          "calle": "Avenida de la Ciencia, 2 (Granada) 18006",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0167",
+      "id_convenio": "CV0167",
+      "convocatoria": "2025-27",
+      "cif": "G18000802",
+      "nombre": "Fundación Caja General de Ahorros de Granada CC Memoria de Andalucía",
+      "centros": [
+        {
+          "calle": "CARRETERA DE LA SIERRA, N.º 9 18008 GRANADA",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0452",
+      "id_convenio": "CV0452",
+      "convocatoria": "2025-27",
+      "cif": "G18700195",
+      "nombre": "FUNDACIÓN CALOR Y CAFÉ DE GRANADA",
+      "centros": [
+        {
+          "calle": "C/ El Guerra, 16 – bajo, Granada, 18014",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0234",
+      "id_convenio": "CV0234",
+      "convocatoria": "2025-27",
+      "cif": "G18362376",
+      "nombre": "FUNDACION CASAS DIOCESANAS DE ACOGIDA",
+      "centros": []
+    },
+    {
+      "id": "CV0125",
+      "id_convenio": "CV0125",
+      "convocatoria": "2025-27",
+      "cif": "G28510295",
+      "nombre": "Fundación Colegio Jovenado Nuestra Señora del Espino",
+      "centros": [
+        {
+          "calle": "Avenida de América nº 2, Santa Fe 18320, Granada",
+          "codigo_postal": "18320",
+          "municipio": "Santa Fe"
+        }
+      ]
+    },
+    {
+      "id": "CV0561",
+      "id_convenio": "CV0561",
+      "convocatoria": "2025-27",
+      "cif": "G91397570",
+      "nombre": "FUNDACION CRUZ BLANCA",
+      "centros": []
+    },
+    {
+      "id": "CV0271",
+      "id_convenio": "CV0271",
+      "convocatoria": "2025-27",
+      "cif": "R2802668J",
+      "nombre": "Fundación Educativa José Gras",
+      "centros": []
+    },
+    {
+      "id": "CV0511",
+      "id_convenio": "CV0511",
+      "convocatoria": "2025-27",
+      "cif": "R2802668J",
+      "nombre": "Fundación Educativa José Gras",
+      "centros": [
+        {
+          "calle": "Calle Pio XII, Nº 46, Huétor Tájar (Granada) CP. 18360",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0486",
+      "id_convenio": "CV0486",
+      "convocatoria": "2025-27",
+      "cif": "G18678789",
+      "nombre": "FUNDACIÓN EL BALCÓN DE LA ZUBIA",
+      "centros": [
+        {
+          "calle": "Calle Elena Martín Vivaldi, 1. 18140. La Zubia (Granada)",
+          "codigo_postal": "18140",
+          "municipio": "La Zubia"
+        }
+      ]
+    },
+    {
+      "id": "CV0022",
+      "id_convenio": "CV0022",
+      "convocatoria": "2025-27",
+      "cif": "G79536983",
+      "nombre": "FUNDACIÓN EMPRESA Y JUVENTUD(ALDEAS INCLUSIVA)",
+      "centros": [
+        {
+          "calle": "Cortijo Casería de Verdeval. Camino de Zujaira-Valderrubio S/N. Zujaira (Granada).18291.",
+          "codigo_postal": "18291",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "C/ Asyma nº 1. Polígono de ASEGRA. 18210 Peligros, Granada.",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0357",
+      "id_convenio": "CV0357",
+      "convocatoria": "2025-27",
+      "cif": "V18459685",
+      "nombre": "FUNDACIÓN ESCUELA DE SOLIDARIDAD",
+      "centros": [
+        {
+          "calle": "AVENIDA MOISÉS, SIERRA ELVIRA ATARFE (GRANADA) CP. 18330",
+          "codigo_postal": "18330",
+          "municipio": "Atarfe"
+        }
+      ]
+    },
+    {
+      "id": "CV0061",
+      "id_convenio": "CV0061",
+      "convocatoria": "2025-27",
+      "cif": "G19640234",
+      "nombre": "FUNDACIÓN FAJALAUZA CECILIO MORALES",
+      "centros": [
+        {
+          "calle": "C/Fajalauza nº2 18010 Granada",
+          "codigo_postal": "18010",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0368",
+      "id_convenio": "CV0368",
+      "convocatoria": "2025-27",
+      "cif": "G18547091",
+      "nombre": "FUNDACIÓN GRANADINA DE SOLIDARIDAD VIRGEN DE LAS ANGUSTIAS – PROYECTO HOMBRE GRANADA",
+      "centros": [
+        {
+          "calle": "CALLE SANTA PAULA, 20 GRANADA, 18001",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0192",
+      "id_convenio": "CV0192",
+      "convocatoria": "2025-27",
+      "cif": "G18693838",
+      "nombre": "FUNDACIÓN LA CASA GRANDE",
+      "centros": []
+    },
+    {
+      "id": "CV0113",
+      "id_convenio": "CV0113",
+      "convocatoria": "2025-27",
+      "cif": "G18466664",
+      "nombre": "FUNDACIÓN LOS PASTOREROS",
+      "centros": [
+        {
+          "calle": "Avda. Andalucía, 130, Fuente Vaqueros 18340 Granada",
+          "codigo_postal": "18340",
+          "municipio": "Fuente Vaqueros"
+        }
+      ]
+    },
+    {
+      "id": "CV0070",
+      "id_convenio": "CV0070",
+      "convocatoria": "2025-27",
+      "cif": "G19716737",
+      "nombre": "FUNDACIÓN OMNIA VALLE DE LECRÍN",
+      "centros": [
+        {
+          "calle": "C/ Pedro Antonio de Alarcón 7 18005 (Granada)",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0099",
+      "id_convenio": "CV0099",
+      "convocatoria": "2025-27",
+      "cif": "G18618777",
+      "nombre": "Fundación Patronato Avemariano de Granada",
+      "centros": []
+    },
+    {
+      "id": "CV0269",
+      "id_convenio": "CV0269",
+      "convocatoria": "2025-27",
+      "cif": "G18618777",
+      "nombre": "Fundación Patronato Avemariano de Granada",
+      "centros": []
+    },
+    {
+      "id": "CV0194",
+      "id_convenio": "CV0194",
+      "convocatoria": "2025-27",
+      "cif": "G14684146",
+      "nombre": "FUNDACIÓN PRODE",
+      "centros": [
+        {
+          "calle": "C/ Fuentezuelas, nº 7, 18550, Iznalloz, Granada",
+          "codigo_postal": "18550",
+          "municipio": "Iznalloz"
+        }
+      ]
+    },
+    {
+      "id": "CV0141",
+      "id_convenio": "CV0141",
+      "convocatoria": "2025-27",
+      "cif": "F18607093",
+      "nombre": "G AND C SCA (UED Mediterraneo)",
+      "centros": []
+    },
+    {
+      "id": "CV0458",
+      "id_convenio": "CV0458",
+      "convocatoria": "2025-27",
+      "cif": "B22931562",
+      "nombre": "GALA VESTUARIO SL",
+      "centros": [
+        {
+          "calle": "Avenida Juan Pablo II,98, Granada, 18013",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0231",
+      "id_convenio": "CV0231",
+      "convocatoria": "2025-27",
+      "cif": "B18537498",
+      "nombre": "GALILEA CENTRO DE FORMACION Y EMPLEO SL",
+      "centros": [
+        {
+          "calle": "C/ MANUEL DE FALLA, n.º 3, 18005 Granada",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0468",
+      "id_convenio": "CV0468",
+      "convocatoria": "2025-27",
+      "cif": "B18979138",
+      "nombre": "GASTROCASUAL S.L. \"Sancho Casual Burger\"",
+      "centros": []
+    },
+    {
+      "id": "CV0467",
+      "id_convenio": "CV0467",
+      "convocatoria": "2025-27",
+      "cif": "B04978045",
+      "nombre": "GASTROCAUCHILES S.L. \"Sancho Casual Burger\"",
+      "centros": [
+        {
+          "calle": "Placeta Cauchiles, 4 Granada 18001",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0364",
+      "id_convenio": "CV0364",
+      "convocatoria": "2025-27",
+      "cif": "B19626381",
+      "nombre": "GASTRONÓMICAS COLÓN, S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0118",
+      "id_convenio": "CV0118",
+      "convocatoria": "2025-27",
+      "cif": "F18949701",
+      "nombre": "GEISS, S.C.A. DE INTERÉS SOCIAL",
+      "centros": []
+    },
+    {
+      "id": "CV0106",
+      "id_convenio": "CV0106",
+      "convocatoria": "2025-27",
+      "cif": "B18667667",
+      "nombre": "GERYSALUD FERNÁNDEZ ABRIL S.L. (U.E.D. ALFACAR)",
+      "centros": [
+        {
+          "calle": "C/ PARRAS N.º 15, BAJO, 18170 ALFACAR (GRANADA)",
+          "codigo_postal": "18170",
+          "municipio": "Alfacar"
+        }
+      ]
+    },
+    {
+      "id": "CV0408",
+      "id_convenio": "CV0408",
+      "convocatoria": "2025-27",
+      "cif": "B44850824",
+      "nombre": "GESTIGLOBAL SERVICIOS ADMINISTRATIVOS Y JURIDICOS SLP",
+      "centros": [
+        {
+          "calle": "C/ Friburgo, 10 Bajo 12, Granada CP. 18013",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0202",
+      "id_convenio": "CV0202",
+      "convocatoria": "2025-27",
+      "cif": "B18560607",
+      "nombre": "GESTIÓN AMBIENTAL Y ANÁLISIS GRANADA SL",
+      "centros": []
+    },
+    {
+      "id": "CV0386",
+      "id_convenio": "CV0386",
+      "convocatoria": "2025-27",
+      "cif": "A18608463",
+      "nombre": "GESTION GERIATRICA SA",
+      "centros": [
+        {
+          "calle": "Calle Huertos, 25 Pinos Puente (Granada) 18240",
+          "codigo_postal": "18240",
+          "municipio": "Pinos Puente"
+        }
+      ]
+    },
+    {
+      "id": "CV0348",
+      "id_convenio": "CV0348",
+      "convocatoria": "2025-27",
+      "cif": "B14796619",
+      "nombre": "GESTIONES ACERTADAS SL",
+      "centros": [
+        {
+          "calle": "Calle santa Rosalía, 14 Granada 18007",
+          "codigo_postal": "18007",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0182",
+      "id_convenio": "CV0182",
+      "convocatoria": "2025-27",
+      "cif": "B75687566",
+      "nombre": "GOOD MUSIC EXPERIENCE SL",
+      "centros": [
+        {
+          "calle": "CALLE REBITE, 36, HÚETOR VEGA 18198",
+          "codigo_postal": "18198",
+          "municipio": "Huétor Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0090",
+      "id_convenio": "CV0090",
+      "convocatoria": "2025-27",
+      "cif": "B19596485",
+      "nombre": "Grabena 1800 S.L",
+      "centros": []
+    },
+    {
+      "id": "CV0239",
+      "id_convenio": "CV0239",
+      "convocatoria": "2025-27",
+      "cif": "G18084475",
+      "nombre": "GRANADA ACOGE",
+      "centros": [
+        {
+          "calle": "C/ Almona de San Juan de Dios, nº 12, bajo, 18001, Granada",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0560",
+      "id_convenio": "CV0560",
+      "convocatoria": "2025-27",
+      "cif": "B72877269",
+      "nombre": "GRANADA COPAS",
+      "centros": []
+    },
+    {
+      "id": "CV0502",
+      "id_convenio": "CV0502",
+      "convocatoria": "2025-27",
+      "cif": "B27564921",
+      "nombre": "GRANADA TEA 1999, S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0013",
+      "id_convenio": "CV0013",
+      "convocatoria": "2025-27",
+      "cif": "A80500200",
+      "nombre": "GRANDES ALMACENES FNAC ESPAÑA S.A.",
+      "centros": [
+        {
+          "calle": "C.C. Nevada Shopping C/ Hipócrates, Local 226-227. Armilla Granada",
+          "codigo_postal": "",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0080",
+      "id_convenio": "CV0080",
+      "convocatoria": "2025-27",
+      "cif": "B19646769",
+      "nombre": "GRANJA LUDICA SL",
+      "centros": [
+        {
+          "calle": "C/ San Isidro, 33. Loja (Granada). 18300",
+          "codigo_postal": "18300",
+          "municipio": "Loja"
+        }
+      ]
+    },
+    {
+      "id": "CV0392",
+      "id_convenio": "CV0392",
+      "convocatoria": "2025-27",
+      "cif": "B56788177",
+      "nombre": "GRUPO CARRASCO PVC SL",
+      "centros": [
+        {
+          "calle": "C/ Fernando Martin, 3 Dúrcal, Granada 18650",
+          "codigo_postal": "18650",
+          "municipio": "Dúrcal"
+        }
+      ]
+    },
+    {
+      "id": "CV0474",
+      "id_convenio": "CV0474",
+      "convocatoria": "2025-27",
+      "cif": "B21053848",
+      "nombre": "GRUPO EMPRESARIAL EL JAMÓN S.L.",
+      "centros": [
+        {
+          "calle": "Avd. Dr.Oloriz, 19. Granada, 18012",
+          "codigo_postal": "18012",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Calle Alhamar, 3. Granada, 18004",
+          "codigo_postal": "18004",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Calle Primero de Mayo, 16. La Zubia (Granada) 18140",
+          "codigo_postal": "18140",
+          "municipio": "La Zubia"
+        }
+      ]
+    },
+    {
+      "id": "CV0553",
+      "id_convenio": "CV0553",
+      "convocatoria": "2025-27",
+      "cif": "B18466086",
+      "nombre": "GRUPO EMPRESARIAL SAN ROQUE S.L.",
+      "centros": [
+        {
+          "calle": "Paseo Laguna de Cameros, nº6, 18008, Granada",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0280",
+      "id_convenio": "CV0280",
+      "convocatoria": "2025-27",
+      "cif": "B18454090",
+      "nombre": "GRUPO ERIK EDITORES SL",
+      "centros": []
+    },
+    {
+      "id": "CV0402",
+      "id_convenio": "CV0402",
+      "convocatoria": "2025-27",
+      "cif": "B56788250",
+      "nombre": "GRUPO LÓPEZ PVC SL",
+      "centros": [
+        {
+          "calle": "PI EL ROMERAL C/PINO 13 DÚRCAL (GRANADA) CP: 18650",
+          "codigo_postal": "18650",
+          "municipio": "Dúrcal"
+        }
+      ]
+    },
+    {
+      "id": "CV0580",
+      "id_convenio": "CV0580",
+      "convocatoria": "2025-27",
+      "cif": "B09940768",
+      "nombre": "GRUPO OHANA CEI SL",
+      "centros": []
+    },
+    {
+      "id": "CV0549",
+      "id_convenio": "CV0549",
+      "convocatoria": "2025-27",
+      "cif": "B14651046",
+      "nombre": "GRUPO PEÑA AUTOMOCIÓN SLU",
+      "centros": [
+        {
+          "calle": "Polígono Juncaril, C/ Salobreña, parc. R82, Albolote,18220, Granada",
+          "codigo_postal": "18220",
+          "municipio": "Albolote"
+        },
+        {
+          "calle": "Camino Puente del Palo PP9, Parcela 112. CP 18194 Churriana de la Vega (Granada)",
+          "codigo_postal": "18194",
+          "municipio": "Churriana de la Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0091",
+      "id_convenio": "CV0091",
+      "convocatoria": "2025-27",
+      "cif": "B19632751",
+      "nombre": "GRUPO TGA SOLUCIONES GRAFICAS SL",
+      "centros": [
+        {
+          "calle": "C/La Calahorra 11-12- Polígono Industrial Juncaril. 18220. Albolote",
+          "codigo_postal": "18220",
+          "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0233",
+      "id_convenio": "CV0233",
+      "convocatoria": "2025-27",
+      "cif": "B26955989",
+      "nombre": "HAVENHOMES S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0343",
+      "id_convenio": "CV0343",
+      "convocatoria": "2025-27",
+      "cif": "E18496653",
+      "nombre": "Heladerías Sanper C.B.",
+      "centros": []
+    },
+    {
+      "id": "CV0505",
+      "id_convenio": "CV0505",
+      "convocatoria": "2025-27",
+      "cif": "B18355974",
+      "nombre": "HERMAGAL S.L.",
+      "centros": [
+        {
+          "calle": "C/ Federico García Lorca, nº 71, C.P. 18360 Huétor Tájar (Granada)",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0356",
+      "id_convenio": "CV0356",
+      "convocatoria": "2025-27",
+      "cif": "R1800580A",
+      "nombre": "HERMANAS DE NUESTRA SEÑORA DE LA CONSOLACIÓN SANTA FE",
+      "centros": [
+        {
+          "calle": "Calle/ Pintor Juan Ruiz, 9, Granada - Santa Fe CP. 18320",
+          "codigo_postal": "18320",
+          "municipio": "Santa Fe"
+        }
+      ]
+    },
+    {
+      "id": "CV0576",
+      "id_convenio": "CV0576",
+      "convocatoria": "2025-27",
+      "cif": "R1800115F",
+      "nombre": "HERMANITAS DE LOS POBRES",
+      "centros": [
+        {
+          "calle": "C/ FELIZ RODRIGUEZ DE LA FUENTE, 8, 18006, GRANADA",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0216",
+      "id_convenio": "CV0216",
+      "convocatoria": "2025-27",
+      "cif": "B18613695",
+      "nombre": "HIJOS DE MIGUEL CERDERA SL (FIRST STOP)",
+      "centros": [
+        {
+          "calle": "AVENIDA DILAR Nº 140 -GRANADA C.P: 18.016",
+          "codigo_postal": "18016",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0433",
+      "id_convenio": "CV0433",
+      "convocatoria": "2025-27",
+      "cif": "R1800125E",
+      "nombre": "HOGAR SAN JOSÉ",
+      "centros": [
+        {
+          "calle": "Avda. de Andalucía, 4 18800 Baza (Granada)",
+          "codigo_postal": "18800",
+          "municipio": "Baza"
+        }
+      ]
+    },
+    {
+      "id": "CV0059",
+      "id_convenio": "CV0059",
+      "convocatoria": "2025-27",
+      "cif": "B19661602",
+      "nombre": "HORECAFERNANGAR SLU",
+      "centros": [
+        {
+          "calle": "C/ Reyes Católicos 67. Granada 18001",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0546",
+      "id_convenio": "CV0546",
+      "convocatoria": "2025-27",
+      "cif": "B19661602",
+      "nombre": "HORECAFERNANGAR SLU",
+      "centros": [
+        {
+          "calle": "Acera del Darro, 64, 18005, Granada",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "C/ Recogidas, 35, bajo z, 18002, Granada",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0178",
+      "id_convenio": "CV0178",
+      "convocatoria": "2025-27",
+      "cif": "G18049544",
+      "nombre": "HOSPITALARIAS FUNDACION PURISIMA CONCEPCION GRANADA",
+      "centros": [
+        {
+          "calle": "Polígono El Florío, s/n. Granada 18015.",
+          "codigo_postal": "18015",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0224",
+      "id_convenio": "CV0224",
+      "convocatoria": "2025-27",
+      "cif": "G18049544",
+      "nombre": "HOSPITALARIAS FUNDACION PURISIMA CONCEPCION GRANADA",
+      "centros": [
+        {
+          "calle": "C/ PEDRO MACHUCA, 23 18011 GRANADA",
+          "codigo_postal": "18011",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0067",
+      "id_convenio": "CV0067",
+      "convocatoria": "2025-27",
+      "cif": "B56900806",
+      "nombre": "HOSTELERÍA Y FORMACIÓN GRANADA SL.",
+      "centros": []
+    },
+    {
+      "id": "CV0211",
+      "id_convenio": "CV0211",
+      "convocatoria": "2025-27",
+      "cif": "F18035501",
+      "nombre": "HUERTO ALEGRE, S.COOP.AND",
+      "centros": [
+        {
+          "calle": "CALLE LAUREL Nº4-VILLA DE OTURA (GRANADA) C.P. 18.630",
+          "codigo_postal": "18630",
+          "municipio": "Otura"
+        }
+      ]
+    },
     {
       "id": "CV0571",
       "id_convenio": "CV0571",
@@ -23,47 +3194,215 @@
       ]
     },
     {
-      "id": "CV0007",
-      "id_convenio": "CV0007",
-      "convocatoria": "2",
-      "cif": "G18710558",
-      "nombre": "ASOCIACIÓN ALMANJAYAR EN FAMILIA",
+      "id": "CV0399",
+      "id_convenio": "CV0399",
+      "convocatoria": "2025-27",
+      "cif": "A79475729",
+      "nombre": "ILUNION LAVANDERÍAS SAU",
+      "centros": []
+    },
+    {
+      "id": "CV0530",
+      "id_convenio": "CV0530",
+      "convocatoria": "2025-27",
+      "cif": "B18934372",
+      "nombre": "IMAGINATE PONIENTE SL",
       "centros": [
         {
-          "calle": "C/ Real de Motril 58, Local 3",
-          "codigo_postal": "18100",
-          "municipio": "Armilla"
+          "calle": "C/ Pio XII, Nº 8 Huétor Tájar (Granada) CP. 18360",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0579",
+      "id_convenio": "CV0579",
+      "convocatoria": "2025-27",
+      "cif": "G18518183",
+      "nombre": "IMERIS (ASOCIACION PARA INTERVENCION CON MENORES EN RIESGO SOCIAL)",
+      "centros": []
+    },
+    {
+      "id": "CV0057",
+      "id_convenio": "CV0057",
+      "convocatoria": "2025-27",
+      "cif": "B18960351",
+      "nombre": "IMPORTACIONES TRILCE SL",
+      "centros": [
+        {
+          "calle": "C/ Antonio Huertas Remigio, 62. 18200 Maracena (Granada)",
+          "codigo_postal": "18200",
+          "municipio": "Maracena"
+        }
+      ]
+    },
+    {
+      "id": "CV0465",
+      "id_convenio": "CV0465",
+      "convocatoria": "2025-27",
+      "cif": "A18062117",
+      "nombre": "INDUSTRIAS CARNICAS ZURITA SA",
+      "centros": []
+    },
+    {
+      "id": "CV0380",
+      "id_convenio": "CV0380",
+      "convocatoria": "2025-27",
+      "cif": "B18314112",
+      "nombre": "INFORMÁTICA MEGASUR SL",
+      "centros": [
+        {
+          "calle": "CALLE LOS VISOS 14, ESCUZAR GRANADA 18130",
+          "codigo_postal": "18130",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0253",
+      "id_convenio": "CV0253",
+      "convocatoria": "2025-27",
+      "cif": "B18971481",
+      "nombre": "INFORMATICA NO SOLO PC SL.",
+      "centros": [
+        {
+          "calle": "Av. Luis Miranda Dávalos, 4, local 1, Beiro, 18014 Granada",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0425",
+      "id_convenio": "CV0425",
+      "convocatoria": "2025-27",
+      "cif": "B11975216",
+      "nombre": "INGEMANSUR, S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0161",
+      "id_convenio": "CV0161",
+      "convocatoria": "2025-27",
+      "cif": "B91723288",
+      "nombre": "INICIATIVAS EMPRESARIALES ANDALUZAS SL",
+      "centros": [
+        {
+          "calle": "CALLE FUENTE SALINAS, N.º 40 FUENTE VAQUEROS 18340",
+          "codigo_postal": "18340",
+          "municipio": "Fuente Vaqueros"
         },
         {
-          "calle": "C/ Arquitecto José Contreras, nº13",
-          "codigo_postal": "18013",
+          "calle": "AVENIDA LOS CLAVELES, N.º 18 18200 MARACENA",
+          "codigo_postal": "18200",
+          "municipio": "Maracena"
+        }
+      ]
+    },
+    {
+      "id": "CV0406",
+      "id_convenio": "CV0406",
+      "convocatoria": "2025-27",
+      "cif": "B75856294",
+      "nombre": "INSTITUTO DE SEGURIDAD INTEGRAL VARAN, S.L",
+      "centros": [
+        {
+          "calle": "Calle Baza , parcela 3, oficina 211 Albolote Granada",
+          "codigo_postal": "",
+          "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0171",
+      "id_convenio": "CV0171",
+      "convocatoria": "2025-27",
+      "cif": "B91749655",
+      "nombre": "INTEGRA MGSI CEE ANDALUCIA SL",
+      "centros": []
+    },
+    {
+      "id": "CV0109",
+      "id_convenio": "CV0109",
+      "convocatoria": "2025-27",
+      "cif": "B18777441",
+      "nombre": "IPACIL S.L.",
+      "centros": [
+        {
+          "calle": "CALLE PEDRO MACHUCA 102, NORTE 18011, GRANADA",
+          "codigo_postal": "18011",
           "municipio": "Granada"
         }
       ]
     },
     {
-      "id": "CV0022",
-      "id_convenio": "CV0022",
-      "convocatoria": "2",
-      "cif": "G18710558",
-      "nombre": "ASOCIACIÓN ALMANJAYAR EN FAMILIA",
+      "id": "CV0291",
+      "id_convenio": "CV0291",
+      "convocatoria": "2025-27",
+      "cif": "F18072371",
+      "nombre": "IRIS S.C.A",
+      "centros": []
+    },
+    {
+      "id": "CV0473",
+      "id_convenio": "CV0473",
+      "convocatoria": "2025-27",
+      "cif": "B42995365",
+      "nombre": "JACANDA 2014 S.L.",
       "centros": [
         {
-          "calle": "prueba de dirección",
-          "codigo_postal": "18001",
+          "calle": "Plaza del Campillo Bajo, 1, 18009, Granada",
+          "codigo_postal": "18009",
           "municipio": "Granada"
         }
       ]
     },
     {
-      "id": "CV0006",
-      "id_convenio": "CV0006",
-      "convocatoria": "2",
-      "cif": "B18468876",
-      "nombre": "Centro Infantil Arco Iris SL",
+      "id": "CV0517",
+      "id_convenio": "CV0517",
+      "convocatoria": "2025-27",
+      "cif": "B19501923",
+      "nombre": "JCJ ASINTEA SL",
       "centros": [
         {
-          "calle": "Avenida de la Ilustración 129, local 10",
+          "calle": "C/ Belen, Nº 8 Huétor Tájar (Granada) CP. 18360",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0531",
+      "id_convenio": "CV0531",
+      "convocatoria": "2025-27",
+      "cif": "B18461392",
+      "nombre": "JFJ MAQUINARIA Y MONSTAJES, S.L.",
+      "centros": [
+        {
+          "calle": "C/ Finlandia, Nº 5 Huétor Tájar (Granada) CP. 18360",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0066",
+      "id_convenio": "CV0066",
+      "convocatoria": "2025-27",
+      "cif": "B18936666",
+      "nombre": "JOMAR 2010 SL. - RTE. CAMAURA",
+      "centros": []
+    },
+    {
+      "id": "CV0050",
+      "id_convenio": "CV0050",
+      "convocatoria": "2025-27",
+      "cif": "B56694581",
+      "nombre": "JOMAUTO MOTOR S.L.",
+      "centros": [
+        {
+          "calle": "C/ Abderrahman, 19 (Granada) 18006",
           "codigo_postal": "18006",
           "municipio": "Granada"
         }
@@ -72,296 +3411,2285 @@
     {
       "id": "CV0023",
       "id_convenio": "CV0023",
-      "convocatoria": "2",
-      "cif": "B18468876",
-      "nombre": "Centro Infantil Arco Iris SL",
+      "convocatoria": "2025-27",
+      "cif": "B19688217",
+      "nombre": "JOPAMI MARKET SL",
       "centros": [
         {
-          "calle": "fasdfasdf",
-          "codigo_postal": "18327",
-          "municipio": "Láchar"
-        }
-      ]
-    },
-    {
-      "id": "CV0003",
-      "id_convenio": "CV0003",
-      "convocatoria": "2",
-      "cif": "B86561412",
-      "nombre": "Coca Cola",
-      "centros": [
-        {
-          "calle": "Avda. Joaquina Eguaras, 2",
-          "codigo_postal": "18013",
+          "calle": "Avenida de la Constitución 24, Granada.18012",
+          "codigo_postal": "18012",
           "municipio": "Granada"
         }
       ]
     },
     {
-      "id": "CV0001",
-      "id_convenio": "CV0001",
-      "convocatoria": "2",
-      "cif": "B86561412",
-      "nombre": "Coca Cola",
+      "id": "CV0249",
+      "id_convenio": "CV0249",
+      "convocatoria": "2025-27",
+      "cif": "B19547363",
+      "nombre": "JV ELEVACIÓN 2012 SL.",
       "centros": [
         {
-          "calle": "calle malva, 8",
-          "codigo_postal": "18003",
-          "municipio": "Granada"
-        },
-        {
-          "calle": "Avda. Andalucía, 9",
-          "codigo_postal": "18327",
-          "municipio": "Láchar"
-        },
-        {
-          "calle": "Calle Cuadrado, 98",
-          "codigo_postal": "18327",
-          "municipio": "Láchar"
+          "calle": "C/ Antonio Huertas Remigio, nº 4, 18200, Maracena, Granada",
+          "codigo_postal": "18200",
+          "municipio": "Maracena"
         }
       ]
     },
     {
-      "id": "CV0016",
-      "id_convenio": "CV0016",
-      "convocatoria": "2",
-      "cif": "B86561412",
-      "nombre": "Coca Cola",
+      "id": "CV0028",
+      "id_convenio": "CV0028",
+      "convocatoria": "2025-27",
+      "cif": "B19645001",
+      "nombre": "KIRA MARKET S.L.",
       "centros": [
         {
-          "calle": "calle rosa, 7",
-          "codigo_postal": "18230",
-          "municipio": "Motril"
-        }
-      ]
-    },
-    {
-      "id": "CV0002",
-      "id_convenio": "CV0002",
-      "convocatoria": "2",
-      "cif": "B86561412",
-      "nombre": "Coca Cola",
-      "centros": [
-        {
-          "calle": "C/ Real, 3",
-          "codigo_postal": "18328",
-          "municipio": "Fuensanta"
-        },
-        {
-          "calle": "calle fuente, 3",
-          "codigo_postal": "18327",
-          "municipio": "Láchar"
-        }
-      ]
-    },
-    {
-      "id": "CV0024",
-      "id_convenio": "CV0024",
-      "convocatoria": "2",
-      "cif": "B86561412",
-      "nombre": "Coca Cola",
-      "centros": [
-        {
-          "calle": "Calle Circulo, 5",
-          "codigo_postal": "18320",
-          "municipio": "Santa Fe"
-        }
-      ]
-    },
-    {
-      "id": "CV0020",
-      "id_convenio": "CV0020",
-      "convocatoria": "2",
-      "cif": "R1800580A",
-      "nombre": "HERMANAS DE NUESTRA  SEÑORA DE LA  CONSOLACION SANTA FE",
-      "centros": [
-        {
-          "calle": "C/ pintor Juan Ruiz 9",
-          "codigo_postal": "18320",
-          "municipio": "santa fe"
-        }
-      ]
-    },
-    {
-      "id": "CV0010",
-      "id_convenio": "CV0010",
-      "convocatoria": "2",
-      "cif": "B19692268",
-      "nombre": "MULTISERVICIOS EMPRESARIALES GRANADA SL",
-      "centros": [
-        {
-          "calle": "Plaza Isabel la Católica 1",
-          "codigo_postal": "18009",
-          "municipio": "Granada"
-        }
-      ]
-    },
-    {
-      "id": "CV0017",
-      "id_convenio": "CV0017",
-      "convocatoria": "2",
-      "cif": "G14422075",
-      "nombre": "MZC Asociación Mujeres en Zona de Conflicto",
-      "centros": [
-        {
-          "calle": "C/ Camino de Ronda, 96 -1º",
-          "codigo_postal": "18004",
-          "municipio": "Granada"
-        }
-      ]
-    },
-    {
-      "id": "CV0019",
-      "id_convenio": "CV0019",
-      "convocatoria": "2",
-      "cif": "B18593475",
-      "nombre": "Promociones Primera Ocupación SL",
-      "centros": [
-        {
-          "calle": "C/ Casería Tolín s/n, Crta. Loja-Huetor Tajar, , Granada",
-          "codigo_postal": "18360",
-          "municipio": "Huetor Tajar"
-        }
-      ]
-    },
-    {
-      "id": "CV0008",
-      "id_convenio": "CV0008",
-      "convocatoria": "2",
-      "cif": "A79059085",
-      "nombre": "SAR RESIDENCIAL Y ASISTENCIAL, S.A.U",
-      "centros": [
-        {
-          "calle": "C/ Padre Ferrer 1",
-          "codigo_postal": "18008",
-          "municipio": "Granada"
-        }
-      ]
-    },
-    {
-      "id": "CV0021",
-      "id_convenio": "CV0021",
-      "convocatoria": "2",
-      "cif": "B18754440",
-      "nombre": "TARTAS CRISTINA SL",
-      "centros": [
-        {
-          "calle": "AVENIDA DE CONSTITUCIÓN, 27",
-          "codigo_postal": "18014",
-          "municipio": "GRANADA"
-        },
-        {
-          "calle": "C/ RECOGIDAS, 46",
-          "codigo_postal": "18002",
-          "municipio": "GRANADA"
-        },
-        {
-          "calle": "Polígono de Asegra, C/ SIERRA DE BAZA, 4",
-          "codigo_postal": "18210",
-          "municipio": "PELIGROS"
-        }
-      ]
-    },
-    {
-      "id": "CV0009",
-      "id_convenio": "CV0009",
-      "convocatoria": "2",
-      "cif": "B18894683",
-      "nombre": "UNIBERICA VACACIONAL SL",
-      "centros": [
-        {
-          "calle": "Plaza Isabel la Católica 1",
-          "codigo_postal": "18009",
-          "municipio": "Granada"
-        }
-      ]
-    },
-    {
-      "id": "CV0012",
-      "id_convenio": "CV0012",
-      "convocatoria": "2",
-      "cif": "B18894683",
-      "nombre": "UNIBERICA VACACIONAL SL",
-      "centros": [
-        {
-          "calle": "Plaza Isabel la Católica 1",
-          "codigo_postal": "18009",
-          "municipio": "Granada"
-        }
-      ]
-    },
-    {
-      "id": "CV0005",
-      "id_convenio": "CV0005",
-      "convocatoria": "2",
-      "cif": "B18281766",
-      "nombre": "VIVEROS CAMBIL S.L.",
-      "centros": [
-        {
-          "calle": "Avda. Andalucía, 99",
-          "codigo_postal": "18327",
-          "municipio": "Láchar"
-        },
-        {
-          "calle": "Carretera de Málaga, km 34",
-          "codigo_postal": "18320",
-          "municipio": "Santa Fe"
-        }
-      ]
-    },
-    {
-      "id": "CV0013",
-      "id_convenio": "CV0013",
-      "convocatoria": "2",
-      "cif": "B18281766",
-      "nombre": "VIVEROS CAMBIL S.L.",
-      "centros": [
-        {
-          "calle": "Calle Rosa, 7",
+          "calle": "Gran Vía de Colón 11. 18001. Granada",
           "codigo_postal": "18001",
           "municipio": "Granada"
         }
       ]
     },
     {
-      "id": "CV0014",
-      "id_convenio": "CV0014",
-      "convocatoria": "2",
-      "cif": "B18281766",
-      "nombre": "VIVEROS CAMBIL S.L.",
+      "id": "CV0160",
+      "id_convenio": "CV0160",
+      "convocatoria": "2025-27",
+      "cif": "B18948034",
+      "nombre": "KREA GESTIÓN DE LA CULTURA Y EL OCIO SL",
+      "centros": []
+    },
+    {
+      "id": "CV0453",
+      "id_convenio": "CV0453",
+      "convocatoria": "2025-27",
+      "cif": "B18975888",
+      "nombre": "LA ALFAGUARA SALAR S.L",
       "centros": [
         {
-          "calle": "Calle Amapola, s/n",
-          "codigo_postal": "18320",
-          "municipio": "Santa Fe"
+          "calle": "Plaza Tierno Galván, 1. 18310 Salar (Granada)",
+          "codigo_postal": "18310",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0490",
+      "id_convenio": "CV0490",
+      "convocatoria": "2025-27",
+      "cif": "B18975888",
+      "nombre": "LA ALFAGUARA SALAR S.L",
+      "centros": []
+    },
+    {
+      "id": "CV0462",
+      "id_convenio": "CV0462",
+      "convocatoria": "2025-27",
+      "cif": "B19697101",
+      "nombre": "LA ALFAGUARA SERVICIOS SOCIALES SL",
+      "centros": []
+    },
+    {
+      "id": "CV0535",
+      "id_convenio": "CV0535",
+      "convocatoria": "2025-27",
+      "cif": "B18569467",
+      "nombre": "LA CASITA DEL JUEGO SL",
+      "centros": []
+    },
+    {
+      "id": "CV0334",
+      "id_convenio": "CV0334",
+      "convocatoria": "2025-27",
+      "cif": "E19612068",
+      "nombre": "LA CIGÜEÑA C.B.",
+      "centros": []
+    },
+    {
+      "id": "CV0065",
+      "id_convenio": "CV0065",
+      "convocatoria": "2025-27",
+      "cif": "B16954430",
+      "nombre": "LA MURALLA DEL BOTÁNICO SL – RTE. MEMENTOMORI",
+      "centros": []
+    },
+    {
+      "id": "CV0237",
+      "id_convenio": "CV0237",
+      "convocatoria": "2025-27",
+      "cif": "B56850373",
+      "nombre": "LA REZETA CAFE SL",
+      "centros": [
+        {
+          "calle": "Avda. de la Ilustración, nº 119, bloque 2, 18016, Granada",
+          "codigo_postal": "18016",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0133",
+      "id_convenio": "CV0133",
+      "convocatoria": "2025-27",
+      "cif": "B18724799",
+      "nombre": "LABORATORIOS NEVADA, S.L.",
+      "centros": [
+        {
+          "calle": "C/ EURÍPIDES N.º 1, LOCAL 6, 18014, GRANADA",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0002",
+      "id_convenio": "CV0002",
+      "convocatoria": "2025-27",
+      "cif": "B42742080",
+      "nombre": "LACADOS ANDALUCÍA S.L.U.",
+      "centros": [
+        {
+          "calle": "Santa María 2-4. Churriana de la Vega, Granada. 18194.",
+          "codigo_postal": "18194",
+          "municipio": "Churriana de la Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0307",
+      "id_convenio": "CV0307",
+      "convocatoria": "2025-27",
+      "cif": "B75322164",
+      "nombre": "Lacouture Ham SL",
+      "centros": [
+        {
+          "calle": "Rambla de las Brujas, local 5 P. Comercial Mediterráneo, Motril 18.600",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0016",
+      "id_convenio": "CV0016",
+      "convocatoria": "2025-27",
+      "cif": "B18919431",
+      "nombre": "LANDER ORGANIZACIÓN S.L.(PAPELERÍA CARLIN",
+      "centros": [
+        {
+          "calle": "Camino de Ronda 88. Granada. 18004",
+          "codigo_postal": "18004",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0259",
+      "id_convenio": "CV0259",
+      "convocatoria": "2025-27",
+      "cif": "B44939239",
+      "nombre": "Lavandería 10 S.L",
+      "centros": [
+        {
+          "calle": "LavanderÌa 10 S.L.",
+          "codigo_postal": "",
+          "municipio": ""
+        }
+      ]
+    },
+    {
+      "id": "CV0020",
+      "id_convenio": "CV0020",
+      "convocatoria": "2025-27",
+      "cif": "B19602127",
+      "nombre": "LAVANDERIA INDUSTRIAL CANO S.L. (LAVANDERIA CERVANTES)",
+      "centros": [
+        {
+          "calle": "Polígono Industrial Las Canteras, C/ Leñadores, 11 (Monachil, Granada) 18193",
+          "codigo_postal": "18193",
+          "municipio": "Monachil"
+        }
+      ]
+    },
+    {
+      "id": "CV0158",
+      "id_convenio": "CV0158",
+      "convocatoria": "2025-27",
+      "cif": "B19706209",
+      "nombre": "LAVANDY LAVANDERÍA INDUSTRIAL S.L",
+      "centros": [
+        {
+          "calle": "Polígono Industrial las Nieves. Pº de las Andas, nº 10. Las Gabias. cp:18110. Granada",
+          "codigo_postal": "18110",
+          "municipio": "Las Gabias"
+        }
+      ]
+    },
+    {
+      "id": "CV0491",
+      "id_convenio": "CV0491",
+      "convocatoria": "2025-27",
+      "cif": "B19682640",
+      "nombre": "LIMPIEZAS GRANASUR S.L",
+      "centros": [
+        {
+          "calle": "Calle Real de Motril, 20 Armilla (Granada) 18100 (Itinerante)",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0404",
+      "id_convenio": "CV0404",
+      "convocatoria": "2025-27",
+      "cif": "B42768572",
+      "nombre": "LIMPIEZAS SEMAR, SL",
+      "centros": [
+        {
+          "calle": "TREVENQUE, 30 BJ. LOCAL, C.P. 18002 Granada",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0359",
+      "id_convenio": "CV0359",
+      "convocatoria": "2025-27",
+      "cif": "B87809224",
+      "nombre": "LIVENSA GRANADA CARTUJA SL",
+      "centros": [
+        {
+          "calle": "Cuesta del Observatorio, 3 , CP 18010 Granada",
+          "codigo_postal": "18010",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0361",
+      "id_convenio": "CV0361",
+      "convocatoria": "2025-27",
+      "cif": "B87874178",
+      "nombre": "LIVENSA GRANADA FUENTENUEVA SLU",
+      "centros": [
+        {
+          "calle": "Camino de Ronda, 200 GRANADA 18003",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0097",
+      "id_convenio": "CV0097",
+      "convocatoria": "2025-27",
+      "cif": "B42789032",
+      "nombre": "LOGISTICA Y TRANSPORTES CSD S.L.",
+      "centros": [
+        {
+          "calle": "C/Santo Tomás de Villanueva 1 18014 Granada",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0466",
+      "id_convenio": "CV0466",
+      "convocatoria": "2025-27",
+      "cif": "B18658815",
+      "nombre": "LÓPEZ PALOMO RESTAURACIÓN 1970 SL",
+      "centros": [
+        {
+          "calle": "CC Granada Shopping. Calle Hipócrates S/N. Armilla (Granada) 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "c/ Pedro Antonio de Alarcón, 13. Granada 18002",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Plaza de Santa Ana, 1 Granada 18010",
+          "codigo_postal": "18010",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0136",
+      "id_convenio": "CV0136",
+      "convocatoria": "2025-27",
+      "cif": "B67732982",
+      "nombre": "LÓPEZ&BOLÍVAR CORREDURÍA DE SEGUROS S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0031",
+      "id_convenio": "CV0031",
+      "convocatoria": "2025-27",
+      "cif": "B18530410",
+      "nombre": "LOZANO ARACIL SL (RESIDENCIA ALICANTE)",
+      "centros": [
+        {
+          "calle": "AVENIDA REINA SOFÍA, S/N, PELIGROS (GRANADA) 18210",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0245",
+      "id_convenio": "CV0245",
+      "convocatoria": "2025-27",
+      "cif": "B22986301",
+      "nombre": "LUAVIE INVERSIONES S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0403",
+      "id_convenio": "CV0403",
+      "convocatoria": "2025-27",
+      "cif": "B75696989",
+      "nombre": "LUKORA BLOOM, S.L.",
+      "centros": [
+        {
+          "calle": "C/ SAN ANTÓN, 20 18005, GRANADA",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0583",
+      "id_convenio": "CV0583",
+      "convocatoria": "2025-27",
+      "cif": "A18068387",
+      "nombre": "MADERAS ALFONSO, S.A",
+      "centros": [
+        {
+          "calle": "Calle Jaén s/n. Peligros (Granada) 18210",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0401",
+      "id_convenio": "CV0401",
+      "convocatoria": "2025-27",
+      "cif": "B18092593",
+      "nombre": "MANIPULADOS EUROPA S.L.",
+      "centros": [
+        {
+          "calle": "Pol. Ind. ASEGRA Avda. Andalucía, 25 Peligros, Granada CP. 18210",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0496",
+      "id_convenio": "CV0496",
+      "convocatoria": "2025-27",
+      "cif": "B18300640",
+      "nombre": "MARITOÑI SL",
+      "centros": [
+        {
+          "calle": "POLIGONO TECNOLÓGICO OGÍJARES, NAVE 2, OGÍJARES (GRANADA) 18151",
+          "codigo_postal": "18151",
+          "municipio": "Ogíjares"
+        }
+      ]
+    },
+    {
+      "id": "CV0377",
+      "id_convenio": "CV0377",
+      "convocatoria": "2025-27",
+      "cif": "B18579953",
+      "nombre": "MARSDIGITAL, S.L",
+      "centros": [
+        {
+          "calle": "C/ Benjamin Franklin, 1 Armilla (Granada) C.P. 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0311",
+      "id_convenio": "CV0311",
+      "convocatoria": "2025-27",
+      "cif": "B92385665",
+      "nombre": "MASTER GIFT IMPORT SL",
+      "centros": []
+    },
+    {
+      "id": "CV0564",
+      "id_convenio": "CV0564",
+      "convocatoria": "2025-27",
+      "cif": "B19620426",
+      "nombre": "MASVALIA 3365 S.L",
+      "centros": []
+    },
+    {
+      "id": "CV0547",
+      "id_convenio": "CV0547",
+      "convocatoria": "2025-27",
+      "cif": "B19591668",
+      "nombre": "MERCEDES ISLA PIONONOS S.L.",
+      "centros": [
+        {
+          "calle": "Calle Músico Vicente Zarco S/N Bajo 5, 18002, Granada",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0426",
+      "id_convenio": "CV0426",
+      "convocatoria": "2025-27",
+      "cif": "B63266969",
+      "nombre": "MERKAL CALZADOS S",
+      "centros": [
+        {
+          "calle": "C/ Hipócrates 128/129 18100 Armilla (Granada)",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "C/ Luis Buñuel s/n 18197 Pulianas (Granada)",
+          "codigo_postal": "18197",
+          "municipio": "Pulianas"
+        }
+      ]
+    },
+    {
+      "id": "CV0424",
+      "id_convenio": "CV0424",
+      "convocatoria": "2025-27",
+      "cif": "B19627744",
+      "nombre": "METALOMECANICA ACEITUNO S.L.U.",
+      "centros": []
+    },
+    {
+      "id": "CV0258",
+      "id_convenio": "CV0258",
+      "convocatoria": "2025-27",
+      "cif": "B19711688",
+      "nombre": "METURNO S.L",
+      "centros": []
+    },
+    {
+      "id": "CV0447",
+      "id_convenio": "CV0447",
+      "convocatoria": "2025-27",
+      "cif": "B18913988",
+      "nombre": "MICELIOS DEL ALTIPLANO SL",
+      "centros": [
+        {
+          "calle": "Polígono Industrial Hactara parcela 17 - 20 18811 Zújar (Granada)",
+          "codigo_postal": "18811",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0405",
+      "id_convenio": "CV0405",
+      "convocatoria": "2025-27",
+      "cif": "B10666907",
+      "nombre": "MK ARMILLA, S.L.",
+      "centros": [
+        {
+          "calle": "Avenida de la Investigación, 3 Granada- Armilla CP. 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0344",
+      "id_convenio": "CV0344",
+      "convocatoria": "2025-27",
+      "cif": "B18846709",
+      "nombre": "MLG ELECTROSOLAR GRANADA SL",
+      "centros": [
+        {
+          "calle": "Poligono Mirador de Sierra Nevada C/ Yeguas, 17 Cijuela (Granada) CP. 18339",
+          "codigo_postal": "18339",
+          "municipio": "Cijuela"
+        }
+      ]
+    },
+    {
+      "id": "CV0510",
+      "id_convenio": "CV0510",
+      "convocatoria": "2025-27",
+      "cif": "B19652122",
+      "nombre": "MONPAN 2017 S.L",
+      "centros": [
+        {
+          "calle": "Avenida del Sur, Nº 21 Granada (Granada) CP. 18014",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0479",
+      "id_convenio": "CV0479",
+      "convocatoria": "2025-27",
+      "cif": "B09619552",
+      "nombre": "MOSTAZA GREEN GRANADA",
+      "centros": [
+        {
+          "calle": "Avd. Federico García Lorca, 16 Local 2. Granada 18014",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Avenida de la Ilustración, 107, Granada, 18007",
+          "codigo_postal": "18007",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0498",
+      "id_convenio": "CV0498",
+      "convocatoria": "2025-27",
+      "cif": "B55467856",
+      "nombre": "MUERDE LA PASTA S.L.",
+      "centros": [
+        {
+          "calle": "C.C. Nevada Shopping. Avd. de las Palmeras s/n Armilla Granada 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "María Celena Molina campos",
+          "codigo_postal": "",
+          "municipio": ""
+        }
+      ]
+    },
+    {
+      "id": "CV0084",
+      "id_convenio": "CV0084",
+      "convocatoria": "2025-27",
+      "cif": "B19692268",
+      "nombre": "MULTISERVICIOS EMPRESARIALES GRANADA SL",
+      "centros": []
+    },
+    {
+      "id": "CV0086",
+      "id_convenio": "CV0086",
+      "convocatoria": "2025-27",
+      "cif": "G14422075",
+      "nombre": "MZC Asociación Mujeres en Zona de Conflicto",
+      "centros": [
+        {
+          "calle": "Camino de Ronda 96, 1º (Granada) 18004",
+          "codigo_postal": "18004",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0025",
+      "id_convenio": "CV0025",
+      "convocatoria": "2025-27",
+      "cif": "A78119773",
+      "nombre": "NOROTO SAU(NORAUTO)",
+      "centros": [
+        {
+          "calle": "Centro Comercial Alcampo, Avda. Juan Pablo II, s/n , GRANADA 18013",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0009",
+      "id_convenio": "CV0009",
+      "convocatoria": "2025-27",
+      "cif": "A18031500",
+      "nombre": "NRF ESPAÑA SA",
+      "centros": []
+    },
+    {
+      "id": "CV0011",
+      "id_convenio": "CV0011",
+      "convocatoria": "2025-27",
+      "cif": "B19883032",
+      "nombre": "NRF THERMAL ENGINEERING SL",
+      "centros": [
+        {
+          "calle": "Avenida de Asegra nº22 - 26 Polígono Industrial de Asegra, Peligros (Granada) 18210",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0325",
+      "id_convenio": "CV0325",
+      "convocatoria": "2025-27",
+      "cif": "F18678433",
+      "nombre": "Nubes de algodón S.C.A.",
+      "centros": []
+    },
+    {
+      "id": "CV0304",
+      "id_convenio": "CV0304",
+      "convocatoria": "2025-27",
+      "cif": "F18580845",
+      "nombre": "NUEVO MILENIUM S.C.A.",
+      "centros": []
+    },
+    {
+      "id": "CV0289",
+      "id_convenio": "CV0289",
+      "convocatoria": "2025-27",
+      "cif": "B19660091",
+      "nombre": "Oasis Servicios Costa Tropical S.L.",
+      "centros": [
+        {
+          "calle": "Camino Patria nº 8, C.P. 18613 Motril (Granada)",
+          "codigo_postal": "18613",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0038",
+      "id_convenio": "CV0038",
+      "convocatoria": "2025-27",
+      "cif": "B18865170",
+      "nombre": "OCTOPUS SERVICIOS DE PRODUCCIÓN A LA COMUNICACIÓN",
+      "centros": [
+        {
+          "calle": "Calle Lanjarón 312, Peligros, Granada. 18210",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0411",
+      "id_convenio": "CV0411",
+      "convocatoria": "2025-27",
+      "cif": "B13929567",
+      "nombre": "OHANA JABEL, S.L.",
+      "centros": [
+        {
+          "calle": "C/ Angel, 17 18002 Granada",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0351",
+      "id_convenio": "CV0351",
+      "convocatoria": "2025-27",
+      "cif": "B62212436",
+      "nombre": "OPI PRENDAS INFANTILES ORCHESTRA SL",
+      "centros": [
+        {
+          "calle": "C.C. GRANAITA C/LUIS BUÑUEL S/N 18197 PULIANAS, GR",
+          "codigo_postal": "18197",
+          "municipio": "Pulianas"
+        }
+      ]
+    },
+    {
+      "id": "CV0096",
+      "id_convenio": "CV0096",
+      "convocatoria": "2025-27",
+      "cif": "B18905182",
+      "nombre": "OPTIMACULTURA S.L",
+      "centros": [
+        {
+          "calle": "P.E. CORTIJO DEL CONDE C/PAGO DE CAMBEA 14, NAVE 7 (Granada)",
+          "codigo_postal": "",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0164",
+      "id_convenio": "CV0164",
+      "convocatoria": "2025-27",
+      "cif": "R1800038J",
+      "nombre": "ORDEN HOSPITALARIA DE SAN JUAN DE DIOS , ASILO CLÍNICA SAN RAFAEL.",
+      "centros": []
+    },
+    {
+      "id": "CV0367",
+      "id_convenio": "CV0367",
+      "convocatoria": "2025-27",
+      "cif": "R1800038J",
+      "nombre": "ORDEN HOSPITALARIA DE SAN JUAN DE DIOS , ASILO CLÍNICA SAN RAFAEL.",
+      "centros": [
+        {
+          "calle": "C/ San Juan de Dios 19-23 18001 Granad",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0172",
+      "id_convenio": "CV0172",
+      "convocatoria": "2025-27",
+      "cif": "B18336487",
+      "nombre": "ORTOPEDIA TECNICA Y MOVILIDAD SL",
+      "centros": []
+    },
+    {
+      "id": "CV0027",
+      "id_convenio": "CV0027",
+      "convocatoria": "2025-27",
+      "cif": "B19630698",
+      "nombre": "OTTOMOCIÓN SL",
+      "centros": [
+        {
+          "calle": "C/ MOTRIL R-133, ALBOLOTE (GRANADA) 18220",
+          "codigo_postal": "18220",
+          "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0552",
+      "id_convenio": "CV0552",
+      "convocatoria": "2025-27",
+      "cif": "B18721449",
+      "nombre": "PANADERÍA LA GRACIA DE DIOS SL",
+      "centros": []
+    },
+    {
+      "id": "CV0240",
+      "id_convenio": "CV0240",
+      "convocatoria": "2025-27",
+      "cif": "E18505602",
+      "nombre": "PANADERÍA VIRGEN DEL MAR",
+      "centros": [
+        {
+          "calle": "C/ SANTA ROSALÍA Nº 15 18.007 GRANADA",
+          "codigo_postal": "18007",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0394",
+      "id_convenio": "CV0394",
+      "convocatoria": "2025-27",
+      "cif": "B18322255",
+      "nombre": "PANIFICADORA MARTIN, S.L",
+      "centros": [
+        {
+          "calle": "PLAZA/MUNDO NUEVO,S/N HUETOR VEGA(GRANADA)CP18198",
+          "codigo_postal": "18198",
+          "municipio": "Huétor Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0335",
+      "id_convenio": "CV0335",
+      "convocatoria": "2025-27",
+      "cif": "B26641407",
+      "nombre": "Papelería Tropical 75 S.L.",
+      "centros": [
+        {
+          "calle": "Calle Muralla, 11, C.P. 18600, Motril (Granada)",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0336",
+      "id_convenio": "CV0336",
+      "convocatoria": "2025-27",
+      "cif": "B13673090",
+      "nombre": "PAPELERÍA Y ROTULACIÓN COSTA TROPICAL S.L.",
+      "centros": [
+        {
+          "calle": "Calle Barranco de las monjas, 68, Local 2, C.P. 18600, Motril (Granada",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0478",
+      "id_convenio": "CV0478",
+      "convocatoria": "2025-27",
+      "cif": "B18546473",
+      "nombre": "PASTELERÍA LA CRUZADA S.L.",
+      "centros": [
+        {
+          "calle": "Avenida Dilar, 30. Granada 18006",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "C/ Andrés Segovia s/n. Granada 18006",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0101",
+      "id_convenio": "CV0101",
+      "convocatoria": "2025-27",
+      "cif": "B67773101",
+      "nombre": "PCBLUE SL",
+      "centros": []
+    },
+    {
+      "id": "CV0577",
+      "id_convenio": "CV0577",
+      "convocatoria": "2025-27",
+      "cif": "B56382419",
+      "nombre": "PDA SERVICIOS INTEGRALES SOCIEDAD LIMITADA",
+      "centros": []
+    },
+    {
+      "id": "CV0475",
+      "id_convenio": "CV0475",
+      "convocatoria": "2025-27",
+      "cif": "A18015792",
+      "nombre": "PENALVA ALIMENTACIÓN, SA",
+      "centros": [
+        {
+          "calle": "Carretera Alhama, 56, Churriana de la Vega (Granada), 18194",
+          "codigo_postal": "18194",
+          "municipio": "Churriana de la Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0554",
+      "id_convenio": "CV0554",
+      "convocatoria": "2025-27",
+      "cif": "B10504488",
+      "nombre": "PERSOREGALA SLU",
+      "centros": [
+        {
+          "calle": "Comercial Nevada Shopping, Avenida de las PalmCentroeras, 75, Armilla, 18100, Granada",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0354",
+      "id_convenio": "CV0354",
+      "convocatoria": "2025-27",
+      "cif": "B19683127",
+      "nombre": "PINK AND LEMON SL",
+      "centros": [
+        {
+          "calle": "Camino de Ronda, 154, Granada, CP: 18003",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0206",
+      "id_convenio": "CV0206",
+      "convocatoria": "2025-27",
+      "cif": "B72761851",
+      "nombre": "PISO Y APARTE SL",
+      "centros": []
+    },
+    {
+      "id": "CV0409",
+      "id_convenio": "CV0409",
+      "convocatoria": "2025-27",
+      "cif": "A83151977",
+      "nombre": "PLANIGER, SA.",
+      "centros": [
+        {
+          "calle": "C/ Carril de Santo Domingo, 2 Huétor Vega, Granada CP. 18198",
+          "codigo_postal": "18198",
+          "municipio": "Huétor Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0190",
+      "id_convenio": "CV0190",
+      "convocatoria": "2025-27",
+      "cif": "G56996200",
+      "nombre": "PLATAFORMA DE ASOCIACIONES DE PACIENTES DE GRANADA",
+      "centros": [
+        {
+          "calle": "C/ Escultor navas Parejo, Panta iC, Puerta 2, Edif. Carolina. 18006 Granada",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0488",
+      "id_convenio": "CV0488",
+      "convocatoria": "2025-27",
+      "cif": "B90017112",
+      "nombre": "POMODORO FRANQUICIA S.L.",
+      "centros": [
+        {
+          "calle": "Calle Blvd. Billy Wilder, s/n. Pulianas (Granada) 18197",
+          "codigo_postal": "18197",
+          "municipio": "Pulianas"
+        }
+      ]
+    },
+    {
+      "id": "CV0092",
+      "id_convenio": "CV0092",
+      "convocatoria": "2025-27",
+      "cif": "B19500636",
+      "nombre": "PONIENTE TRAVEL GROUP ANDALUCIA SL",
+      "centros": [
+        {
+          "calle": "Camino de Ronda 3 Bajo 18006 Granada",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0483",
+      "id_convenio": "CV0483",
+      "convocatoria": "2025-27",
+      "cif": "B10704245",
+      "nombre": "PRENATAL RETAIL GROUP SLU – TOY”R”US",
+      "centros": [
+        {
+          "calle": "Parque comercial Albán, s/n, Armilla, Granada. 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0565",
+      "id_convenio": "CV0565",
+      "convocatoria": "2025-27",
+      "cif": "B40520603",
+      "nombre": "PRICETOBED SL",
+      "centros": [
+        {
+          "calle": "Plaza Fortuny, 6, 18009, Granada",
+          "codigo_postal": "18009",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0142",
+      "id_convenio": "CV0142",
+      "convocatoria": "2025-27",
+      "cif": "B18593475",
+      "nombre": "Promociones primera ocupación SL",
+      "centros": [
+        {
+          "calle": "C/ Casería Tolín s/n, Crta. Loja,Huetor Tajar, 18360, Granada",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0353",
+      "id_convenio": "CV0353",
+      "convocatoria": "2025-27",
+      "cif": "B19370428",
+      "nombre": "PTS PINK AND LEMON SL",
+      "centros": [
+        {
+          "calle": "Calle/ Cañaveral, 5, 1 en Granada CP. 18.003",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Calle/ Cañaveral, 5, 1º, Granada, CP: 18003",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0157",
+      "id_convenio": "CV0157",
+      "convocatoria": "2025-27",
+      "cif": "B19715556",
+      "nombre": "PUERTA BERNINA S.L.",
+      "centros": [
+        {
+          "calle": "Acera del Casino, n.º 17. Granada 18009.",
+          "codigo_postal": "18009",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0145",
+      "id_convenio": "CV0145",
+      "convocatoria": "2025-27",
+      "cif": "B67803288",
+      "nombre": "QCHARX INTERNATIONAL SL",
+      "centros": [
+        {
+          "calle": "C/ Viznar, 113, C.P. 18220, Albolote",
+          "codigo_postal": "18220",
+          "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0321",
+      "id_convenio": "CV0321",
+      "convocatoria": "2025-27",
+      "cif": "B22893077",
+      "nombre": "Quintarejo SL",
+      "centros": [
+        {
+          "calle": "Avenida Rodríguez Acosta 24 bajo, Motril, C.P. 18.600",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0287",
+      "id_convenio": "CV0287",
+      "convocatoria": "2025-27",
+      "cif": "G18014688",
+      "nombre": "REAL CLUB NÁUTICO MOTRIL",
+      "centros": []
+    },
+    {
+      "id": "CV0040",
+      "id_convenio": "CV0040",
+      "convocatoria": "2025-27",
+      "cif": "A18351965",
+      "nombre": "RECAMBIOS INDUSTRIALES MOLEON SA (RIMOSA)",
+      "centros": []
+    },
+    {
+      "id": "CV0333",
+      "id_convenio": "CV0333",
+      "convocatoria": "2025-27",
+      "cif": "A18020347",
+      "nombre": "Recambios Montero S.A.",
+      "centros": []
+    },
+    {
+      "id": "CV0173",
+      "id_convenio": "CV0173",
+      "convocatoria": "2025-27",
+      "cif": "B19704634",
+      "nombre": "RECICLADOS LA PURISIMA SL",
+      "centros": []
+    },
+    {
+      "id": "CV0551",
+      "id_convenio": "CV0551",
+      "convocatoria": "2025-27",
+      "cif": "B19526342",
+      "nombre": "RECOMPRO PUNTO 0, S.L",
+      "centros": [
+        {
+          "calle": "C/ BAZA 218, Planta Baja. POLÍGONO JUNCARIL ALBOLOTE 18220 GRANADA",
+          "codigo_postal": "18220",
+          "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0207",
+      "id_convenio": "CV0207",
+      "convocatoria": "2025-27",
+      "cif": "B18094276",
+      "nombre": "REPRODUCCIONES OCAÑA SL",
+      "centros": [
+        {
+          "calle": "C/ Emperatriz Eugenia, nº 5, local 3, 18002, Granada",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0110",
+      "id_convenio": "CV0110",
+      "convocatoria": "2025-27",
+      "cif": "B18634048",
+      "nombre": "RESIDENCIA CASERÍO DE FONSECA S.L.",
+      "centros": [
+        {
+          "calle": "Avenida de Fonseca, s/n. Peligros 18210",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0163",
+      "id_convenio": "CV0163",
+      "convocatoria": "2025-27",
+      "cif": "R1800165A",
+      "nombre": "RESIDENCIA DE MAYORES SAN JUAN DE DIOS",
+      "centros": []
+    },
+    {
+      "id": "CV0032",
+      "id_convenio": "CV0032",
+      "convocatoria": "2025-27",
+      "cif": "B91056028",
+      "nombre": "RESIDENCIA NUEVA DEL MILENIO CAMINO DE SANTIAGO S.L.",
+      "centros": [
+        {
+          "calle": "C/Vereda de la Acequia s/n. Alhendín, Granada. 18620",
+          "codigo_postal": "18620",
+          "municipio": "Alhendín"
+        }
+      ]
+    },
+    {
+      "id": "CV0350",
+      "id_convenio": "CV0350",
+      "convocatoria": "2025-27",
+      "cif": "R1800224F",
+      "nombre": "RESIDENCIA SAGRADA FAMILIA",
+      "centros": [
+        {
+          "calle": "CALLE REAL,39 LA ZUBIA (GRANADA) 18140",
+          "codigo_postal": "18140",
+          "municipio": "La Zubia"
+        }
+      ]
+    },
+    {
+      "id": "CV0482",
+      "id_convenio": "CV0482",
+      "convocatoria": "2025-27",
+      "cif": "B18776757",
+      "nombre": "RESIDENCIA VIRGEN MARIA AUXILIADORA S.L.",
+      "centros": [
+        {
+          "calle": "C/ Camelia 2,18194, Churriana de la Vega (Granada)",
+          "codigo_postal": "18194",
+          "municipio": "Churriana de la Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0460",
+      "id_convenio": "CV0460",
+      "convocatoria": "2025-27",
+      "cif": "B29842283",
+      "nombre": "RESIDENCIAS FAMILIARES PARA MAYORES, SLU",
+      "centros": []
+    },
+    {
+      "id": "CV0155",
+      "id_convenio": "CV0155",
+      "convocatoria": "2025-27",
+      "cif": "B75888883",
+      "nombre": "RESIDENCIAS REIFS PREMIER SLU",
+      "centros": [
+        {
+          "calle": "Av. Los Claveles, 18 Maracena C.P. 18200",
+          "codigo_postal": "18200",
+          "municipio": "Maracena"
+        }
+      ]
+    },
+    {
+      "id": "CV0501",
+      "id_convenio": "CV0501",
+      "convocatoria": "2025-27",
+      "cif": "B01786912",
+      "nombre": "RESTAURACION BIRRAMBLA SL",
+      "centros": [
+        {
+          "calle": "Plaza de Bib Rambla, 15 Granada 18001",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0058",
+      "id_convenio": "CV0058",
+      "convocatoria": "2025-27",
+      "cif": "B75696856",
+      "nombre": "RESTAURANTE SETIMERIEN 9 SL",
+      "centros": [
+        {
+          "calle": "Avda. La Constitución, 50. 18014 Granada",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0049",
+      "id_convenio": "CV0049",
+      "convocatoria": "2025-27",
+      "cif": "B10569978",
+      "nombre": "ROOM MATE HOSPITALITY & LEISURE SLU",
+      "centros": [
+        {
+          "calle": "C/ CAMPO VERDE Nº 1 18001 GRANADA",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0218",
+      "id_convenio": "CV0218",
+      "convocatoria": "2025-27",
+      "cif": "R1800150C",
+      "nombre": "RR SIERVAS DE LOS POBRES HSCJ(ESCUELA INFANTIL SANTA ROSALÍA)",
+      "centros": [
+        {
+          "calle": "C/ Santa Rosalía, nº 2, 18007, Granada",
+          "codigo_postal": "18007",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0415",
+      "id_convenio": "CV0415",
+      "convocatoria": "2025-27",
+      "cif": "F18008482",
+      "nombre": "SCA. NTRA. SRA. DE LOS REMEDIOS",
+      "centros": [
+        {
+          "calle": "C/ Dehesas Viejas, s/n. Iznalloz (Granada) 18550",
+          "codigo_postal": "18550",
+          "municipio": "Iznalloz"
+        },
+        {
+          "calle": "Calle/ Explanada de la Estación, S/N. Iznalloz (Granada) CP. 18550",
+          "codigo_postal": "18550",
+          "municipio": "Iznalloz"
+        }
+      ]
+    },
+    {
+      "id": "CV0503",
+      "id_convenio": "CV0503",
+      "convocatoria": "2025-27",
+      "cif": "B18766741",
+      "nombre": "SEGUMAS GESTIÓN S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0312",
+      "id_convenio": "CV0312",
+      "convocatoria": "2025-27",
+      "cif": "B18063123",
+      "nombre": "Semilleros Saliplant SL",
+      "centros": []
+    },
+    {
+      "id": "CV0094",
+      "id_convenio": "CV0094",
+      "convocatoria": "2025-27",
+      "cif": "F19807098",
+      "nombre": "SENTIDO INVERSO S. COOP. AND.",
+      "centros": [
+        {
+          "calle": "Avenida de Madrid 10. Granada. 18012",
+          "codigo_postal": "18012",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "C/Margarita Xirgú S/N 18005 Granada",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0087",
+      "id_convenio": "CV0087",
+      "convocatoria": "2025-27",
+      "cif": "B19501337",
+      "nombre": "SERIGRAFÍAS GRANADA SL",
+      "centros": [
+        {
+          "calle": "Pol. Ind. Juncaril C/ Colomera R-204, Albolote (Granada) 18220",
+          "codigo_postal": "18220",
+          "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0208",
+      "id_convenio": "CV0208",
+      "convocatoria": "2025-27",
+      "cif": "E19594993",
+      "nombre": "SERVICIOS CAMPUS CB",
+      "centros": [
+        {
+          "calle": "AVENIDA LOAYSA, S/N HUETOR VEGA (GRANADA) C.P. 18198",
+          "codigo_postal": "18198",
+          "municipio": "Huétor Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0276",
+      "id_convenio": "CV0276",
+      "convocatoria": "2025-27",
+      "cif": "B18696088",
+      "nombre": "Servicios Educativos Valverde S.L.",
+      "centros": [
+        {
+          "calle": "Avenida Enrique Martín Cuevas, 14, 18600 Motril (Granada",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0540",
+      "id_convenio": "CV0540",
+      "convocatoria": "2025-27",
+      "cif": "B10814952",
+      "nombre": "SERVICIOS PROFESIONALES DE HOSTELERIA GRANADA, S.L",
+      "centros": [
+        {
+          "calle": "Calle Alhamar, 41, 18004, Granada",
+          "codigo_postal": "18004",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "CAMINO DE RONDA, 141-143, 18013, GRANADA",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Plaza Ciudad de los Cármenes, 2, 18013, Granada",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0071",
+      "id_convenio": "CV0071",
+      "convocatoria": "2025-27",
+      "cif": "B56674740",
+      "nombre": "SERVICIOS PROFESIONALES DUQUESA SL",
+      "centros": []
+    },
+    {
+      "id": "CV0219",
+      "id_convenio": "CV0219",
+      "convocatoria": "2025-27",
+      "cif": "B55628341",
+      "nombre": "SERVIPLUS TECNIMAX SL",
+      "centros": [
+        {
+          "calle": "Avda. Alfaguara, nº 29, 18170. Alfacar, Granada",
+          "codigo_postal": "18170",
+          "municipio": "Alfacar"
+        }
+      ]
+    },
+    {
+      "id": "CV0010",
+      "id_convenio": "CV0010",
+      "convocatoria": "2025-27",
+      "cif": "B18983494",
+      "nombre": "SERYMAR INSERTA SL",
+      "centros": [
+        {
+          "calle": "Paseo Hermanos Costaleros, S/N, Granada 18008",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0541",
+      "id_convenio": "CV0541",
+      "convocatoria": "2025-27",
+      "cif": "B19512607",
+      "nombre": "SIGMA BIOTECH SL",
+      "centros": []
+    },
+    {
+      "id": "CV0030",
+      "id_convenio": "CV0030",
+      "convocatoria": "2025-27",
+      "cif": "B18898700",
+      "nombre": "SINERGIAS SOSTENIBLES SL",
+      "centros": [
+        {
+          "calle": "C/ Moclín, Nave 79A. Peligros, Granada. 18210",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
         }
       ]
     },
     {
       "id": "CV0015",
       "id_convenio": "CV0015",
-      "convocatoria": "2",
-      "cif": "B18281766",
-      "nombre": "VIVEROS CAMBIL S.L.",
+      "convocatoria": "2025-27",
+      "cif": "B19607126",
+      "nombre": "SOCIEDAD GRANADINA DE RESTAURACIÓN Y CATERING SL(CATERING EMAUS)",
       "centros": [
         {
-          "calle": "Calle telefónica, 9",
-          "codigo_postal": "18320",
-          "municipio": "Santa Fe"
+          "calle": "C/ Pedro Machuca, 4 – 6, 18011, Granada",
+          "codigo_postal": "18011",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Plaza José Antonio Atienza s/n, Maracena (GRANADA) 18200",
+          "codigo_postal": "18200",
+          "municipio": "Maracena"
         }
       ]
     },
     {
-      "id": "CV0004",
-      "id_convenio": "CV0004",
-      "convocatoria": "2",
-      "cif": "B18281766",
-      "nombre": "VIVEROS CAMBIL S.L.",
+      "id": "CV0313",
+      "id_convenio": "CV0313",
+      "convocatoria": "2025-27",
+      "cif": "B22790505",
+      "nombre": "SOCIVET25 SOCIEDAD LIMITADA PROFESIONAL",
       "centros": [
         {
-          "calle": "CARRETERA DE LA SIERRA, 180",
+          "calle": "Calle Cruces nº 2, Motril, CP 18.600",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0557",
+      "id_convenio": "CV0557",
+      "convocatoria": "2025-27",
+      "cif": "A18376780",
+      "nombre": "SOTEC LUIS CROVETTO SA",
+      "centros": []
+    },
+    {
+      "id": "CV0288",
+      "id_convenio": "CV0288",
+      "convocatoria": "2025-27",
+      "cif": "E19611060",
+      "nombre": "SPLASH ACADEMIA DE INGLÉS CB",
+      "centros": [
+        {
+          "calle": "C/Rambla del Manjón, 12, Local 2, Motril 18600 (Granada)",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        },
+        {
+          "calle": "C/Rambla del Manjón, 14, Motril 18600 (Granada)",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0282",
+      "id_convenio": "CV0282",
+      "convocatoria": "2025-27",
+      "cif": "B53404646",
+      "nombre": "SPRINTER MEGACENTROS DEL DEPORTE S.L",
+      "centros": []
+    },
+    {
+      "id": "CV0485",
+      "id_convenio": "CV0485",
+      "convocatoria": "2025-27",
+      "cif": "B53404646",
+      "nombre": "SPRINTER MEGACENTROS DEL DEPORTE S.L",
+      "centros": [
+        {
+          "calle": "CC Nevada Shopping, Av. de las Palmeras, 75, Armilla, Granada. 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "PC. Alban. Carretera de Armilla, s/n, Armilla, Granada. 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "C.C. Serrallo Plaza. Plaza Paseo Laguna de Cameras, s/n, Granada.18008",
           "codigo_postal": "18008",
-          "municipio": "Lancha del Genil"
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Sprinter Outlet. P.C. Granaita. C/ Luis Buñuel, s/n, Pulianas, Granada",
+          "codigo_postal": "",
+          "municipio": "Pulianas"
+        }
+      ]
+    },
+    {
+      "id": "CV0236",
+      "id_convenio": "CV0236",
+      "convocatoria": "2025-27",
+      "cif": "B56981947",
+      "nombre": "STAR TIME CAMP, S.L..",
+      "centros": [
+        {
+          "calle": "CARRETERA A-348-KM 18, SN ÓRGIVA (GRANADA) C.P. 18.400",
+          "codigo_postal": "18400",
+          "municipio": "Órgiva"
+        }
+      ]
+    },
+    {
+      "id": "CV0077",
+      "id_convenio": "CV0077",
+      "convocatoria": "2025-27",
+      "cif": "B18993972",
+      "nombre": "SUBETE AL CARRO SL",
+      "centros": [
+        {
+          "calle": "C/ALMERIA Nº4 LOCAL 3 Y 4 MONACHIL. GRANADA",
+          "codigo_postal": "",
+          "municipio": "Monachil"
+        }
+      ]
+    },
+    {
+      "id": "CV0093",
+      "id_convenio": "CV0093",
+      "convocatoria": "2025-27",
+      "cif": "B18948919",
+      "nombre": "SUMINISTROS FERROIDEA, S.L.",
+      "centros": [
+        {
+          "calle": "AVDA. RAFAEL PEREZ DEL ALAMO Nº 2, BAJO, LOJA (GRANADA) 18300",
+          "codigo_postal": "18300",
+          "municipio": "Loja"
+        }
+      ]
+    },
+    {
+      "id": "CV0186",
+      "id_convenio": "CV0186",
+      "convocatoria": "2025-27",
+      "cif": "B19672237",
+      "nombre": "SUPERMERCADO FELICITI SL",
+      "centros": []
+    },
+    {
+      "id": "CV0082",
+      "id_convenio": "CV0082",
+      "convocatoria": "2025-27",
+      "cif": "B09919671",
+      "nombre": "SUPERMERCADO MASEDA S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0081",
+      "id_convenio": "CV0081",
+      "convocatoria": "2025-27",
+      "cif": "B18321836",
+      "nombre": "SUPERMERCADO SIERRA NEVADA CARTUJA SL",
+      "centros": [
+        {
+          "calle": "C/ Santiago Lozano, 6, 18011. Granada",
+          "codigo_postal": "18011",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0083",
+      "id_convenio": "CV0083",
+      "convocatoria": "2025-27",
+      "cif": "B19695659",
+      "nombre": "SUPERMERCADO SIERRA NEVADA CARTUJA SL",
+      "centros": []
+    },
+    {
+      "id": "CV0430",
+      "id_convenio": "CV0430",
+      "convocatoria": "2025-27",
+      "cif": "B18595017",
+      "nombre": "Supermercados BAI SL",
+      "centros": [
+        {
+          "calle": "C/ Félix Rodríguez de la Fuente,4,18210, Peligros ,GR",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0292",
+      "id_convenio": "CV0292",
+      "convocatoria": "2025-27",
+      "cif": "F18638262",
+      "nombre": "SUPERMERCADOS CASAHER SCA",
+      "centros": []
+    },
+    {
+      "id": "CV0103",
+      "id_convenio": "CV0103",
+      "convocatoria": "2025-27",
+      "cif": "B27560614",
+      "nombre": "SUPERMERCADOS MANUEL GONZALEZ S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0162",
+      "id_convenio": "CV0162",
+      "convocatoria": "2025-27",
+      "cif": "F18964759",
+      "nombre": "SUPERMERCADOS MEDINA ALAMEDA SCA",
+      "centros": [
+        {
+          "calle": "Paseo de los Álamos 1. Huetor Santillán Granada. 18183",
+          "codigo_postal": "18183",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0481",
+      "id_convenio": "CV0481",
+      "convocatoria": "2025-27",
+      "cif": "B19703370",
+      "nombre": "SUPERMERCADOS SUMAYBA SL",
+      "centros": [
+        {
+          "calle": "C/ Tejeiro, 12 Granada.18005",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0407",
+      "id_convenio": "CV0407",
+      "convocatoria": "2025-27",
+      "cif": "B19641083",
+      "nombre": "SUREÑA DE EVENTOS Y OCIO SL",
+      "centros": []
+    },
+    {
+      "id": "CV0378",
+      "id_convenio": "CV0378",
+      "convocatoria": "2025-27",
+      "cif": "B19623057",
+      "nombre": "SYCO SISTEMAS E INSTALACIONES SLU",
+      "centros": [
+        {
+          "calle": "C/ Ramón y Cajal, n.º 11. Granada 18003.",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0421",
+      "id_convenio": "CV0421",
+      "convocatoria": "2025-27",
+      "cif": "B18784298",
+      "nombre": "TABERNA OLEUM GRANADA S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0395",
+      "id_convenio": "CV0395",
+      "convocatoria": "2025-27",
+      "cif": "B22955199",
+      "nombre": "TACTO DIGITAL, S.L.U",
+      "centros": [
+        {
+          "calle": "C/ Gran vía DE COLÓN, 21, 4º A, 18001 GRANADA",
+          "codigo_postal": "18001",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0450",
+      "id_convenio": "CV0450",
+      "convocatoria": "2025-27",
+      "cif": "F18982108",
+      "nombre": "Taller Autosport Armilla, S.C.A",
+      "centros": [
+        {
+          "calle": "C/Praga,s.n,nave4,Armilla, Granada, 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0251",
+      "id_convenio": "CV0251",
+      "convocatoria": "2025-27",
+      "cif": "B19510536",
+      "nombre": "TALLERES PEYMA AUTOMOCIÓN SL",
+      "centros": [
+        {
+          "calle": "C/ Cisne, nº 18, 18014, Granada",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0504",
+      "id_convenio": "CV0504",
+      "convocatoria": "2025-27",
+      "cif": "B18310136",
+      "nombre": "TARESA SL",
+      "centros": [
+        {
+          "calle": "C/ Hernán Cortés, 4 – 2º A, Huétor Tájar 18360",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        },
+        {
+          "calle": "Paseo Redonda Norte S/N Huétor Tájar (Granada) CP. 18360",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0400",
+      "id_convenio": "CV0400",
+      "convocatoria": "2025-27",
+      "cif": "B18754440",
+      "nombre": "TARTAS CRISTINA S.L.",
+      "centros": [
+        {
+          "calle": "Pol. ASEGRA, C/ Sierra de Baza, 4 Peligros (Granada) 18210",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0414",
+      "id_convenio": "CV0414",
+      "convocatoria": "2025-27",
+      "cif": "B25877887",
+      "nombre": "TECNONEXO ADVISORS STRATEGY SL",
+      "centros": []
+    },
+    {
+      "id": "CV0257",
+      "id_convenio": "CV0257",
+      "convocatoria": "2025-27",
+      "cif": "B06828412",
+      "nombre": "TEMPLO GRANADA, S. L.",
+      "centros": []
+    },
+    {
+      "id": "CV0273",
+      "id_convenio": "CV0273",
+      "convocatoria": "2025-27",
+      "cif": "B70833744",
+      "nombre": "Terapias Camaleón S.L.",
+      "centros": []
+    },
+    {
+      "id": "CV0347",
+      "id_convenio": "CV0347",
+      "convocatoria": "2025-27",
+      "cif": "B93261527",
+      "nombre": "TIGER SOUTH SPAIN, S.L.",
+      "centros": [
+        {
+          "calle": "Avda. Las Palmeras, 75 CC. Nevada. Armilla (Granada) 18100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "C. Puentezuelas, 11, 18002 Granada",
+          "codigo_postal": "18002",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0476",
+      "id_convenio": "CV0476",
+      "convocatoria": "2025-27",
+      "cif": "B18424069",
+      "nombre": "TINTORERÍAS NIAGRA, SL",
+      "centros": [
+        {
+          "calle": "Polígono Industrial La Paz, C/ Rafael Fernández Piñar. Maracena (Granada) 18200",
+          "codigo_postal": "18200",
+          "municipio": "Maracena"
+        }
+      ]
+    },
+    {
+      "id": "CV0149",
+      "id_convenio": "CV0149",
+      "convocatoria": "2025-27",
+      "cif": "B18406942",
+      "nombre": "TIRESUR SL",
+      "centros": []
+    },
+    {
+      "id": "CV0210",
+      "id_convenio": "CV0210",
+      "convocatoria": "2025-27",
+      "cif": "B18516187",
+      "nombre": "TM DIGITAL GRANADA SL",
+      "centros": [
+        {
+          "calle": "C/ HONDA DEL REALEJO, Nº 28-BAJO-GRANADA C.P. 18.009",
+          "codigo_postal": "18009",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0199",
+      "id_convenio": "CV0199",
+      "convocatoria": "2025-27",
+      "cif": "B18905885",
+      "nombre": "TRATO HOSTELERÍA SLU",
+      "centros": [
+        {
+          "calle": "C/ Sierra de Tejeda, nº 19, Polígono Asegra, 18210, Peligros, Granada",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0372",
+      "id_convenio": "CV0372",
+      "convocatoria": "2025-27",
+      "cif": "B18987461",
+      "nombre": "TU BOUTIQUE DE BELLEZA Y SALUD SLU",
+      "centros": [
+        {
+          "calle": "C/ Periodista Luis Barrios Talavera, 4. 18014, Granada",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0256",
+      "id_convenio": "CV0256",
+      "convocatoria": "2025-27",
+      "cif": "B73982977",
+      "nombre": "TU SUPER MORON S.L",
+      "centros": []
+    },
+    {
+      "id": "CV0200",
+      "id_convenio": "CV0200",
+      "convocatoria": "2025-27",
+      "cif": "B18762252",
+      "nombre": "TU SUPER PURCHASE SL",
+      "centros": [
+        {
+          "calle": "AVENIDA OGIJARES Nº9 ARMILLA (GRANADA) 18.100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        },
+        {
+          "calle": "CALLE COMANDANTE LAZARO Nº 80 DURCAL GRANADA C.P. 18650",
+          "codigo_postal": "18650",
+          "municipio": "Dúrcal"
+        },
+        {
+          "calle": "CALLE VERDIALES Nº 17 EDIF. GAUDI LOCAL 3-4 GRANADA 18.014",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0314",
+      "id_convenio": "CV0314",
+      "convocatoria": "2025-27",
+      "cif": "B18762252",
+      "nombre": "TU SUPER PURCHASE SL",
+      "centros": [
+        {
+          "calle": "Calle Rector Federico Mayor Zaragoza nº 21, Playa Granada, Motril (CP 18.613)",
+          "codigo_postal": "18613",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0174",
+      "id_convenio": "CV0174",
+      "convocatoria": "2025-27",
+      "cif": "B41610825",
+      "nombre": "UNEI INICIATIVA SOCIAL SLU",
+      "centros": [
+        {
+          "calle": "C/ Asyma, Nº 9, Peligros, CP. 18210",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0085",
+      "id_convenio": "CV0085",
+      "convocatoria": "2025-27",
+      "cif": "B18894683",
+      "nombre": "UNIBERICA VACACIONAL SL",
+      "centros": []
+    },
+    {
+      "id": "CV0107",
+      "id_convenio": "CV0107",
+      "convocatoria": "2025-27",
+      "cif": "B18851881",
+      "nombre": "UNIDAD DE ESTANCIA DIURNA ALFAGUARA S.L.",
+      "centros": [
+        {
+          "calle": "C/ Jaén n.º 7 18214. Nívar. Granada.",
+          "codigo_postal": "18214",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0195",
+      "id_convenio": "CV0195",
+      "convocatoria": "2025-27",
+      "cif": "B18840942",
+      "nombre": "UNIDADES DE ESTANCIA DIURNA GRANADINAS SL",
+      "centros": [
+        {
+          "calle": "C/ Santa Clotilde, 16. 18003 Granda",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0247",
+      "id_convenio": "CV0247",
+      "convocatoria": "2025-27",
+      "cif": "H18574756",
+      "nombre": "URBANIZACION ALTOS DE VISTA NEVADA",
+      "centros": [
+        {
+          "calle": "AVDA FERNANDO DE LOS RIOS 101 ARMILLA GRANADA C.P. 18.100",
+          "codigo_postal": "18100",
+          "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0193",
+      "id_convenio": "CV0193",
+      "convocatoria": "2025-27",
+      "cif": "A07077969",
+      "nombre": "URBIA INTERMEDIACIÓN INGENIERÍA Y SERVICIOS S.A",
+      "centros": [
+        {
+          "calle": "C/ ABÉN HUMELLA, Nº 11 BAJO-EDIFICIO ZURBARÁN 18005 GRANADA",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0339",
+      "id_convenio": "CV0339",
+      "convocatoria": "2025-27",
+      "cif": "B19532530",
+      "nombre": "Uvibyte S.L.",
+      "centros": [
+        {
+          "calle": "Avenida Salobreña s/n, Centro Comercial Alcampo, Motril",
+          "codigo_postal": "",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0397",
+      "id_convenio": "CV0397",
+      "convocatoria": "2025-27",
+      "cif": "G18034058",
+      "nombre": "VALE, ASOCIACIÓN A FAVOR DE PERSONAS CON DISCAPACIDAD",
+      "centros": [
+        {
+          "calle": "Avenida del Velez 25, Dúrcal, Granada CP. 18650",
+          "codigo_postal": "18650",
+          "municipio": "Dúrcal"
+        }
+      ]
+    },
+    {
+      "id": "CV0181",
+      "id_convenio": "CV0181",
+      "convocatoria": "2025-27",
+      "cif": "B70986666",
+      "nombre": "VALEMPRENDE SL",
+      "centros": [
+        {
+          "calle": "Avenida del Velez 25, BARRIADA DE MARCHENA Dúrcal, Granada CP. 18650",
+          "codigo_postal": "18650",
+          "municipio": "Dúrcal"
+        }
+      ]
+    },
+    {
+      "id": "CV0429",
+      "id_convenio": "CV0429",
+      "convocatoria": "2025-27",
+      "cif": "B18916551",
+      "nombre": "VALGASE CONSULT SL",
+      "centros": [
+        {
+          "calle": "C/ Manuel de Falla, n.º 5, 18005 Granada",
+          "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0147",
+      "id_convenio": "CV0147",
+      "convocatoria": "2025-27",
+      "cif": "E18801688",
+      "nombre": "VALLAUTO C.B.",
+      "centros": [
+        {
+          "calle": "Carretera Jaén. Polígono Juncaril, Parcela 102. Nave 4. Peligros (Granada) 18210",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0464",
+      "id_convenio": "CV0464",
+      "convocatoria": "2025-27",
+      "cif": "B19686195",
+      "nombre": "VERDE Y SALUDABLE SL",
+      "centros": []
+    },
+    {
+      "id": "CV0252",
+      "id_convenio": "CV0252",
+      "convocatoria": "2025-27",
+      "cif": "B19655034",
+      "nombre": "VETERINARIOS ALBOLOTE SLU",
+      "centros": [
+        {
+          "calle": "C/ Lucilo Carvajal, nº 2, locales 2, 3 y 4, 18220, Albolote, Granada",
+          "codigo_postal": "18220",
+          "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0463",
+      "id_convenio": "CV0463",
+      "convocatoria": "2025-27",
+      "cif": "B19577782",
+      "nombre": "VICTORXICO CORAZONES S.L",
+      "centros": []
+    },
+    {
+      "id": "CV0062",
+      "id_convenio": "CV0062",
+      "convocatoria": "2025-27",
+      "cif": "B19454636",
+      "nombre": "VISUART ESTUDIOS, SL",
+      "centros": [
+        {
+          "calle": "C/ COMERCIO, 23 CHAUCHINA",
+          "codigo_postal": "",
+          "municipio": "Chauchina"
+        },
+        {
+          "calle": "Avda. Cañada de los Fenicios, 4 puerta 1 GOJAR",
+          "codigo_postal": "",
+          "municipio": "Gójar"
+        }
+      ]
+    },
+    {
+      "id": "CV0449",
+      "id_convenio": "CV0449",
+      "convocatoria": "2025-27",
+      "cif": "B36624831",
+      "nombre": "VITHAS DIAGNÓSTICO SLU",
+      "centros": [
+        {
+          "calle": "Avda. Santa María de la Alhambra nº 6 18008 Granada",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0518",
+      "id_convenio": "CV0518",
+      "convocatoria": "2025-27",
+      "cif": "B18952416",
+      "nombre": "VIVAFIBRA TELECOMUNICACIONES SL",
+      "centros": [
+        {
+          "calle": "Plaza Pósito, Nº 1 Bajo Huétor Tájar (Granada) CP. 18360",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
+    },
+    {
+      "id": "CV0242",
+      "id_convenio": "CV0242",
+      "convocatoria": "2025-27",
+      "cif": "B18635565",
+      "nombre": "VIVERO Y FLORISTERIA JARDIMAR SL.",
+      "centros": [
+        {
+          "calle": "URB. EL PUNTAL G-2, 106, PADUL (GRANADA) C.P. 18.640",
+          "codigo_postal": "18640",
+          "municipio": "Padul"
+        }
+      ]
+    },
+    {
+      "id": "CV0024",
+      "id_convenio": "CV0024",
+      "convocatoria": "2025-27",
+      "cif": "B18281766",
+      "nombre": "VIVEROS CAMBIL SL",
+      "centros": [
+        {
+          "calle": "Puente de los Vados, Antigua Ctra. de Málaga. Granada 18015",
+          "codigo_postal": "18015",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0293",
+      "id_convenio": "CV0293",
+      "convocatoria": "2025-27",
+      "cif": "B18281766",
+      "nombre": "VIVEROS CAMBIL SL",
+      "centros": []
+    },
+    {
+      "id": "CV0457",
+      "id_convenio": "CV0457",
+      "convocatoria": "2025-27",
+      "cif": "B18503102",
+      "nombre": "VIVEROS DOMINGUEZ GONZALEZ,",
+      "centros": [
+        {
+          "calle": "Autovía Bailén- Motril , salida 18. Ogíjares, Granada, 18151",
+          "codigo_postal": "18151",
+          "municipio": "Ogíjares"
+        }
+      ]
+    },
+    {
+      "id": "CV0332",
+      "id_convenio": "CV0332",
+      "convocatoria": "2025-27",
+      "cif": "B19511120",
+      "nombre": "VIVEROS EMILIO DIAZ SL",
+      "centros": []
+    },
+    {
+      "id": "CV0492",
+      "id_convenio": "CV0492",
+      "convocatoria": "2025-27",
+      "cif": "B18594275",
+      "nombre": "Viveros Millan Mollano SL",
+      "centros": [
+        {
+          "calle": "Carretera de la Zubia, s/n, La Zubia, Granada, 18140",
+          "codigo_postal": "18140",
+          "municipio": "La Zubia"
+        }
+      ]
+    },
+    {
+      "id": "CV0324",
+      "id_convenio": "CV0324",
+      "convocatoria": "2025-27",
+      "cif": "B18762930",
+      "nombre": "World Vypmar S.L.",
+      "centros": [
+        {
+          "calle": "Vial acceso ZAL, s/n, C.P. 18613, Puerto de Motril, Motril",
+          "codigo_postal": "18613",
+          "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0153",
+      "id_convenio": "CV0153",
+      "convocatoria": "2025-27",
+      "cif": "B18978437",
+      "nombre": "YAGORA 2011 SL",
+      "centros": [
+        {
+          "calle": "C/ sócrates, 23 (esquina con Trajano), Granada, CP 18004",
+          "codigo_postal": "18004",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0471",
+      "id_convenio": "CV0471",
+      "convocatoria": "2025-27",
+      "cif": "B18392001",
+      "nombre": "YOLAZUL SL",
+      "centros": []
+    },
+    {
+      "id": "CV0134",
+      "id_convenio": "CV0134",
+      "convocatoria": "2025-27",
+      "cif": "B70747985",
+      "nombre": "YUKICONE SLU",
+      "centros": [
+        {
+          "calle": "C/ Ovidio N.º 2 Bajo 1, Edif. Arrayanes 18014 Granada",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
         }
       ]
     }
