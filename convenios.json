@@ -1,8 +1,16 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-06-15T11:41:38.745Z"
+    "ultima_actualizacion": "2026-08-25T09:54:01.129Z"
   },
   "datos": [
+    {
+      "id": "CV0571",
+      "id_convenio": "CV0571",
+      "convocatoria": "2025-27",
+      "cif": "B13782446",
+      "nombre": "IBEROLAM TIMBER & TECHNOLOGY SL",
+      "centros": []
+    },
     {
       "id": "CV0007",
       "id_convenio": "CV0007",
