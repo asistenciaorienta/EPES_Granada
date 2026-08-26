@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-08-26T06:23:20.693Z"
+    "ultima_actualizacion": "2026-08-26T06:36:32.892Z"
   },
   "datos": [
     {
@@ -2221,7 +2221,13 @@
       "convocatoria": "2025-27",
       "cif": "B18568295",
       "nombre": "EUROSPLIT DISTRIBUCIÓN Y SUMINISTROS, S.L.",
-      "centros": []
+      "centros": [
+        {
+          "calle": "C/ Moclín, nave 79,1",
+          "codigo_postal": "18210",
+          "municipio": "Peligros"
+        }
+      ]
     },
     {
       "id": "CV0075",
