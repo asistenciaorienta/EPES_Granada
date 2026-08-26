@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-08-26T12:15:51.857Z"
+    "ultima_actualizacion": "2026-08-26T12:18:50.377Z"
   },
   "datos": [
     {
@@ -3363,6 +3363,20 @@
       "cif": "F18072371",
       "nombre": "IRIS S.C.A",
       "centros": []
+    },
+    {
+      "id": "CV0586",
+      "id_convenio": "CV0586",
+      "convocatoria": "2025-27",
+      "cif": "B18445056",
+      "nombre": "J. Bautista Rodríguez SL",
+      "centros": [
+        {
+          "calle": "Calle Fernando De Los Ríos, 3",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        }
+      ]
     },
     {
       "id": "CV0473",
