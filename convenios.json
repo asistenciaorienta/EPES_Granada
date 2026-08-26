@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-08-26T06:36:32.892Z"
+    "ultima_actualizacion": "2026-08-26T12:13:39.883Z"
   },
   "datos": [
     {
@@ -1303,6 +1303,20 @@
       "cif": "F19712835",
       "nombre": "CENTRO DE DIA SIERRA DE LAS NIEVES S.COOP.AND DE INTERÉS SOCIAL",
       "centros": []
+    },
+    {
+      "id": "CV0584",
+      "id_convenio": "CV0584",
+      "convocatoria": "2025-27",
+      "cif": "F18853572",
+      "nombre": "Centro de Educación Infantil Lunera Tropical SCA",
+      "centros": [
+        {
+          "calle": "Calle Limonero s/n",
+          "codigo_postal": "18.600",
+          "municipio": "Motril"
+        }
+      ]
     },
     {
       "id": "CV0390",
