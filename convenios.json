@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-08-28T09:53:12.352Z"
+    "ultima_actualizacion": "2026-08-28T10:16:22.875Z"
   },
   "datos": [
     {
@@ -3849,6 +3849,20 @@
           "calle": "C/ Benjamin Franklin, 1 Armilla (Granada) C.P. 18100",
           "codigo_postal": "18100",
           "municipio": "Armilla"
+        }
+      ]
+    },
+    {
+      "id": "CV0587",
+      "id_convenio": "CV0587",
+      "convocatoria": "2025-27",
+      "cif": "B19410323",
+      "nombre": "MAS DE CUARENTA, S.L",
+      "centros": [
+        {
+          "calle": "PASAJE FLOR 3",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
         }
       ]
     },
