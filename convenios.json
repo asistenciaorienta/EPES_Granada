@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-08-26T12:18:50.377Z"
+    "ultima_actualizacion": "2026-08-28T09:53:12.352Z"
   },
   "datos": [
     {
@@ -5616,6 +5616,11 @@
           "calle": "Plaza Pósito, Nº 1 Bajo Huétor Tájar (Granada) CP. 18360",
           "codigo_postal": "18360",
           "municipio": "Huétor Tájar"
+        },
+        {
+          "calle": "C/ Cuesta Campos Nº 6 Bajo",
+          "codigo_postal": "18300",
+          "municipio": "Loja"
         }
       ]
     },
