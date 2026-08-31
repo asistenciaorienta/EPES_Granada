@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-08-28T10:16:22.875Z"
+    "ultima_actualizacion": "2026-08-31T11:33:08.623Z"
   },
   "datos": [
     {
@@ -2074,6 +2074,20 @@
           "calle": "C/ HUÉTOR VEGA, 5C-6C ALBOLOTE 18220",
           "codigo_postal": "18220",
           "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0588",
+      "id_convenio": "CV0588",
+      "convocatoria": "2025-27",
+      "cif": "E42787986",
+      "nombre": "EL  SUEÑO DE EME CB",
+      "centros": [
+        {
+          "calle": "Carretera de Alhama,18",
+          "codigo_postal": "18310",
+          "municipio": "Salar"
         }
       ]
     },
