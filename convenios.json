@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-08-31T11:33:08.623Z"
+    "ultima_actualizacion": "2026-09-01T10:40:41.419Z"
   },
   "datos": [
     {
@@ -2827,6 +2827,20 @@
           "calle": "Calle Huertos, 25 Pinos Puente (Granada) 18240",
           "codigo_postal": "18240",
           "municipio": "Pinos Puente"
+        }
+      ]
+    },
+    {
+      "id": "CV0589",
+      "id_convenio": "CV0589",
+      "convocatoria": "2025-27",
+      "cif": "B26951483",
+      "nombre": "GESTIÓN HORECA GRANADINA, SL.",
+      "centros": [
+        {
+          "calle": "AVENIDA GRANADA, Nº 1",
+          "codigo_postal": "18210",
+          "municipio": "PELIGROS"
         }
       ]
     },
