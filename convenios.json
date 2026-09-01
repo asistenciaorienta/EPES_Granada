@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-01T10:44:21.955Z"
+    "ultima_actualizacion": "2026-09-01T11:45:46.577Z"
   },
   "datos": [
     {
@@ -3562,7 +3562,13 @@
       "convocatoria": "2025-27",
       "cif": "B19697101",
       "nombre": "LA ALFAGUARA SERVICIOS SOCIALES SL",
-      "centros": []
+      "centros": [
+        {
+          "calle": "Crta Ronda nº8",
+          "codigo_postal": "18800",
+          "municipio": "Baza"
+        }
+      ]
     },
     {
       "id": "CV0535",
