@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-02T08:02:40.826Z"
+    "ultima_actualizacion": "2026-09-02T08:03:01.911Z"
   },
   "datos": [
     {
@@ -5470,6 +5470,11 @@
         {
           "calle": "CALLE CALAR, Nº 3",
           "codigo_postal": "18008",
+          "municipio": "GRANADA"
+        },
+        {
+          "calle": "CALLE FLORIDA, Nº 22",
+          "codigo_postal": "18007",
           "municipio": "GRANADA"
         },
         {
