@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-02T08:10:41.957Z"
+    "ultima_actualizacion": "2026-09-02T09:25:10.542Z"
   },
   "datos": [
     {
@@ -5531,6 +5531,11 @@
           "calle": "C/ REAL BAJA, Nº 21",
           "codigo_postal": "18151",
           "municipio": "OGÍJARES"
+        },
+        {
+          "calle": "AVENIDA DE LA FUENTE Nº 33",
+          "codigo_postal": "18210",
+          "municipio": "PELIGROS"
         }
       ]
     },
