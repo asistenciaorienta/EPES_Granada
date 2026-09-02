@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-02T07:58:02.777Z"
+    "ultima_actualizacion": "2026-09-02T08:02:16.314Z"
   },
   "datos": [
     {
@@ -5466,6 +5466,11 @@
           "calle": "CALLE VERDIALES Nº 17 EDIF. GAUDI LOCAL 3-4 GRANADA 18.014",
           "codigo_postal": "18014",
           "municipio": "Granada"
+        },
+        {
+          "calle": "CARRETERA DE LA SIERRA, Nº 70",
+          "codigo_postal": "18008",
+          "municipio": "GRANADA"
         }
       ]
     },
