@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-02T08:08:44.958Z"
+    "ultima_actualizacion": "2026-09-02T08:09:09.852Z"
   },
   "datos": [
     {
@@ -5464,6 +5464,11 @@
         },
         {
           "calle": "C/ COMANDANTE LÁZARO, Nº 80",
+          "codigo_postal": "18650",
+          "municipio": "DÚRCAL"
+        },
+        {
+          "calle": "C/ MÁLAGA, Nº 12",
           "codigo_postal": "18650",
           "municipio": "DÚRCAL"
         },
