@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-02T07:55:42.436Z"
+    "ultima_actualizacion": "2026-09-02T07:56:04.701Z"
   },
   "datos": [
     {
@@ -5422,7 +5422,13 @@
       "convocatoria": "2025-27",
       "cif": "B73982977",
       "nombre": "TU SUPER MORON S.L",
-      "centros": []
+      "centros": [
+        {
+          "calle": "CALLEJÓN DE LOS NARANJOS Nº 2",
+          "codigo_postal": "18300",
+          "municipio": "LOJA"
+        }
+      ]
     },
     {
       "id": "CV0200",
