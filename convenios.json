@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-02T08:03:19.878Z"
+    "ultima_actualizacion": "2026-09-02T08:03:53.841Z"
   },
   "datos": [
     {
@@ -5480,6 +5480,11 @@
         {
           "calle": "CALLE FLORIDA, Nº 22",
           "codigo_postal": "18007",
+          "municipio": "GRANADA"
+        },
+        {
+          "calle": "CALLE RIBERA DEL GENIL, Nº 9",
+          "codigo_postal": "18005",
           "municipio": "GRANADA"
         },
         {
