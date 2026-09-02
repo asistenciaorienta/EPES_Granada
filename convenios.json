@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-02T09:25:10.542Z"
+    "ultima_actualizacion": "2026-09-02T09:33:09.483Z"
   },
   "datos": [
     {
@@ -1169,14 +1169,6 @@
       "convocatoria": "2025-27",
       "cif": "E19708700",
       "nombre": "CARPINTERIA SOPORTUJAR CB",
-      "centros": []
-    },
-    {
-      "id": "CV0566",
-      "id_convenio": "CV0566",
-      "convocatoria": "2025-27",
-      "cif": "B18522649",
-      "nombre": "CASA CASTAÑEDA S.L",
       "centros": []
     },
     {
