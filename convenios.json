@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-02T08:09:35.906Z"
+    "ultima_actualizacion": "2026-09-02T08:10:14.163Z"
   },
   "datos": [
     {
@@ -5485,6 +5485,11 @@
         {
           "calle": "C/ PAGÉS, Nº 23",
           "codigo_postal": "18010",
+          "municipio": "GRANADA"
+        },
+        {
+          "calle": "C/ VERDIALES, Nº 17 EDIF. GAUDI LOCAL 3-4",
+          "codigo_postal": "18014",
           "municipio": "GRANADA"
         },
         {
