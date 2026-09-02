@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-02T08:10:14.163Z"
+    "ultima_actualizacion": "2026-09-02T08:10:41.957Z"
   },
   "datos": [
     {
@@ -5456,6 +5456,11 @@
           "calle": "AVENIDA OGIJARES Nº9 ARMILLA (GRANADA) 18.100",
           "codigo_postal": "18100",
           "municipio": "Armilla"
+        },
+        {
+          "calle": "AVENIDA OGÍJARES, Nº 9",
+          "codigo_postal": "18100",
+          "municipio": "ARMILLA"
         },
         {
           "calle": "CALLE COMANDANTE LAZARO Nº 80 DURCAL GRANADA C.P. 18650",
