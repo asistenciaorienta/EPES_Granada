@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-02T08:03:53.841Z"
+    "ultima_actualizacion": "2026-09-02T08:07:33.437Z"
   },
   "datos": [
     {
@@ -5461,6 +5461,11 @@
           "calle": "CALLE COMANDANTE LAZARO Nº 80 DURCAL GRANADA C.P. 18650",
           "codigo_postal": "18650",
           "municipio": "Dúrcal"
+        },
+        {
+          "calle": "C/ PASEO DEL PRADO, Nº 10",
+          "codigo_postal": "18340",
+          "municipio": "FUENTE VAQUEROS"
         },
         {
           "calle": "CALLE VERDIALES Nº 17 EDIF. GAUDI LOCAL 3-4 GRANADA 18.014",
