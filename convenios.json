@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-02T07:57:30.107Z"
+    "ultima_actualizacion": "2026-09-02T07:58:02.777Z"
   },
   "datos": [
     {
@@ -5423,6 +5423,11 @@
       "cif": "B73982977",
       "nombre": "TU SUPER MORON S.L",
       "centros": [
+        {
+          "calle": "AVENIDA ÁLVARO DE LUNA, Nº 18 Y Nº 20",
+          "codigo_postal": "18360",
+          "municipio": "HÚETOR TÁJAR"
+        },
         {
           "calle": "CALLEJÓN DE LOS NARANJOS Nº 2",
           "codigo_postal": "18300",
