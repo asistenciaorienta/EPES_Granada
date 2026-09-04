@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-04T07:11:49.107Z"
+    "ultima_actualizacion": "2026-09-04T07:12:00.957Z"
   },
   "datos": [
     {
@@ -5405,6 +5405,20 @@
           "calle": "C/ Sierra de Tejeda, nº 19, Polígono Asegra, 18210, Peligros, Granada",
           "codigo_postal": "18210",
           "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0591",
+      "id_convenio": "CV0591",
+      "convocatoria": "2025-27",
+      "cif": "A19602994",
+      "nombre": "Tropiclab S.A",
+      "centros": [
+        {
+          "calle": "Vial de la ZAL, Puerto de Motril, CRTA. GR 16",
+          "codigo_postal": "18613",
+          "municipio": "Motril"
         }
       ]
     },
