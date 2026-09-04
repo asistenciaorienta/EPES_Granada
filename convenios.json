@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-04T07:12:00.957Z"
+    "ultima_actualizacion": "2026-09-04T07:12:11.211Z"
   },
   "datos": [
     {
@@ -4002,6 +4002,20 @@
           "calle": "Polígono Industrial Hactara parcela 17 - 20 18811 Zújar (Granada)",
           "codigo_postal": "18811",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0592",
+      "id_convenio": "CV0592",
+      "convocatoria": "2025-27",
+      "cif": "A18044768",
+      "nombre": "Miguel García  Sánchez e Hijos S.A.",
+      "centros": [
+        {
+          "calle": "Carretera Vieja de Carchuna  s/n, Puntalón",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
         }
       ]
     },
