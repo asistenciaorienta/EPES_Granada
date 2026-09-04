@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-04T07:11:30.029Z"
+    "ultima_actualizacion": "2026-09-04T07:11:49.107Z"
   },
   "datos": [
     {
@@ -2238,6 +2238,20 @@
           "calle": "Ctra. de Jaen, 8 18197 Pulianas (Granada)",
           "codigo_postal": "18197",
           "municipio": "Pulianas"
+        }
+      ]
+    },
+    {
+      "id": "CV0593",
+      "id_convenio": "CV0593",
+      "convocatoria": "2025-27",
+      "cif": "B18535930",
+      "nombre": "Eurocastell  Caña S.L",
+      "centros": [
+        {
+          "calle": "Pago del Rancho s/n",
+          "codigo_postal": "18.740",
+          "municipio": "Gualchos-Catell de  Ferro"
         }
       ]
     },
