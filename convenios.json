@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-04T07:12:11.211Z"
+    "ultima_actualizacion": "2026-09-04T07:12:24.033Z"
   },
   "datos": [
     {
@@ -82,6 +82,20 @@
       "cif": "B19642743",
       "nombre": "AGROILLESCAS SLU",
       "centros": []
+    },
+    {
+      "id": "CV0594",
+      "id_convenio": "CV0594",
+      "convocatoria": "2025-27",
+      "cif": "V05315965",
+      "nombre": "Agrotropical SAT",
+      "centros": [
+        {
+          "calle": "Polígono 5, Parcela 258",
+          "codigo_postal": "18750",
+          "municipio": "La Mamola"
+        }
+      ]
     },
     {
       "id": "CV0538",
