@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-07T08:02:44.118Z"
+    "ultima_actualizacion": "2026-09-07T11:22:11.332Z"
   },
   "datos": [
     {
@@ -5172,14 +5172,6 @@
       "convocatoria": "2025-27",
       "cif": "F18638262",
       "nombre": "SUPERMERCADOS CASAHER SCA",
-      "centros": []
-    },
-    {
-      "id": "CV0103",
-      "id_convenio": "CV0103",
-      "convocatoria": "2025-27",
-      "cif": "B27560614",
-      "nombre": "SUPERMERCADOS MANUEL GONZALEZ S.L.",
       "centros": []
     },
     {
