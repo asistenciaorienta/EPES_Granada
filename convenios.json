@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-14T08:00:12.932Z"
+    "ultima_actualizacion": "2026-09-14T08:16:51.145Z"
   },
   "datos": [
     {
@@ -665,6 +665,20 @@
         {
           "calle": "AVDA. LA RAZUELA 9, 1º, DCHA 18650 NIGÜELAS, GRANADA",
           "codigo_postal": "18650",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0573",
+      "id_convenio": "CV0573",
+      "convocatoria": "2025-27",
+      "cif": "G18288878",
+      "nombre": "ASOCIACIÓN MEDICUS MUNDI SUR",
+      "centros": [
+        {
+          "calle": "C/ José Tamayo, 12 Edf. Puerto Lápice- local, 18008, Granada",
+          "codigo_postal": "18008",
           "municipio": "Granada"
         }
       ]
