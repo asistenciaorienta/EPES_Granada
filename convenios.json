@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-14T07:47:35.392Z"
+    "ultima_actualizacion": "2026-09-14T08:00:12.932Z"
   },
   "datos": [
     {
@@ -2641,6 +2641,20 @@
           "calle": "AVENIDA MOISÉS, SIERRA ELVIRA ATARFE (GRANADA) CP. 18330",
           "codigo_postal": "18330",
           "municipio": "Atarfe"
+        }
+      ]
+    },
+    {
+      "id": "CV0600",
+      "id_convenio": "CV0600",
+      "convocatoria": "2025-27",
+      "cif": "G23633266",
+      "nombre": "FUNDACIÓN ESCUELAS PROFESIONALES DE LA SAGRADA FAMILIA (SAFA)",
+      "centros": [
+        {
+          "calle": "C/ CARRETERA NACIONAL 432, KM 428",
+          "codigo_postal": "18230",
+          "municipio": "ATARFE"
         }
       ]
     },
