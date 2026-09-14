@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-14T07:11:56.974Z"
+    "ultima_actualizacion": "2026-09-14T07:12:49.516Z"
   },
   "datos": [
     {
@@ -3524,6 +3524,20 @@
           "calle": "C/ Antonio Huertas Remigio, nº 4, 18200, Maracena, Granada",
           "codigo_postal": "18200",
           "municipio": "Maracena"
+        }
+      ]
+    },
+    {
+      "id": "CV0607",
+      "id_convenio": "CV0607",
+      "convocatoria": "2025-27",
+      "cif": "B10989796",
+      "nombre": "KALLAS FOODS SL.",
+      "centros": [
+        {
+          "calle": "PASEO DEL PADRE MANJÓN, Nº 3 -BJ",
+          "codigo_postal": "18010",
+          "municipio": "GRANADA"
         }
       ]
     },
