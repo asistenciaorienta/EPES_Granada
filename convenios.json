@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-14T10:12:52.612Z"
+    "ultima_actualizacion": "2026-09-14T11:06:08.139Z"
   },
   "datos": [
     {
@@ -1948,6 +1948,45 @@
       "cif": "A80782519",
       "nombre": "DIA RETAIL ESPAÑA S.A.U.",
       "centros": []
+    },
+    {
+      "id": "CV0605",
+      "id_convenio": "CV0605",
+      "convocatoria": "2025-27",
+      "cif": "A80782519",
+      "nombre": "DIA RETAIL ESPAÑA S.A.U.",
+      "centros": [
+        {
+          "calle": "C/San Ramón, Toril 21, esquina,",
+          "codigo_postal": "18194",
+          "municipio": "Churriana"
+        },
+        {
+          "calle": "Av.Federico García Lorca 22,",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Pedro Machuca, Esq.C.Periodista Luis de Vicente, Beiro",
+          "codigo_postal": "18011",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Pg Laurel, Manz.In1",
+          "codigo_postal": "18140",
+          "municipio": "LA ZUBIA"
+        },
+        {
+          "calle": "Cam. Nuevo 1",
+          "codigo_postal": "18210",
+          "municipio": "PELIGROS"
+        },
+        {
+          "calle": "Avenida Palos de la Frontera (santa Fé) C.P. 18320",
+          "codigo_postal": "18230",
+          "municipio": "SANTA FE"
+        }
+      ]
     },
     {
       "id": "CV0019",
