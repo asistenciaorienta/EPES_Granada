@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-14T07:12:49.516Z"
+    "ultima_actualizacion": "2026-09-14T07:31:15.002Z"
   },
   "datos": [
     {
@@ -1392,6 +1392,20 @@
       "cif": "B56823669",
       "nombre": "CENTRO INFANTIL PANDA S.L",
       "centros": []
+    },
+    {
+      "id": "CV0611",
+      "id_convenio": "CV0611",
+      "convocatoria": "2025-27",
+      "cif": "J56922503",
+      "nombre": "CENTRO MASSALUD SOCIEDAD CIVIL PARTICULAR",
+      "centros": [
+        {
+          "calle": "C/ ALICANTE, Nº13, LOCAL BAJO, 18193, MONACHIL, GRANADA",
+          "codigo_postal": "18193",
+          "municipio": "Monachil"
+        }
+      ]
     },
     {
       "id": "CV0513",
