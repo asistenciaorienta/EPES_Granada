@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-14T07:38:09.375Z"
+    "ultima_actualizacion": "2026-09-14T07:47:35.392Z"
   },
   "datos": [
     {
@@ -3146,6 +3146,20 @@
           "calle": "C/ FELIZ RODRIGUEZ DE LA FUENTE, 8, 18006, GRANADA",
           "codigo_postal": "18006",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0602",
+      "id_convenio": "CV0602",
+      "convocatoria": "2025-27",
+      "cif": "B19601525",
+      "nombre": "HIDROELÉCTRICA GUADALFEO, SL.",
+      "centros": [
+        {
+          "calle": "Carretera de Almaría Km 1.8.",
+          "codigo_postal": "18600",
+          "municipio": "MOTRIL"
         }
       ]
     },
