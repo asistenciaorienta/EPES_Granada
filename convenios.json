@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-14T11:06:08.139Z"
+    "ultima_actualizacion": "2026-09-16T06:35:06.261Z"
   },
   "datos": [
     {
@@ -4640,6 +4640,20 @@
           "calle": "Plaza Fortuny, 6, 18009, Granada",
           "codigo_postal": "18009",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0610",
+      "id_convenio": "CV0610",
+      "convocatoria": "2025-27",
+      "cif": "F18034686",
+      "nombre": "PROCAM SOCIEDAD COOPERATIVA ANDALUZA",
+      "centros": [
+        {
+          "calle": "Carretera de Almería Km 1,6, Motril",
+          "codigo_postal": "18600",
+          "municipio": "MOTRIL"
         }
       ]
     },
