@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-16T06:35:06.261Z"
+    "ultima_actualizacion": "2026-09-16T06:35:17.254Z"
   },
   "datos": [
     {
@@ -4715,6 +4715,20 @@
           "calle": "C/ Viznar, 113, C.P. 18220, Albolote",
           "codigo_postal": "18220",
           "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0603",
+      "id_convenio": "CV0603",
+      "convocatoria": "2025-27",
+      "cif": "B19557008",
+      "nombre": "QUINTA GENERACIÓN VIDERAS, SL.",
+      "centros": [
+        {
+          "calle": "Calle Nueva, 54",
+          "codigo_postal": "18600",
+          "municipio": "MOTRIL"
         }
       ]
     },
