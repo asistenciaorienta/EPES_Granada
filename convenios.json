@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-16T06:49:01.903Z"
+    "ultima_actualizacion": "2026-09-16T06:49:17.349Z"
   },
   "datos": [
     {
@@ -5370,6 +5370,20 @@
           "calle": "Paseo de los Álamos 1. Huetor Santillán Granada. 18183",
           "codigo_postal": "18183",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0615",
+      "id_convenio": "CV0615",
+      "convocatoria": "2025-27",
+      "cif": "F18964759",
+      "nombre": "SUPERMERCADOS MEDINA ALAMEDA SCA",
+      "centros": [
+        {
+          "calle": "Plaza Manuel Siles López, 13",
+          "codigo_postal": "18213",
+          "municipio": "Jun"
         }
       ]
     },
