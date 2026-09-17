@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-17T07:12:27.433Z"
+    "ultima_actualizacion": "2026-09-17T12:01:34.005Z"
   },
   "datos": [
     {
@@ -3282,6 +3282,11 @@
           "calle": "AVENIDA DILAR Nº 140 -GRANADA C.P: 18.016",
           "codigo_postal": "18016",
           "municipio": "Granada"
+        },
+        {
+          "calle": "CARRETERA BAILEN-MOTRIL,KM 152,5 PADUL",
+          "codigo_postal": "18640",
+          "municipio": "PADUL"
         }
       ]
     },
