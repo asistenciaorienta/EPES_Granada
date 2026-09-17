@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-17T07:11:13.626Z"
+    "ultima_actualizacion": "2026-09-17T07:12:27.433Z"
   },
   "datos": [
     {
@@ -1200,6 +1200,11 @@
           "calle": "Centro Comenrcial Nevada Shopping, C/ Hipócrates s/n",
           "codigo_postal": "18100",
           "municipio": "Armilla (Granada)"
+        },
+        {
+          "calle": "C/ Pampaneira, 22",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
         },
         {
           "calle": "PZ. BIBRAMBLA, 4, CP 18001 GRANADA",
