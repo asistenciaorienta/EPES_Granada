@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-16T13:12:51.248Z"
+    "ultima_actualizacion": "2026-09-17T06:55:22.502Z"
   },
   "datos": [
     {
@@ -1196,6 +1196,11 @@
       "cif": "B16843104",
       "nombre": "CARNE Y CALLA SL.",
       "centros": [
+        {
+          "calle": "Centro Comenrcial Nevada Shopping, C/ Hipócrates s/n",
+          "codigo_postal": "18100",
+          "municipio": "Armilla (Granada)"
+        },
         {
           "calle": "PZ. BIBRAMBLA, 4, CP 18001 GRANADA",
           "codigo_postal": "18001",
