@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-18T11:55:39.869Z"
+    "ultima_actualizacion": "2026-09-18T12:08:21.286Z"
   },
   "datos": [
     {
@@ -5115,6 +5115,11 @@
           "calle": "Avenida Enrique Martín Cuevas, 14, 18600 Motril (Granada",
           "codigo_postal": "18600",
           "municipio": "Motril"
+        },
+        {
+          "calle": "Calle Depósito, 13.",
+          "codigo_postal": "18600",
+          "municipio": "Motril (Granada)"
         }
       ]
     },
