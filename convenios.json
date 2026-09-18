@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-18T11:38:56.948Z"
+    "ultima_actualizacion": "2026-09-18T11:40:09.012Z"
   },
   "datos": [
     {
@@ -3151,6 +3151,11 @@
       "centros": [
         {
           "calle": "C/ Santo Domingo, 31. Polígono Industrial \"El Vadillo\". Motril.",
+          "codigo_postal": "18600",
+          "municipio": "Motril (Granada)"
+        },
+        {
+          "calle": "C/ Santo Domingo, 5. Polígono Industrial \"El Vadillo\". Motril.",
           "codigo_postal": "18600",
           "municipio": "Motril (Granada)"
         },
