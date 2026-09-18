@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-18T11:40:09.012Z"
+    "ultima_actualizacion": "2026-09-18T11:41:44.580Z"
   },
   "datos": [
     {
@@ -3163,6 +3163,11 @@
           "calle": "C/ Tegucigalpa, 8.",
           "codigo_postal": "18600",
           "municipio": "Motril (Granada)"
+        },
+        {
+          "calle": "Polígono Industrial La gasolinera, 17.",
+          "codigo_postal": "18680",
+          "municipio": "Salabreña (Granada)"
         }
       ]
     },
