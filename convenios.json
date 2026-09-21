@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-21T10:09:54.731Z"
+    "ultima_actualizacion": "2026-09-21T10:10:14.590Z"
   },
   "datos": [
     {
@@ -2837,6 +2837,11 @@
       "cif": "G18618777",
       "nombre": "Fundación Patronato Avemariano de Granada",
       "centros": [
+        {
+          "calle": "AVENIDA JULIO MORENO, Nº 1",
+          "codigo_postal": "18613",
+          "municipio": "MOTRIL"
+        },
         {
           "calle": "C/ ESPARRAGUERA, 59",
           "codigo_postal": "18600",
