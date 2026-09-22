@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-22T11:21:22.080Z"
+    "ultima_actualizacion": "2026-09-22T11:45:14.978Z"
   },
   "datos": [
     {
@@ -4374,6 +4374,25 @@
       "cif": "F18580845",
       "nombre": "NUEVO MILENIUM S.C.A.",
       "centros": []
+    },
+    {
+      "id": "CV0623",
+      "id_convenio": "CV0623",
+      "convocatoria": "2025-27",
+      "cif": "B18957514",
+      "nombre": "NUTRISQUARE, S.L.",
+      "centros": [
+        {
+          "calle": "C/ Lérida, 27, Portal 4, Bajo 2.",
+          "codigo_postal": "18100",
+          "municipio": "ARMILLA"
+        },
+        {
+          "calle": "C/ Alhamar, 25.",
+          "codigo_postal": "18005",
+          "municipio": "GRANADA"
+        }
+      ]
     },
     {
       "id": "CV0289",
