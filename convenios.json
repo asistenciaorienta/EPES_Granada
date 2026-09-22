@@ -1,8 +1,22 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-22T11:45:14.978Z"
+    "ultima_actualizacion": "2026-09-22T11:45:35.032Z"
   },
   "datos": [
+    {
+      "id": "CV0622",
+      "id_convenio": "CV0622",
+      "convocatoria": "2025-27",
+      "cif": "B75644286",
+      "nombre": "2024 REFORPLUS, S.L.",
+      "centros": [
+        {
+          "calle": "Calle Alhamar, 25. Piso 5 Granada",
+          "codigo_postal": "18005",
+          "municipio": "GRANADA"
+        }
+      ]
+    },
     {
       "id": "CV0213",
       "id_convenio": "CV0213",
