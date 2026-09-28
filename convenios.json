@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-28T06:55:31.521Z"
+    "ultima_actualizacion": "2026-09-28T06:55:45.157Z"
   },
   "datos": [
     {
@@ -1037,6 +1037,20 @@
           "calle": "C/ Francia, n.º 1, Alfacar, CP 18170",
           "codigo_postal": "18170",
           "municipio": "Alfacar"
+        }
+      ]
+    },
+    {
+      "id": "CV0635",
+      "id_convenio": "CV0635",
+      "convocatoria": "2025-27",
+      "cif": "E01725290",
+      "nombre": "BARBER SHOP C.B.",
+      "centros": [
+        {
+          "calle": "C/ SAN RAFAEL, Nº 7",
+          "codigo_postal": "18600",
+          "municipio": "MOTRIL"
         }
       ]
     },
