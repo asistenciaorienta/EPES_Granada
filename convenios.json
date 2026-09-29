@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-28T06:55:54.982Z"
+    "ultima_actualizacion": "2026-09-29T09:39:47.455Z"
   },
   "datos": [
     {
@@ -822,6 +822,11 @@
       "cif": "G18767319",
       "nombre": "Asociación SAPAME (Salud para la Mente",
       "centros": [
+        {
+          "calle": "Calle Almona del Boquerón Nº10.",
+          "codigo_postal": "18014",
+          "municipio": "Granada"
+        },
         {
           "calle": "Calle Almona del Boquerón Nº10, Granada, 18001",
           "codigo_postal": "18001",
