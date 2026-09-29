@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-29T11:40:23.134Z"
+    "ultima_actualizacion": "2026-09-29T11:40:51.109Z"
   },
   "datos": [
     {
@@ -3534,6 +3534,11 @@
       "cif": "G18518183",
       "nombre": "IMERIS (ASOCIACION PARA INTERVENCION CON MENORES EN RIESGO SOCIAL)",
       "centros": [
+        {
+          "calle": "C/ Torre de Machuca, 2",
+          "codigo_postal": "18007",
+          "municipio": "GRANADA"
+        },
         {
           "calle": "C/ Pintor Manuel Maldonado, nº 21",
           "codigo_postal": "18007",
