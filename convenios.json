@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-09-30T06:04:07.512Z"
+    "ultima_actualizacion": "2026-10-01T07:45:06.065Z"
   },
   "datos": [
     {
@@ -6108,6 +6108,11 @@
           "calle": "Avenida del Velez 25, Dúrcal, Granada CP. 18650",
           "codigo_postal": "18650",
           "municipio": "Dúrcal"
+        },
+        {
+          "calle": "Avenida del Velez, 25",
+          "codigo_postal": "18650",
+          "municipio": "Dúrcal (Granada)"
         }
       ]
     },
