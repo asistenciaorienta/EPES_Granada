@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-01T10:16:41.551Z"
+    "ultima_actualizacion": "2026-10-01T11:25:13.153Z"
   },
   "datos": [
     {
@@ -3458,6 +3458,20 @@
       "cif": "B56900806",
       "nombre": "HOSTELERÍA Y FORMACIÓN GRANADA SL.",
       "centros": []
+    },
+    {
+      "id": "CV0638",
+      "id_convenio": "CV0638",
+      "convocatoria": "2025-27",
+      "cif": "B87635033",
+      "nombre": "HUBR STUDENT HOUSING SL",
+      "centros": [
+        {
+          "calle": "C/ Profesor Calavera, 6",
+          "codigo_postal": "18011",
+          "municipio": "Granada"
+        }
+      ]
     },
     {
       "id": "CV0211",
