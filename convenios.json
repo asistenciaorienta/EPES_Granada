@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-06T06:56:08.784Z"
+    "ultima_actualizacion": "2026-10-06T11:00:04.887Z"
   },
   "datos": [
     {
@@ -5775,7 +5775,13 @@
       "convocatoria": "2025-27",
       "cif": "B25877887",
       "nombre": "TECNONEXO ADVISORS STRATEGY SL",
-      "centros": []
+      "centros": [
+        {
+          "calle": "Av. Fernando de los Ríos 52, Edificio Leo, pl 3, piso 3A",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        }
+      ]
     },
     {
       "id": "CV0257",
