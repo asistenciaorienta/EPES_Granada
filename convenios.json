@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-06T11:51:29.171Z"
+    "ultima_actualizacion": "2026-10-06T11:51:50.296Z"
   },
   "datos": [
     {
@@ -4046,6 +4046,20 @@
           "calle": "Polígono Industrial Las Canteras, C/ Leñadores, 11 (Monachil, Granada) 18193",
           "codigo_postal": "18193",
           "municipio": "Monachil"
+        }
+      ]
+    },
+    {
+      "id": "CV0641",
+      "id_convenio": "CV0641",
+      "convocatoria": "2025-27",
+      "cif": "B18567180",
+      "nombre": "LAVANDERIA J´LUMA SL",
+      "centros": [
+        {
+          "calle": "Polígono  Industrial Lapachares, Carretera de Villanueva S/N",
+          "codigo_postal": "18360",
+          "municipio": "HUETOR TAJAR"
         }
       ]
     },
