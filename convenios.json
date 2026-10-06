@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-06T11:00:04.887Z"
+    "ultima_actualizacion": "2026-10-06T11:51:12.767Z"
   },
   "datos": [
     {
@@ -5766,6 +5766,20 @@
           "calle": "Pol. ASEGRA, C/ Sierra de Baza, 4 Peligros (Granada) 18210",
           "codigo_postal": "18210",
           "municipio": "Peligros"
+        }
+      ]
+    },
+    {
+      "id": "CV0644",
+      "id_convenio": "CV0644",
+      "convocatoria": "2025-27",
+      "cif": "B18999318",
+      "nombre": "TAXARPRO SLU",
+      "centros": [
+        {
+          "calle": "Polígono Industrial La  Catalana, Calle Alemania, N.º 15",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
         }
       ]
     },
