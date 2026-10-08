@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-08T07:27:58.382Z"
+    "ultima_actualizacion": "2026-10-08T07:28:08.410Z"
   },
   "datos": [
     {
@@ -1581,6 +1581,25 @@
           "calle": "C/ Restauradores 1, Granada 18007",
           "codigo_postal": "18007",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0648",
+      "id_convenio": "CV0648",
+      "convocatoria": "2025-27",
+      "cif": "B19707181",
+      "nombre": "CEREMONIA ARRAEZ SL",
+      "centros": [
+        {
+          "calle": "Calle Correo, 8.",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
+        },
+        {
+          "calle": "Calle Travesía del Colegio S/N.",
+          "codigo_postal": "18600",
+          "municipio": "Motril."
         }
       ]
     },
