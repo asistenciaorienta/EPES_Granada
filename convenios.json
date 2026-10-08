@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-08T07:28:08.410Z"
+    "ultima_actualizacion": "2026-10-08T07:28:24.815Z"
   },
   "datos": [
     {
@@ -3035,6 +3035,20 @@
       "cif": "B19626381",
       "nombre": "GASTRONÓMICAS COLÓN, S.L.",
       "centros": []
+    },
+    {
+      "id": "CV0647",
+      "id_convenio": "CV0647",
+      "convocatoria": "2025-27",
+      "cif": "B27660885",
+      "nombre": "GEDACA SL",
+      "centros": [
+        {
+          "calle": "CALLE RAMÓN Y CAJAL, Nº 11, 7ºC",
+          "codigo_postal": "18003",
+          "municipio": "GRANADA"
+        }
+      ]
     },
     {
       "id": "CV0118",
