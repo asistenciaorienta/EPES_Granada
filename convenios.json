@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-07T10:33:37.593Z"
+    "ultima_actualizacion": "2026-10-08T07:27:58.382Z"
   },
   "datos": [
     {
@@ -5840,6 +5840,20 @@
           "calle": "Av. Fernando de los Ríos 52, Edificio Leo, pl 3, piso 3A",
           "codigo_postal": "18006",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0649",
+      "id_convenio": "CV0649",
+      "convocatoria": "2025-27",
+      "cif": "B18325720",
+      "nombre": "TECOASE S.L.",
+      "centros": [
+        {
+          "calle": "C/ Catalanes nº 12, 1ºB",
+          "codigo_postal": "18600",
+          "municipio": "Motril"
         }
       ]
     },
