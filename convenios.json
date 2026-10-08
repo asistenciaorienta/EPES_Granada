@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-08T07:30:32.518Z"
+    "ultima_actualizacion": "2026-10-08T12:32:58.825Z"
   },
   "datos": [
     {
@@ -6074,6 +6074,11 @@
           "calle": "C/ PASEO DEL PRADO, Nº 10",
           "codigo_postal": "18340",
           "municipio": "FUENTE VAQUEROS"
+        },
+        {
+          "calle": "AVENIDA DE CERVANTES Nº 12",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
         },
         {
           "calle": "CALLE VERDIALES Nº 17 EDIF. GAUDI LOCAL 3-4 GRANADA 18.014",
