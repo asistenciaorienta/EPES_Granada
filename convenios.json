@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-13T08:31:00.974Z"
+    "ultima_actualizacion": "2026-10-13T11:42:54.241Z"
   },
   "datos": [
     {
@@ -620,6 +620,11 @@
           "calle": "C/ Escritor Miguel Toro nº 7, bajo. Granada.18006.",
           "codigo_postal": "18006",
           "municipio": "Granada"
+        },
+        {
+          "calle": "Av. de la Ciencia, 2, Centro Cultural Caja Granada, Planta Baja",
+          "codigo_postal": "18006",
+          "municipio": "GRANADA"
         }
       ]
     },
