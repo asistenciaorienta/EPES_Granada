@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-09T11:17:04.388Z"
+    "ultima_actualizacion": "2026-10-13T08:31:00.974Z"
   },
   "datos": [
     {
@@ -838,6 +838,20 @@
           "calle": "Calle Almona del Boquerón Nº10, Granada, 18001",
           "codigo_postal": "18001",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0652",
+      "id_convenio": "CV0652",
+      "convocatoria": "2025-27",
+      "cif": "G19557156",
+      "nombre": "ASOCIACION U.P.I.M. Universita Della Pizza Italiana nel Mondo",
+      "centros": [
+        {
+          "calle": "CAMINO DE RONDA 166 BAJO J",
+          "codigo_postal": "18003",
+          "municipio": "GRANADA"
         }
       ]
     },
