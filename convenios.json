@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-15T10:26:29.511Z"
+    "ultima_actualizacion": "2026-10-15T11:56:41.292Z"
   },
   "datos": [
     {
@@ -3827,6 +3827,11 @@
           "calle": "CALLE PEDRO MACHUCA 102, NORTE 18011, GRANADA",
           "codigo_postal": "18011",
           "municipio": "Granada"
+        },
+        {
+          "calle": "C/ PEDRO MACHUCA, Nº 102 - CENTRO DE DÍA LOS GIRASAOLES",
+          "codigo_postal": "18011",
+          "municipio": "GRANADA"
         }
       ]
     },
