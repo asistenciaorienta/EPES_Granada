@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-15T05:48:42.808Z"
+    "ultima_actualizacion": "2026-10-15T05:48:54.414Z"
   },
   "datos": [
     {
@@ -1945,6 +1945,20 @@
           "calle": "Avda. Ronda de Baza, 55. Baza. 18800 (Granada)",
           "codigo_postal": "18800",
           "municipio": "Baza"
+        }
+      ]
+    },
+    {
+      "id": "CV0650",
+      "id_convenio": "CV0650",
+      "convocatoria": "2025-27",
+      "cif": "Q2866001G",
+      "nombre": "CRUZ ROJA ESPAÑOLA",
+      "centros": [
+        {
+          "calle": "C/ CUESTA ESCORIAZA Nº 8",
+          "codigo_postal": "18008",
+          "municipio": "GRANADA"
         }
       ]
     },
