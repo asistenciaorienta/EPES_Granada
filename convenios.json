@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-15T05:48:31.093Z"
+    "ultima_actualizacion": "2026-10-15T05:48:42.808Z"
   },
   "datos": [
     {
@@ -5100,6 +5100,20 @@
           "calle": "Avenida Rodríguez Acosta 24 bajo, Motril, C.P. 18.600",
           "codigo_postal": "18600",
           "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0654",
+      "id_convenio": "CV0654",
+      "convocatoria": "2025-27",
+      "cif": "B19686302",
+      "nombre": "QUINTIERO EDGERTON SL",
+      "centros": [
+        {
+          "calle": "CL Lérida, 27 local F",
+          "codigo_postal": "18100",
+          "municipio": "ARMILLA"
         }
       ]
     },
