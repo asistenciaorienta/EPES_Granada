@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-15T05:48:54.414Z"
+    "ultima_actualizacion": "2026-10-15T08:12:56.927Z"
   },
   "datos": [
     {
@@ -3796,6 +3796,14 @@
           "municipio": "Albolote"
         }
       ]
+    },
+    {
+      "id": "CV0171",
+      "id_convenio": "CV0171",
+      "convocatoria": "2025-27",
+      "cif": "B91749655",
+      "nombre": "INTEGRA MGSI CEE ANDALUCIA SL",
+      "centros": []
     },
     {
       "id": "CV0109",
