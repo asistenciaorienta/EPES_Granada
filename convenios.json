@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-15T10:24:50.687Z"
+    "ultima_actualizacion": "2026-10-15T10:25:49.682Z"
   },
   "datos": [
     {
@@ -1501,6 +1501,11 @@
       "cif": "B18646471",
       "nombre": "CENTRO GERIÁTRICO ESTANCIA DIURNA ALCÁZAR SL.",
       "centros": [
+        {
+          "calle": "C/ Chimarral, locall 7-8-9, Ronda",
+          "codigo_postal": "18003",
+          "municipio": "GRANADA,"
+        },
         {
           "calle": "CALLE REY ABU SAID, Nº6, BAJO",
           "codigo_postal": "18003",
