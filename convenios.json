@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-16T07:23:01.735Z"
+    "ultima_actualizacion": "2026-10-16T07:34:11.254Z"
   },
   "datos": [
     {
@@ -3263,6 +3263,20 @@
           "calle": "C/ Salobreña, 98. Polígono Juncaril.",
           "codigo_postal": "18220",
           "municipio": "Albolote (Granada)"
+        }
+      ]
+    },
+    {
+      "id": "CV0657",
+      "id_convenio": "CV0657",
+      "convocatoria": "2025-27",
+      "cif": "B18999102",
+      "nombre": "GRANALOHA S.L.",
+      "centros": [
+        {
+          "calle": "CEIP SIERRA NEVADA GRANADA, Paseo del Emperador Carlos V, 17.",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
         }
       ]
     },
