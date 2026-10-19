@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-16T10:59:47.319Z"
+    "ultima_actualizacion": "2026-10-19T10:15:44.156Z"
   },
   "datos": [
     {
@@ -248,6 +248,20 @@
           "calle": "Polígono Industrial Juncaril, C/ Loja Parc 117. 18210 Granada",
           "codigo_postal": "18210",
           "municipio": "Loja"
+        }
+      ]
+    },
+    {
+      "id": "CV0661",
+      "id_convenio": "CV0661",
+      "convocatoria": "2025-27",
+      "cif": "A18213421",
+      "nombre": "Almuñécar International School S.A.",
+      "centros": [
+        {
+          "calle": "Calle Pinariego, nº 1.",
+          "codigo_postal": "18690",
+          "municipio": "Almuñécar (Granada)"
         }
       ]
     },
