@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-19T10:59:58.758Z"
+    "ultima_actualizacion": "2026-10-19T11:00:27.446Z"
   },
   "datos": [
     {
@@ -2026,6 +2026,20 @@
           "calle": "Polígono  Juncaril, C/ Baza, 347",
           "codigo_postal": "18220",
           "municipio": "Albolote"
+        }
+      ]
+    },
+    {
+      "id": "CV0662",
+      "id_convenio": "CV0662",
+      "convocatoria": "2025-27",
+      "cif": "B18486969",
+      "nombre": "Dávila Restauración de Monumentos",
+      "centros": [
+        {
+          "calle": "Avenida  Cervantes 12, 1 A",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
         }
       ]
     },
