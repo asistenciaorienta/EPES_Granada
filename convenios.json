@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-19T10:15:44.156Z"
+    "ultima_actualizacion": "2026-10-19T10:59:58.758Z"
   },
   "datos": [
     {
@@ -2742,6 +2742,25 @@
       "cif": "B75505586",
       "nombre": "FLORISTERÍA CALADIUM, S. L. U .",
       "centros": []
+    },
+    {
+      "id": "CV0663",
+      "id_convenio": "CV0663",
+      "convocatoria": "2025-27",
+      "cif": "B18415661",
+      "nombre": "FORMACION VIAL GENIL SL.",
+      "centros": [
+        {
+          "calle": "PLAZA CATEDRÁTICA ASUNCIÓN LINARES, 1, local 7-8",
+          "codigo_postal": "18016",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "CALLE/ BOABDIL  28",
+          "codigo_postal": "18151",
+          "municipio": "OGIJARES"
+        }
+      ]
     },
     {
       "id": "CV0060",
