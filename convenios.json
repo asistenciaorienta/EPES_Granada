@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-20T11:48:11.327Z"
+    "ultima_actualizacion": "2026-10-20T11:50:22.982Z"
   },
   "datos": [
     {
@@ -3055,7 +3055,12 @@
           "municipio": "ALBOLOTE"
         },
         {
-          "calle": "C/ Molinos, 63",
+          "calle": "CDP Ave María Vistillas (Parking). C/ Molinos, 63.",
+          "codigo_postal": "18009",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Centro Escuela Hogar Andres Manjón. C/ Molinos, 63",
           "codigo_postal": "18009",
           "municipio": "Granada"
         },
