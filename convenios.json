@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-20T10:37:24.596Z"
+    "ultima_actualizacion": "2026-10-20T10:58:48.938Z"
   },
   "datos": [
     {
@@ -3058,6 +3058,11 @@
           "calle": "Cuesta del Chapiz, 3-20",
           "codigo_postal": "18010",
           "municipio": "Granada"
+        },
+        {
+          "calle": "C.D.P. Ave María La Quinta – Avenida Cervantes nº 4",
+          "codigo_postal": "18008",
+          "municipio": "GRANADA"
         },
         {
           "calle": "C.D.P. Ave María San Cristóbal – Carretera de Murcia nº 51",
