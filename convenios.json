@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-20T10:21:58.519Z"
+    "ultima_actualizacion": "2026-10-20T10:37:24.596Z"
   },
   "datos": [
     {
@@ -3058,6 +3058,11 @@
           "calle": "Cuesta del Chapiz, 3-20",
           "codigo_postal": "18010",
           "municipio": "Granada"
+        },
+        {
+          "calle": "C.D.P. Ave María San Cristóbal – Carretera de Murcia nº 51",
+          "codigo_postal": "18010",
+          "municipio": "GRANADA"
         }
       ]
     },
