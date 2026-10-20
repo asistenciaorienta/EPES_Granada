@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-20T11:35:57.062Z"
+    "ultima_actualizacion": "2026-10-20T11:48:11.327Z"
   },
   "datos": [
     {
@@ -3789,6 +3789,20 @@
           "calle": "C/ Antonio Huertas Remigio, 62. 18200 Maracena (Granada)",
           "codigo_postal": "18200",
           "municipio": "Maracena"
+        }
+      ]
+    },
+    {
+      "id": "CV0656",
+      "id_convenio": "CV0656",
+      "convocatoria": "2025-27",
+      "cif": "B18536441",
+      "nombre": "IMPRESIÓN DIGITAL GAMI S.L",
+      "centros": [
+        {
+          "calle": "Fray Leopoldo de Alpandeire 8",
+          "codigo_postal": "18014",
+          "municipio": "GRANADA"
         }
       ]
     },
