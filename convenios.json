@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-20T10:58:48.938Z"
+    "ultima_actualizacion": "2026-10-20T11:35:57.062Z"
   },
   "datos": [
     {
@@ -3053,6 +3053,11 @@
           "calle": "C/ JACOBO CAMARERO, 3,",
           "codigo_postal": "18220",
           "municipio": "ALBOLOTE"
+        },
+        {
+          "calle": "C/ Molinos, 63",
+          "codigo_postal": "18009",
+          "municipio": "Granada"
         },
         {
           "calle": "Cuesta del Chapiz, 3-20",
