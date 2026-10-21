@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-20T11:50:22.982Z"
+    "ultima_actualizacion": "2026-10-21T07:41:37.858Z"
   },
   "datos": [
     {
@@ -2773,6 +2773,20 @@
           "calle": "CALLE/ BOABDIL  28",
           "codigo_postal": "18151",
           "municipio": "OGIJARES"
+        }
+      ]
+    },
+    {
+      "id": "CV0665",
+      "id_convenio": "CV0665",
+      "convocatoria": "2025-27",
+      "cif": "B56371628",
+      "nombre": "FRANQUICIA MI TOSTA, S.L.",
+      "centros": [
+        {
+          "calle": "Avda. Doctor Olóriz, 25, Local LL.",
+          "codigo_postal": "18012",
+          "municipio": "Granada"
         }
       ]
     },
