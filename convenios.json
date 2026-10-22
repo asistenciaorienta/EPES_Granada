@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-22T10:10:45.163Z"
+    "ultima_actualizacion": "2026-10-22T10:11:29.575Z"
   },
   "datos": [
     {
@@ -1046,6 +1046,25 @@
           "calle": "C/ Manuel de Falla, nº 5, bajo, 18005, Granada",
           "codigo_postal": "18005",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0624",
+      "id_convenio": "CV0624",
+      "convocatoria": "2025-27",
+      "cif": "B24914509",
+      "nombre": "AVIO VINTAGE, S.L.",
+      "centros": [
+        {
+          "calle": "C/ Duquesa, 29",
+          "codigo_postal": "18001",
+          "municipio": "GRANADA"
+        },
+        {
+          "calle": "C/ Elvira, 82.",
+          "codigo_postal": "18010",
+          "municipio": "GRANADA"
         }
       ]
     },
