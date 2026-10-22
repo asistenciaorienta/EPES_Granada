@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-21T12:59:32.150Z"
+    "ultima_actualizacion": "2026-10-22T10:10:45.163Z"
   },
   "datos": [
     {
@@ -3125,6 +3125,20 @@
           "calle": "C/ Fuentezuelas, nº 7, 18550, Iznalloz, Granada",
           "codigo_postal": "18550",
           "municipio": "Iznalloz"
+        }
+      ]
+    },
+    {
+      "id": "CV0664",
+      "id_convenio": "CV0664",
+      "convocatoria": "2025-27",
+      "cif": "G83117374",
+      "nombre": "FUNDACION SECRETARIADO GITANO",
+      "centros": [
+        {
+          "calle": "Calle María Teresa de León, Nº 6-8",
+          "codigo_postal": "18013",
+          "municipio": "Granada"
         }
       ]
     },
