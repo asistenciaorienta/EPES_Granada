@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-23T08:37:29.928Z"
+    "ultima_actualizacion": "2026-10-26T11:01:34.806Z"
   },
   "datos": [
     {
@@ -1498,7 +1498,13 @@
       "convocatoria": "2025-27",
       "cif": "F19712835",
       "nombre": "CENTRO DE DIA SIERRA DE LAS NIEVES S.COOP.AND DE INTERÉS SOCIAL",
-      "centros": []
+      "centros": [
+        {
+          "calle": "C/ Agramesón, 1. ,",
+          "codigo_postal": "18183",
+          "municipio": "Huétor Santillán (Granada)"
+        }
+      ]
     },
     {
       "id": "CV0584",
