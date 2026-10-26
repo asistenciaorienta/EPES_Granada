@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-26T11:44:30.721Z"
+    "ultima_actualizacion": "2026-10-26T11:51:53.066Z"
   },
   "datos": [
     {
@@ -2771,6 +2771,20 @@
       "cif": "B19697002",
       "nombre": "FIBERGY NETWORKS",
       "centros": []
+    },
+    {
+      "id": "CV0666",
+      "id_convenio": "CV0666",
+      "convocatoria": "2025-27",
+      "cif": "B18603365",
+      "nombre": "FIJAPLAST SLU",
+      "centros": [
+        {
+          "calle": "Polígono Industrial La Catalana, Avd. España nave 1",
+          "codigo_postal": "18360",
+          "municipio": "HUETOR TAJAR"
+        }
+      ]
     },
     {
       "id": "CV0151",
