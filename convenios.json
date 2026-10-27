@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-26T11:51:53.066Z"
+    "ultima_actualizacion": "2026-10-27T09:54:40.567Z"
   },
   "datos": [
     {
@@ -1978,11 +1978,6 @@
       "cif": "B56406564",
       "nombre": "Cronophone Motril S.L.",
       "centros": [
-        {
-          "calle": "Plaza Cruz Verde,7, 18600 Motril (Granada)",
-          "codigo_postal": "18600",
-          "municipio": "Motril"
-        },
         {
           "calle": "Avda. Antonio Machado,2, Bajo,18680 Salobreña",
           "codigo_postal": "18680",
