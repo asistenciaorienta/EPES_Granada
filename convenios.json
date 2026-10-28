@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-28T09:37:14.329Z"
+    "ultima_actualizacion": "2026-10-28T09:37:25.959Z"
   },
   "datos": [
     {
@@ -5024,6 +5024,20 @@
       "cif": "B18721449",
       "nombre": "PANADERÍA LA GRACIA DE DIOS SL",
       "centros": []
+    },
+    {
+      "id": "CV0671",
+      "id_convenio": "CV0671",
+      "convocatoria": "2025-27",
+      "cif": "B19502988",
+      "nombre": "PANADERIA ROBLES E HIJOS, SL",
+      "centros": [
+        {
+          "calle": "C/ SANTA FE DE BOGOTÁ, 36",
+          "codigo_postal": "18320",
+          "municipio": "SANTA FE (GRANADA)"
+        }
+      ]
     },
     {
       "id": "CV0240",
