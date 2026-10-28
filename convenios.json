@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-28T09:39:03.401Z"
+    "ultima_actualizacion": "2026-10-28T09:39:09.132Z"
   },
   "datos": [
     {
@@ -2878,6 +2878,20 @@
         {
           "calle": "C/ Acera del Darro, nº 20, 18005, GRANADA",
           "codigo_postal": "18005",
+          "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0675",
+      "id_convenio": "CV0675",
+      "convocatoria": "2025-27",
+      "cif": "G18468165",
+      "nombre": "FUNDACIÓN ALBIHAR",
+      "centros": [
+        {
+          "calle": "C/ Alhóndiga nº6 4ºB",
+          "codigo_postal": "18001",
           "municipio": "Granada"
         }
       ]
