@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-27T09:55:08.713Z"
+    "ultima_actualizacion": "2026-10-28T09:37:14.329Z"
   },
   "datos": [
     {
@@ -4797,6 +4797,20 @@
       "cif": "B19692268",
       "nombre": "MULTISERVICIOS EMPRESARIALES GRANADA SL",
       "centros": []
+    },
+    {
+      "id": "CV0673",
+      "id_convenio": "CV0673",
+      "convocatoria": "2025-27",
+      "cif": "B02932994",
+      "nombre": "MUNDOTPV",
+      "centros": [
+        {
+          "calle": "C/ Loja, 15. Polígono Industrial Juncaril.",
+          "codigo_postal": "18210",
+          "municipio": "Peligros (Granada)"
+        }
+      ]
     },
     {
       "id": "CV0086",
