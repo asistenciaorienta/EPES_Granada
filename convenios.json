@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-28T09:38:10.046Z"
+    "ultima_actualizacion": "2026-10-28T09:38:52.129Z"
   },
   "datos": [
     {
@@ -2747,6 +2747,25 @@
           "calle": "C/ MARTINES CAMPOS, 17. GRANADA 18002.",
           "codigo_postal": "18002",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0669",
+      "id_convenio": "CV0669",
+      "convocatoria": "2025-27",
+      "cif": "B26689000",
+      "nombre": "Ferro Properties Inmobiliaria S.L",
+      "centros": [
+        {
+          "calle": "AVD ANDALUCIA 14",
+          "codigo_postal": "18230",
+          "municipio": "ATARFE"
+        },
+        {
+          "calle": "Calle Duque de Valencia 17",
+          "codigo_postal": "18300",
+          "municipio": "LOJA"
         }
       ]
     },
