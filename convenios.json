@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-28T09:37:25.959Z"
+    "ultima_actualizacion": "2026-10-28T09:38:03.254Z"
   },
   "datos": [
     {
@@ -3170,6 +3170,20 @@
           "calle": "C/ Fuentezuelas, nº 7, 18550, Iznalloz, Granada",
           "codigo_postal": "18550",
           "municipio": "Iznalloz"
+        }
+      ]
+    },
+    {
+      "id": "CV0670",
+      "id_convenio": "CV0670",
+      "convocatoria": "2025-27",
+      "cif": "R1800719E",
+      "nombre": "FUNDACIÓN SAN JUAN DE ÁVILA CEI VIRGEN DEL PILAR",
+      "centros": [
+        {
+          "calle": "C/ Rodrigo de Triana, 21",
+          "codigo_postal": "18011",
+          "municipio": "Granada"
         }
       ]
     },
