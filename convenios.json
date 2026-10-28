@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-28T09:38:52.129Z"
+    "ultima_actualizacion": "2026-10-28T09:39:03.401Z"
   },
   "datos": [
     {
@@ -4870,6 +4870,20 @@
           "calle": "Camino de Ronda 96, 1º (Granada) 18004",
           "codigo_postal": "18004",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0674",
+      "id_convenio": "CV0674",
+      "convocatoria": "2025-27",
+      "cif": "B19526060",
+      "nombre": "NATURAL GREEN MARKET S.L.",
+      "centros": [
+        {
+          "calle": "Avenida de Asegra, 18",
+          "codigo_postal": "18210",
+          "municipio": "Peligros (Granada)"
         }
       ]
     },
