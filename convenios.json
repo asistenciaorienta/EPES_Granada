@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-28T11:57:01.807Z"
+    "ultima_actualizacion": "2026-10-29T07:49:52.411Z"
   },
   "datos": [
     {
@@ -2213,6 +2213,11 @@
           "calle": "Avenida de Dilar 95. 18007 Granada.",
           "codigo_postal": "18007",
           "municipio": "Granada"
+        },
+        {
+          "calle": "CAMINO DE RONDA, 109",
+          "codigo_postal": "18003",
+          "municipio": "GRANADA"
         },
         {
           "calle": "Carretera de la Sierra S/N. 18550, Iznalloz, Granada.",
