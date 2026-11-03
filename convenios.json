@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-10-29T07:50:41.588Z"
+    "ultima_actualizacion": "2026-11-03T11:04:48.067Z"
   },
   "datos": [
     {
@@ -4371,6 +4371,20 @@
       "cif": "B16954430",
       "nombre": "LA MURALLA DEL BOTÁNICO SL – RTE. MEMENTOMORI",
       "centros": []
+    },
+    {
+      "id": "CV0682",
+      "id_convenio": "CV0682",
+      "convocatoria": "2025-27",
+      "cif": "F18068049",
+      "nombre": "LA PALMERA SCA",
+      "centros": [
+        {
+          "calle": "Calle Huerta de Las Angustias S/N",
+          "codigo_postal": "18600",
+          "municipio": "MOTRIL"
+        }
+      ]
     },
     {
       "id": "CV0237",
