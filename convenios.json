@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-03T11:04:48.067Z"
+    "ultima_actualizacion": "2026-11-03T11:05:11.180Z"
   },
   "datos": [
     {
@@ -516,6 +516,20 @@
           "calle": "CALLE PEDRO DE ROJAS, Nº 9.",
           "codigo_postal": "18011",
           "municipio": "GRANADA"
+        }
+      ]
+    },
+    {
+      "id": "CV0680",
+      "id_convenio": "CV0680",
+      "convocatoria": "2025-27",
+      "cif": "G18908137",
+      "nombre": "ASOCIACIÓN CONECTA",
+      "centros": [
+        {
+          "calle": "Avenida Julio Moreno, 80, El Varadero",
+          "codigo_postal": "18613",
+          "municipio": "MOTRIL"
         }
       ]
     },
