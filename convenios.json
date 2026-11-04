@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-04T09:21:56.649Z"
+    "ultima_actualizacion": "2026-11-04T09:22:02.157Z"
   },
   "datos": [
     {
@@ -4425,6 +4425,25 @@
           "calle": "Avda. de la Ilustración, nº 119, bloque 2, 18016, Granada",
           "codigo_postal": "18016",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0679",
+      "id_convenio": "CV0679",
+      "convocatoria": "2025-27",
+      "cif": "B19667484",
+      "nombre": "LA ZUBIA CARS S.L.",
+      "centros": [
+        {
+          "calle": "Calle Fernando de los rios, s/n, La Zubia (Granada)",
+          "codigo_postal": "18140",
+          "municipio": "LA ZUBIA"
+        },
+        {
+          "calle": "Carretera de La Zubia km2",
+          "codigo_postal": "18140",
+          "municipio": "LA ZUBIA"
         }
       ]
     },
