@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-03T11:05:11.180Z"
+    "ultima_actualizacion": "2026-11-04T09:21:12.185Z"
   },
   "datos": [
     {
@@ -4270,6 +4270,20 @@
           "calle": "Gran Vía de Colón 11. 18001. Granada",
           "codigo_postal": "18001",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0678",
+      "id_convenio": "CV0678",
+      "convocatoria": "2025-27",
+      "cif": "B70721592",
+      "nombre": "KLICHE PUBLICIDAD Y COMUNICACION, SL",
+      "centros": [
+        {
+          "calle": "Calle Torre de los Abencerrajes, Num 1 Planta LC, puerta 4",
+          "codigo_postal": "18008",
+          "municipio": "GRANADA"
         }
       ]
     },
