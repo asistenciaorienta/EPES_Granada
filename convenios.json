@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-06T08:22:42.140Z"
+    "ultima_actualizacion": "2026-11-06T08:23:48.974Z"
   },
   "datos": [
     {
@@ -2755,6 +2755,11 @@
           "calle": "Avda. Cristobal Colón, s/n Churriana de la Vega, 18194",
           "codigo_postal": "18194",
           "municipio": "Churriana de la Vega"
+        },
+        {
+          "calle": "C/ Marqués de la Ensenada, N° 1, Planta 4, Ronda.",
+          "codigo_postal": "18004",
+          "municipio": "Granada."
         }
       ]
     },
