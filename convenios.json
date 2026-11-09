@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-09T11:40:37.310Z"
+    "ultima_actualizacion": "2026-11-09T12:15:25.646Z"
   },
   "datos": [
     {
@@ -128,6 +128,20 @@
           "calle": "Polígono 5, Parcela 258",
           "codigo_postal": "18750",
           "municipio": "La Mamola"
+        }
+      ]
+    },
+    {
+      "id": "CV0689",
+      "id_convenio": "CV0689",
+      "convocatoria": "2025-27",
+      "cif": "G18025353",
+      "nombre": "AGRUPACIÓN DE PERSONAS SORDAS DE GRANADA Y PROVINCIA_ASOGRA",
+      "centros": [
+        {
+          "calle": "C/ Ramón y Cajal, 54, Local 3.",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
         }
       ]
     },
