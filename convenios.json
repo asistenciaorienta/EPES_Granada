@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-10T12:37:25.536Z"
+    "ultima_actualizacion": "2026-11-10T12:37:34.602Z"
   },
   "datos": [
     {
@@ -6713,20 +6713,6 @@
           "calle": "Calle Rector Federico Mayor Zaragoza nº 21, Playa Granada, Motril (CP 18.613)",
           "codigo_postal": "18613",
           "municipio": "Motril"
-        }
-      ]
-    },
-    {
-      "id": "CV0174",
-      "id_convenio": "CV0174",
-      "convocatoria": "2025-27",
-      "cif": "B41610825",
-      "nombre": "UNEI INICIATIVA SOCIAL SLU",
-      "centros": [
-        {
-          "calle": "C/ Asyma, Nº 9, Peligros, CP. 18210",
-          "codigo_postal": "18210",
-          "municipio": "Peligros"
         }
       ]
     },
