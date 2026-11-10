@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-10T11:18:09.650Z"
+    "ultima_actualizacion": "2026-11-10T11:19:29.850Z"
   },
   "datos": [
     {
@@ -963,6 +963,11 @@
       "cif": "B18489179",
       "nombre": "ATLÁNTIDA FORMACIÓN SL",
       "centros": [
+        {
+          "calle": "C/ ACEQUIA DE CORON, 2",
+          "codigo_postal": "C.P 18.005",
+          "municipio": "Granada"
+        },
         {
           "calle": "CALLE/ ACEQUIA DEL ZUTE, 2, Granada C.P. 18015",
           "codigo_postal": "18015",
