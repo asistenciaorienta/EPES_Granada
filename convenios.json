@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-12T13:26:47.425Z"
+    "ultima_actualizacion": "2026-11-12T13:26:56.132Z"
   },
   "datos": [
     {
@@ -699,6 +699,20 @@
           "calle": "PLAZA ANTONIO QUITIAN,BLOQUE 13,LOCAL 1,18013 GRANADA",
           "codigo_postal": "18013",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0436",
+      "id_convenio": "CV0436",
+      "convocatoria": "2025-27",
+      "cif": "G18018853",
+      "nombre": "ASOCIACIÓN EN FAVOR DE LAS PERSONAS CON DISCAPACIDAD INTELECTUAL “SAN JOSÉ”",
+      "centros": [
+        {
+          "calle": "C/ José Luis de los Reyes Arenas, 1 18500 Guadix (Granada)",
+          "codigo_postal": "18500",
+          "municipio": "Guadix"
         }
       ]
     },
