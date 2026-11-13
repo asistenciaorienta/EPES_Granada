@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-13T12:05:32.016Z"
+    "ultima_actualizacion": "2026-11-13T12:09:02.716Z"
   },
   "datos": [
     {
@@ -142,6 +142,20 @@
           "calle": "C/ Ramón y Cajal, 54, Local 3.",
           "codigo_postal": "18003",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0693",
+      "id_convenio": "CV0693",
+      "convocatoria": "2025-27",
+      "cif": "B18733550",
+      "nombre": "AJT Reclamaciones Conjuntas S.L.",
+      "centros": [
+        {
+          "calle": "Calle Domine 1",
+          "codigo_postal": "18600",
+          "municipio": "MOTRIL"
         }
       ]
     },
