@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-13T12:09:09.935Z"
+    "ultima_actualizacion": "2026-11-13T12:09:36.177Z"
   },
   "datos": [
     {
@@ -5403,6 +5403,20 @@
           "calle": "Carretera Alhama, 56, Churriana de la Vega (Granada), 18194",
           "codigo_postal": "18194",
           "municipio": "Churriana de la Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0692",
+      "id_convenio": "CV0692",
+      "convocatoria": "2025-27",
+      "cif": "F19580414",
+      "nombre": "PEQUEDUCA SCA",
+      "centros": [
+        {
+          "calle": "Carretera de la Celulosa s/n (Centro de Desarrollo Turístico y Empresarial)",
+          "codigo_postal": "18613",
+          "municipio": "MOTRIL"
         }
       ]
     },
