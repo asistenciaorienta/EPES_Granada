@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-12T19:02:14.978Z"
+    "ultima_actualizacion": "2026-11-13T06:28:27.464Z"
   },
   "datos": [
     {
@@ -1808,6 +1808,20 @@
       "cif": "F91141879",
       "nombre": "CLAROS SOCIEDAD COOPERATIVA ANDALUZA DE INTERES SOCIAL",
       "centros": []
+    },
+    {
+      "id": "CV0690",
+      "id_convenio": "CV0690",
+      "convocatoria": "2025-27",
+      "cif": "A80364243",
+      "nombre": "CLECE, S.A.",
+      "centros": [
+        {
+          "calle": "C/ José Luis Pérez Pujadas, 14, 3, Planta Módulo B, Oficina 33",
+          "codigo_postal": "18006",
+          "municipio": "Granada"
+        }
+      ]
     },
     {
       "id": "CV0342",
