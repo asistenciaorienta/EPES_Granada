@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-16T09:00:06.890Z"
+    "ultima_actualizacion": "2026-11-16T09:01:23.731Z"
   },
   "datos": [
     {
@@ -4676,6 +4676,11 @@
           "calle": "TREVENQUE, 30 BJ. LOCAL, C.P. 18002 Granada",
           "codigo_postal": "18002",
           "municipio": "Granada"
+        },
+        {
+          "calle": "PASEO/ HERMANOS COSTALEROS, S/N.",
+          "codigo_postal": "18008",
+          "municipio": "GRANADA"
         }
       ]
     },
