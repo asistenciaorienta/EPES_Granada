@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-17T08:39:56.482Z"
+    "ultima_actualizacion": "2026-11-17T08:40:15.709Z"
   },
   "datos": [
     {
@@ -5270,6 +5270,20 @@
           "calle": "C/ Angel, 17 18002 Granada",
           "codigo_postal": "18002",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0698",
+      "id_convenio": "CV0698",
+      "convocatoria": "2025-27",
+      "cif": "B18560433",
+      "nombre": "Oligest Uno S.L.",
+      "centros": [
+        {
+          "calle": "c/ Dómine, 1",
+          "codigo_postal": "18600",
+          "municipio": "MOTRIL"
         }
       ]
     },
