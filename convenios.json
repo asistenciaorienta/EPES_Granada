@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-17T08:32:14.034Z"
+    "ultima_actualizacion": "2026-11-17T08:32:39.663Z"
   },
   "datos": [
     {
@@ -2537,6 +2537,20 @@
       "cif": "B19564129",
       "nombre": "Ediciones Iceberg S.L.",
       "centros": []
+    },
+    {
+      "id": "CV0695",
+      "id_convenio": "CV0695",
+      "convocatoria": "2025-27",
+      "cif": "A18074898",
+      "nombre": "EE.SS. Motril S.A.",
+      "centros": [
+        {
+          "calle": "Avenida de Andalucía, 11",
+          "codigo_postal": "18600",
+          "municipio": "MOTRIL"
+        }
+      ]
     },
     {
       "id": "CV0144",
