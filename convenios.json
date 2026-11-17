@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-17T08:31:37.413Z"
+    "ultima_actualizacion": "2026-11-17T08:32:14.034Z"
   },
   "datos": [
     {
@@ -5872,6 +5872,20 @@
           "calle": "Avda. La Constitución, 50. 18014 Granada",
           "codigo_postal": "18014",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0697",
+      "id_convenio": "CV0697",
+      "convocatoria": "2025-27",
+      "cif": "B42783506",
+      "nombre": "RGTLOGIST",
+      "centros": [
+        {
+          "calle": "Avenida/ Las Canteras, s/n",
+          "codigo_postal": "18320",
+          "municipio": "atarfe"
         }
       ]
     },
