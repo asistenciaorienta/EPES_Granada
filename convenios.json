@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-17T08:32:46.561Z"
+    "ultima_actualizacion": "2026-11-17T08:32:53.718Z"
   },
   "datos": [
     {
@@ -7177,6 +7177,20 @@
           "calle": "C/ sócrates, 23 (esquina con Trajano), Granada, CP 18004",
           "codigo_postal": "18004",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0700",
+      "id_convenio": "CV0700",
+      "convocatoria": "2025-27",
+      "cif": "B42770636",
+      "nombre": "Yanguas y Asociados S.L.",
+      "centros": [
+        {
+          "calle": "c/ Dómine, 1",
+          "codigo_postal": "18600",
+          "municipio": "MOTRIL"
         }
       ]
     },
