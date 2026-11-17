@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-16T09:01:23.731Z"
+    "ultima_actualizacion": "2026-11-17T08:31:26.839Z"
   },
   "datos": [
     {
@@ -2014,6 +2014,20 @@
       "cif": "B18240838",
       "nombre": "CONGELADOS APOLO SL",
       "centros": []
+    },
+    {
+      "id": "CV0702",
+      "id_convenio": "CV0702",
+      "convocatoria": "2025-27",
+      "cif": "B18816991",
+      "nombre": "CONSERVAS CASA RUFINO",
+      "centros": [
+        {
+          "calle": "calle san sebastian , 29",
+          "codigo_postal": "18360",
+          "municipio": "Huétor Tájar"
+        }
+      ]
     },
     {
       "id": "CV0528",
