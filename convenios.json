@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-17T08:32:39.663Z"
+    "ultima_actualizacion": "2026-11-17T08:32:46.561Z"
   },
   "datos": [
     {
@@ -5131,6 +5131,20 @@
           "calle": "Avenida de Asegra, 18",
           "codigo_postal": "18210",
           "municipio": "Peligros (Granada)"
+        }
+      ]
+    },
+    {
+      "id": "CV0696",
+      "id_convenio": "CV0696",
+      "convocatoria": "2025-27",
+      "cif": "B82816422",
+      "nombre": "Noega 2000 S.L.",
+      "centros": [
+        {
+          "calle": "Calle Dómine, 1,",
+          "codigo_postal": "18600",
+          "municipio": "MOTRIL"
         }
       ]
     },
