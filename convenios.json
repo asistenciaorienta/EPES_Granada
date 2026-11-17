@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-17T08:31:26.839Z"
+    "ultima_actualizacion": "2026-11-17T08:31:37.413Z"
   },
   "datos": [
     {
@@ -536,6 +536,25 @@
           "calle": "C/ Arquitecto José Contreras, nº 13, 18013, Granada",
           "codigo_postal": "18013",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0694",
+      "id_convenio": "CV0694",
+      "convocatoria": "2025-27",
+      "cif": "G18751008",
+      "nombre": "ASOCIACIÓN AMPACHICO",
+      "centros": [
+        {
+          "calle": "CORTIJO DE LA CARTUJA S/N",
+          "codigo_postal": "18630",
+          "municipio": "ALBOLOTE"
+        },
+        {
+          "calle": "c/ Jueves s/n",
+          "codigo_postal": "18100",
+          "municipio": "ARMILLA"
         }
       ]
     },
