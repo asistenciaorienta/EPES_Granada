@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-17T08:40:15.709Z"
+    "ultima_actualizacion": "2026-11-19T08:34:13.059Z"
   },
   "datos": [
     {
@@ -7044,6 +7044,20 @@
           "calle": "Avda. Cañada de los Fenicios, 4 puerta 1 GOJAR",
           "codigo_postal": "",
           "municipio": "Gójar"
+        }
+      ]
+    },
+    {
+      "id": "CV0703",
+      "id_convenio": "CV0703",
+      "convocatoria": "2025-27",
+      "cif": "B99438806",
+      "nombre": "VITALIA HOME SLU",
+      "centros": [
+        {
+          "calle": "C/ Huerta del Rasillo, Nº 4",
+          "codigo_postal": "18003",
+          "municipio": "Granada"
         }
       ]
     },
