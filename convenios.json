@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-19T08:34:55.769Z"
+    "ultima_actualizacion": "2026-11-20T10:37:20.479Z"
   },
   "datos": [
     {
@@ -6911,6 +6911,20 @@
           "calle": "C/ Santa Clotilde, 16. 18003 Granda",
           "codigo_postal": "18003",
           "municipio": "Granada"
+        }
+      ]
+    },
+    {
+      "id": "CV0708",
+      "id_convenio": "CV0708",
+      "convocatoria": "2025-27",
+      "cif": "B18806190",
+      "nombre": "United Caro SLU",
+      "centros": [
+        {
+          "calle": "calle Polígono Industrial El Baico Parcela 64",
+          "codigo_postal": "18800",
+          "municipio": "Baza"
         }
       ]
     },
