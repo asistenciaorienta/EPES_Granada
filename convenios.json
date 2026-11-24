@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-20T10:57:02.761Z"
+    "ultima_actualizacion": "2026-11-24T09:23:56.452Z"
   },
   "datos": [
     {
@@ -607,6 +607,20 @@
       "cif": "G19625482",
       "nombre": "ASOCIACIÓN CULTURAL EL BOSQUE NATURA",
       "centros": []
+    },
+    {
+      "id": "CV0706",
+      "id_convenio": "CV0706",
+      "convocatoria": "2025-27",
+      "cif": "G18975250",
+      "nombre": "ASOCIACIÓN DE ALUMNOS Y ALUMNAS ANTONIO MACHADO DEL SEPER MARIANA PINEDA",
+      "centros": [
+        {
+          "calle": "C/ MIGUEL JIMÉNEZ RUEDA, 1",
+          "codigo_postal": "18230",
+          "municipio": "ATARFE (GRANADA)"
+        }
+      ]
     },
     {
       "id": "CV0534",
