@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-24T10:43:11.998Z"
+    "ultima_actualizacion": "2026-11-25T11:30:23.739Z"
   },
   "datos": [
     {
@@ -4220,6 +4220,11 @@
           "calle": "AVENIDA LOS CLAVELES, N.º 18 18200 MARACENA",
           "codigo_postal": "18200",
           "municipio": "Maracena"
+        },
+        {
+          "calle": "C/ MONTEVIDEO, S/N",
+          "codigo_postal": "18200",
+          "municipio": "MARACENA (GRANADA)"
         }
       ]
     },
