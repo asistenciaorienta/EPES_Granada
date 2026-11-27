@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-27T07:13:48.467Z"
+    "ultima_actualizacion": "2026-11-27T07:14:38.347Z"
   },
   "datos": [
     {
@@ -4241,6 +4241,11 @@
           "calle": "C/ MONTEVIDEO, S/N",
           "codigo_postal": "18200",
           "municipio": "MARACENA (GRANADA)"
+        },
+        {
+          "calle": "C/ Huertos, 25.",
+          "codigo_postal": "C.P. 18240",
+          "municipio": "Pinos Puente (Granada)."
         }
       ]
     },
