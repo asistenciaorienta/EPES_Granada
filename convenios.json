@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-27T07:14:38.347Z"
+    "ultima_actualizacion": "2026-11-27T07:15:39.378Z"
   },
   "datos": [
     {
@@ -4222,6 +4222,11 @@
       "cif": "B91723288",
       "nombre": "INICIATIVAS EMPRESARIALES ANDALUZAS SL",
       "centros": [
+        {
+          "calle": "C/ Calvo Sotelo, 10.",
+          "codigo_postal": "C.P. 18194",
+          "municipio": "Churriana de la Vega (Granada)"
+        },
         {
           "calle": "CALLE FUENTE SALINAS, N.º 40",
           "codigo_postal": "18340",
