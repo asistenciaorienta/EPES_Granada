@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-27T09:29:01.893Z"
+    "ultima_actualizacion": "2026-11-27T11:07:28.083Z"
   },
   "datos": [
     {
@@ -6338,6 +6338,20 @@
           "calle": "Calle Cruces nº 2, Motril, CP 18.600",
           "codigo_postal": "18600",
           "municipio": "Motril"
+        }
+      ]
+    },
+    {
+      "id": "CV0712",
+      "id_convenio": "CV0712",
+      "convocatoria": "2025-27",
+      "cif": "B67936195",
+      "nombre": "SOLUART PRINT, S.L",
+      "centros": [
+        {
+          "calle": "C/ Escritor Antonio Almagro, nave 7 (Pol. Ind. Fatinafar)",
+          "codigo_postal": "18015",
+          "municipio": "GRANADA"
         }
       ]
     },
