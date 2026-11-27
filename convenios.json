@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-26T11:55:32.247Z"
+    "ultima_actualizacion": "2026-11-27T07:13:48.467Z"
   },
   "datos": [
     {
@@ -4223,9 +4223,14 @@
       "nombre": "INICIATIVAS EMPRESARIALES ANDALUZAS SL",
       "centros": [
         {
-          "calle": "CALLE FUENTE SALINAS, N.º 40 FUENTE VAQUEROS 18340",
+          "calle": "CALLE FUENTE SALINAS, N.º 40",
           "codigo_postal": "18340",
           "municipio": "Fuente Vaqueros"
+        },
+        {
+          "calle": "C/ Fuente Salinas, 2,",
+          "codigo_postal": "C.P. 18340",
+          "municipio": "Fuente Vaqueros (Granada)"
         },
         {
           "calle": "AVENIDA LOS CLAVELES, N.º 18 18200 MARACENA",
