@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-27T09:10:39.187Z"
+    "ultima_actualizacion": "2026-11-27T09:29:01.893Z"
   },
   "datos": [
     {
@@ -732,14 +732,6 @@
           "municipio": "Huétor Tájar"
         }
       ]
-    },
-    {
-      "id": "CV0226",
-      "id_convenio": "CV0226",
-      "convocatoria": "2025-27",
-      "cif": "G18866343",
-      "nombre": "ASOCIACION DE OSTOMIZADOS DE GRANADA (AOGRA)",
-      "centros": []
     },
     {
       "id": "CV0069",
