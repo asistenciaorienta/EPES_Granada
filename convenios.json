@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ultima_actualizacion": "2026-11-27T09:03:26.918Z"
+    "ultima_actualizacion": "2026-11-27T09:03:40.992Z"
   },
   "datos": [
     {
@@ -3847,6 +3847,40 @@
           "calle": "Camino Puente del Palo PP9, Parcela 112. CP 18194 Churriana de la Vega (Granada)",
           "codigo_postal": "18194",
           "municipio": "Churriana de la Vega"
+        }
+      ]
+    },
+    {
+      "id": "CV0714",
+      "id_convenio": "CV0714",
+      "convocatoria": "2025-27",
+      "cif": "B72509433",
+      "nombre": "GRUPO SOCEL SERVICIOS GENERALES, S.L.",
+      "centros": [
+        {
+          "calle": "Avenida de la Innovación, 1,",
+          "codigo_postal": "18016",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "C/ Estrellas, S/N, Chana.",
+          "codigo_postal": "18015",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "C/ Santo Sepulcro s/n.",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "C/ Torre Pedro de Morales, s/n, Genil.",
+          "codigo_postal": "18008",
+          "municipio": "Granada"
+        },
+        {
+          "calle": "Callejón. Tallacarne, 15, Albaicín.",
+          "codigo_postal": "18011",
+          "municipio": "Granada"
         }
       ]
     },
